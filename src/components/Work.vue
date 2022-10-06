@@ -1,8 +1,5 @@
 <script>
     import {mapState} from "vuex";
-    import dessert from "@/images/dessert-person.png";
-    import music from "@/images/music-matters.png";
-    import audio from "@/images/audio-img.png";
     let projectData = [
         {
             slug: "2020-bachelor",
@@ -60,9 +57,6 @@
             return {
                 sortedWork: [],
                 projectData,
-                dessert,
-                music,
-                audio,
             };
         },
         computed: {
@@ -83,9 +77,6 @@
                 v-for="project in sortedWork"
                 :key="project.title"
             >
-                <div>
-                    <img :src="dessert" alt="" class="project-image" />
-                </div>
                 <div>
                     {{ project.title }}
                 </div>
