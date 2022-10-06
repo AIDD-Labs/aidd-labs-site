@@ -1,0 +1,172 @@
+@import "./prism-github.scss";
+
+html,
+body,
+#root {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+
+    * {
+        box-sizing: border-box;
+
+        &::selection {
+            background: var(--neon-green-300);
+        }
+    }
+}
+
+#app {
+    height: 100%;
+}
+
+a {
+    color: currentColor;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--blue-300);
+    font-weight: 500;
+    color: currentColor;
+}
+
+a.nav { // make this specific for the nav somehow
+    font-weight: 400;
+    text-decoration: none;
+}
+a.nav:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--blue-300);
+    font-weight: 500;
+    color: currentColor;
+}
+
+a.footer {
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a.footer:hover{
+    font-weight: 1000;
+}
+
+h1 {
+    font-family: 'Prata';
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 1em 0 0.5em 0;
+}
+
+h2 {
+    font-family: 'Prata';
+    font-weight: 500;
+    margin: 1em 0 0 0;
+}
+
+h3 {
+    line-height: 1;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    margin: 1em 0 0 0;
+}
+
+ul {
+    margin-bottom: 2em;
+}
+
+span.arrow {
+    font-family: 'DM sans', sans-serif;
+}
+
+.p-style {
+    margin: 1em 0 0 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 5px 20px; // padding around text (top/bottom left/right)
+    margin-right: 5px;
+    text-align: center;
+    color: black;
+    background-color: transparent;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    cursor: pointer;
+    
+    p {
+        margin: 0;
+    }
+}
+
+button:hover{
+    border-radius: 2px;
+    background-color: var(--blue-400);
+    color: white;
+}
+button:active{
+    background-color: var(--blue-400);
+}
+
+button.primary {
+    padding: 5px 20px; // padding around text (top/bottom left/right)
+    margin-top: 10px; // spacing on top from text
+    text-align: center;
+    background-color: var(--blue-400);
+    color: white;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    p {
+        margin: 0;
+    }
+}
+
+button.footer {
+    padding: 10px 10px; // padding around text (top/bottom left/right)
+    margin-top: 10px; // spacing on top from text
+    margin-bottom: 10px; // spacing on top from text
+    text-align: center;
+    background-color: var(--bright-yellow-300);
+    color: black;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    p {
+        margin: 0;
+    }
+}
+img {
+    width: 100%;
+}
+
+.font-vulf {
+    font-family: 'Vulf Mono', serif;
+    font-weight: 500;
+}
