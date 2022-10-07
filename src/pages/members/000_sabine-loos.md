@@ -2,7 +2,7 @@
 slug: "sabine-loos"
 name: "Sabine Loos"
 title: "Principal Investigator"
-img: "src/assets/img/member-sabine.jpg"
+img: "img/member-sabine.jpg"
 url: "https://sabine-loos.com/"
 ---
 

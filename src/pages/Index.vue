@@ -83,26 +83,26 @@
                 </div>
                 </div>
                 <div class="about-img">
-                    <img src="/src/assets/img/home-approach.png" alt="AIDD labs approach diagram showing flows from users to decisions to data">
+                    <img src="/img/home-approach.png" alt="AIDD labs approach diagram showing flows from users to decisions to data">
                 </div>
             </div>
             <h1>Partners & Funders</h1>
             <div class="partners">
                 <div class="partners__photo-banner">
-                    <a class="first" target="_blank" rel="noopener noreferrer" href="https://earthquake.usgs.gov/"><img src="/src/assets/img/partner-usgs.png" /></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://hazards.colorado.edu/"><img src="/src/assets/img/partner-nhc.png" /></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.data4sdgs.org/"><img src="/src/assets/img/partner-GPSDD.jpg" /></a>
-                    <a href="#"><img src="/src/assets/img/partner-tfscb.png" /></a>
-                    <a href="#"><img src="/src/assets/img/partner-WBibrd.png" /></a>
-                    <a href="#"><img src="/src/assets/img/partner-kwpf.png" /></a>
-                    <a href="#"><img src="/src/assets/img/partner-UKaid.jpg" /></a>
-                    <a href="#"><img src="/src/assets/img/partner-irishAid.png" /></a>
+                    <a class="first" target="_blank" rel="noopener noreferrer" href="https://earthquake.usgs.gov/"><img src="/img/partner-usgs.png" /></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://hazards.colorado.edu/"><img src="/img/partner-nhc.png" /></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.data4sdgs.org/"><img src="/img/partner-GPSDD.jpg" /></a>
+                    <a href="#"><img src="/img/partner-tfscb.png" /></a>
+                    <a href="#"><img src="/img/partner-WBibrd.png" /></a>
+                    <a href="#"><img src="/img/partner-kwpf.png" /></a>
+                    <a href="#"><img src="/img/partner-UKaid.jpg" /></a>
+                    <a href="#"><img src="/img/partner-irishAid.png" /></a>
                     <!-- Below is the width of 1400 px -->
-                    <a target="_blank" rel="noopener noreferrer" href="https://earthquake.usgs.gov/"><img src="/src/assets/img/partner-usgs.png" /></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://hazards.colorado.edu/"><img src="/src/assets/img/partner-nhc.png" /></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.data4sdgs.org/"><img src="/src/assets/img/partner-GPSDD.jpg" /></a>
-                    <a href="#"><img src="/src/assets/img/partner-tfscb.png" /></a>
-                    <a href="#"><img src="/src/assets/img/partner-WBibrd.png" /></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://earthquake.usgs.gov/"><img src="/img/partner-usgs.png" /></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://hazards.colorado.edu/"><img src="/img/partner-nhc.png" /></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.data4sdgs.org/"><img src="/img/partner-GPSDD.jpg" /></a>
+                    <a href="#"><img src="/img/partner-tfscb.png" /></a>
+                    <a href="#"><img src="/img/partner-WBibrd.png" /></a>
                 </div>
             </div>
         </div>
@@ -130,7 +130,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: url("/src/assets/img/home-hero-1.png");
+        background: url("/img/home-hero-1.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;

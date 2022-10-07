@@ -13,8 +13,8 @@
         computed: {
             src () {
                 return this.$route.name === "Index"
-                    ? "/src/assets/img/logo-light.png"
-                    : "/src/assets/img/logo-dark.png"
+                    ? "/img/logo-light.png"
+                    : "/img/logo-dark.png"
             }
         },
         methods: {},

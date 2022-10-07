@@ -3,7 +3,7 @@ slug: "marisa-macias"
 name: "Marísa Macías"
 title: "Masters researcher"
 affiliation: "Colorado School of Mines & USGS"
-img: "src/assets/img/member-marisa.jpeg"
+img: "img/member-marisa.jpeg"
 url: "https://www.usgs.gov/staff-profiles/marisa-macias"
 ---
 

@@ -45,7 +45,7 @@
     <MaxWidth class="footer-container" size="xl">
         <div class="contact">
             <div class="img-logo">
-                <img src="/src/assets/img/logo-light.png" alt="AIDD labs logo"> 
+                <img src="img/logo-light.png" alt="AIDD labs logo"> 
             </div>
             <div class="contacttext">
                 <p>Send us an email <a href="mailto:sloos@umich.edu" class="footer" target="_blank" rel="noopener noreferrer">sloos [at] umich [dot] edu</a> 

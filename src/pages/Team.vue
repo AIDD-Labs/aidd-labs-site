@@ -74,7 +74,7 @@
                     </b>
                     <br>
                 </p>
-                <div class="img-fullwidth"><img src="/src/assets/img/team-usgs.jpg" alt="AIDD team USGS"></div>
+                <div class="img-fullwidth"><img src="/img/team-usgs.jpg" alt="AIDD team USGS"></div>
         </div>
     </MaxWidth>
 </template>
