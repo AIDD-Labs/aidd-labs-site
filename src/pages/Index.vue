@@ -25,7 +25,8 @@
                             by integrating voices of communities and organizations who have historically been excluded from design,
                             by developing approaches that can be used in data-scarce regions, and
                             by understanding past applications to better design future information systems.
-                        <p> Our lab website is under construction, but please explore our research and approach here. If you are interested in joining our lab, please see our <a href="http://localhost:3001/team">Team</a> page.</p>`,
+                        <p> Our lab website is under construction, but please explore our research and approach here. If you are interested in joining our lab, please see our 
+                            <a href="https://looslabs.netlify.app/team">Team</a> page.</p>`,
                     research: `
                         <p> Our research takes multiple forms, both to understand our current information systems and to design new systems that reduce risk to those most vulnerable.  
                             Our projects range from evaluating why people contribute to crowdsourced hazard information to developing statistical methods to estimate disaster impacts. 
