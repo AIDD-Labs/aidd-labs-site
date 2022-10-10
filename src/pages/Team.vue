@@ -29,9 +29,9 @@
     <MaxWidth class="team container" size = "xl">
         <div class="team__about">
             <h1>Team</h1>
-            Our team is a group of disaster analysts from multiple backgrounds—including humanitarian engineering, civil engineering, computer science, and statistics—and we’re looking to grow (see below). 
-            We strive to conduct convergent research, blending our knowledge of data, statistics, and information on disasters and/or the built environment with an understanding of the social and natural systems that surround them. 
-            Therefore, our team members employ multiple methods bridging multiple disciplines.             
+            Our team is a group of disaster analysts with multiple backgrounds—including humanitarian engineering, civil engineering, statistics--and we're looking to grow.
+            We strive to conduct convergent research, blending our knowledge of data and statistics on disasters and/or the built environment with an understanding of the social and natural systems that surround them. 
+            Therefore, our team members employ multiple methods bridging multiple disciplines. 
         </div>
         <div class="team__members">
             <h2>Current members</h2>
@@ -64,6 +64,7 @@
                     <br><br>
                     <b>If you’d like to pursue a PhD in AIDD labs, please consider applying to Civil & Environmental Engineering program at University of Michigan.</b>  
                     Please indicate in your application that you’re interested in working with Professor Loos to ensure she is sent your application for review. 
+                    We are open to folks from multiple disciplines, including engineering, geography, urban planning, computer science, geology, among many more. 
                     You are also more than welcome to email Professor Loos with the subject line “Prospective PhD student: ___” before applying, including your CV, a description of your research interests and how they align with AIDD labs research, what you're hoping to gain from a PhD, and any other relevant material. 
                     Please know that while she would like to be able to respond to all inquiries, you may not receive a personal response given the number of emails received each year.
                     <br><br>

@@ -3,7 +3,7 @@ slug: "elijah-knodel"
 name: "Elijah Knodel"
 title: "Undergraduate Researcher"
 affiliation: "Colorado School of Mines & USGS"
-img: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+img: "img/member-elijah.jpeg"
 ---
 
 Beep boop banana pants.
