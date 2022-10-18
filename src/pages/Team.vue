@@ -13,6 +13,7 @@
         computed: {
             ...mapState({
                 members: state => state.members,
+                contents: state => state.contents,
                 recentPosts: state => [...state.posts.slice(0, 3)],
             }),
         },
@@ -20,7 +21,7 @@
         methods: {},
         mounted() {
             this.isLoaded = true;
-            console.log('MEMBERS', this.members);
+            console.log('CONTENTS', this.contents);
         },
     };
 </script>
