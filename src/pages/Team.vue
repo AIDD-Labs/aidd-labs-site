@@ -98,7 +98,7 @@
         margin-left: auto;
         margin-right: auto;
         height: auto;
-        max-width: 50%;
+        max-width: 60%;
     }
     .members {
         display: grid;

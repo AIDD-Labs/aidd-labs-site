@@ -25,22 +25,25 @@
 </script>
 
 <template>
-    <MaxWidth class="team container" size = "xl">
-        <div class="team__about">
-            <h1>Team</h1>
-            Our team is a group of disaster analysts with multiple backgrounds—including humanitarian engineering, civil engineering, statistics--and we're looking to grow.
-            We strive to conduct convergent research, blending our knowledge of data and statistics on disasters and/or the built environment with an understanding of the social and natural systems that surround them. 
-            Therefore, our team members employ multiple methods bridging multiple disciplines. 
+    <MaxWidth class="contentpage container" size = "xl">
+        <div class="contentpage__about">
+            <h1>Content</h1>
+            <em>this is stuff about what goes here</em>
         </div>
-        <div class="team__members">
-            <h2>Current members</h2>
-            <div class="members">
+        <div class="contentpage__contents">
+            <h2>TOPIC</h2>
+            <h2>TYPE</h2>
+            <div class="contents">
                 <div
                     v-for="content in contents"
                     :key="content.slug"
-                    class="member">
+                    class="content">
                         <a :href="content.meta.url" target="_blank" class="member">
-                            <img :src="content.meta.thumbnailurl">                         
+                            <!-- <img :src="content.meta.thumbnailurl">                          -->
+                            <div class="hoverwrap">
+                                <img :src="content.meta.thumbnail"/>
+                                <div class="hovercap" :src="content.meta.title">test text</div>
+                            </div>
                         </a>
                 </div>
             </div>
@@ -50,7 +53,7 @@
 
 <style lang="scss" >
     @import "./../styles/globals"; 
-    .team {
+    .contentpage {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -60,29 +63,60 @@
             margin-bottom: 1rem;
         }
     }
-    .img-fullwidth{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-        max-width: 50%;
-    }
-    .members {
+    .contents {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         row-gap: 30px;
         justify-items: start;
         width: 100%;
     }
-    .member {
+    .content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
-        & img {
-            width: 200px;
-            aspect-ratio: 2/3;
-        }
+        // & img {
+        //     width: 275px;
+        //     aspect-ratio: 1/1;
+        // }
+    }
+    /* (A) WRAPPER */
+    .hoverwrap {
+        position: relative; /* required for (c2) */
+        aspect-ratio: 1/1;
+        max-width: 275px;   /* optional */
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1); // 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+
+    /* (B) RESPONSIVE IMAGE */
+    .hoverwrap img { width: 100%; }
+
+    /* (C) CAPTION */
+    .hovercap {
+        /* (C1) DIMENSIONS */
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        
+        /* (C2) POSITION */
+        position: absolute;
+        top: 0; left: 0;
+        text-align: left;
+        padding-top: 5%;
+        padding-left: 5%;
+        
+        /* (C3) COLORS */
+        background-color: rgba(30, 38, 72, 0.8);
+        color: white;
+    }
+
+    /* (D) SHOW/HIDE */
+    .hovercap {
+        visibility: none; opacity: 0;
+        transition: opacity 0.3s;
+    }
+        .hoverwrap:hover .hovercap {
+        visibility: visible; opacity: 1;
     }
 </style>
