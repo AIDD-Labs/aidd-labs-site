@@ -19,6 +19,7 @@
         "vite-imagetools": "^4.0.3",
         "vite-plugin-fonts": "^0.3.0",
         "vue": "^3.2.25",
+        "vue-cool-lightbox": "^2.7.5",
         "vue-html2pdf": "^1.8.0",
         "vue-meta": "^3.0.0-alpha.8",
         "vue-tailwind": "^2.5.1",
