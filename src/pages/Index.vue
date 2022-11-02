@@ -1,16 +1,27 @@
 <script>
     import {mapState} from "vuex";
     import Work from "@/components/Work.vue";
+    import LightBox from "@/components/global/LightBox.vue";
 
     export default {
         name: "Index",
         components: {
             Work,
+            LightBox,
         },
         data() {
             return {
                 isLoaded: false,
-                aboutState: 'mission'
+                aboutState: 'mission',
+                lightbox: {
+                    images: {
+                    thumbnails: ["home-approach.jpg"],
+                    large: ["home-approach.jpg"]
+                },
+                captions: ["The AIDD labs approach"],
+                thumbnailsPath: "/img/",
+                largePath: "/img/"
+                }
             };
         },
         computed: {
@@ -84,7 +95,15 @@
                 </div>
                 </div>
                 <div class="about-img">
-                    <img src="/img/home-approach.png" alt="AIDD labs approach diagram showing flows from users to decisions to data">
+                    <!-- <img src="/img/home-approach.png" alt="AIDD labs approach diagram showing flows from users to decisions to data"> -->
+                    <LightBox
+                        :thumbnails="lightbox.images.thumbnails"
+                        :largeImages="lightbox.images.large"
+                        :thumbnailsPath="lightbox.thumbnailsPath"
+                        :largePath="lightbox.largePath"
+                        :captions="lightbox.captions"
+                        class="lightBox"
+                    />
                 </div>
             </div>
             <h1>Partners & Funders</h1>
@@ -106,6 +125,9 @@
                     <a href="#"><img src="/img/partner-WBibrd.png" /></a>
                 </div>
             </div>
+            <!-- <div class="FeedItem">
+                <div class="FeedItem__image" src="/img/partner-tfscb.png"></div>
+            </div> -->
         </div>
     </MaxWidth>
 </template>
@@ -188,6 +210,16 @@
         justify-content: center;
         padding-left: 1rem;
     }
+    .light-box {
+        &__thumbnail {
+        margin: 10px;
+        width: 100%;
+        }
+        & img {
+        max-width: 100%;
+        }
+    }
+
     .partners {
         width: 100%;
         overflow: hidden;

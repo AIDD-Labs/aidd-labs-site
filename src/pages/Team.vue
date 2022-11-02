@@ -1,18 +1,32 @@
 <script>
     import {mapState} from "vuex";
     import MaxWidth from "../components/global/MaxWidth.vue";
+    import LightBox from "@/components/global/LightBox.vue";
 
     export default {
         name: "Index",
-        components: { MaxWidth },
+        components: { 
+            MaxWidth,
+            LightBox
+         },
         data() {
             return {
                 isLoaded: false,
+                lightbox: {
+                    images: {
+                    thumbnails: ["team-usgs.jpg"],
+                    large: ["team-usgs.jpg"]
+                },
+                captions: ["AIDD labs getting ice cream after work. Pictured clockwise: Sabine Loos, Marísa Macías, David Wald, Alex Brunson, Eli Knodel, Maddie Karr."],
+                thumbnailsPath: "/img/",
+                largePath: "/img/"
+                }
             };
         },
         computed: {
             ...mapState({
                 members: state => state.members,
+                contents: state => state.contents,
                 recentPosts: state => [...state.posts.slice(0, 3)],
             }),
         },
@@ -20,7 +34,7 @@
         methods: {},
         mounted() {
             this.isLoaded = true;
-            console.log('MEMBERS', this.members);
+            console.log('CONTENTS', this.contents);
         },
     };
 </script>
@@ -75,7 +89,15 @@
                     </b>
                     <br>
                 </p>
-                <div class="img-fullwidth"><img src="/img/team-usgs.jpg" alt="AIDD team USGS"></div>
+                <!-- <div class="img-fullwidth"><img src="/img/team-usgs.jpg" alt="AIDD team USGS"></div> -->
+                <LightBox
+                        :thumbnails="lightbox.images.thumbnails"
+                        :largeImages="lightbox.images.large"
+                        :thumbnailsPath="lightbox.thumbnailsPath"
+                        :largePath="lightbox.largePath"
+                        :captions="lightbox.captions"
+                        class="lightBox"
+                />
         </div>
     </MaxWidth>
 </template>
@@ -92,13 +114,22 @@
             margin-bottom: 1rem;
         }
     }
-    .img-fullwidth{
+    .light-box {
+        &__thumbnail {
         display: block;
         margin-left: auto;
         margin-right: auto;
         height: auto;
-        max-width: 50%;
+        max-width: 60%;
+        }
     }
+    // .img-fullwidth{
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     height: auto;
+    //     max-width: 60%;
+    // }
     .members {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

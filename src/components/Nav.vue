@@ -33,7 +33,7 @@
             <!--
             TODO: implement all routes: ['team','posts', 'projects', 'content', 'events']
             -->
-            <div v-for="item in ['team']" :key="item">
+            <div v-for="item in ['team','content']" :key="item">
                 <Link :to="`/${item}`">
                     {{ item }}
                 </Link>

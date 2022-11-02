@@ -1,23 +1,122 @@
 <script>
+    import {mapState} from "vuex";
+    import MaxWidth from "../components/global/MaxWidth.vue";
+
     export default {
-        name: "Events",
-        components: {},
+        name: "Content",
+        components: { MaxWidth },
         data() {
-            return {};
+            return {
+                isLoaded: false,
+            };
         },
-        computed: {},
+        computed: {
+            ...mapState({
+                contents: state => state.contents,
+            }),
+        },
 
         methods: {},
-        mounted() {},
+        mounted() {
+            this.isLoaded = true;
+            console.log('CONTENTS', this.contents);
+        },
     };
 </script>
+
 <template>
-    <MaxWidth size="s">
-        <div>
-            This site
+    <MaxWidth class="contentpage container" size = "xl">
+        <div class="contentpage__about">
+            <h1>Content</h1>
+            <em>this is stuff about what goes here</em>
         </div>
-        <div>
-            Marg
+        <div class="contentpage__contents">
+            <h2>TOPIC</h2>
+            <h2>TYPE</h2>
+            <div class="contents">
+                <div
+                    v-for="content in contents"
+                    :key="content.slug"
+                    class="content">
+                        <a :href="content.meta.url" target="_blank" class="member">
+                            <!-- <img :src="content.meta.thumbnailurl">                          -->
+                            <div class="hoverwrap">
+                                <img :src="content.meta.thumbnail"/>
+                                <div class="hovercap" :src="content.meta.title">test text</div>
+                            </div>
+                        </a>
+                </div>
+            </div>
         </div>
     </MaxWidth>
 </template>
+
+<style lang="scss" >
+    @import "./../styles/globals"; 
+    .contentpage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 12.5% 2rem;
+
+        > div:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+    .contents {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 30px;
+        justify-items: start;
+        width: 100%;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        // & img {
+        //     width: 275px;
+        //     aspect-ratio: 1/1;
+        // }
+    }
+    /* (A) WRAPPER */
+    .hoverwrap {
+        position: relative; /* required for (c2) */
+        aspect-ratio: 1/1;
+        max-width: 275px;   /* optional */
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1); // 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+
+    /* (B) RESPONSIVE IMAGE */
+    .hoverwrap img { width: 100%; }
+
+    /* (C) CAPTION */
+    .hovercap {
+        /* (C1) DIMENSIONS */
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        
+        /* (C2) POSITION */
+        position: absolute;
+        top: 0; left: 0;
+        text-align: left;
+        padding-top: 5%;
+        padding-left: 5%;
+        
+        /* (C3) COLORS */
+        background-color: rgba(30, 38, 72, 0.8);
+        color: white;
+    }
+
+    /* (D) SHOW/HIDE */
+    .hovercap {
+        visibility: none; opacity: 0;
+        transition: opacity 0.3s;
+    }
+        .hoverwrap:hover .hovercap {
+        visibility: visible; opacity: 1;
+    }
+</style>

@@ -7,6 +7,7 @@ const store = createStore({
             postsById: {},
             members: [],
             membersById: {},
+            contents: [],
             infoDensity: "low",
             themeColor: typeof window !== 'undefined' && localStorage.getItem("mz____") ? JSON.parse(localStorage.getItem("mz____"))["theme"] : "light",
             localStorageKey: "sb____",
@@ -45,6 +46,18 @@ const store = createStore({
             console.log('STATE', state);
         },
 
+        loadContents(state, {contents}) {
+            let sortedContents = [...contents];
+
+
+            let recentDate = arr => new Date(arr[arr.length - 1]);
+            sortedContents = sortedContents.sort((a, b) => {
+                return recentDate(b.meta.date) - recentDate(a.meta.date);
+            });
+
+            state.contents = sortedContents; // might want to add content by tag
+        },
+
         setInfoDensity(state, density) {
             state.infoDensity = density;
         },
@@ -68,6 +81,12 @@ const store = createStore({
         loadMembers({commit}, members) {
             commit("loadMembers", {
                 members: members
+            });
+        },
+
+        loadContents({commit}, contents) {
+            commit("loadContents", {
+                contents: contents,
             });
         },
 
