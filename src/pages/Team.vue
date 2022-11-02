@@ -1,7 +1,7 @@
 <script>
     import {mapState} from "vuex";
     import MaxWidth from "../components/global/MaxWidth.vue";
-    import LightBox from "@/components/global/LightBox.vue";
+    import LightBox from "@/components/global/Lightbox.vue";
 
     export default {
         name: "Index",
