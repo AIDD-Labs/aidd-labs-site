@@ -1,5 +1,5 @@
 <script>
-    import {mapState} from "vuex";
+    import {mapState, mapActions} from "vuex";
     import MaxWidth from "../components/global/MaxWidth.vue";
 
     export default {
@@ -8,18 +8,31 @@
         data() {
             return {
                 isLoaded: false,
+                filteredContent: []
             };
         },
         computed: {
             ...mapState({
                 contents: state => state.contents,
             }),
+            ...mapActions({
+                test: 'filterByTag'
+            })
         },
 
-        methods: {},
+        methods: {
+            filterByTag(e) {
+                const tag = e.target.textContent.toLowerCase().split(' ').join('');
+                console.log('FILTER BY TAG', tag)
+                this.filteredContent = this.contents.filter(content => {
+                    return content.meta?.tags.includes(tag)
+                });
+                console.log('FILTERED CONTENT', this.filteredContent);
+            }
+        },
         mounted() {
             this.isLoaded = true;
-            console.log('CONTENTS', this.contents);
+            this.filteredContent = this.contents;
         },
     };
 </script>
@@ -34,9 +47,12 @@
         <div class="contentpage__contents">
             <h2>TOPIC</h2>
             <h2>TYPE</h2>
+            <button @click="filterByTag">Recovery</button>
+            <button @click="filterByTag">Nepal</button>
+            <button @click="filterByTag">Statistical Modeling</button>
             <div class="contents">
                 <div
-                    v-for="content in contents"
+                    v-for="content in filteredContent"
                     :key="content.slug"
                     class="content">
                         <a :href="content.meta.url" target="_blank" class="member">

@@ -99,7 +99,7 @@ const store = createStore({
 
         setMode({commit}, mode) {
             commit("setMode", mode)
-        }
+        },
     },
 });
 
