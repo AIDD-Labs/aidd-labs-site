@@ -28,7 +28,8 @@
     <MaxWidth class="contentpage container" size = "xl">
         <div class="contentpage__about">
             <h1>Content</h1>
-            <em>this is stuff about what goes here</em>
+            We communicate our research for multiple audiences, making sure what we do has broader impact outside of academia. 
+            Below, find our journal articles, blog posts, visualizations, reports, presentations, and podcasts on our work.
         </div>
         <div class="contentpage__contents">
             <h2>TOPIC</h2>
@@ -65,8 +66,9 @@
     }
     .contents {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        row-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 1%;
+        row-gap: 1%;
         justify-items: start;
         width: 100%;
     }
