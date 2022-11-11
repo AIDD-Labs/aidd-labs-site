@@ -23,8 +23,10 @@
             }),
             filteredContent() {              
                 return this.contents.filter(content => {
-                    const tagFilterCheck = this.tagFilter === 'all' ? true : content.meta?.tags.includes(this.tagFilter);
-                    const typeFilterCheck = this.typeFilter === 'all' ? true : content.meta?.type === this.typeFilter;
+                    const meta = content.meta || {};
+
+                    const tagFilterCheck = this.tagFilter === 'all' ? true : meta.tags.includes(this.tagFilter);
+                    const typeFilterCheck = this.typeFilter === 'all' ? true : meta.type === this.typeFilter;
                 
                     return tagFilterCheck && typeFilterCheck
                 });
