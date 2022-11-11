@@ -77,7 +77,7 @@
                             <!-- <img :src="content.meta.thumbnailurl">                          -->
                             <div class="hoverwrap">
                                 <img :src="content.meta.thumbnail"/>
-                                <div class="hovercap" :src="content.meta.title">test text</div>
+                                <div class="hovercap">{{content.meta.title}}</div>
                             </div>
                         </a>
                 </div>
