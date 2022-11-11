@@ -8,7 +8,10 @@
         data() {
             return {
                 isLoaded: false,
-                filteredContent: []
+                tags: [ 'all', 'nepal', 'recovery', 'statistical-modeling' ],
+                types: [ 'all', 'blog', 'journal-article', 'presentation', 'podast' ],
+                tagFilter: 'all',
+                typeFilter: 'all',
             };
         },
         computed: {
@@ -17,17 +20,23 @@
             }),
             ...mapActions({
                 test: 'filterByTag'
-            })
+            }),
+            filteredContent() {              
+                return this.contents.filter(content => {
+                    const tagFilterCheck = this.tagFilter === 'all' ? true : content.meta?.tags.includes(this.tagFilter);
+                    const typeFilterCheck = this.typeFilter === 'all' ? true : content.meta?.type === this.typeFilter;
+                
+                    return tagFilterCheck && typeFilterCheck
+                });
+            }
         },
 
         methods: {
-            filterByTag(e) {
-                const tag = e.target.textContent.toLowerCase().split(' ').join('');
-                console.log('FILTER BY TAG', tag)
-                this.filteredContent = this.contents.filter(content => {
-                    return content.meta?.tags.includes(tag)
-                });
-                console.log('FILTERED CONTENT', this.filteredContent);
+            setTagFilter(tag) {
+                this.tagFilter = tag;
+            },
+            setTypeFilter(type) {
+                this.typeFilter = type
             }
         },
         mounted() {
@@ -46,10 +55,17 @@
         </div>
         <div class="contentpage__contents">
             <h2>TOPIC</h2>
+            <RadioGroup
+                name="tags"
+                :options=this.tags
+                v-model="this.tagFilter"
+                @radioGroupChange="this.setTagFilter"/>
             <h2>TYPE</h2>
-            <button @click="filterByTag">Recovery</button>
-            <button @click="filterByTag">Nepal</button>
-            <button @click="filterByTag">Statistical Modeling</button>
+            <RadioGroup 
+                name="type"
+                :options=this.types
+                v-model="this.typeFilter"
+                @radioGroupChange="this.setTypeFilter"/>
             <div class="contents">
                 <div
                     v-for="content in filteredContent"
