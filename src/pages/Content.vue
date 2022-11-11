@@ -1,5 +1,5 @@
 <script>
-    import {mapState} from "vuex";
+    import {mapState, mapActions} from "vuex";
     import MaxWidth from "../components/global/MaxWidth.vue";
 
     export default {
@@ -8,18 +8,42 @@
         data() {
             return {
                 isLoaded: false,
+                tags: [ 'all', 'nepal', 'recovery', 'statistical-modeling' ],
+                types: [ 'all', 'blog', 'journal-article', 'presentation', 'podast' ],
+                tagFilter: 'all',
+                typeFilter: 'all',
             };
         },
         computed: {
             ...mapState({
                 contents: state => state.contents,
             }),
+            ...mapActions({
+                test: 'filterByTag'
+            }),
+            filteredContent() {              
+                return this.contents.filter(content => {
+                    const meta = content.meta || {};
+
+                    const tagFilterCheck = this.tagFilter === 'all' ? true : meta.tags.includes(this.tagFilter);
+                    const typeFilterCheck = this.typeFilter === 'all' ? true : meta.type === this.typeFilter;
+                
+                    return tagFilterCheck && typeFilterCheck
+                });
+            }
         },
 
-        methods: {},
+        methods: {
+            setTagFilter(tag) {
+                this.tagFilter = tag;
+            },
+            setTypeFilter(type) {
+                this.typeFilter = type
+            }
+        },
         mounted() {
             this.isLoaded = true;
-            console.log('CONTENTS', this.contents);
+            this.filteredContent = this.contents;
         },
     };
 </script>
@@ -33,10 +57,20 @@
         </div>
         <div class="contentpage__contents">
             <h2>TOPIC</h2>
+            <RadioGroup
+                name="tags"
+                :options=this.tags
+                v-model="this.tagFilter"
+                @radioGroupChange="this.setTagFilter"/>
             <h2>TYPE</h2>
+            <RadioGroup 
+                name="type"
+                :options=this.types
+                v-model="this.typeFilter"
+                @radioGroupChange="this.setTypeFilter"/>
             <div class="contents">
                 <div
-                    v-for="content in contents"
+                    v-for="content in filteredContent"
                     :key="content.slug"
                     class="content">
                         <a :href="content.meta.url" target="_blank" class="member">
