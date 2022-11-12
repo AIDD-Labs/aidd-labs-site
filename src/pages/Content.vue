@@ -8,8 +8,9 @@
         data() {
             return {
                 isLoaded: false,
-                tags: [ 'all', 'nepal', 'recovery', 'statistical-modeling' ],
-                types: [ 'all', 'blog', 'journal-article', 'presentation', 'podast' ],
+                tags: [ 'all', 'risk', 'impact', 'recovery'],
+                // methods: [ 'all', 'risk', 'impact', 'recovery'], // ONE DAY
+                types: [ 'all', 'journal-article', 'report', 'presentation', 'visualization','blog','podcast' ],
                 tagFilter: 'all',
                 typeFilter: 'all',
             };
@@ -55,26 +56,30 @@
             We communicate our research for multiple audiences, making sure what we do has broader impact outside of academia. 
             Below, find our journal articles, blog posts, visualizations, reports, presentations, and podcasts on our work.
         </div>
-        <div class="contentpage__contents">
-            <h2>TOPIC</h2>
-            <RadioGroup
-                name="tags"
-                :options=this.tags
-                v-model="this.tagFilter"
-                @radioGroupChange="this.setTagFilter"/>
-            <h2>TYPE</h2>
-            <RadioGroup 
-                name="type"
-                :options=this.types
-                v-model="this.typeFilter"
-                @radioGroupChange="this.setTypeFilter"/>
-            <div class="contents">
+            <div class="contentpage__filters">
+                <div class="contentpage__filters__Topic">
+                    <h2>TOPIC</h2>
+                    <RadioGroup
+                    name="tags"
+                    :options=this.tags
+                    v-model="this.tagFilter"
+                    @radioGroupChange="this.setTagFilter"/>
+                </div>
+                <div>
+                    <h2>TYPE</h2>
+                    <RadioGroup 
+                    name="type"
+                    :options=this.types
+                    v-model="this.typeFilter"
+                    @radioGroupChange="this.setTypeFilter"/>
+                </div>
+            </div>
+            <div class="contentpage__contents">
                 <div
                     v-for="content in filteredContent"
                     :key="content.slug"
                     class="content">
                         <a :href="content.meta.url" target="_blank" class="member">
-                            <!-- <img :src="content.meta.thumbnailurl">                          -->
                             <div class="hoverwrap">
                                 <img :src="content.meta.thumbnail"/>
                                 <div class="hovercap">{{content.meta.title}}</div>
@@ -82,7 +87,6 @@
                         </a>
                 </div>
             </div>
-        </div>
     </MaxWidth>
 </template>
 
@@ -97,25 +101,26 @@
         > div:not(:last-child) {
             margin-bottom: 1rem;
         }
-    }
-    .contents {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        column-gap: 1%;
-        row-gap: 1%;
-        justify-items: start;
-        width: 100%;
+
+        &__filters {
+            display: flex;
+            &__Topic {
+                width: 33%;
+            }
+        }
+        &__contents {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 255px);
+            grid-gap: 1%;
+            justify-items: flex-end;
+        }
     }
     .content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        // & img {
-        //     width: 275px;
-        //     aspect-ratio: 1/1;
-        // }
     }
     /* (A) WRAPPER */
     .hoverwrap {
@@ -141,16 +146,17 @@
         text-align: left;
         padding-top: 5%;
         padding-left: 5%;
+        padding-right: 5%;
         
         /* (C3) COLORS */
-        background-color: rgba(30, 38, 72, 0.8);
+        background-color: rgba(30, 38, 72, 0.9);
         color: white;
     }
 
     /* (D) SHOW/HIDE */
     .hovercap {
         visibility: none; opacity: 0;
-        transition: opacity 0.3s;
+        transition: opacity 0.5s;
     }
         .hoverwrap:hover .hovercap {
         visibility: visible; opacity: 1;
