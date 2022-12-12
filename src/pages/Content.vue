@@ -53,7 +53,7 @@
     <MaxWidth class="contentpage container" size = "xl">
         <div class="contentpage__about">
             <h1>Content</h1>
-            We communicate our research for multiple audiences, making sure what we do has broader impact outside of academia. 
+            We communicate our research for multiple audiences, making sure what we do reaches the people who need it. 
             Below, find our journal articles, blog posts, visualizations, reports, presentations, and podcasts on our work.
         </div>
             <div class="contentpage__filters">
