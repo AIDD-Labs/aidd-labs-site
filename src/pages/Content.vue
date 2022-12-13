@@ -10,7 +10,7 @@
                 isLoaded: false,
                 tags: [ 'all', 'risk', 'impact', 'recovery'],
                 // methods: [ 'all', 'risk', 'impact', 'recovery'], // ONE DAY
-                types: [ 'all', 'journal-article', 'report', 'presentation', 'visualization','blog','podcast' ],
+                types: [ 'all', 'journal-article', 'report', 'presentation', 'visualization','blog','podcast', 'software'],
                 tagFilter: 'all',
                 typeFilter: 'all',
             };
@@ -57,6 +57,14 @@
             Below, find our journal articles, blog posts, visualizations, reports, presentations, and podcasts on our work.
         </div>
             <div class="contentpage__filters">
+                <div class="contentpage__filters__Type">
+                    <h2>TYPE</h2>
+                    <RadioGroup 
+                    name="type"
+                    :options=this.types
+                    v-model="this.typeFilter"
+                    @radioGroupChange="this.setTypeFilter"/>
+                </div>
                 <div class="contentpage__filters__Topic">
                     <h2>TOPIC</h2>
                     <RadioGroup
@@ -64,14 +72,6 @@
                     :options=this.tags
                     v-model="this.tagFilter"
                     @radioGroupChange="this.setTagFilter"/>
-                </div>
-                <div>
-                    <h2>TYPE</h2>
-                    <RadioGroup 
-                    name="type"
-                    :options=this.types
-                    v-model="this.typeFilter"
-                    @radioGroupChange="this.setTypeFilter"/>
                 </div>
             </div>
             <div class="contentpage__contents">
@@ -105,7 +105,10 @@
         &__filters {
             display: flex;
             &__Topic {
-                width: 33%;
+                width: 30%;
+            }
+            &__Type {
+                width: 40%;
             }
         }
         &__contents {
