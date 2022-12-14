@@ -39,5 +39,14 @@
 
 <style lang="scss">
   .radio-group {
+    display: flex;
+    flex-direction: column;
+    max-height: 120px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    label{padding-right: 15px;
+          padding-bottom: 5px;
+    }
   }
 </style>
