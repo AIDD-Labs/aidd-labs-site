@@ -117,7 +117,7 @@
                     url: `${this.canonical}`,
                     image: {
                         "@type": "ImageObject",
-                        url: `https://cee.engin.umich.edu/metas/og-image-defaut.png`,
+                        url: `https://disasterdata.engin.umich.edu/metas/og-image-defaut.png`,
                         height: 630,
                         width: 1200,
                     },
@@ -187,7 +187,7 @@
         <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="https://cee.engin.umich.edu/images/metas/apple-touch-icon.png"
+            href="https://disasterdata.engin.umich.edu/images/metas/apple-touch-icon.png"
         />
 
         <component :is="'script'" type="application/ld+json">
