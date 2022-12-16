@@ -62,17 +62,17 @@
                     <h2>TYPE</h2>
                     <RadioGroup 
                     name="type"
-                    :options=this.types
-                    v-model="this.typeFilter"
-                    @radioGroupChange="this.setTypeFilter"/>
+                    :options=types
+                    v-model="typeFilter"
+                    @radioGroupChange="setTypeFilter"/>
                 </div>
                 <div class="contentpage__filters__Topic">
                     <h2>TOPIC</h2>
                     <RadioGroup
                     name="tags"
-                    :options=this.tags
-                    v-model="this.tagFilter"
-                    @radioGroupChange="this.setTagFilter"/>
+                    :options=tags
+                    v-model="tagFilter"
+                    @radioGroupChange="setTagFilter"/>
                 </div>
             </div>
             <div class="contentpage__contents">
