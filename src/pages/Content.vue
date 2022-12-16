@@ -13,6 +13,8 @@
                 types: [ 'all', 'journal-article', 'report', 'presentation', 'visualization','blog','podcast', 'software'],
                 tagFilter: 'all',
                 typeFilter: 'all',
+
+                activeType: "all"
             };
         },
         computed: {
@@ -58,10 +60,10 @@
             Below, find our journal articles, blog posts, visualizations, reports, presentations, and podcasts on our work.
         </div>
             <div class="contentpage__filters">
-                <div class="contentpage__filters__Type">
+                <!-- <div class="contentpage__filters__Type">
                     <h2>TYPE</h2>
                     <RadioGroup 
-                    name="type"
+                    :name="type"
                     :options=types
                     v-model="typeFilter"
                     @radioGroupChange="setTypeFilter"/>
@@ -73,10 +75,10 @@
                     :options=tags
                     v-model="tagFilter"
                     @radioGroupChange="setTagFilter"/>
-                </div>
+                </div> -->
             </div>
             <div class="contentpage__contents">
-                <div
+                <!-- <div
                     v-for="content in filteredContent"
                     :key="content.slug"
                     class="content">
@@ -86,7 +88,7 @@
                                 <div class="hovercap">{{content.meta.title}}</div>
                             </div>
                         </a>
-                </div>
+                </div> -->
             </div>
     </MaxWidth>
 </template>
