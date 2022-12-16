@@ -34,7 +34,6 @@
         methods: {},
         mounted() {
             this.isLoaded = true;
-            console.log('CONTENTS', this.contents);
         },
     };
 </script>

@@ -69,10 +69,8 @@
         },
         mounted() {
             this.initPosts();
-            console.log(this.posts)
             if (!Object.keys(this.$route.query).length) {
                 this.activeFilters.all = true;
-                console.log(this.activeFilters)
             }
         },
     };

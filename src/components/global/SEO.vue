@@ -136,7 +136,6 @@
                 immediate: true,
                 handler() {
                     this.setJsonLd();
-                    console.log(this.graphJsonLd);
                 },
             },
         },

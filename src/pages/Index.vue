@@ -65,7 +65,6 @@
 
         methods: {
             handleClick (e) {
-                console.log('HANDLE CLICK', e.target.value);
                 this.aboutState = e.target.value;
             },
         },
