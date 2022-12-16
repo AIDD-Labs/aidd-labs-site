@@ -40,6 +40,7 @@
 </script>
 
 <template>
+    <SEO meta-title="Team"/>
     <MaxWidth class="team container" size = "xl">
         <div class="team__about">
             <h1>Team</h1>

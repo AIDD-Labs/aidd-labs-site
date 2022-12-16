@@ -27,6 +27,7 @@
         computed: {
             ...mapState({
                 recentPosts: state => [...state.posts.slice(0, 3)],
+                siteMetadata: state => state.siteMetadata,
             }),
             aboutContent () {
                 const aboutContentHash = {
@@ -66,7 +67,7 @@
             handleClick (e) {
                 console.log('HANDLE CLICK', e.target.value);
                 this.aboutState = e.target.value;
-            }
+            },
         },
         mounted() {
             this.isLoaded = true;
@@ -75,6 +76,7 @@
 </script>
 
 <template>
+    <SEO />
     <section class="hero">
         <div class="hero-content">
             <h1 class="hero-title">
