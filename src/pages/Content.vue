@@ -50,6 +50,7 @@
 </script>
 
 <template>
+    <SEO meta-title="Content"/>
     <MaxWidth class="contentpage container" size = "xl">
         <div class="contentpage__about">
             <h1>Content</h1>
