@@ -39,7 +39,6 @@ export const createApp = ViteSSG(
 
         let mdPostRoutes = [];
         let markdownPosts = import.meta.globEager("./pages/post/**/*.md");
-        console.log(markdownPosts)
         if (mode == "production" || mode == "dev") {
             // filter out drafts
             let filteredPosts = {};
@@ -103,7 +102,6 @@ export const createApp = ViteSSG(
         }
 
         let allRoutes = [...routes, ...mdPostRoutes, ...mdMemberRoutes, ...mdContentRoutes];
-        console.log('ALL ROUTES', allRoutes)
         app.use(store);
 
         if (import.meta.env.SSR) {
@@ -112,7 +110,6 @@ export const createApp = ViteSSG(
             if (!initialState.store) {
                 initialState.store = store.state;
             } else {
-                console.log("check on this");
                 store.replaceState(initialState.store);
             }
         }

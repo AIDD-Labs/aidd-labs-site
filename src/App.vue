@@ -1,9 +1,7 @@
 <script>
-    import { Head, useHead } from "@vueuse/head";
     import {mapState} from "vuex";
     export default {
         components: {
-            Head,
         },
         props: {},
         data() {
@@ -18,20 +16,7 @@
             }),
         },
         methods: {},
-        setup() {
-            useHead({
-                htmlAttrs: { lang: "en", amp: true },
-                title: "AIDD labs",
-                meta: [
-                    {
-                        name: `Actionable Information for Disasters and Development`,
-                        content: "Actionable Information for Disasters and Development",
-                    },
-                ],
-            });
-        },
 
-        mounted() {},
     };
 </script>
 

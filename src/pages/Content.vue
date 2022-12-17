@@ -13,6 +13,8 @@
                 types: [ 'all', 'journal-article', 'report', 'presentation', 'visualization','blog','podcast', 'software'],
                 tagFilter: 'all',
                 typeFilter: 'all',
+
+                activeType: "all"
             };
         },
         computed: {
@@ -50,6 +52,7 @@
 </script>
 
 <template>
+    <SEO meta-title="Content"/>
     <MaxWidth class="contentpage container" size = "xl">
         <div class="contentpage__about">
             <h1>Content</h1>
@@ -57,25 +60,25 @@
             Below, find our journal articles, blog posts, visualizations, reports, presentations, and podcasts on our work.
         </div>
             <div class="contentpage__filters">
-                <div class="contentpage__filters__Type">
+                <!-- <div class="contentpage__filters__Type">
                     <h2>TYPE</h2>
                     <RadioGroup 
-                    name="type"
-                    :options=this.types
-                    v-model="this.typeFilter"
-                    @radioGroupChange="this.setTypeFilter"/>
+                    :name="type"
+                    :options=types
+                    v-model="typeFilter"
+                    @radioGroupChange="setTypeFilter"/>
                 </div>
                 <div class="contentpage__filters__Topic">
                     <h2>TOPIC</h2>
                     <RadioGroup
                     name="tags"
-                    :options=this.tags
-                    v-model="this.tagFilter"
-                    @radioGroupChange="this.setTagFilter"/>
-                </div>
+                    :options=tags
+                    v-model="tagFilter"
+                    @radioGroupChange="setTagFilter"/>
+                </div> -->
             </div>
             <div class="contentpage__contents">
-                <div
+                <!-- <div
                     v-for="content in filteredContent"
                     :key="content.slug"
                     class="content">
@@ -85,7 +88,7 @@
                                 <div class="hovercap">{{content.meta.title}}</div>
                             </div>
                         </a>
-                </div>
+                </div> -->
             </div>
     </MaxWidth>
 </template>

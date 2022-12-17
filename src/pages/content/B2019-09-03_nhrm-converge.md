@@ -10,7 +10,7 @@ members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
 project: "Informatics for equitable recovery" # associate this with the slug for a project
 is_featured: false
 url: "https://urbanresilience.stanford.edu/news/converging-disaster-researchers-asia-pacific" # include link to open pdf file
-thumbnail: "img/content-b-converging-nhrm.jpg" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.jpeg"
+thumbnail: "" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.jpeg"
 title: "Converging Disaster Researchers in the Asia Pacific" # insert title here
 authors: "Sabine Loos and Yolanda Lin" # insert full author list here, to be listed publicly
 publication: "Stanford Urban Resilience Initiative" # insert publication location here (like the journal)

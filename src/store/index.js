@@ -9,16 +9,29 @@ const store = createStore({
             membersById: {},
             contents: [],
             infoDensity: "low",
-            themeColor: typeof window !== 'undefined' && localStorage.getItem("mz____") ? JSON.parse(localStorage.getItem("mz____"))["theme"] : "light",
+            themeColor: typeof window !== 'undefined' && localStorage.getItem("sb____") ? JSON.parse(localStorage.getItem("sb____"))["theme"] : "light",
             localStorageKey: "sb____",
-            mode: "dev" //TODO: update this bb with .env from main.js
+            siteMetadata: {
+                title: `AIDD Labs`,
+                description: `The AIDD (Actionable Information for Disasters and Development) labs’ mission is to leverage data and information to prioritize populations in need before, during, and after disasters.`,
+                author: `Dr. Sabine Loos`,
+                siteUrl: "https://disasterdata.engin.umich.edu",
+                url: "disasterdata.engin.umich.edu",
+                image: `https://disasterdata.engin.umich.edu/images/metas/og-image-aidd-default.png`,
+                twitterImage: ``,
+                keywords: `university of michigan, aidd labs, sabine loos, dr. sabine loos, civil, environmental, engineering, disaster, relief, data, data visualization`,
+                twitterUrl: 'https://twitter.com/sab_loos',
+                githubUrl: 'https://github.com/sabineloos',
+                researchGateUrl: 'https://www.researchgate.net/profile/Sabine-Loos',
+                googleScholarUrl: 'https://scholar.google.com/citations?user=WEt_N8AAAAAJ&hl=en',
+                michCivilUrl: 'https://cee.engin.umich.edu'
+            },
         };
     },
 
     mutations: {
         loadPosts(state, {posts}) {
             let sortedPosts = [...posts];
-
 
             let recentDate = arr => new Date(arr[arr.length - 1]);
             sortedPosts = sortedPosts.sort((a, b) => {
@@ -43,12 +56,10 @@ const store = createStore({
 
             state.members = [...members];
             state.membersById = membersById
-            console.log('STATE', state);
         },
 
         loadContents(state, {contents}) {
             let sortedContents = [...contents];
-
 
             let recentDate = arr => new Date(arr[arr.length - 1]);
             sortedContents = sortedContents.sort((a, b) => {

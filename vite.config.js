@@ -1,5 +1,7 @@
 import {defineConfig} from "vite";
+import generateSitemap from "vite-plugin-pages-sitemap";
 import ViteComponents from "vite-plugin-components";
+import imagePresets, {widthPreset} from "vite-plugin-image-presets";
 import Pages from "vite-plugin-pages";
 import vue from "@vitejs/plugin-vue";
 import Markdown from "vite-plugin-md";
@@ -24,6 +26,17 @@ export default defineConfig({
     assetsInclude: ["**/*.woff", "**/*.woff2", "**/*.png"],
     filenameHashing: false,
     plugins: [
+        imagePresets({
+            thumbnail: widthPreset({
+                class: "img thumb",
+                loading: "lazy",
+                widths: [48, 96],
+                formats: {
+                    webp: {quality: 50},
+                    jpg: {quality: 70},
+                },
+            }),
+        }),
         ViteComponents(),
         vue({
             include: [/\.vue$/, /\.md$/], // <--
@@ -68,6 +81,12 @@ export default defineConfig({
                     };
                 }
                 return route;
+            },
+            onRoutesGenerated: routes => {
+                generateSitemap({
+                    routes,
+                    hostname: "https://disasterdata.engin.umich.edu",
+                });
             },
         }),
     ],
