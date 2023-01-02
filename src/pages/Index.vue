@@ -259,30 +259,34 @@
         // BODY
         .grid-container {
         }
+
         .main {
-            width: 75%;
             display: flex;
             flex-direction: column;
         }
+
         .about {
             display: flex;
-            margin: 10px;
+            gap: 1em;
+
+            @media(max-width: 700px) {
+                flex-direction: column;
+                gap: 2em;
+            }
         }
+
         .about-text {
-            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: flex-end; // keep things aligned to the bottom so the bottoms don't jump around
         }
 
         .about-img {
-            grid-area: about-img;
             display: block;
-            width: 50%;
-            height: auto;
             justify-content: center;
             padding-left: 1rem;
         }
+
         .light-box {
             &__thumbnail {
                 margin: 10px;
@@ -304,6 +308,7 @@
                 margin-top: 10px;
                 // width: 100%;
                 width: 1425px;
+
                 & img {
                     display: inline-block;
                     height: 75px;

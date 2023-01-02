@@ -6,121 +6,141 @@
         props: {},
         data() {
             return {
-                links: [
+                socialLinks: [
                     {
-                        label: "LinkedIn",
-                        url: "https://www.linkedin.com/in/margueriteroth/",
-                    },
-                    {
-                        label: "Instagram",
-                        url: "https://instagram.com/marguer.ite/",
+                        label: "Twitter",
+                        url: "https://twitter.com/sab_loos",
                     },
                     {
                         label: "Github",
-                        url: "https://github.com/margueriteroth/",
+                        url: "https://github.com/sabineloos",
+                    },
+                    {
+                        label: "Researchgate",
+                        url: "https://www.researchgate.net/profile/Sabine-Loos",
+                    },
+                    {
+                        label: "Google Scholar",
+                        url: "https://scholar.google.com/citations?user=WEt_N8AAAAAJ&hl=en",
+                    },
+                ],
+                otherLinks: [
+                    {
+                        label: "DAT/Artathon",
+                        url: "https://datartathon.com/",
+                    },
+                    {
+                        label: "University of Michigan Civil & Environmental Engineering",
+                        url: "https://cee.engin.umich.edu/",
                     },
                 ],
             };
         },
-        computed: {
-            ...mapState({
-                infoDensity: state => state.infoDensity,
-                themeColor: state => state.themeColor,
-            }),
-        },
-        // methods: {
-        //     toggleInfoDensity() {
-        //         let density = this.infoDensity == "low" ? "high" : "low";
-        //         this.$store.dispatch("setInfoDensity", density);
-        //     },
-        //     toggleThemeColor() {
-        //         let theme = this.themeColor == "light" ? "dark" : "light";
-        //         this.$store.dispatch("setThemeColor", theme);
-        //     },
-        // },
+        computed: {},
     };
 </script>
 
 <template>
-    <MaxWidth class="footer-container" size="xl">
+    <MaxWidth class="footer-container" size="m">
         <div class="contact">
             <div class="img-logo">
-                <img src="/img/logo-light.png" alt="AIDD labs logo"> 
+                <img src="/img/logo-light.png" alt="AIDD labs logo" />
             </div>
             <div class="contacttext">
-                <p>Send us an email <a href="mailto:sloos@umich.edu" class="footer" target="_blank" rel="noopener noreferrer">sloos [at] umich [dot] edu</a> 
-                <br>
-                We are looking for new team members and partners!
-                <br><br>
-                <a href="https://goo.gl/maps/9JHpZbNSBSz7ajgr8" class="footer" target="_blank" rel="noopener noreferrer">Office Address: GG Brown, 2350 Hayward St, Ann Arbor, MI 48109</a>
-                
-                <form action="https://www.researchgate.net/profile/Sabine-Loos" method="get" target="_blank">
-                    <button class="footer">Check out our recent articles</button>
-                </form>
-                
-                © Sabine Loos 2022
+                <p>
+                    Send us an email
+                    <Link to="mailto:sloos@umich.edu" class="footer"
+                        >sloos [at] umich [dot] edu</Link
+                    >
                 </p>
+                <p>We are looking for new team members and partners!</p>
+                <p>
+                    <Link to="https://goo.gl/maps/9JHpZbNSBSz7ajgr8" class="footer">
+                        Office Address: GG Brown, 2350 Hayward St, Ann Arbor, MI 48109
+                    </Link>
+                </p>
+                <p>
+                    <Link is-button to="https://www.researchgate.net/profile/Sabine-Loos">
+                        Check out our recent articles
+                    </Link>
+                </p>
+                <p>© Sabine Loos 2022</p>
             </div>
         </div>
-        <div class="social"> 
-            <h3>Follow us</h3>
-            <p>
-                <a href="https://twitter.com/sab_loos" class="footer" target="_blank" rel="noopener noreferrer">Twitter</a> 
-                <br>
-                <a href="https://github.com/sabineloos" class="footer" target="_blank" rel="noopener noreferrer">Github</a>
-                <br>
-                <a href="https://www.researchgate.net/profile/Sabine-Loos" class="footer" target="_blank" rel="noopener noreferrer">Researchgate</a>
-                <br>
-                <a href="https://scholar.google.com/citations?user=WEt_N8AAAAAJ&hl=en" class="footer" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-            </p>
-        </div>
-        <div class="related"> 
-            <h3>Related</h3>
-            <p>
-                <a href="https://datartathon.com/" class="footer" target="_blank" rel="noopener noreferrer">DAT/Artathon</a> 
-                <br>
-                <a href="https://cee.engin.umich.edu/" class="footer" target="_blank" rel="noopener noreferrer">University of Michigan Civil & Environmental Engineering</a>
-            </p>
+        <div class="socials">
+            <div class="social">
+                <h3>Follow us</h3>
+                <div class="links">
+                    <Link v-for="link in socialLinks" :to="link.url" :key="link">{{
+                        link.label
+                    }}</Link>
+                </div>
+            </div>
+            <div class="related">
+                <h3>Related</h3>
+                <div class="links">
+                    <Link v-for="link in otherLinks" :to="link.url" :key="link">{{
+                        link.label
+                    }}</Link>
+                </div>
+            </div>
         </div>
     </MaxWidth>
 </template>
 
 <style lang="scss">
     @import "./../styles/globals.scss";
-        .footer-container {
-            display: grid;
-            grid-template-columns: 40% 10% 1fr;
-            grid-template-areas: 'contact social related';
-            grid-gap: 1rem;
-            width: 100%;
-            background: var(--blue-500);
-            padding: 2rem 12.5%;
-            color: white;
-            font-size: 0.9rem;
+    .footer-container {
+        display: grid;
+        grid-template-columns: 2.5fr minmax(200px 1fr);
+        grid-template-areas: "contact socials";
+        grid-gap: 1rem;
+        width: 100%;
+        background: var(--blue-500);
+        color: white;
+        font-size: 0.9rem;
+        padding-top: 3em;
+        padding-bottom: 4em;
+
+        @media (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            padding-bottom: 7em;
         }
+
+        h3 {
+            margin: 0;
+        }
+
         .contact {
             grid-area: contact;
             display: flex;
             flex-direction: column;
         }
-        .img-logo{
-            width: 175px;
+
+        .socials {
+            display: flex;
+            gap: 2em;
+            grid-area: socials;
         }
-        .contacttext{
-            margin: 10px;
+
+        .img-logo {
+            max-width: 175px;
+            width: 100%;
         }
-        .social {
-            grid-area: social;
+
+        .links {
             display: flex;
             flex-direction: column;
-            grid-gap: 0px;
-            padding-top: 10px;
+            gap: 0.75em;
         }
+
+        .social,
         .related {
-            grid-area: related;
             display: flex;
             flex-direction: column;
-            grid-gap: 0px;
-            padding-top: 10px;
+            grid-gap: 1em;
         }
+    }
 </style>
