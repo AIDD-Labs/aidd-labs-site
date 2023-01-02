@@ -41,88 +41,105 @@
 </script>
 
 <template>
-    <MaxWidth class="footer-container" size="m">
-        <div class="contact">
-            <div class="img-logo">
-                <img src="/img/logo-light.png" alt="AIDD labs logo" />
-            </div>
-            <div class="contacttext">
-                <p>
-                    Send us an email
-                    <Link to="mailto:sloos@umich.edu" class="footer"
-                        >sloos [at] umich [dot] edu</Link
-                    >
-                </p>
-                <p>We are looking for new team members and partners!</p>
-                <p>
-                    <Link to="https://goo.gl/maps/9JHpZbNSBSz7ajgr8" class="footer">
-                        Office Address: GG Brown, 2350 Hayward St, Ann Arbor, MI 48109
-                    </Link>
-                </p>
-                <p>
-                    <Link is-button to="https://www.researchgate.net/profile/Sabine-Loos">
-                        Check out our recent articles
-                    </Link>
-                </p>
-                <p>© Sabine Loos 2022</p>
-            </div>
-        </div>
-        <div class="socials">
-            <div class="social">
-                <h3>Follow us</h3>
-                <div class="links">
-                    <Link v-for="link in socialLinks" :to="link.url" :key="link">{{
-                        link.label
-                    }}</Link>
+    <MaxWidth class="footer-container" size="xl">
+        <MaxWidth class="footer-content" size="m">
+            <div class="contact">
+                <div class="img-logo">
+                    <img src="/img/logo-light.png" alt="AIDD labs logo" />
+                </div>
+                <div class="contacttext">
+                    <p>
+                        Send us an email
+                        <Link to="mailto:sloos@umich.edu" class="footer"
+                            >sloos [at] umich [dot] edu</Link
+                        >
+                    </p>
+                    <p>We are looking for new team members and partners!</p>
+                    <p>
+                        <Link to="https://goo.gl/maps/9JHpZbNSBSz7ajgr8" class="footer">
+                            Office Address: GG Brown, 2350 Hayward St, Ann Arbor, MI 48109
+                        </Link>
+                    </p>
+                    <p>
+                        <Link
+                            is-button
+                            to="https://www.researchgate.net/profile/Sabine-Loos"
+                        >
+                            Check out our recent articles
+                        </Link>
+                    </p>
+                    <div class="copyright">© Sabine Loos 2022</div>
                 </div>
             </div>
-            <div class="related">
-                <h3>Related</h3>
-                <div class="links">
-                    <Link v-for="link in otherLinks" :to="link.url" :key="link">{{
-                        link.label
-                    }}</Link>
+            <div class="socials">
+                <div class="social">
+                    <h3>Follow us</h3>
+                    <div class="links">
+                        <Link v-for="link in socialLinks" :to="link.url" :key="link">{{
+                            link.label
+                        }}</Link>
+                    </div>
+                </div>
+                <div class="related">
+                    <h3>Related</h3>
+                    <div class="links">
+                        <Link v-for="link in otherLinks" :to="link.url" :key="link">{{
+                            link.label
+                        }}</Link>
+                    </div>
                 </div>
             </div>
-        </div>
+        </MaxWidth>
     </MaxWidth>
 </template>
 
 <style lang="scss">
     @import "./../styles/globals.scss";
     .footer-container {
-        display: grid;
-        grid-template-columns: 2.5fr minmax(200px 1fr);
-        grid-template-areas: "contact socials";
-        grid-gap: 1rem;
-        width: 100%;
         background: var(--blue-500);
         color: white;
-        font-size: 0.9rem;
-        padding-top: 3em;
-        padding-bottom: 4em;
 
-        @media (max-width: 600px) {
-            display: flex;
-            flex-direction: column;
-            gap: 2em;
-            padding-bottom: 7em;
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr minmax(200px 1fr);
+            grid-template-areas: "contact socials";
+            grid-gap: 1rem;
+            width: 100%;
+
+            font-size: 0.9rem;
+            padding-top: 3em;
+            padding-bottom: 3em;
+
+            @media (max-width: 600px) {
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+                padding-bottom: 2em;
+            }
         }
 
         h3 {
             margin: 0;
+            margin-bottom: 1em;
         }
 
         .contact {
             grid-area: contact;
             display: flex;
             flex-direction: column;
+            height: 100%;
+
+            .copyright {
+                margin-top: 8em;
+                opacity: 0.55;
+            }
         }
 
         .socials {
             display: flex;
             gap: 2em;
             grid-area: socials;
+            justify-content: flex-end;
         }
 
         .img-logo {
