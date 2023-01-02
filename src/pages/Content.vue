@@ -70,7 +70,7 @@
         description="Journal articles, blog posts,
             visualizations, reports, presentations, and podcasts on AIDD work."
     />
-    <MaxWidth class="contentpage container" size="xl">
+    <MaxWidth class="contentpage container" size="m">
         <div class="contentpage__about">
             <h1>Content</h1>
             We communicate our research for multiple audiences, making sure what we do
@@ -116,7 +116,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 12.5% 2rem;
+        margin-top: 5em;
+        padding-bottom: 5em;
 
         > div:not(:last-child) {
             margin-bottom: 1rem;
@@ -138,55 +139,56 @@
             grid-gap: 1%;
             justify-items: flex-end;
         }
-    }
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    /* (A) WRAPPER */
-    .hoverwrap {
-        position: relative; /* required for (c2) */
-        aspect-ratio: 1/1;
-        max-width: 275px; /* optional */
-        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1); // 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-    }
 
-    /* (B) RESPONSIVE IMAGE */
-    .hoverwrap img {
-        width: 100%;
-    }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        /* (A) WRAPPER */
+        .hoverwrap {
+            position: relative; /* required for (c2) */
+            aspect-ratio: 1/1;
+            max-width: 275px; /* optional */
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1); // 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        }
 
-    /* (C) CAPTION */
-    .hovercap {
-        /* (C1) DIMENSIONS */
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
+        /* (B) RESPONSIVE IMAGE */
+        .hoverwrap img {
+            width: 100%;
+        }
 
-        /* (C2) POSITION */
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: left;
-        padding-top: 5%;
-        padding-left: 5%;
-        padding-right: 5%;
+        /* (C) CAPTION */
+        .hovercap {
+            /* (C1) DIMENSIONS */
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
 
-        /* (C3) COLORS */
-        background-color: rgba(30, 38, 72, 0.9);
-        color: white;
-    }
+            /* (C2) POSITION */
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: left;
+            padding-top: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
 
-    /* (D) SHOW/HIDE */
-    .hovercap {
-        visibility: none;
-        opacity: 0;
-        transition: opacity 0.5s;
-    }
-    .hoverwrap:hover .hovercap {
-        visibility: visible;
-        opacity: 1;
+            /* (C3) COLORS */
+            background-color: rgba(30, 38, 72, 0.9);
+            color: white;
+        }
+
+        /* (D) SHOW/HIDE */
+        .hovercap {
+            visibility: none;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .hoverwrap:hover .hovercap {
+            visibility: visible;
+            opacity: 1;
+        }
     }
 </style>
