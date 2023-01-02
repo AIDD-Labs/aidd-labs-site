@@ -41,12 +41,12 @@
 </script>
 
 <template>
-    <SEO meta-title="Team" />
+    <SEO meta-title="Team" meta-description="About our diverse group of scientists and engineers."/>
     <MaxWidth class="team-page container" size="m">
         <div class="team__about">
             <h1>Team</h1>
-            Our team is a group of disaster analysts with multiple backgrounds—including
-            humanitarian engineering, civil engineering, statistics--and we're looking to
+            Our team is a group of disaster analysts with multiple backgrounds &emd; including
+            humanitarian engineering, civil engineering, statistics &emd; and we're looking to
             grow. We strive to conduct convergent research, blending our knowledge of data
             and statistics on disasters and/or the built environment with an understanding
             of the social and natural systems that surround them. Therefore, our team

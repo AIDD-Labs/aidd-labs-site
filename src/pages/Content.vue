@@ -4,17 +4,26 @@
 
     export default {
         name: "Content",
-        components: { MaxWidth },
+        components: {MaxWidth},
         data() {
             return {
                 isLoaded: false,
-                tags: [ 'all', 'risk', 'impact', 'recovery'],
+                tags: ["all", "risk", "impact", "recovery"],
                 // methods: [ 'all', 'risk', 'impact', 'recovery'], // ONE DAY
-                types: [ 'all', 'journal-article', 'report', 'presentation', 'visualization','blog','podcast', 'software'],
-                tagFilter: 'all',
-                typeFilter: 'all',
+                types: [
+                    "all",
+                    "journal-article",
+                    "report",
+                    "presentation",
+                    "visualization",
+                    "blog",
+                    "podcast",
+                    "software",
+                ],
+                tagFilter: "all",
+                typeFilter: "all",
 
-                activeType: "all"
+                activeType: "all",
             };
         },
         computed: {
@@ -22,18 +31,22 @@
                 contents: state => state.contents,
             }),
             ...mapActions({
-                test: 'filterByTag'
+                test: "filterByTag",
             }),
-            filteredContent() {              
+            filteredContent() {
                 return this.contents.filter(content => {
                     const meta = content.meta || {};
 
-                    const tagFilterCheck = this.tagFilter === 'all' ? true : meta.tags.includes(this.tagFilter);
-                    const typeFilterCheck = this.typeFilter === 'all' ? true : meta.type === this.typeFilter;
-                
-                    return tagFilterCheck && typeFilterCheck
+                    const tagFilterCheck =
+                        this.tagFilter === "all"
+                            ? true
+                            : meta.tags.includes(this.tagFilter);
+                    const typeFilterCheck =
+                        this.typeFilter === "all" ? true : meta.type === this.typeFilter;
+
+                    return tagFilterCheck && typeFilterCheck;
                 });
-            }
+            },
         },
 
         methods: {
@@ -41,8 +54,8 @@
                 this.tagFilter = tag;
             },
             setTypeFilter(type) {
-                this.typeFilter = type
-            }
+                this.typeFilter = type;
+            },
         },
         mounted() {
             this.isLoaded = true;
@@ -52,49 +65,53 @@
 </script>
 
 <template>
-    <SEO meta-title="Content"/>
-    <MaxWidth class="contentpage container" size = "xl">
+    <SEO
+        meta-title="Content"
+        description="Journal articles, blog posts,
+            visualizations, reports, presentations, and podcasts on AIDD work."
+    />
+    <MaxWidth class="contentpage container" size="xl">
         <div class="contentpage__about">
             <h1>Content</h1>
-            We communicate our research for multiple audiences, making sure what we do reaches the people who need it. 
-            Below, find our journal articles, blog posts, visualizations, reports, presentations, and podcasts on our work.
+            We communicate our research for multiple audiences, making sure what we do
+            reaches the people who need it. Below, find our journal articles, blog posts,
+            visualizations, reports, presentations, and podcasts on our work.
         </div>
-            <div class="contentpage__filters">
-                <!-- <div class="contentpage__filters__Type">
-                    <h2>TYPE</h2>
-                    <RadioGroup 
-                    :name="type"
-                    :options=types
+        <div class="contentpage__filters">
+            <div class="contentpage__filters__Type">
+                <h2>TYPE</h2>
+                <RadioGroup
+                    :name="activeType"
+                    :options="types"
                     v-model="typeFilter"
-                    @radioGroupChange="setTypeFilter"/>
-                </div>
-                <div class="contentpage__filters__Topic">
-                    <h2>TOPIC</h2>
-                    <RadioGroup
+                    @radioGroupChange="setTypeFilter"
+                />
+            </div>
+            <div class="contentpage__filters__Topic">
+                <h2>TOPIC</h2>
+                <RadioGroup
                     name="tags"
-                    :options=tags
+                    :options="tags"
                     v-model="tagFilter"
-                    @radioGroupChange="setTagFilter"/>
-                </div> -->
+                    @radioGroupChange="setTagFilter"
+                />
             </div>
-            <div class="contentpage__contents">
-                <!-- <div
-                    v-for="content in filteredContent"
-                    :key="content.slug"
-                    class="content">
-                        <a :href="content.meta.url" target="_blank" class="member">
-                            <div class="hoverwrap">
-                                <img :src="content.meta.thumbnail"/>
-                                <div class="hovercap">{{content.meta.title}}</div>
-                            </div>
-                        </a>
-                </div> -->
+        </div>
+        <div class="contentpage__contents">
+            <div v-for="content in filteredContent" :key="content.slug" class="content">
+                <Link :to="content.meta.url" class="member">
+                    <div class="hoverwrap">
+                        <img :src="content.meta.thumbnail" />
+                        <div class="hovercap">{{ content.meta.title }}</div>
+                    </div>
+                </Link>
             </div>
+        </div>
     </MaxWidth>
 </template>
 
-<style lang="scss" >
-    @import "./../styles/globals"; 
+<style lang="scss">
+    @import "./../styles/globals";
     .contentpage {
         display: flex;
         flex-direction: column;
@@ -132,12 +149,14 @@
     .hoverwrap {
         position: relative; /* required for (c2) */
         aspect-ratio: 1/1;
-        max-width: 275px;   /* optional */
+        max-width: 275px; /* optional */
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1); // 0 6px 20px 0 rgba(0, 0, 0, 0.19)
     }
 
     /* (B) RESPONSIVE IMAGE */
-    .hoverwrap img { width: 100%; }
+    .hoverwrap img {
+        width: 100%;
+    }
 
     /* (C) CAPTION */
     .hovercap {
@@ -145,15 +164,16 @@
         box-sizing: border-box;
         width: 100%;
         height: 100%;
-        
+
         /* (C2) POSITION */
         position: absolute;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         text-align: left;
         padding-top: 5%;
         padding-left: 5%;
         padding-right: 5%;
-        
+
         /* (C3) COLORS */
         background-color: rgba(30, 38, 72, 0.9);
         color: white;
@@ -161,10 +181,12 @@
 
     /* (D) SHOW/HIDE */
     .hovercap {
-        visibility: none; opacity: 0;
+        visibility: none;
+        opacity: 0;
         transition: opacity 0.5s;
     }
-        .hoverwrap:hover .hovercap {
-        visibility: visible; opacity: 1;
+    .hoverwrap:hover .hovercap {
+        visibility: visible;
+        opacity: 1;
     }
 </style>

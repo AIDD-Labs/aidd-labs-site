@@ -75,7 +75,7 @@
 </script>
 
 <template>
-    <SEO />
+    <SEO meta-title="Actionable Information for Disasters and Development Labs" />
     <div class="index-page">
         <section class="hero">
             <MaxWidth size="m" class="hero-content">
