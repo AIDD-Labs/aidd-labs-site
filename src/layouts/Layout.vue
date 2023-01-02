@@ -38,10 +38,6 @@
         .flex-content {
             flex: 1;
             background-color: var(--background-color);
-
-            > div:nth-child(2) {
-                margin-top: 85px;
-            }
         }
         .nav__link {
             margin-left: 20px;
