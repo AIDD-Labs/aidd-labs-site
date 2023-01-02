@@ -68,7 +68,7 @@
                             Check out our recent articles
                         </Link>
                     </p>
-                    <div class="copyright">© Sabine Loos 2022</div>
+                    <div class="copyright">© Sabine Loos 2022 – 2023</div>
                 </div>
             </div>
             <div class="socials">
