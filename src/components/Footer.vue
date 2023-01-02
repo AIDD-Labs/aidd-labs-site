@@ -44,9 +44,9 @@
     <MaxWidth class="footer-container" size="xl">
         <MaxWidth class="footer-content" size="m">
             <div class="contact">
-                <div class="img-logo">
+                <Link to="/" class="img-logo">
                     <img src="/img/logo-light.png" alt="AIDD labs logo" />
-                </div>
+                </Link>
                 <div class="contacttext">
                     <p>
                         Send us an email
@@ -72,6 +72,9 @@
                 </div>
             </div>
             <div class="socials">
+                <Link to="/" class="img-logo">
+                    <img src="/img/logo-light.png" alt="AIDD labs logo" />
+                </Link>
                 <div class="social">
                     <h3>Follow us</h3>
                     <div class="links">
@@ -112,7 +115,7 @@
 
             @media (max-width: 600px) {
                 display: flex;
-                flex-direction: column;
+                flex-direction: column-reverse;
                 gap: 2em;
                 padding-bottom: 2em;
             }
@@ -129,6 +132,12 @@
             flex-direction: column;
             height: 100%;
 
+            .img-logo {
+                @media (max-width: 600px) {
+                    display: none;
+                }
+            }
+
             .copyright {
                 margin-top: 8em;
                 opacity: 0.55;
@@ -140,6 +149,22 @@
             gap: 2em;
             grid-area: socials;
             justify-content: flex-end;
+            position: relative;
+
+            .img-logo {
+                display: none;
+            }
+
+            @media(max-width: 600px) {
+                padding-top: 5em;
+
+                .img-logo {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
         }
 
         .img-logo {

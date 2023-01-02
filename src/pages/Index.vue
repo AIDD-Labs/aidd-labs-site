@@ -263,6 +263,7 @@
         .main {
             display: flex;
             flex-direction: column;
+            padding-bottom: 6em;
         }
 
         .about {
@@ -301,6 +302,7 @@
             width: 100%;
             overflow: hidden;
             white-space: nowrap;
+            padding: 2em 0;
             // https://stackoverflow.com/questions/52134961/first-img-of-bannermover-does-not-follow-directly-after-last-img-of-bannermove
 
             &__photo-banner {
