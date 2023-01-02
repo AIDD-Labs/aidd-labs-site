@@ -45,7 +45,8 @@
         background: var(--neon-green-300);
 
         &:hover {
-            background: lightgrey;
+            background: var(--neon-green-500);
+            color: initial;
         }
 
         &.no-style {
