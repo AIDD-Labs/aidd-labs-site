@@ -1,32 +1,33 @@
 <script>
     export default {
-      name: "Radio",
-      props: {
-        value: {
-            type: String
+        name: "Radio",
+        props: {
+            value: {
+                type: String,
+            },
+            name: {
+                type: String,
+            },
         },
-        name: {
-          type: String
-        }
-      },
-      methods: {
-        changeEventHandler(evt) {
-            this.$emit('radioChange', evt.target.value)
-        }
-      }
+        methods: {
+            changeEventHandler(evt) {
+                this.$emit("radioChange", evt.target.value);
+            },
+        },
     };
 </script>
 
 <template>
-  <label :for="value" class="radio">
-    <input
-        type="radio"
-        :name="this.name"
-        :value="value"
-        :id="value"
-        @change="changeEventHandler" />
-    <span><slot /></span>
-  </label>
+    <label :for="value" class="radio">
+        <input
+            type="radio"
+            :name="name"
+            :value="value"
+            :id="value"
+            @change="changeEventHandler"
+        />
+        <span><slot /></span>
+    </label>
 </template>
 
 <style lang="scss">
@@ -58,6 +59,6 @@
         transform: scale(1);
     }
     input[type="radio"]:focus {
-      box-shadow: inset 0em 1em var(--purple-blue-400);
+        box-shadow: inset 0em 1em var(--purple-blue-400);
     }
 </style>

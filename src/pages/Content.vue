@@ -1,10 +1,8 @@
 <script>
-    import {mapState, mapActions} from "vuex";
-    import MaxWidth from "../components/global/MaxWidth.vue";
+    import {mapState} from "vuex";
 
     export default {
         name: "Content",
-        components: {MaxWidth},
         data() {
             return {
                 isLoaded: false,
@@ -23,17 +21,23 @@
                 tagFilter: "all",
                 typeFilter: "all",
 
-                activeType: "all",
+                filteredContent: [],
             };
         },
         computed: {
             ...mapState({
                 contents: state => state.contents,
             }),
-            ...mapActions({
-                test: "filterByTag",
-            }),
-            filteredContent() {
+        },
+
+        methods: {
+            setTagFilter(tag) {
+                this.tagFilter = tag;
+            },
+            setTypeFilter(type) {
+                this.typeFilter = type;
+            },
+            filterContent() {
                 return this.contents.filter(content => {
                     const meta = content.meta || {};
 
@@ -46,15 +50,6 @@
 
                     return tagFilterCheck && typeFilterCheck;
                 });
-            },
-        },
-
-        methods: {
-            setTagFilter(tag) {
-                this.tagFilter = tag;
-            },
-            setTypeFilter(type) {
-                this.typeFilter = type;
             },
         },
         mounted() {
@@ -73,38 +68,49 @@
     <MaxWidth class="contentpage container" size="m">
         <div class="contentpage__about">
             <h1>Content</h1>
-            We communicate our research for multiple audiences, making sure what we do
-            reaches the people who need it. Below, find our journal articles, blog posts,
-            visualizations, reports, presentations, and podcasts on our work.
+            <p>
+                We communicate our research for multiple audiences, making sure what we do
+                reaches the people who need it. Below, find our journal articles, blog
+                posts, visualizations, reports, presentations, and podcasts on our work.
+            </p>
         </div>
-        <div class="contentpage__filters">
-            <div class="contentpage__filters__Type">
-                <h2>TYPE</h2>
-                <RadioGroup
-                    :name="activeType"
-                    :options="types"
-                    v-model="typeFilter"
-                    @radioGroupChange="setTypeFilter"
-                />
+        <div class="grid">
+            <div class="contentpage__filters">
+                <div class="contentpage__filters__Type">
+                    <h2 class="">TYPE</h2>
+                    <RadioGroup
+                        :name="activeType"
+                        :options="types"
+                        v-model="typeFilter"
+                        @radioGroupChange="setTypeFilter"
+                    />
+                </div>
+                <div class="contentpage__filters__Topic">
+                    <h2 class="">TOPIC</h2>
+                    <RadioGroup
+                        :name="activeTag"
+                        :options="tags"
+                        v-model="tagFilter"
+                        @radioGroupChange="setTagFilter"
+                    />
+                </div>
             </div>
-            <div class="contentpage__filters__Topic">
-                <h2>TOPIC</h2>
-                <RadioGroup
-                    name="tags"
-                    :options="tags"
-                    v-model="tagFilter"
-                    @radioGroupChange="setTagFilter"
-                />
-            </div>
-        </div>
-        <div class="contentpage__contents">
-            <div v-for="content in filteredContent" :key="content.slug" class="content">
-                <Link :to="content.meta.url" class="member">
-                    <div class="hoverwrap">
-                        <img :src="content.meta.thumbnail" />
-                        <div class="hovercap">{{ content.meta.title }}</div>
-                    </div>
-                </Link>
+            <div class="contentpage__contents">
+                <div
+                    v-for="content in filteredContent"
+                    :key="content.slug"
+                    class="content"
+                >
+                    <Link no-decoration :to="content.meta.url" class="member card">
+                        <div class="hoverwrap">
+                            <img :src="content.meta.thumbnail" />
+                            <div class="hovercap">{{ content.meta.title }}</div>
+                        </div>
+                        <div class="metas">
+                            {{ content.meta.title }}
+                        </div>
+                    </Link>
+                </div>
             </div>
         </div>
     </MaxWidth>
@@ -117,7 +123,12 @@
         flex-direction: column;
         justify-content: center;
         margin-top: 5em;
-        padding-bottom: 5em;
+        padding-bottom: 8em;
+
+        .grid {
+            display: flex;
+            gap: 4em;
+        }
 
         > div:not(:last-child) {
             margin-bottom: 1rem;
@@ -125,37 +136,40 @@
 
         &__filters {
             display: flex;
-            &__Topic {
-                width: 30%;
-            }
-            &__Type {
-                width: 40%;
-            }
+            flex-direction: column;
+            gap: 2em;
         }
+        
         &__contents {
-            margin-top: 20px;
             display: grid;
-            grid-template-columns: repeat(auto-fill, 255px);
-            grid-gap: 1%;
-            justify-items: flex-end;
+            grid-template-columns: repeat(4, minmax(100px, 1fr));
+            gap: 2em;
+
+            @media(max-width: 1100px) {
+                grid-template-columns: repeat(3, minmax(100px, 1fr));
+            }
+
+            @media(max-width: 900px) {
+                grid-template-columns: repeat(2, minmax(100px, 1fr));
+            }
+
+            @media(max-width: 600px) {
+                grid-template-columns: minmax(100px, 1fr);
+            }
         }
 
         .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            flex: 1;
         }
+
         /* (A) WRAPPER */
         .hoverwrap {
-            position: relative; /* required for (c2) */
-            aspect-ratio: 1/1;
-            max-width: 275px; /* optional */
-            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1); // 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+            position: relative;
         }
 
         /* (B) RESPONSIVE IMAGE */
         .hoverwrap img {
+            display: block;
             width: 100%;
         }
 
@@ -189,6 +203,34 @@
         .hoverwrap:hover .hovercap {
             visibility: visible;
             opacity: 1;
+        }
+
+        .member {
+            text-decoration: none
+            
+            
+            ;
+            &.card {
+                box-shadow: 0 5px 1em 0 rgba(black, 0.1);
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+
+                &:hover {
+                    box-shadow: 0 5px 1em 0 rgba(black, 0.5);
+                }
+
+                .hoverwrap {
+                }
+            }
+
+            .metas {
+                padding: 0.75em 1.25em;
+                flex: 1;
+                background: rgba(30, 38, 72);
+                color: white;
+            }
         }
     }
 </style>

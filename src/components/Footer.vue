@@ -76,7 +76,7 @@
                     <img src="/img/logo-light.png" alt="AIDD labs logo" />
                 </Link>
                 <div class="social">
-                    <h3>Follow us</h3>
+                    <h4>Follow us</h4>
                     <div class="links">
                         <Link v-for="link in socialLinks" :to="link.url" :key="link">{{
                             link.label
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="related">
-                    <h3>Related</h3>
+                    <h4>Related</h4>
                     <div class="links">
                         <Link v-for="link in otherLinks" :to="link.url" :key="link">{{
                             link.label
@@ -121,7 +121,7 @@
             }
         }
 
-        h3 {
+        h4 {
             margin: 0;
             margin-bottom: 1em;
         }
