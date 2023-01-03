@@ -23,7 +23,7 @@
 </script>
 
 <template>
-    <MaxWidth l :class="navClass">
+    <MaxWidth size="m" :class="navClass">
         <div class="nav__left">
             <Link to="/" no-decoration>
                 <Logo/>
@@ -44,8 +44,8 @@
 
 <style lang="scss">
     .nav {
-        position: absolute;
-        z-index:2;
+        z-index: 200;
+        position: relative;
         
         display: flex;
         justify-content: space-between;
@@ -53,6 +53,7 @@
         font-weight: 500;
         transition: all 100ms linear;
         background-color: none;
+        height: $nav-height;
 
         &--home {
             color: white;

@@ -122,7 +122,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 5em;
         padding-bottom: 8em;
 
         .grid {

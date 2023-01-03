@@ -201,6 +201,8 @@
             justify-content: center;
             align-items: center;
 
+            transform: translateY(-$nav-height);
+
             @media (max-width: 600px) {
                 height: 400px;
             }
@@ -220,13 +222,16 @@
             }
 
             .hero-content {
-                position: absolute;
+                //position: absolute;
+                position: relative;
+                z-index: 300;
                 color: white;
                 text-align: left;
-                max-width: 700px;
                 width: 100%;
-                bottom: 4em;
-                left: 0;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                padding-bottom: 6em;
 
                 @media (max-width: 600px) {
                     position: inherit;
@@ -239,10 +244,14 @@
                 }
 
                 .hero-title {
-                    font-family: "DM Sans";
+                    font-family: "DM Sans", sans-serif;
                     font-size: 3rem;
                     font-weight: 300;
                     margin-bottom: 0;
+                    max-width: 880px;
+                    margin-right: auto;
+                    margin-left: 0;
+                    margin-top: auto;
 
                     @media (max-width: 600px) {
                         font-size: 2em;
@@ -270,7 +279,7 @@
             display: flex;
             gap: 1em;
 
-            @media(max-width: 700px) {
+            @media (max-width: 700px) {
                 flex-direction: column;
                 gap: 2em;
             }
