@@ -1,5 +1,4 @@
 <script>
-
     export default {
         name: "Nav",
         components: {},
@@ -9,16 +8,15 @@
         },
         computed: {
             pageType() {
-                return this.$route.fullPath.includes("/posts/") ? "post" : "other"
+                return this.$route.fullPath.includes("/posts/") ? "post" : "other";
             },
             navClass() {
                 return {
-                    "nav": true,
-                    "nav--home": this.$route.name === "Index"
-                }
-            }
-        }
-
+                    nav: true,
+                    "nav--home": this.$route.name === "Index",
+                };
+            },
+        },
     };
 </script>
 
@@ -26,18 +24,22 @@
     <MaxWidth size="m" :class="navClass">
         <div class="nav__left">
             <Link to="/" no-decoration>
-                <Logo/>
+                <Logo />
+                <div class="meta">
+                    Dr. Sabine Loos <span>/ University of Michigan</span>
+                </div>
             </Link>
         </div>
         <div class="nav__right">
             <!--
             TODO: implement all routes: ['team','posts', 'projects', 'content', 'events']
             -->
-            <div v-for="item in ['team']" :key="item">
-                <Link :to="`/${item}`">
-                    {{ item }}
-                </Link>
-            </div>
+            <Link v-for="item in ['content', 'team']" :key="item" :to="`/${item}`">
+                {{ item }}
+            </Link>
+            <Link to="/contact" is-button>
+                Work with us!
+            </Link>
         </div>
     </MaxWidth>
 </template>
@@ -46,7 +48,7 @@
     .nav {
         z-index: 200;
         position: relative;
-        
+
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -62,6 +64,19 @@
         &__left {
             padding-top: 1rem;
             padding-bottom: 1rem;
+
+            .meta {
+                font-size: .925em;
+                border-top: 1px solid rgba(255, 255, 255, 0.4);
+                padding-top: 0.75em;
+                margin-top: 0.35em;
+                padding-right: 1em;
+
+                span {
+                    opacity: 0.75;
+                    margin-left: 0.5em;
+                }
+            }
         }
 
         &__right {
@@ -83,6 +98,9 @@
             max-width: 15em;
             height: auto;
             pointer-events: none;
+            transform: translateX(
+                -21px
+            ); // Faking left alignment of text A instead of the graphic
         }
     }
 

@@ -48,11 +48,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        align-content: flex-start;
-
-        label {
-            padding-right: 15px;
-            padding-bottom: 5px;
-        }
+        align-content: flex-start; 
+        gap: 0.75em;
     }
 </style>

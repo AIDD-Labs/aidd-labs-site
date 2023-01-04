@@ -44,7 +44,7 @@
         :target="doOpenInNewTab ? '_blank' : ''"
         :rel="doOpenInNewTab ? 'noreferrer noopener' : ''"
     >
-        <Button v-if=isButton>
+        <Button v-if=isButton size="m">
             <slot />
         </Button>
         <slot v-else/>

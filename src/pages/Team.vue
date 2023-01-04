@@ -18,7 +18,7 @@
                         large: ["team-usgs.jpg"],
                     },
                     captions: [
-                        "AIDD labs getting ice cream after work. Pictured clockwise: Sabine Loos, Marísa Macías, David Wald, Alex Brunson, Eli Knodel, Maddie Karr.",
+                        "AIDD labs getting ice cream after work. Pictured clockwise: Dr. Sabine Loos, Marísa Macías, David Wald, Alex Brunson, Eli Knodel, Maddie Karr.",
                     ],
                     thumbnailsPath: "/img/",
                     largePath: "/img/",
