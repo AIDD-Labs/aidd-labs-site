@@ -6,23 +6,6 @@
         data() {
             return {
                 isLoaded: false,
-                tags: ["all", "risk", "impact", "recovery"],
-                methods: ["all", "risk", "impact", "recovery"], // ONE DAY
-
-                types: [
-                    "all",
-                    "journal-article",
-                    "report",
-                    "presentation",
-                    "visualization",
-                    "blog",
-                    "podcast",
-                    "software",
-                ],
-
-                tagFilter: "all",
-                typeFilter: "all",
-
                 filteredContent: [],
             };
         },
@@ -33,12 +16,6 @@
         },
 
         methods: {
-            setTagFilter(tag) {
-                this.tagFilter = tag;
-            },
-            setTypeFilter(type) {
-                this.typeFilter = type;
-            },
             filterContent() {
                 return this.contents.filter(content => {
                     const meta = content.meta || {};
@@ -77,26 +54,7 @@
             </p>
         </div>
         <div class="grid">
-            <div class="contentpage__filters">
-                <div class="contentpage__filters__Type">
-                    <h2 class="">TYPE</h2>
-                    <RadioGroup
-                        :name="activeType"
-                        :options="types"
-                        v-model="typeFilter"
-                        @radioGroupChange="setTypeFilter"
-                    />
-                </div>
-                <div class="contentpage__filters__Topic">
-                    <h2 class="">TOPIC</h2>
-                    <RadioGroup
-                        :name="activeTag"
-                        :options="tags"
-                        v-model="tagFilter"
-                        @radioGroupChange="setTagFilter"
-                    />
-                </div>
-            </div>
+            <FilterBar :content="contents" />
             <div class="contentpage__contents" v-if="isLoaded">
                 <div
                     v-for="content in filteredContent"
@@ -107,7 +65,9 @@
                         <div class="hoverwrap">
                             <img :src="content.meta.thumbnail" />
                             <!-- <div class="hovercap">{{ content.meta.title }}</div> -->
-                            <div class="hovercap">Read More <span class="arrow">→</span></div>
+                            <div class="hovercap">
+                                Read More <span class="arrow">→</span>
+                            </div>
                         </div>
                         <div class="metas">
                             {{ content.meta.title }}
@@ -126,6 +86,7 @@
         flex-direction: column;
         justify-content: center;
         padding-bottom: 8em;
+        padding-top: 4em;
         position: relative;
 
         .grid {

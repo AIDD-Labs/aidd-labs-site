@@ -16,14 +16,6 @@
             inputEventHandler(value) {
                 this.$emit("radioGroupChange", value);
             },
-            getLabel(value) {
-                return value
-                    .split("-")
-                    .map(str => {
-                        return str.charAt(0).toUpperCase() + str.slice(1);
-                    })
-                    .join(" ");
-            },
         },
     };
 </script>

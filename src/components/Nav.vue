@@ -4,11 +4,17 @@
         components: {},
         props: {},
         data() {
-            return {};
+            return {
+                theme: "light",
+            };
         },
         computed: {
             pageType() {
-                return this.$route.fullPath.includes("/posts/") ? "post" : "other";
+                return this.$route.fullPath.includes("/posts/")
+                    ? "post"
+                    : this.$route.fullPath == "/"
+                    ? "index"
+                    : "other";
             },
             navClass() {
                 return {
@@ -17,6 +23,14 @@
                 };
             },
         },
+        methods: {
+            setTheme() {
+                this.theme = this.navClass['nav--home'] ? 'light' : 'dark';
+            }
+        },
+        mounted() {
+            this.setTheme();
+        }
     };
 </script>
 
@@ -25,7 +39,7 @@
         <div class="nav__left">
             <Link to="/" no-decoration>
                 <Logo />
-                <div class="meta">
+                <div class="meta" :style="{borderTop: '1px solid lightgrey'}">
                     Dr. Sabine Loos <span>/ University of Michigan</span>
                 </div>
             </Link>
@@ -37,9 +51,7 @@
             <Link v-for="item in ['content', 'team']" :key="item" :to="`/${item}`">
                 {{ item }}
             </Link>
-            <Link to="/contact" is-button>
-                Work with us!
-            </Link>
+            <Link class="cta" to="/contact" is-button> Work with us! </Link>
         </div>
     </MaxWidth>
 </template>
@@ -65,8 +77,12 @@
             padding-top: 1rem;
             padding-bottom: 1rem;
 
+            &:hover {
+                text-decoration: none;
+            }
+
             .meta {
-                font-size: .925em;
+                font-size: 0.925em;
                 border-top: 1px solid rgba(255, 255, 255, 0.4);
                 padding-top: 0.75em;
                 margin-top: 0.35em;
@@ -74,7 +90,7 @@
 
                 span {
                     opacity: 0.75;
-                    margin-left: 0.5em;
+                    margin-left: 0.65em;
                 }
             }
         }
@@ -102,15 +118,9 @@
                 -21px
             ); // Faking left alignment of text A instead of the graphic
         }
-    }
 
-    [theme="dark"] {
-        .nav {
-            .sabine-logo {
-                .black-name {
-                    opacity: 0;
-                }
-            }
+        .cta {
+            border: 1px solid;
         }
     }
 </style>

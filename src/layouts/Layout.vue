@@ -3,21 +3,21 @@
         name: "Layout",
         data() {
             return {};
-        }
+        },
     };
 </script>
-
 
 <template>
     <div class="layout" id="layout">
         <div class="flex-content">
             <Nav />
-            <slot />
+            <div class="flex-content">
+                <slot />
+            </div>
         </div>
         <Footer />
     </div>
 </template>
-
 
 <style lang="scss">
     @import "./../styles/globals";

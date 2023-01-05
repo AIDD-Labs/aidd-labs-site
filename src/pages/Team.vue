@@ -136,6 +136,7 @@
         flex-direction: column;
         justify-content: center;
         padding-bottom: 5em;
+        padding-top: 4em;
 
         .light-box {
             &__thumbnail {
