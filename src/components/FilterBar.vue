@@ -24,7 +24,6 @@
                     "software",
                 ],
                 topics: ["all", "risk", "impact", "recovery"],
-                methods: ["all", "risk", "impact", "recovery"], // ONE DAY
 
                 // We are not supporting multiple filters per type
                 activeFilters: {
@@ -50,16 +49,16 @@
 
                 this.activeFilters = filters;
             },
-            changeQueryParams() {
+            changeQueryParams(event) {
                 let newQuery = {...this.activeFilters};
 
                 Object.keys(this.activeFilters).forEach(filter => {
-                    if (this.activeFilters[filter] == 'all') {
-                        delete newQuery[filter]
+                    if (this.activeFilters[filter] == "all") {
+                        delete newQuery[filter];
                     } else {
                         newQuery[filter] = utils.slugify(newQuery[filter]);
                     }
-                }) 
+                });
 
                 this.$router.push({query: newQuery});
             },
@@ -71,31 +70,34 @@
 </script>
 <template>
     <div class="filter-bar">
-        <div class="contentpage__filters">
-            <div class="contentpage__filters__Type">
+        <div class="filter-bar__filters">
+            <div class="filter-bar__filters">
                 <h2 class="">Type</h2>
-
                 <div class="radio-group">
-                    <label v-for="type in types" :key="type" class="radio">
+                    <label v-for="filter in types" :key="filter" class="radio">
                         <input
                             type="radio"
-                            :value="type"
+                            :value="filter"
                             v-model="activeFilters.type"
-                            :name="type"
-                            @change="changeQueryParams"
+                            @change="changeQueryParams({type: filter})"
                         />
-                        {{ getLabel(type) }}
+                        {{ getLabel(filter) }}
                     </label>
                 </div>
             </div>
-            <div class="contentpage__filters__Topic">
+            <div class="filter-bar__filters">
                 <h2 class="">Topic</h2>
-                <RadioGroup
-                    name="topic"
-                    :options="topics"
-                    v-model="activeFilters.topic"
-                    @radioGroupChange="changeFilters()"
-                />
+                <div class="radio-group">
+                    <label v-for="filter in topics" :key="filter" class="radio">
+                        <input
+                            type="radio"
+                            :value="filter"
+                            v-model="activeFilters.topic"
+                            @change="changeQueryParams({topic: filter})"
+                        />
+                        {{ getLabel(filter) }}
+                    </label>
+                </div>
             </div>
         </div>
     </div>
@@ -105,17 +107,35 @@
         border: 1px solid var(--base-4);
         padding: 1em;
 
+        > div:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        &__filters {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25em;
+            align-self: flex-start;
+            margin-bottom: 2em;
+        }
+
         .radio-group {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             align-content: flex-start;
-            gap: 0.75em;
+            gap: 0.6em;
             white-space: nowrap;
 
             .radio {
-                display: flex;
+                display: inline-flex;
                 gap: 0.5em;
+                width: fit-content;
+                padding-right: 0.5em;
+
+                &:hover {
+                    cursor: pointer;
+                }
 
                 input[type="radio"] {
                     appearance: none; // removes native appearance
@@ -140,7 +160,7 @@
                 input[type="radio"]::before {
                     content: "";
                     width: 9px;
-                    height:9px;
+                    height: 9px;
                     position: absolute;
                     top: 2px;
                     left: 2px;

@@ -95,17 +95,10 @@
             position: relative;
         }
 
-        > div:not(:last-child) {
-            margin-bottom: 1rem;
-        }
-
-        &__filters {
-            display: flex;
-            flex-direction: column;
-            gap: 2em;
-
+        .filter-bar {
             position: sticky;
-            top: 2em;
+            top: 0;
+            left: 0;
             align-self: flex-start;
         }
 
