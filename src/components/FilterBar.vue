@@ -103,6 +103,7 @@
         <div class="filter-bar__filters">
             <div class="filter-bar__filters">
                 <h2 class="">Type</h2>
+                <Loading  v-if="!filterCounts.types"/>
                 <div class="radio-group" v-if="filterCounts.types">
                     <label v-for="filter in types" :key="filter" class="radio">
                         <input

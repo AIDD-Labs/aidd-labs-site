@@ -27,38 +27,35 @@
                     return;
                 }
 
-                // this.contents.forEach(row => {
-                //     let tags = row.meta.tags; // topics
-                //     let type = row.meta.type;
-
-                //     if (!Object.keys(this.$route.query).length) {
-                //        processed.push(row);
-                //     }
-                // });
-
-                processed.filter(row => {
+                processed = processed.filter(row => {
                     if (!Object.keys(query).length) {
                        return row;
                     } else {
-                        return row.type == query.type && row;
+                        let passesType = !query.type || row.meta.type == query.type;
+                        let passesTopic = !query.topic || row.meta.tags.includes(query.topic)
+                        
+                        if (passesType && passesTopic) {
+                            return row;
+                        }
                     }
                 })
-
-                
+ 
                 this.filteredContent = processed;
+                this.isLoaded = true;
             },
         },
         watch: {
             activeFilters: {
                 immediate: true,
                 handler() {
+                    this.isLoaded = false;
                     this.processContent();
                 },
             },
         },
         mounted() {
             //this.filteredContent = this.contents;
-            this.isLoaded = true;
+           
         },
     };
 </script>
@@ -80,6 +77,7 @@
         </div>
         <div class="grid">
             <FilterBar :content="contents" />
+            <Loading  v-if="!isLoaded"/>
             <div class="contentpage__contents" v-if="isLoaded">
                 <div
                     v-for="content in filteredContent"
@@ -131,6 +129,7 @@
             display: grid;
             grid-template-columns: repeat(4, minmax(100px, 1fr));
             gap: 2em;
+            //align-items: flex-start;
 
             @media (max-width: 1100px) {
                 grid-template-columns: repeat(3, minmax(100px, 1fr));
