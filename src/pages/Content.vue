@@ -69,11 +69,6 @@
     <MaxWidth class="contentpage container" size="m">
         <div class="contentpage__about">
             <h1>Content</h1>
-            <p>
-                We communicate our research for multiple audiences, making sure what we do
-                reaches the people who need it. Below, find our journal articles, blog
-                posts, visualizations, reports, presentations, and podcasts on our work.
-            </p>
         </div>
         <div class="grid">
             <FilterBar :content="contents" />
@@ -115,7 +110,7 @@
         flex-direction: column;
         justify-content: center;
         padding-bottom: 8em;
-        padding-top: 4em;
+        padding-top: 2em;
         position: relative;
 
         .grid {
@@ -126,9 +121,13 @@
 
         .filter-bar {
             position: sticky;
-            top: 0;
+            top: 1.5em;
             left: 0;
             align-self: flex-start;
+        }
+
+        &__about {
+            margin-bottom: 1.5em;
         }
 
         &__contents {

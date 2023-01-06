@@ -39,16 +39,6 @@ a {
     position: relative;
 }
 
-a:hover {
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 2px;
-    text-decoration-color: var(--blue-300);
-    font-weight: 500;
-    color: currentColor;
-}
-
 a.nav {
     // make this specific for the nav somehow
     font-weight: 400;

@@ -84,13 +84,12 @@
             .meta {
                 font-size: 0.925em;
                 border-top: 1px solid rgba(255, 255, 255, 0.4);
-                padding-top: 0.75em;
-                margin-top: 0.35em;
+                padding-top: 0.5em;
+                margin-top: 0.05em;
                 padding-right: 1em;
 
                 span {
                     opacity: 0.75;
-                    margin-left: 0.65em;
                 }
             }
         }

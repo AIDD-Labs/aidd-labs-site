@@ -57,10 +57,6 @@
             text-decoration: none;
         }
 
-        &--no-decoration {
-            text-decoration: none;
-        }
-
         &:hover {
             cursor: pointer;
         }
@@ -69,6 +65,10 @@
             text-decoration: underline;
             text-underline-offset: 2px;
             text-decoration-thickness: 2px;
+        }
+
+        &--no-decoration {
+            text-decoration: none;
         }
     }
 </style>

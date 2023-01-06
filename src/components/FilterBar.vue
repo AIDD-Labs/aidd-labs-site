@@ -100,10 +100,16 @@
 </script>
 <template>
     <div class="filter-bar">
+        <p>
+            We communicate our research for multiple audiences, making sure what we do
+            reaches the people who need it. 
+            <!-- Below, find our journal articles, blog posts,
+            visualizations, reports, presentations, and podcasts on our work. -->
+        </p>
         <div class="filter-bar__filters">
             <div class="filter-bar__filters">
                 <h2 class="">Type</h2>
-                <Loading  v-if="!filterCounts.types"/>
+                <Loading v-if="!filterCounts.types" />
                 <div class="radio-group" v-if="filterCounts.types">
                     <label v-for="filter in types" :key="filter" class="radio">
                         <input
@@ -113,9 +119,9 @@
                             @change="changeQueryParams({type: filter})"
                         />
                         {{ getLabel(filter) }}
-                        <div v-if="filter != 'all'"
-                            >({{ filterCounts.types[filter] }})</div
-                        >
+                        <div v-if="filter != 'all'">
+                            ({{ filterCounts.types[filter] }})
+                        </div>
                     </label>
                 </div>
             </div>
@@ -130,9 +136,9 @@
                             @change="changeQueryParams({topic: filter})"
                         />
                         {{ getLabel(filter) }}
-                        <div v-if="filter != 'all'"
-                            >({{ filterCounts.topics[filter] }})</div
-                        >
+                        <div v-if="filter != 'all'">
+                            ({{ filterCounts.topics[filter] }})
+                        </div>
                     </label>
                 </div>
             </div>
@@ -141,8 +147,12 @@
 </template>
 <style lang="scss">
     .filter-bar {
-        border: 1px solid var(--base-4);
-        padding: 1em;
+        width: 100%;
+
+        p {
+            margin-top: 0;
+            font-size: 0.95em;
+        }
 
         > div:not(:last-child) {
             margin-bottom: 1rem;
