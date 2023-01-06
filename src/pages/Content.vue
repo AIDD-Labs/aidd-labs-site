@@ -15,7 +15,7 @@
             }),
             activeFilters() {
                 return this.$route.query;
-            }
+            },
         },
 
         methods: {
@@ -29,17 +29,18 @@
 
                 processed = processed.filter(row => {
                     if (!Object.keys(query).length) {
-                       return row;
+                        return row;
                     } else {
                         let passesType = !query.type || row.meta.type == query.type;
-                        let passesTopic = !query.topic || row.meta.tags.includes(query.topic)
-                        
+                        let passesTopic =
+                            !query.topic || row.meta.tags.includes(query.topic);
+
                         if (passesType && passesTopic) {
                             return row;
                         }
                     }
-                })
- 
+                });
+
                 this.filteredContent = processed;
                 this.isLoaded = true;
             },
@@ -55,7 +56,6 @@
         },
         mounted() {
             //this.filteredContent = this.contents;
-           
         },
     };
 </script>
@@ -77,8 +77,12 @@
         </div>
         <div class="grid">
             <FilterBar :content="contents" />
-            <Loading  v-if="!isLoaded"/>
-            <div class="contentpage__contents" v-if="isLoaded">
+            <Loading v-if="!isLoaded" />
+            <div
+                class="contentpage__contents"
+                v-if="isLoaded"
+                :style="{alignItems: filteredContent.length <= 4 && 'flex-start'}"
+            >
                 <div
                     v-for="content in filteredContent"
                     :key="content.slug"
@@ -86,7 +90,9 @@
                 >
                     <Link no-decoration :to="content.meta.url" class="member card">
                         <div class="hoverwrap">
-                            <img :src="content.meta.thumbnail" />
+                            <div class="img-container">
+                                <img :src="content.meta.thumbnail || '/img/home-hero-1.png'" />
+                            </div>
                             <!-- <div class="hovercap">{{ content.meta.title }}</div> -->
                             <div class="hovercap">
                                 Read More <span class="arrow">→</span>
@@ -187,6 +193,15 @@
         .hoverwrap:hover .hovercap {
             visibility: visible;
             opacity: 1;
+        }
+
+        .img-container {
+            height: 230px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            background-color: rgba(30, 38, 72, 0.9);
+            justify-content: center;
         }
 
         .member {
