@@ -44,13 +44,13 @@
                 let filterCounts = {};
                 let categories = Object.keys(this.activeFilters);
 
-                // set up starting empty counts of 0
+                // Set up starting empty counts of 0
                 categories.forEach(cat => {
                     let category = `${cat}s`;
                     filterCounts[category] = {};
                     let items = [...this[category]];
                     filterCounts[category] = Object.fromEntries(
-                        items.map(item => [item, 0])
+                        items.map(item => [utils.slugify(item), 0])
                     );
                 });
 
@@ -120,7 +120,7 @@
                         />
                         {{ getLabel(filter) }}
                         <div v-if="filter != 'all'">
-                            ({{ filterCounts.types[filter] }})
+                            ({{ filterCounts.types[slugify(filter)] }})
                         </div>
                     </label>
                 </div>
