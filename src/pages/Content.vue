@@ -55,7 +55,6 @@
             },
         },
         mounted() {
-            //this.filteredContent = this.contents;
         },
     };
 </script>
