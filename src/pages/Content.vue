@@ -54,8 +54,7 @@
                 },
             },
         },
-        mounted() {
-        },
+        mounted() {},
     };
 </script>
 
@@ -85,7 +84,11 @@
                     <Link no-decoration :to="content.meta.url" class="member card">
                         <div class="hoverwrap">
                             <div class="img-container">
-                                <img :src="content.meta.thumbnail || '/img/home-hero-1.png'" />
+                                <img
+                                    :src="
+                                        content.meta.thumbnail || '/img/home-hero-1.png'
+                                    "
+                                />
                             </div>
                             <!-- <div class="hovercap">{{ content.meta.title }}</div> -->
                             <div class="hovercap">
@@ -117,7 +120,11 @@
             gap: 4em;
             position: relative;
 
-            @media(max-width: 700px) {
+            @media (max-width: 1100px) {
+                gap: 1em;
+            }
+
+            @media (max-width: 800px) {
                 flex-direction: column;
                 gap: 0;
             }
@@ -125,12 +132,14 @@
 
         .filter-bar {
             position: sticky;
+            flex-basis: 280px;
             top: 1.5em;
             left: 0;
             align-self: flex-start;
 
-            @media(max-width: 700px) {
+            @media (max-width: 800px) {
                 position: initial;
+                flex-basis: 100%;
             }
         }
 
@@ -142,10 +151,12 @@
             display: grid;
             grid-template-columns: repeat(4, minmax(100px, 1fr));
             gap: 2em;
+            flex: 1;
             //align-items: flex-start;
 
             @media (max-width: 1100px) {
                 grid-template-columns: repeat(3, minmax(100px, 1fr));
+                gap: 1em;
             }
 
             @media (max-width: 900px) {
@@ -168,8 +179,8 @@
 
         /* (B) RESPONSIVE IMAGE */
         .hoverwrap img {
-            display: block;
-            width: 100%;
+            //display: block;
+            //width: 100%;
         }
 
         /* (C) CAPTION */
@@ -207,8 +218,14 @@
             overflow: hidden;
             position: relative;
             display: flex;
+            align-items: flex-start;
             background-color: rgba(30, 38, 72, 0.9);
             justify-content: center;
+
+            img {
+                height: 100%;
+                width: auto;
+            }
         }
 
         .member {

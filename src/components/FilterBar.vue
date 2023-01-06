@@ -147,8 +147,6 @@
 </template>
 <style lang="scss">
     .filter-bar {
-        width: 100%;
-
         p {
             margin-top: 0;
             font-size: 0.95em;
@@ -164,6 +162,9 @@
             gap: 0.25em;
             align-self: flex-start;
             margin-bottom: 2em;
+
+            @media(max-width: 800px) {
+            }
         }
 
         .radio-group {
@@ -174,7 +175,7 @@
             gap: 0.6em;
             white-space: nowrap;
 
-            @media(max-width: 700px) {
+            @media(max-width: 800px) {
                 flex-direction: row;
             }
 
