@@ -121,17 +121,6 @@
                     },
                 ],
             });
-            // useMeta({
-            //     title: route.meta.title,
-            //     description: route.meta.description,
-            //     meta: "cats",
-            //     cars: [
-            //         { name: "author", bee: "marguserite" },
-            //         { name: "distribution", content: "global" },
-            //         { name: "keywords", content: "cats, bees" },
-            //         { name: "language", content: "English" },
-            //     ],
-            // });
         },
         mounted() {
             window.addEventListener("scroll", this.onScroll);

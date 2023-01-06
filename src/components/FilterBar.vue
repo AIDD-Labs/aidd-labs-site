@@ -95,6 +95,7 @@
         mounted() {
             this.initActiveFilters();
             this.initFilterCounts();
+            console.log('bees')
         },
     };
 </script>

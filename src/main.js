@@ -101,7 +101,7 @@ export const createApp = ViteSSG(
             mdContentRoutes.push(metaProps);
         }
 
-        let allRoutes = [...routes, ...mdPostRoutes, ...mdMemberRoutes, ...mdContentRoutes];
+        // not used. see vite config Pages() let allRoutes = [...routes, ...mdPostRoutes, ...mdMemberRoutes, ...mdContentRoutes];
         app.use(store);
 
         if (import.meta.env.SSR) {
