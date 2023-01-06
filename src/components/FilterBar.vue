@@ -174,6 +174,10 @@
             gap: 0.6em;
             white-space: nowrap;
 
+            @media(max-width: 700px) {
+                flex-direction: row;
+            }
+
             .radio {
                 display: inline-flex;
                 gap: 0.5em;

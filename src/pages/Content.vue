@@ -116,6 +116,11 @@
             display: flex;
             gap: 4em;
             position: relative;
+
+            @media(max-width: 700px) {
+                flex-direction: column;
+                gap: 0;
+            }
         }
 
         .filter-bar {
