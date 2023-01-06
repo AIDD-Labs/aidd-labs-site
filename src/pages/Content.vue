@@ -128,6 +128,10 @@
             top: 1.5em;
             left: 0;
             align-self: flex-start;
+
+            @media(max-width: 700px) {
+                position: initial;
+            }
         }
 
         &__about {
