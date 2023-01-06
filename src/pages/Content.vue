@@ -13,26 +13,51 @@
             ...mapState({
                 contents: state => state.contents,
             }),
+            activeFilters() {
+                return this.$route.query;
+            }
         },
 
         methods: {
-            filterContent() {
-                return this.contents.filter(content => {
-                    const meta = content.meta || {};
+            processContent() {
+                let processed = [...this.contents];
+                let query = this.$route.query;
 
-                    const tagFilterCheck =
-                        this.tagFilter === "all"
-                            ? true
-                            : meta.tags.includes(this.tagFilter);
-                    const typeFilterCheck =
-                        this.typeFilter === "all" ? true : meta.type === this.typeFilter;
+                if (!this.contents.length) {
+                    return;
+                }
 
-                    return tagFilterCheck && typeFilterCheck;
-                });
+                // this.contents.forEach(row => {
+                //     let tags = row.meta.tags; // topics
+                //     let type = row.meta.type;
+
+                //     if (!Object.keys(this.$route.query).length) {
+                //        processed.push(row);
+                //     }
+                // });
+
+                processed.filter(row => {
+                    if (!Object.keys(query).length) {
+                       return row;
+                    } else {
+                        return row.type == query.type && row;
+                    }
+                })
+
+                
+                this.filteredContent = processed;
+            },
+        },
+        watch: {
+            activeFilters: {
+                immediate: true,
+                handler() {
+                    this.processContent();
+                },
             },
         },
         mounted() {
-            this.filteredContent = this.contents;
+            //this.filteredContent = this.contents;
             this.isLoaded = true;
         },
     };

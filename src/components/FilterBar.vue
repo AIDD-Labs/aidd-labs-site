@@ -29,8 +29,9 @@
                 activeFilters: {
                     type: "all",
                     topic: "all",
-                    method: "all",
                 },
+
+                filterCounts: {}, // adding this until it gets too slow
 
                 filteredContent: [],
             };
@@ -39,6 +40,34 @@
             ...mapState({}),
         },
         methods: {
+            initFilterCounts() {
+                let filterCounts = {};
+                let categories = Object.keys(this.activeFilters);
+
+                // set up starting empty counts of 0
+                categories.forEach(cat => {
+                    let category = `${cat}s`;
+                    filterCounts[category] = {};
+                    let items = [...this[category]];
+                    filterCounts[category] = Object.fromEntries(
+                        items.map(item => [item, 0])
+                    );
+                });
+
+                // Loop through content, update counts
+                this.content.forEach(row => {
+                    let type = row.meta.type;
+                    filterCounts.types[type] += 1;
+
+                    this.topics.forEach(filterTopic => {
+                        if (row.meta.tags.includes(filterTopic)) {
+                            filterCounts.topics[filterTopic] += 1;
+                        }
+                    });
+                });
+
+                this.filterCounts = filterCounts;
+            },
             initActiveFilters() {
                 let query = {...this.$route.query};
                 let filters = {...this.activeFilters};
@@ -65,6 +94,7 @@
         },
         mounted() {
             this.initActiveFilters();
+            this.initFilterCounts();
         },
     };
 </script>
@@ -73,7 +103,7 @@
         <div class="filter-bar__filters">
             <div class="filter-bar__filters">
                 <h2 class="">Type</h2>
-                <div class="radio-group">
+                <div class="radio-group" v-if="filterCounts.types">
                     <label v-for="filter in types" :key="filter" class="radio">
                         <input
                             type="radio"
@@ -82,12 +112,15 @@
                             @change="changeQueryParams({type: filter})"
                         />
                         {{ getLabel(filter) }}
+                        <div v-if="filter != 'all'"
+                            >({{ filterCounts.types[filter] }})</div
+                        >
                     </label>
                 </div>
             </div>
             <div class="filter-bar__filters">
                 <h2 class="">Topic</h2>
-                <div class="radio-group">
+                <div class="radio-group" v-if="filterCounts.topics">
                     <label v-for="filter in topics" :key="filter" class="radio">
                         <input
                             type="radio"
@@ -96,6 +129,9 @@
                             @change="changeQueryParams({topic: filter})"
                         />
                         {{ getLabel(filter) }}
+                        <div v-if="filter != 'all'"
+                            >({{ filterCounts.topics[filter] }})</div
+                        >
                     </label>
                 </div>
             </div>
