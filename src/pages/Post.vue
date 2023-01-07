@@ -42,6 +42,9 @@
             pubDates() {
                 return this.$route.meta.date;
             },
+            authorList() {
+                return this.authors?.split() || ["Dr. Sabine Loos"];
+            },
         },
         methods: {
             initHeadingTitles() {
@@ -134,9 +137,24 @@
         <div class="post-left"></div>
         <div class="post-center">
             <div class="content">
-                <h1>{{ title }}</h1>
-                <div class="description" v-if="description">
-                    {{ description }}
+                <div class="metas">
+                    <h1>{{ title }}</h1>
+                    <div class="description" v-if="description">
+                        {{ description }}
+                    </div>
+                    <div class="authors">
+                        <div class="author" v-for="author in authorList" :key="author">
+                            {{ author }}
+                        </div>
+                    </div>
+                    <div class="other-metas">
+                        <div class="publication" v-if="publication">
+                            <strong>Publication:</strong> {{ publication }}
+                        </div>
+                        <div class="citation" v-if="citation">
+                            <strong>Citation:</strong> {{ citation }}
+                        </div>
+                    </div>
                 </div>
                 <div class="article-text">
                     <slot />
@@ -151,12 +169,43 @@
         padding-top: 2em;
         padding-bottom: 3em;
 
+        img {
+            border: 1px solid;
+        }
+
+        .hero-wrapper {
+            text-align: center;
+        }
+
         .content {
             font-size: 1.125em;
         }
 
+        .metas {
+            h1 {
+                text-transform: none;
+                font-size: 3em;
+                line-height: 1.15;
+                margin-bottom: 0;
+
+                @media(max-width: 1300px) {
+                    font-size: 2em;
+                }
+            }
+        }
+
+        .other-metas {
+            padding-top: 1em;
+            font-size: 0.8em;
+        }
+
+        .authors {
+            font-weight: 600;
+        }
+
         .description {
             font-size: 1.25em;
+            padding: 0.75em 0;
         }
 
         .abstract {
