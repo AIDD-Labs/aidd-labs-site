@@ -13,7 +13,8 @@ body,
 body {
     width: 100%;
     margin: 0 auto;
-    font-family: "DM Sans";
+    font-family: "DM Sans", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-size: 16px;
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
@@ -70,7 +71,7 @@ img {
 h1 {
     font-family: "Prata", serif;
     font-weight: 500;
-    line-height: 1.1;
+    line-height: 1.3;
     margin: 1em 0 0.5em 0;
 }
 
@@ -84,6 +85,9 @@ h2 {
 }
 
 h3 {
+}
+
+h6 {
     line-height: 1;
     font-family: "DM Sans", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;

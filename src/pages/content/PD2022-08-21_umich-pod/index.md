@@ -1,5 +1,5 @@
 ---
-slug: "umich-pd-usa" # ier-b-nepal
+slug: "umich-pod" # match folder label name
 date: ["2022-08-21"]
 status: "published"
 tags: ["equity", "overview"] # "recovery", "impact", "statistical-modeling"
@@ -18,3 +18,20 @@ description: "" # insert a one sentence description here
 citation: "" # add the citation here, in APA format
 abstract: "" # add the abstract here
 ---
+
+
+Our first podcast season is called "Pleased to Introduce..." These podcasts highlight our five new faculty members. During the conversations, they discuss how their work aligns with CEE's Strategic Directions and ways they foster diversity, equity and inclusion in their research and classes.
+
+<br />
+
+<YouTubeEmbed video-src="https://www.youtube.com/embed/AMn1zFrZ7fU" title="Connections & Directions | Pleased to Introduce... | Dr. Sabine Loos"/>
+
+Follow Civil and Environmental Engineering:
+
+-   Twitter: [https://twitter.com/UM_CEE​ ](https://twitter.com/UM_CEE​)
+-   Facebook: [https://www.facebook.com/UMCEEFA​ ](https://www.facebook.com/UMCEEFA)
+-   Instagram: [https://www.instagram.com/um_cee/​ ](https://www.instagram.com/um_cee/)
+
+Contact Civil and Environmental Engineering:
+
+-   https://cee.engin.umich.edu/

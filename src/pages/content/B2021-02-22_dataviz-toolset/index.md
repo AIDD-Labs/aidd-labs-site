@@ -1,5 +1,4 @@
 ---
-slug: "dataviztoolset-b-" # ier-b-nepal
 date: ["2021-02-22"]
 status: "published"
 tags: ["data-visualization"] # "recovery", "impact", "statistical-modeling"

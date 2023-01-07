@@ -1,5 +1,5 @@
 ---
-slug: "project-type-location" # ier-b-nepal
+slug: "project-type-location" # match folder label name
 date: ["YYYY-MM-DD"]
 status: "published"
 tags: [] # "recovery", "impact", "statistical-modeling"

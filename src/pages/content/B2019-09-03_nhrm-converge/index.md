@@ -1,5 +1,5 @@
 ---
-slug: "nhrmconverge-b-usa" # ier-b-nepal
+slug: "nhrm-converges" # match folder label name
 date: ["2019-09-03"]
 status: "published"
 tags: ["recovery", "statistical-modeling", "mixed-methods"] # "recovery", "impact", "statistical-modeling"

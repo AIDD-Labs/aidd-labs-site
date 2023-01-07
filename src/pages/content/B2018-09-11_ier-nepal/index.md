@@ -1,5 +1,5 @@
 ---
-slug: "ier-b-nepal"
+slug: "ier-nepal"
 date: ["2018-09-11"]
 status: "published"
 tags: ["recovery", "impact", "statistical-modeling","nepal"]

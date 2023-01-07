@@ -1,5 +1,5 @@
 ---
-slug: "afterthequake-v-nepal" # ier-b-nepal
+slug: "afterthequake-nepal" # match folder label name
 date: ["2019-07-01"]
 status: "published"
 tags: ["recovery", "impact"] # "recovery", "impact", "statistical-modeling"

@@ -1,5 +1,5 @@
 ---
-slug: "radcrowd-t-haiti" # ier-b-nepal
+slug: "radcrowd-report" # match folder label name
 date: ["2018-12-15"]
 status: "published"
 tags: ["impact", "crowdsourcing", "mixed-methods", "statistical-method", "qualitative"] # "recovery", "impact", "statistical-modeling"
