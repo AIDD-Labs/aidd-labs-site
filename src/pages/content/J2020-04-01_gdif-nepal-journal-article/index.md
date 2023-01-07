@@ -1,5 +1,5 @@
 ---
-slug: "gdif-nepal"
+slug: "gdif-nepal-journal-article"
 date: ["2020-04-01"]
 status: "published"
 tags: ["impact", "statistical-modeling","nepal"]

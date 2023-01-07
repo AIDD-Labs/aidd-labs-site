@@ -81,7 +81,7 @@
                     :key="content.slug"
                     class="content"
                 >
-                    <Link no-decoration :to="content.meta.url" class="member card">
+                    <Link no-decoration :to="`/content/${content.meta.slug}`" class="member card">
                         <div class="hoverwrap">
                             <div class="img-container">
                                 <img
