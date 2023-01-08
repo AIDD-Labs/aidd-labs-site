@@ -4,7 +4,7 @@
     import LightBox from "@/components/global/Lightbox.vue";
 
     export default {
-        name: "Index",
+        name: "Team",
         components: {
             MaxWidth,
             LightBox,
@@ -55,14 +55,15 @@
         <div class="team__members">
             <h2>Current members</h2>
             <div class="members">
-                <div v-for="member in members" :key="member.id" class="member">
+                <div v-for="member in Object.keys(members)" :key="member" class="member">
+                    {{ member }}
                     <div class="img-container">
-                        <img :src="member.meta.img" />
+                        <img :src="members[member].meta.img" />
                     </div>
-                    <Link :to="member.meta.url" class="member">
-                        <h3>{{ member.meta.name }}</h3>
-                        <div>{{ member.meta.title }}</div>
-                        <div>{{ member.meta.affiliation }}</div>
+                    <Link :to="members[member].meta.url" class="member">
+                        <h3>{{ members[member].meta.name }}</h3>
+                        <div>{{ members[member].meta.title }}</div>
+                        <div>{{ members[member].meta.affiliation }}</div>
                     </Link>
                 </div>
             </div>
