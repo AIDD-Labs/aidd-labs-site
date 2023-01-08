@@ -134,30 +134,41 @@
 
 <template>
     <MaxWidth class="post" size="m">
-        <div class="post-left"></div>
         <div class="post-center">
-            <div class="content">
-                <div class="metas">
-                    <h1>{{ title }}</h1>
-                    <div class="description" v-if="description">
-                        {{ description }}
-                    </div>
-                    <div class="authors">
-                        <div class="author" v-for="author in authorList" :key="author">
-                            {{ author }}
+            <div class="metas">
+                <h1>{{ title }}</h1>
+            </div>
+            <div class="flex-wrapper">
+                <div class="content">
+                    <div class="metas">
+                        <div class="description" v-if="description">
+                            {{ description }}
+                        </div>
+                        <div class="authors">
+                            <div
+                                class="author"
+                                v-for="author in authorList"
+                                :key="author"
+                            >
+                                {{ author }}
+                            </div>
+                        </div>
+                        <div class="other-metas">
+                            <div class="publication" v-if="publication">
+                                <strong>Publication:</strong> {{ publication }}
+                            </div>
+                            <div class="citation" v-if="citation">
+                                <strong>Citation:</strong> {{ citation }}
+                            </div>
                         </div>
                     </div>
-                    <div class="other-metas">
-                        <div class="publication" v-if="publication">
-                            <strong>Publication:</strong> {{ publication }}
-                        </div>
-                        <div class="citation" v-if="citation">
-                            <strong>Citation:</strong> {{ citation }}
-                        </div>
+                    <div class="article-text">
+                        <slot />
                     </div>
                 </div>
-                <div class="article-text">
-                    <slot />
+                <div class="post-right">
+                    <AuthorBlock/>
+                    <TOC :active-heading="activeHeadingId" />
                 </div>
             </div>
         </div>
@@ -168,6 +179,7 @@
     .post {
         padding-top: 2em;
         padding-bottom: 3em;
+        font-size: 1.125em;
 
         img {
             border: 1px solid;
@@ -178,7 +190,20 @@
         }
 
         .content {
-            font-size: 1.125em;
+            h2 {
+                font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+                    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+                text-transform: none;
+                letter-spacing: 0;
+                font-size: 1.65em;
+                font-weight: 600;
+            }
+
+            h5 {
+                //used as annotation
+                margin: 0;
+                margin-bottom: 2em;
+            }
         }
 
         .metas {
@@ -188,9 +213,26 @@
                 line-height: 1.15;
                 margin-bottom: 0;
 
-                @media(max-width: 1300px) {
+                @media (max-width: 1300px) {
                     font-size: 2em;
                 }
+            }
+        }
+
+        .flex-wrapper {
+            display: flex;
+            gap: 6em;
+            position: relative;
+
+            .content {
+                flex-basis: 860px;
+            }
+
+            .post-right {
+                position: sticky;
+                top: 1em;
+                align-self: flex-start;
+                padding-top: 1em;
             }
         }
 

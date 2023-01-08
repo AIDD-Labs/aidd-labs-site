@@ -39,7 +39,6 @@
 <template>
     <div class="TOC">
         <div v-if="titles[0]">
-            ~
             <div v-for="(heading, index) in titles" :key="heading">
                 <a
                     href=""

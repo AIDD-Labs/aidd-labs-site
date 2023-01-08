@@ -99,7 +99,7 @@
 <style lang="scss">
     @import "./../styles/globals.scss";
     .footer-container {
-        background: var(--blue-500);
+        background: var(--blue-900);
         color: white;
 
         .footer-content {

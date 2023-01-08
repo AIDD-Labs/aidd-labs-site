@@ -43,7 +43,7 @@
         border-radius: 2px;
 
         font-weight: 600;
-        background: var(--neon-green-300);
+        background: var(--yellow-500);
 
         &:hover {
             background: #3a58c4;
