@@ -26,7 +26,7 @@
             scrollToHeading(headingId, $event) {
                 $event.preventDefault();
                 let element = document.getElementById(headingId);
-                let top = element.offsetTop - (6 * 16);
+                let top = element.offsetTop + 180;
                 window.scrollTo({left: 0, top, behavior: "smooth"});
             },
         },

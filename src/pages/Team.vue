@@ -56,7 +56,6 @@
             <h2>Current members</h2>
             <div class="members">
                 <div v-for="member in Object.keys(members)" :key="member" class="member">
-                    {{ member }}
                     <div class="img-container">
                         <img :src="members[member].meta.img" />
                     </div>

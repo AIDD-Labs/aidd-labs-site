@@ -15,7 +15,7 @@ let utils = {
         return result;
     },
     getMarkdownTitles() {
-        let selector = Array.from({length: 2}, (_, i) => `.markdown-body h` + (i + 1));
+        let selector = Array.from({length: 2}, (_, i) => `.markdown-body h` + (i + 2));
         let nodes = Array.from(document.querySelectorAll(selector));
         let titles = nodes.map(node => ({
             title: node.innerText,

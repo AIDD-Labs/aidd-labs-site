@@ -45,6 +45,9 @@
             authorList() {
                 return this.authors?.split() || ["Dr. Sabine Loos"];
             },
+            primaryAuthor() {
+                return this.members[0] || "sabine-loos";
+            },
         },
         methods: {
             initHeadingTitles() {
@@ -144,16 +147,11 @@
                         <div class="description" v-if="description">
                             {{ description }}
                         </div>
-                        <div class="authors">
-                            <div
-                                class="author"
-                                v-for="author in authorList"
-                                :key="author"
-                            >
-                                {{ author }}
-                            </div>
-                        </div>
+                        <AuthorBlock :author="primaryAuthor" orientation="landscape" />
                         <div class="other-metas">
+                            <div class="authors" v-if="authors.length">
+                                <strong>Authors:</strong> {{ authors }}
+                            </div>
                             <div class="publication" v-if="publication">
                                 <strong>Publication:</strong> {{ publication }}
                             </div>
@@ -167,7 +165,7 @@
                     </div>
                 </div>
                 <div class="post-right">
-                    <AuthorBlock/>
+                    <AuthorBlock :author="primaryAuthor" />
                     <TOC :active-heading="activeHeadingId" />
                 </div>
             </div>
@@ -180,10 +178,6 @@
         padding-top: 2em;
         padding-bottom: 3em;
         font-size: 1.125em;
-
-        img {
-            border: 1px solid;
-        }
 
         .hero-wrapper {
             text-align: center;
@@ -207,6 +201,10 @@
         }
 
         .metas {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
             h1 {
                 text-transform: none;
                 font-size: 3em;
@@ -223,31 +221,57 @@
             display: flex;
             gap: 6em;
             position: relative;
+            padding-top: 1em;
+
+            @media (max-width: 1100px) {
+                gap: 4em;
+            }
+
+            @media (max-width: 1000px) {
+                gap: 2em;
+            }
 
             .content {
-                flex-basis: 860px;
+                flex-basis: 1200px;
+
+                @media (max-width: 900px) {
+                    flex-basis: 100%;
+                }
+
+                .author-block {
+                    display: none;
+
+                    @media (max-width: 900px) {
+                        display: block;
+                    }
+                }
             }
 
             .post-right {
                 position: sticky;
                 top: 1em;
                 align-self: flex-start;
-                padding-top: 1em;
+                padding-top: 1.25em;
+                padding-bottom: 4em;
+                width: 24em;
+
+                @media (max-width: 1000px) {
+                    display: none;
+                }
             }
         }
 
         .other-metas {
-            padding-top: 1em;
             font-size: 0.8em;
         }
 
         .authors {
-            font-weight: 600;
+            //font-weight: 600;
         }
 
         .description {
-            font-size: 1.25em;
-            padding: 0.75em 0;
+            font-weight: 500;
+            //padding: 0.75em 0;
         }
 
         .abstract {
@@ -256,6 +280,12 @@
 
         .article-text {
             padding-top: 1.5em;
+
+            .markdown-body {
+                img {
+                    border: 1px solid;
+                }
+            }
         }
     }
 </style>

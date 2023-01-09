@@ -176,3 +176,11 @@ img {
     font-family: "Vulf Mono", serif;
     font-weight: 500;
 }
+
+.wavy {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--neon-green-300);
+}
