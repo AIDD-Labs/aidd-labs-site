@@ -46,7 +46,12 @@
                 return this.authors?.split() || ["Dr. Sabine Loos"];
             },
             primaryAuthor() {
-                return this.members[0] || "sabine-loos";
+                if (this.members?.length) {
+                    return this.members[0]
+                    // Need to specifically check for members and length here for ssg build
+                } else {
+                    return "sabine-loos"
+                }
             },
         },
         methods: {

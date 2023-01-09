@@ -56,7 +56,7 @@
         <div class="author-metas landscape" v-if="orientation == 'landscape'">
             <div class="bio-image-wrapper">
                 <div class="bio-image-container">
-                    <img class="bio-image" :src="`../../${info.meta.img}`" />
+                    <img class="bio-image" :src="`../${info.meta.img}`" />
                 </div>
             </div>
             <div class="info">

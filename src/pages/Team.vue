@@ -42,7 +42,7 @@
 
 <template>
     <SEO meta-title="Team" meta-description="About our diverse group of scientists and engineers."/>
-    <MaxWidth class="team-page container" size="m">
+    <MaxWidth class="team-page container" size="m" v-if="isLoaded">
         <div class="team__about">
             <h1>Team</h1>
             Our team is a group of disaster analysts with multiple backgrounds &emd; including
@@ -59,11 +59,16 @@
                     <div class="img-container">
                         <img :src="members[member].meta.img" />
                     </div>
-                    <Link :to="members[member].meta.url" class="member">
+                    <Link :to="members[member].meta.url" class="member" v-if="members[member].meta.url">
                         <h3>{{ members[member].meta.name }}</h3>
                         <div>{{ members[member].meta.title }}</div>
                         <div>{{ members[member].meta.affiliation }}</div>
                     </Link>
+                    <div :to="members[member].meta.url" class="member" v-else>
+                        <h3>{{ members[member].meta.name }}</h3>
+                        <div>{{ members[member].meta.title }}</div>
+                        <div>{{ members[member].meta.affiliation }}</div>
+                    </div>
                 </div>
             </div>
         </div>

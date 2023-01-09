@@ -79,7 +79,6 @@ export default defineConfig({
 
                     let newRoute = route.path.split("_")[1];
                     //ier-nepal
-                    console.log(newRoute)
                     return {
                         ...route,
                         path: `/content/${newRoute}`, // final route will be /content/ier-nepal
