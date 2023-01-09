@@ -139,11 +139,24 @@
     <MaxWidth class="post" size="m">
         <div class="post-center">
             <div class="metas">
+                <Link class="back-link" to="/content"><span class="arrow">← &nbsp;</span>Content</Link>
                 <h1>{{ title }}</h1>
             </div>
             <div class="flex-wrapper">
                 <div class="content">
                     <div class="metas">
+                        <div class="tags">
+                            <Link
+                                v-for="tag in tags"
+                                :key="tag"
+                                :to="`/content?topic=${tag}`"
+                            >
+                                <TagPill variant="topic" :tag="tag" />
+                            </Link>
+                            <Link :to="`/content?type=${type}`">
+                                <TagPill variant="type" :tag="type" />
+                            </Link>
+                        </div>
                         <div class="description" v-if="description">
                             {{ description }}
                         </div>
@@ -175,7 +188,7 @@
 
 <style lang="scss">
     .post {
-        padding-top: 2em;
+        padding-top: 4em;
         padding-bottom: 3em;
         font-size: 1.125em;
 
@@ -203,17 +216,31 @@
         .metas {
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             gap: 1em;
+
+            .back-link {
+                margin-bottom: 1.5em;
+                font-size: 0.8em;
+                color: var(--blue-700);
+            }
 
             h1 {
                 text-transform: none;
                 font-size: 3em;
                 line-height: 1.15;
                 margin-bottom: 0;
+                margin-top: 0;
 
                 @media (max-width: 1300px) {
                     font-size: 2em;
                 }
+            }
+
+            .tags {
+                display: flex;
+                gap: 0.5em;
+                flex-wrap: wrap;
             }
         }
 
@@ -251,7 +278,6 @@
                 position: sticky;
                 top: 1em;
                 align-self: flex-start;
-                padding-top: 1.25em;
                 padding-bottom: 4em;
                 width: 24em;
 

@@ -117,9 +117,5 @@
                 -21px
             ); // Faking left alignment of text A instead of the graphic
         }
-
-        .cta {
-            border: 1px solid;
-        }
     }
 </style>

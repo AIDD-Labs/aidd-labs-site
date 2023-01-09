@@ -44,6 +44,7 @@
 
         font-weight: 600;
         background: var(--yellow-500);
+        border: 1px solid var(--blue-900);
 
         &:hover {
             background: #3a58c4;

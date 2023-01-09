@@ -1,12 +1,10 @@
 <script>
     import {mapState} from "vuex";
-    import Work from "@/components/Work.vue";
     import LightBox from "@/components/global/Lightbox.vue";
 
     export default {
         name: "Index",
         components: {
-            Work,
             LightBox,
         },
         data() {

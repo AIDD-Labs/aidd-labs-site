@@ -23,7 +23,9 @@
                     "podcast",
                     "software",
                 ],
-                topics: ["all", "risk", "impact", "recovery"],
+                topics: ["all", "risk", "impact", "recovery"], // Todo, set these lists
+                // from main.js so we can dynamically snag all topics and types. Then store in the store,
+                // and pull them into here via mapstate (or props if you think this sill be used elsewhere);
 
                 // We are not supporting multiple filters per type
                 activeFilters: {
@@ -220,7 +222,7 @@
                     border-radius: 2em;
                     // position: relative;
                     transform: scale(0);
-                    box-shadow: inset 0em 1em var(--purple-blue-300);
+                    box-shadow: inset 0em 1em var(--blue-400);
                     transition: 120ms transform ease-in-out;
                 }
 
