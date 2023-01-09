@@ -12,6 +12,8 @@
             return {
                 ...this.$attrs.frontmatter,
 
+                isLoaded: false,
+
                 breakpointWatcher: "",
 
                 readingTime: {},
@@ -47,10 +49,10 @@
             },
             primaryAuthor() {
                 if (this.members?.length) {
-                    return this.members[0]
+                    return this.members[0];
                     // Need to specifically check for members and length here for ssg build
                 } else {
-                    return "sabine-loos"
+                    return "sabine-loos";
                 }
             },
         },
@@ -133,6 +135,10 @@
                 this.readingTimeUnit =
                     this.readingTime.readingTime < 2 ? "minute" : "minutes";
             }
+
+            if (this.title) {
+                this.isLoaded = true;
+            }
         },
         beforeUnmount() {
             window.removEventListener("scroll", this.onScroll);
@@ -142,9 +148,11 @@
 
 <template>
     <MaxWidth class="post" size="m">
-        <div class="post-center">
+        <div class="post-center" v-if="isLoaded">
             <div class="metas">
-                <Link class="back-link" to="/content"><span class="arrow">← &nbsp;</span>Content</Link>
+                <Link class="back-link" to="/content"
+                    ><span class="arrow">← &nbsp;</span>Content</Link
+                >
                 <h1>{{ title }}</h1>
             </div>
             <div class="flex-wrapper">
