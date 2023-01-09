@@ -1,10 +1,10 @@
 ---
-slug: "madeline-karr"
-name: "Madeline Karr"
-title: "Masters Researcher"
-affiliation: "CU Boulder & USGS"
-img: "img/member-madeline.png"
-url: "https://www.linkedin.com/in/maddie-karr"
+slug: "elijah-knodel"
+name: "Elijah Knodel"
+title: "Undergraduate Researcher"
+affiliation: "Colorado School of Mines & USGS"
+img: "img/member-elijah.png"
+component: "Member"
 ---
 
 Beep boop banana pants.
