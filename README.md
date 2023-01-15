@@ -12,12 +12,12 @@ Vue 3 + Vite + Markdown option
 
 1. Open terminal and clone this repo:
 ```
-git clone git@github.com:margueriteroth/sabine-vue-vite-ssg.git
+git clone git@github.com:sabineloos/lab-site.git
 ```
 
 2. Go into that folder via terminal:
 ```
-cd sabine-vue-vite-ssg
+cd lab-site
 ```
 
 3. Install the node packages listed out in `package.json`:
