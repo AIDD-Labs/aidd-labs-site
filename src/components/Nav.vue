@@ -51,7 +51,7 @@
             <Link v-for="item in ['content', 'team']" :key="item" :to="`/${item}`">
                 {{ item }}
             </Link>
-            <Link class="cta" to="/contact" is-button> Work with us! </Link>
+            <!-- <Link class="cta" to="/team" is-button> Work with us! </Link> -->
         </div>
     </MaxWidth>
 </template>
