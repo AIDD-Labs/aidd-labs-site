@@ -181,6 +181,9 @@
                             <div class="publication" v-if="publication">
                                 <strong>Publication:</strong> {{ publication }}
                             </div>
+                            <div class="date" v-if="date">
+                                <strong>Publication date:</strong> {{ date }}
+                            </div>
                             <div class="citation" v-if="citation">
                                 <strong>Citation:</strong> {{ citation }}
                             </div>

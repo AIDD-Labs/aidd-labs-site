@@ -1,6 +1,6 @@
 ---
 slug: "sabine-loos"
-name: "Dr. Sabine Loos"
+name: "Sabine Loos"
 title: "Principal Investigator"
 img: "img/member-sabine.png"
 url: "https://sabine-loos.com/"
