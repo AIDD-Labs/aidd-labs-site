@@ -45,7 +45,7 @@
                 return this.$route.meta.date;
             },
             authorList() {
-                return this.authors?.split() || ["Dr. Sabine Loos"];
+                return this.authors?.split() || ["Sabine Loos"];
             },
             primaryAuthor() {
                 if (this.members?.length) {
@@ -181,9 +181,15 @@
                             <div class="publication" v-if="publication">
                                 <strong>Publication:</strong> {{ publication }}
                             </div>
+                            <div class="date" v-if="date">
+                                <strong>Publication date:</strong> {{ date }}
+                            </div>
                             <div class="citation" v-if="citation">
                                 <strong>Citation:</strong> {{ citation }}
                             </div>
+                            <!-- <div class="url" v-if="url">
+                                <strong>Open Access File:</strong> {{ url }}
+                            </div> -->
                         </div>
                     </div>
                     <div class="article-text">

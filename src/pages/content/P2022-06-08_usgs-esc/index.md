@@ -26,3 +26,4 @@ The first is on developing actionable damage data, in which we identify how diff
 
 Broadly, evaluating the what, why, and who of earthquake information supports the thoughtful design of future products that are more useful to local planners, reflect the multiple disciplines that study disaster, and, ultimately, inform decisions that lead to more effective and equitable outcomes.
 
+<Link is-button to="https://earthquake.usgs.gov/contactus/menlo/seminars/1382"> Watch the presentation here! </Link>
