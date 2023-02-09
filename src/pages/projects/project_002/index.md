@@ -2,6 +2,9 @@
 slug: "project-002" # match folder label name
 date: "2019-09-03"
 tags: ["recovery", "statistical-modeling", "mixed-methods"] # "recovery", "impact", "statistical-modeling"
+topic: "Risk"
+location: 'Nepal'
+methods: [ "qualitative", "visualization" ]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
 content: ["nhrm-converge", "dataviz-toolset"]
 title: "Project 002" # insert title here
