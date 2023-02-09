@@ -65,6 +65,10 @@ const store = createStore({
             state.contents = sortedContents; // might want to add content by tag
         },
 
+        loadProjects(state, {projects}) {
+            state.projects = projects;
+        },
+
         setInfoDensity(state, density) {
             state.infoDensity = density;
         },
@@ -94,6 +98,12 @@ const store = createStore({
         loadContents({commit}, contents) {
             commit("loadContents", {
                 contents: contents,
+            });
+        },
+
+        loadProjects({commit}, projects) {
+            commit("loadProjects", {
+                projects: projects
             });
         },
 
