@@ -12,10 +12,26 @@
         computed: {
             ...mapState({
                 contents: state => state.contents,
+                tags: state => state.contentMetadata.tags,
+                types: state => state.contentMetadata.types
             }),
             activeFilters() {
                 return this.$route.query;
             },
+            filters() {
+                return [
+                    {
+                        key: 'type',
+                        label: "Type",
+                        options: this.types,
+                    },
+                    {
+                        key: 'tags',
+                        label: "Topic",
+                        options: this.tags,
+                    }
+                ]
+            }
         },
 
         methods: {
@@ -69,7 +85,7 @@
             <h1>Content</h1>
         </div>
         <div class="grid">
-            <FilterBar :content="contents" />
+            <FilterBar :entities="contents" :filters="filters"/>
             <Loading v-if="!isLoaded" />
             <div
                 class="contentpage__contents"
