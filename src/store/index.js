@@ -7,6 +7,15 @@ const store = createStore({
             postsById: {},
             members: {},
             contents: [],
+            projects: [],
+            contentMetadata: {
+                types: [],
+                tags: []
+            },
+            projectMetadata: {
+                tags: [],
+                methods: []
+            },
             infoDensity: "low",
             themeColor:
                 typeof window !== "undefined" && localStorage.getItem("sb____")
@@ -65,8 +74,42 @@ const store = createStore({
             state.contents = sortedContents; // might want to add content by tag
         },
 
+        setContentMetadata(state, {contents}) {
+            const contentMetadata = contents.reduce((acc, content) => {
+                const { tags, type } = content.meta;
+                const concatenatedTags = acc.tags.concat(tags);
+
+                !acc.types.includes(type) && acc.types.push(type);
+                const uniqueTags = concatenatedTags.filter((tag, idx) => concatenatedTags.indexOf(tag) === idx);
+                
+                acc.tags = uniqueTags;
+
+                return acc;
+            }, { types: [], tags: [] });
+
+            state.contentMetadata = contentMetadata;
+        },
+
         loadProjects(state, {projects}) {
             state.projects = projects;
+        },
+
+        setProjectMetadata(state, {projects}) {
+            const projectMetadata = projects.reduce((acc, project) => {
+                const { methods, tags } = project.meta;
+                const concatenatedMethods = acc.methods.concat(methods);
+                const concatenatedTags = acc.tags.concat(tags);
+
+                const uniqueMethods = concatenatedMethods.filter((method, idx) => concatenatedMethods.indexOf(method) === idx);
+                const uniqueTags = concatenatedTags.filter((tag, idx) => concatenatedTags.indexOf(tag) === idx);
+
+                acc.methods = uniqueMethods;
+                acc.tags = uniqueTags;
+
+                return acc;
+            }, { tags: [], methods: [] });
+
+            state.projectMetadata = projectMetadata;
         },
 
         setInfoDensity(state, density) {
@@ -99,12 +142,18 @@ const store = createStore({
             commit("loadContents", {
                 contents: contents,
             });
+            commit("setContentMetadata", {
+                contents: contents
+            });
         },
 
         loadProjects({commit}, projects) {
             commit("loadProjects", {
                 projects: projects
             });
+            commit("setProjectMetadata", {
+                projects: projects
+            })
         },
 
         setThemeColor({commit}, theme) {
