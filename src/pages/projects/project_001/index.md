@@ -4,7 +4,7 @@ date: "2019-09-03"
 tags: ["recovery", "statistical-modeling", "mixed-methods"] # "recovery", "impact", "statistical-modeling"
 topic: "Risk"
 location: 'Nepal'
-methods: [ "qualitative", "visualization" ]
+methods: [ "qualitative" ]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
 content: ["nhrm-converge", "dataviz-toolset"]
 title: "Project 001" # insert title here

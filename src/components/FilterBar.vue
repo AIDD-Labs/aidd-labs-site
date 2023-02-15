@@ -58,7 +58,7 @@
             },
             initActiveFilters() {
                 let query = {...this.$route.query};
-                let filters = {...this.activeFilters};
+                let filters = Object.fromEntries(this.filters.map(filter => [ filter.queryParam, 'all' ]));
 
                 Object.keys(query).forEach(key => {
                     filters[key] = query[key];
@@ -105,8 +105,8 @@
                         <input
                             type="radio"
                             value="all"
-                            v-model="activeFilters[filter.label.toLowerCase()]"
-                            @change="changeQueryParams({[filter.label.toLowerCase()]: 'all'})"
+                            v-model="activeFilters[filter.queryParam]"
+                            @change="changeQueryParams({[filter.queryParam]: 'all'})"
                         />
                         All
                     </label>
@@ -115,8 +115,8 @@
                         <input
                             type="radio"
                             :value="option"
-                            v-model="activeFilters[filter.label.toLowerCase()]"
-                            @change="changeQueryParams({[filter.label.toLowerCase()]: option})"
+                            v-model="activeFilters[filter.queryParam]"
+                            @change="changeQueryParams({[filter.queryParam]: option})"
                         />
                         {{ getLabel(option) }}
                         <div v-if="option != 'all'">

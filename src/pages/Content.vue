@@ -12,8 +12,7 @@
         computed: {
             ...mapState({
                 contents: state => state.contents,
-                tags: state => state.contentMetadata.tags,
-                types: state => state.contentMetadata.types
+                contentMetadata: state => state.contentMetadata
             }),
             activeFilters() {
                 return this.$route.query;
@@ -23,12 +22,14 @@
                     {
                         key: 'type',
                         label: "Type",
-                        options: this.types,
+                        queryParam: 'type',
+                        options: this.contentMetadata.types,
                     },
                     {
                         key: 'tags',
                         label: "Topic",
-                        options: this.tags,
+                        queryParam: 'topic',
+                        options: this.contentMetadata.tags,
                     }
                 ]
             }
@@ -48,8 +49,7 @@
                         return row;
                     } else {
                         let passesType = !query.type || row.meta.type == query.type;
-                        let passesTopic =
-                            !query.topic || row.meta.tags.includes(query.topic);
+                        let passesTopic = !query.topic || row.meta.tags.includes(query.topic);
 
                         if (passesType && passesTopic) {
                             return row;
