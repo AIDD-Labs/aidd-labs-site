@@ -5,67 +5,53 @@
         name: "FilterBar",
         components: {},
         props: {
-            content: {
+            entities: {
                 type: Array,
                 required: true,
             },
+            filters: {
+                type: Array,
+                required: true
+            }
         },
         data() {
             return {
                 isLoaded: false,
-                types: [
-                    "all",
-                    "journal article",
-                    "report",
-                    "presentation",
-                    "visualization",
-                    "blog",
-                    "podcast",
-                    "software",
-                ],
-                topics: ["all", "risk", "impact", "recovery"], // Todo, set these lists
-                // from main.js so we can dynamically snag all topics and types. Then store in the store,
-                // and pull them into here via mapstate (or props if you think this sill be used elsewhere);
-
-                // We are not supporting multiple filters per type
-                activeFilters: {
-                    type: "all",
-                    topic: "all",
-                },
-
+                activeFilters: {},
                 filterCounts: {}, // adding this until it gets too slow
-
-                filteredContent: [],
             };
         },
         computed: {
-            ...mapState({}),
+            ...mapState({})
         },
         methods: {
             initFilterCounts() {
                 let filterCounts = {};
-                let categories = Object.keys(this.activeFilters);
-
+    
                 // Set up starting empty counts of 0
-                categories.forEach(cat => {
-                    let category = `${cat}s`;
-                    filterCounts[category] = {};
-                    let items = [...this[category]];
-                    filterCounts[category] = Object.fromEntries(
-                        items.map(item => [utils.slugify(item), 0])
+                this.filters.forEach(filter => {
+                    const { options, key } = filter;
+                    
+                    filterCounts[key] = {};
+                    filterCounts[key] = Object.fromEntries(
+                        options.map(option => [utils.slugify(option), 0])
                     );
                 });
 
-                // Loop through content, update counts
-                this.content.forEach(row => {
-                    let type = row.meta.type;
-                    filterCounts.types[type] += 1;
+                // Loop through entities and update counts
+                this.entities.forEach(entity => {
+                    this.filters.forEach(filter => {
+                        const { key } = filter;
+                        const value = entity.meta[key];
 
-                    this.topics.forEach(filterTopic => {
-                        if (row.meta.tags.includes(filterTopic)) {
-                            filterCounts.topics[filterTopic] += 1;
+                        if (Array.isArray(value)) {
+                            value.forEach(item => {
+                                entity.meta[key].includes(item) && (filterCounts[key][item] += 1);
+                            });
+                        } else {
+                            filterCounts[key][value] +=1;
                         }
-                    });
+                    })
                 });
 
                 this.filterCounts = filterCounts;
@@ -110,37 +96,31 @@
             visualizations, reports, presentations, and podcasts on our work. -->
         </p>
         <div class="filter-bar__filters">
-            <div class="filter-bar__filters">
-                <h2 class="">Type</h2>
-                <Loading v-if="!filterCounts.types" />
-                <div class="radio-group" v-if="filterCounts.types">
-                    <label v-for="filter in types" :key="filter" class="radio">
+            <div class="filter-bar__filters" v-for="filter in filters">
+                <h2 class="">{{filter.label}}</h2>
+                <Loading v-if="!filterCounts[filter.key]" />
+                <div class="radio-group" v-if="filterCounts[filter.key]">
+                    <!-- ALL radio option -->
+                    <label class="radio">
                         <input
                             type="radio"
-                            :value="filter"
-                            v-model="activeFilters.type"
-                            @change="changeQueryParams({type: filter})"
+                            value="all"
+                            v-model="activeFilters[filter.label.toLowerCase()]"
+                            @change="changeQueryParams({[filter.label.toLowerCase()]: 'all'})"
                         />
-                        {{ getLabel(filter) }}
-                        <div v-if="filter != 'all'">
-                            ({{ filterCounts.types[slugify(filter)] }})
-                        </div>
+                        All
                     </label>
-                </div>
-            </div>
-            <div class="filter-bar__filters">
-                <h2 class="">Topic</h2>
-                <div class="radio-group" v-if="filterCounts.topics">
-                    <label v-for="filter in topics" :key="filter" class="radio">
+                    <!-- The rest of the filter options -->
+                    <label v-for="option in filter.options" :key="option" class="radio">
                         <input
                             type="radio"
-                            :value="filter"
-                            v-model="activeFilters.topic"
-                            @change="changeQueryParams({topic: filter})"
+                            :value="option"
+                            v-model="activeFilters[filter.label.toLowerCase()]"
+                            @change="changeQueryParams({[filter.label.toLowerCase()]: option})"
                         />
-                        {{ getLabel(filter) }}
-                        <div v-if="filter != 'all'">
-                            ({{ filterCounts.topics[filter] }})
+                        {{ getLabel(option) }}
+                        <div v-if="option != 'all'">
+                            ({{ filterCounts[filter.key][slugify(option)] }})
                         </div>
                     </label>
                 </div>
