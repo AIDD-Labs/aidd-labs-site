@@ -48,7 +48,7 @@
             <!--
             TODO: implement all routes: ['team','posts', 'projects', 'content', 'events']
             -->
-            <Link v-for="item in ['projects', 'content', 'team']" :key="item" :to="`/${item}`">
+            <Link v-for="item in ['content', 'team']" :key="item" :to="`/${item}`">
                 {{ item }}
             </Link>
             <!-- <Link class="cta" to="/team" is-button> Work with us! </Link> -->
