@@ -2,7 +2,7 @@
 slug: "gdif-efficacy" # must match folder name (for now)
 date: "2022-08-08"
 status: "published"
-tags: ["impact", "statistical-modeling", "nepal", "new-zealand", "haiti", "italy"]
+tags: ["impact"]
 type: "journal-article"
 section: ["contents"]
 members: ["sabine-loos", "jennifer-levitt", "kei-tomozawa"] # first author's image will show

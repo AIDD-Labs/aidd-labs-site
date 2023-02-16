@@ -2,7 +2,7 @@
 slug: "usgs-esc"
 date: ["2022-06-08"]
 status: "published"
-tags: ["recovery", "impact", "risk","statistical-modeling","nepal", "new-zealand", "haiti"]
+tags: ["recovery", "impact", "risk", "equity"]
 type: "presentation"
 section: ["contents"]
 members: ["sabine-loos"]

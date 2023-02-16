@@ -2,7 +2,7 @@
 slug: "umich-pod" # match folder label name
 date: "2022-08-21"
 status: "published"
-tags: ["equity", "overview"] # "recovery", "impact", "statistical-modeling"
+tags: ["equity"] # "recovery", "impact", "statistical-modeling"
 locations: [] # "nepal", "new-zealand", "haiti", "italy"
 type: "podcast" # "blog", "report", "journal-article", "visualization"
 section: ["contents"]

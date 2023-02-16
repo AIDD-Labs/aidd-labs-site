@@ -2,7 +2,7 @@
 slug: "gdif-nepal"
 date: "2020-04-01"
 status: "published"
-tags: ["impact", "statistical-modeling","nepal"]
+tags: ["impact"]
 type: "journal-article"
 section: ["contents"]
 members: ["sabine-loos"]
