@@ -1,13 +1,14 @@
 ---
 slug: "damage-data-integration" # match folder label name
 date: "2021" # latest 
-topic: "recovery"
+topic: "impact"
 locations: ["nepal", "new-zealand", "italy", "haiti"]
 methods: [ "statistical-modeling" ]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
-content: ["nhrm-converge", "dataviz-toolset"]
+content: ["gdif-nepal", "gdif-efficacy", "usgs-esc", "ier-report"]
 title: "Building damage estimation" # insert title here
-description: "The Asia-Pacific region is an exciting opportunity for transdisciplinary work, because the research space is still rapidly growing and forming, the region is traditionally less data-rich, which inspires more creative data collection and data use; meanwhile, the hazards are numerous and the risks rapidly evolving due to population growth and climate change, and requires the need to balance development with disaster risk reduction." # insert a one sentence description here
+thumbnail: "src/pages/projects/2018_Damage-Data-Integration/fig2-gdifschematic-v1.png"
+description: "Update" # insert a one sentence description here
 ---
 <div class="hero-wrapper">
     <!-- Not totally sure why the public paths are failing the build rn. Todo. -->

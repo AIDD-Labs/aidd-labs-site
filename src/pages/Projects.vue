@@ -109,7 +109,7 @@
                             <div class="img-container">
                                 <img
                                     :src="
-                                        project.meta.thumbnail || '/img/home-hero-1.png'
+                                        project.meta.thumbnail ||  '/img/home-hero-1.png'
                                     "
                                 />
                             </div>
