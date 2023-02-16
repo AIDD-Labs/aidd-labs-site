@@ -1,13 +1,12 @@
 ---
-slug: "project-002" # match folder label name
-date: "2019-09-03"
-tags: ["recovery", "statistical-modeling", "mixed-methods"] # "recovery", "impact", "statistical-modeling"
-topic: "Risk"
-location: 'Nepal'
+slug: "userneeds-equity-risk" # match folder label name
+date: "2023"
+topic: "risk"
+locations: ["nepal"]
 methods: [ "qualitative", "visualization" ]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
 content: ["nhrm-converge", "dataviz-toolset"]
-title: "Project 002" # insert title here
+title: "User Needs for Equity-Aware Loss Models" # insert title here
 description: "The Asia-Pacific region is an exciting opportunity for transdisciplinary work, because the research space is still rapidly growing and forming, the region is traditionally less data-rich, which inspires more creative data collection and data use; meanwhile, the hazards are numerous and the risks rapidly evolving due to population growth and climate change, and requires the need to balance development with disaster risk reduction." # insert a one sentence description here
 ---
 <div class="hero-wrapper">
