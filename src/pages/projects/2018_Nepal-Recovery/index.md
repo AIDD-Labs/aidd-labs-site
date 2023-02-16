@@ -1,7 +1,7 @@
 ---
 slug: "nepal-recovery" # match folder label name
 date: "2023"
-topic: ["recovery", "impact"]
+topic: ["recovery", "impact", "equity"]
 locations: ["nepal"]
 methods: [ "statistical-modeling", "survey-collection", "mixed-methods"]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
