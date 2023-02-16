@@ -13,7 +13,6 @@
             ...mapState({
                 projects: state => state.projects,
                 projectMetadata: state => state.projectMetadata,
-                contents: state => state.contents
             }),
             activeFilters() {
                 return this.$route.query;
