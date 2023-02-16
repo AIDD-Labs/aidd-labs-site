@@ -1,7 +1,7 @@
 ---
 slug: "userneeds-equity-risk" # match folder label name
 date: "2023"
-topic: ["risk", "impact"]
+topic: ["risk", "impact", "equity"]
 locations: ["global"]
 methods: [ "qualitative", "mixed-methods"]
 members: ["sabine-loos", "marisa-macias", "madeline-karr", "elijah-knodel"] # insert your slug here, e.g., "sabine-loos"
