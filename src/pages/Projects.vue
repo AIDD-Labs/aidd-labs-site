@@ -2,17 +2,18 @@
     import {mapState} from "vuex";
 
     export default {
-        name: "Content",
+        name: "Projects",
         data() {
             return {
                 isLoaded: false,
-                filteredContent: [],
+                filteredProjects: [],
             };
         },
         computed: {
             ...mapState({
-                contents: state => state.contents,
-                contentMetadata: state => state.contentMetadata
+                projects: state => state.projects,
+                projectMetadata: state => state.projectMetadata,
+                contents: state => state.contents
             }),
             activeFilters() {
                 return this.$route.query;
@@ -20,27 +21,27 @@
             filters() {
                 return [
                     {
-                        key: 'type',
-                        label: "Type",
-                        queryParam: 'type',
-                        options: this.contentMetadata.types,
+                        key: 'methods',
+                        label: "Methods",
+                        queryParam: 'method',
+                        options: this.projectMetadata.methods,
                     },
                     {
                         key: 'tags',
                         label: "Topic",
                         queryParam: 'topic',
-                        options: this.contentMetadata.tags,
+                        options: this.projectMetadata.tags,
                     }
                 ]
             }
         },
 
         methods: {
-            processContent() {
-                let processed = [...this.contents];
+            processProjects() {
+                let processed = [...this.projects];
                 let query = this.$route.query;
 
-                if (!this.contents.length) {
+                if (!this.projects.length) {
                     return;
                 }
 
@@ -48,16 +49,16 @@
                     if (!Object.keys(query).length) {
                         return row;
                     } else {
-                        let passesType = !query.type || row.meta.type == query.type;
+                        let passesMethod = !query.method || row.meta.methods.includes(query.method);
                         let passesTopic = !query.topic || row.meta.tags.includes(query.topic);
 
-                        if (passesType && passesTopic) {
+                        if (passesMethod && passesTopic) {
                             return row;
                         }
                     }
                 });
 
-                this.filteredContent = processed;
+                this.filteredProjects = processed;
                 this.isLoaded = true;
             },
         },
@@ -66,7 +67,7 @@
                 immediate: true,
                 handler() {
                     this.isLoaded = false;
-                    this.processContent();
+                    this.processProjects();
                 },
             },
         },
@@ -82,27 +83,27 @@
     />
     <MaxWidth class="contentpage container" size="m">
         <div class="contentpage__about">
-            <h1>Content</h1>
+            <h1>Projects</h1>
         </div>
         <div class="grid">
-            <FilterBar :entities="contents" :filters="filters"/>
+            <FilterBar :entities="projects" :filters="filters"/>
             <Loading v-if="!isLoaded" />
             <div
                 class="contentpage__contents"
                 v-if="isLoaded"
-                :style="{alignItems: filteredContent.length <= 4 && 'flex-start'}"
+                :style="{alignItems: filteredProjects.length <= 4 && 'flex-start'}"
             >
                 <div
-                    v-for="content in filteredContent"
-                    :key="content.slug"
+                    v-for="project in filteredProjects"
+                    :key="project.slug"
                     class="content"
                 >
-                    <Link no-decoration :to="`/content/${content.meta.slug}`" class="member card">
+                    <Link no-decoration :to="`/projects/${project.meta.slug}`" class="member card">
                         <div class="hoverwrap">
                             <div class="img-container">
                                 <img
                                     :src="
-                                        content.meta.thumbnail || '/img/home-hero-1.png'
+                                        project.meta.thumbnail || '/img/home-hero-1.png'
                                     "
                                 />
                             </div>
@@ -112,7 +113,7 @@
                             </div>
                         </div>
                         <div class="metas">
-                            {{ content.meta.title }}
+                            {{ project.meta.title }}
                         </div>
                     </Link>
                 </div>
