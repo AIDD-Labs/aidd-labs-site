@@ -1,6 +1,6 @@
 ---
 slug: "damage-data-integration" # match folder label name
-date: "2019-09-03" # latest 
+date: "2021" # latest 
 topic: "recovery"
 locations: ["nepal", "new-zealand", "italy", "haiti"]
 methods: [ "statistical-modeling" ]
