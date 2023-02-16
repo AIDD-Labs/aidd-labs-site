@@ -92,7 +92,15 @@ const store = createStore({
         },
 
         loadProjects(state, {projects}) {
-            state.projects = projects;
+            // state.projects = projects;
+            let sortedProjects = [...projects];
+
+            let recentDateProjects = arr => new Date(arr[arr.length - 1]);
+            sortedProjects = sortedProjects.sort((a, b) => {
+                return recentDateProjects(b.meta.date) - recentDateProjects(a.meta.date);
+            });
+
+            state.projects = sortedProjects; 
         },
 
         setProjectMetadata(state, {projects}) {
