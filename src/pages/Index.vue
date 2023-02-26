@@ -13,8 +13,8 @@
                 aboutState: "mission",
                 lightbox: {
                     images: {
-                        thumbnails: ["home-approach.jpg"],
-                        large: ["home-approach.jpg"],
+                        thumbnails: ["home-approach.png"],
+                        large: ["home-approach.png"],
                     },
                     captions: ["The AIDD labs approach"],
                     thumbnailsPath: "/img/",
@@ -144,12 +144,12 @@
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://www.data4sdgs.org/"
-                            ><img src="/img/partner-GPSDD.jpg"
+                            ><img src="/img/partner-GPSDD.png"
                         /></a>
                         <a href="#"><img src="/img/partner-tfscb.png" /></a>
                         <a href="#"><img src="/img/partner-WBibrd.png" /></a>
                         <a href="#"><img src="/img/partner-kwpf.png" /></a>
-                        <a href="#"><img src="/img/partner-UKaid.jpg" /></a>
+                        <a href="#"><img src="/img/partner-UKaid.png" /></a>
                         <a href="#"><img src="/img/partner-irishAid.png" /></a>
                         <!-- Below is the width of 1400 px -->
                         <a
@@ -168,7 +168,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://www.data4sdgs.org/"
-                            ><img src="/img/partner-GPSDD.jpg"
+                            ><img src="/img/partner-GPSDD.png"
                         /></a>
                         <a href="#"><img src="/img/partner-tfscb.png" /></a>
                         <a href="#"><img src="/img/partner-WBibrd.png" /></a>

@@ -10,7 +10,7 @@ members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
 project: "Informatics for equitable recovery" # associate this with the slug for a project
 is_featured: false
 url: "https://urbanresilience.stanford.edu/news/converging-disaster-researchers-asia-pacific" # include link to open pdf file
-thumbnail: "img/content-b-nhrm-converge.png" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.jpeg"
+thumbnail: "img/content-b-nhrm-converge.png" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.png"
 title: "Converging Disaster Researchers in the Asia Pacific" # insert title here
 authors: "Sabine Loos and Yolanda Lin" # insert full author list here, to be listed publicly
 publication: "Stanford Urban Resilience Initiative" # insert publication location here (like the journal)
@@ -20,7 +20,7 @@ abstract: "The Asia-Pacific region is an exciting opportunity for transdisciplin
 ---
 <div class="hero-wrapper">
     <!-- Not totally sure why the public paths are failing the build rn. Todo. -->
-    <img src="./nhrm-converge.webp" :style="{maxWidth: '900px', margin: '0 auto'}"/>
+    <img src="./nhrm-converge.png" :style="{maxWidth: '900px', margin: '0 auto'}"/>
 </div>
 
 Monday morning, July 15, 2019, the first full day of the 44th Annual Natural Hazards Research and Applications Workshop: not quite knowing what to expect, we (Sabine Loos and Yolanda Lin) were skeptical about the first item on the agenda for the day. It looked as though a full hour and a half was blocked out for introductions — turns out, every one of those 90 minutes was completely necessary because this workshop starts with the tradition of every participant (this year, a record ~650!) standing up to introduce themselves by giving their name and affiliation. Our skepticism melted away when the introductions got underway, and in that opening hour and a half, we knew there was something very different about this conference: personal, interactive, vibrant, dynamic — a community we knew we were excited to join.

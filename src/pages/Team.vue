@@ -14,8 +14,8 @@
                 isLoaded: false,
                 lightbox: {
                     images: {
-                    thumbnails: ["team-usgs.jpg"],
-                    large: ["team-usgs.jpg"]
+                    thumbnails: ["team-usgs.png"],
+                    large: ["team-usgs.png"]
                 },
                 captions: ["AIDD labs getting ice cream after work. Pictured clockwise: Sabine Loos, Marísa Macías, David Wald, Alex Brunson, Eli Knodel, Maddie Karr."],
                 thumbnailsPath: "/img/",
@@ -99,7 +99,7 @@
                     </b>
                     <br>
                 </p>
-                <!-- <div class="img-fullwidth"><img src="/img/team-usgs.jpg" alt="AIDD team USGS"></div> -->
+                <!-- <div class="img-fullwidth"><img src="/img/team-usgs.png" alt="AIDD team USGS"></div> -->
                 <LightBox
                         :thumbnails="lightbox.images.thumbnails"
                         :largeImages="lightbox.images.large"

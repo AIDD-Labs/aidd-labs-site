@@ -9,7 +9,7 @@ members: ["sabine-loos"]
 project: "Impact models for recovery"
 is_featured: false
 url: "https://urbanresilience.stanford.edu/news/informing-equitable-disaster-recovery-more-just-economic-losses"
-thumbnail: "img/content-b-ier-nepal.jpeg"
+thumbnail: "img/content-b-ier-nepal.png"
 title: "Informing Equitable Disaster Recovery: More Than Just Economic Losses"
 authors: "Sabine Loos"
 publication: "Stanford Urban Resilience Initiative"
@@ -20,12 +20,12 @@ abstract:
 
 <div class="hero-wrapper">
     <!-- Not totally sure why the public paths are failing the build rn. Todo. -->
-    <img src="./Bhaktapur-Loos.webp" :style="{maxWidth: '900px', margin: '0 auto'}"/>
+    <img src="./Bhaktapur-Loos.png" :style="{maxWidth: '900px', margin: '0 auto'}"/>
 </div>
 
 About a month ago, I was standing in front of a small conference room presenting to a group of Nepali civic tech enthusiasts about my professional journey to Kathmandu Living Labs (KLL). I received many thoughtful questions at the end of my presentation, but I’ve been reflecting on my answer to one specific question since I returned from my extended visit to Nepal. This question was posed by one of KLL’s interns, who has been deciding on which subject to study at university. He asked, “Why civil engineering?” Harmless enough, but we could extrapolate. Why are buildings and infrastructure important? I said something along the lines of: well, in my opinion, buildings and infrastructure systems make up the basis of civilization. After a disaster, having these basic needs covered, like safe shelter, frees up our minds to focus more on our next level of pursuits.
 
-![](./Loos-KLL.jpeg)
+![](./Loos-KLL.png)
 <em> Loos presenting at Kathmandu Living Labs – July 2018 </em>
 
 Thinking back to this moment, I’m not entirely satisfied with this answer. The obvious reason being that basic, physiological needs are comprised of much more than just safe shelter. At the same time, I didn’t acknowledge the incredible importance of the information required to advance decisions that fulfill these basic societal needs and support further development.

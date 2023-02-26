@@ -9,7 +9,7 @@ members: ["sabine-loos"]
 project: "Damage data integration"
 is_featured: false
 url: "https://drive.google.com/file/d/10QQAkBe1oaiMys8Nc0su0LT7vBxpyQWq/view"
-thumbnail: "img/content-j-gdif-nepal.jpeg"
+thumbnail: "img/content-j-gdif-nepal.png"
 title: "G-DIF: A Geospatial Data Integration Framework to Rapidly Estimate Post-Earthquake Damage"
 authors: "Sabine Loos, David Lallemant, Jack Baker, Jamie McCaughey, Nama Budhathoki, Sang-Ho Yun, Feroz Khan, Ritika Singh"
 publication: "Earthquake Spectra"
