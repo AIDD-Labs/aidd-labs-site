@@ -10,7 +10,7 @@ members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
 project: "crowdsourced-damage-assessment" # associate this with the slug for a project
 is_featured: false
 url: "https://purl.stanford.edu/bj915mt6570" # include link to open pdf file
-thumbnail: "img/content-t-radcrowd-report.jpg" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.jpeg"
+thumbnail: "img/content-t-radcrowd-report.png" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.png"
 title: "The Development and Uses of Crowdsourced Building Damage Information based on Remote-Sensing" # insert title here
 authors: "Sabine Loos, Karen Barns, Gitanjali Bhattacharjee, Rober Soden, Benjamin Herfort, Melanie Eckle, Cristiano Giovando, Blake Girardot, Gregory Deierlein, Anne Kiremidjian, Jack Baker, and David Lallemant" # insert full author list here, to be listed publicly
 publication: "John A. Blume Earthquake Engineering Center Technical Report Series" # insert publication location here (like the journal)

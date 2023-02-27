@@ -9,7 +9,7 @@ members: ["sabine-loos"]
 project: "Impact models for recovery"
 is_featured: false
 url: "https://earthenvironmentcommunity.nature.com/posts/big-data-for-whom-data-driven-estimates-to-prioritize-the-recovery-needs-of-vulnerable-populations-after-a-disaster"
-thumbnail: "img/content-b-ier-bigdata-nonrecovery.avif"
+thumbnail: "img/content-b-ier-bigdata-nonrecovery.png"
 title: "Big data for whom? Data-driven estimates to prioritize the recovery needs of vulnerable populations after a disaster"
 authors: "Sabine Loos"
 publication: "Stanford Urban Resilience Initiative"
@@ -20,7 +20,7 @@ abstract:
 
 <div class="hero-wrapper">
     <!-- Not totally sure why the public paths are failing the build rn. Todo. -->
-    <img src="./nepal_town.jpeg" :style="{maxWidth: '900px', margin: '0 auto'}"/>
+    <img src="./nepal_town.png" :style="{maxWidth: '900px', margin: '0 auto'}"/>
 </div>
 
 For years, international agencies have been effusing the benefits of [big data for sustainable development](https://www.un.org/en/global-issues/big-data-for-sustainable-development). Emerging technology–such as crowdsourcing, satellite imagery, and machine learning–have the power to better inform decision-making, especially those that support the [17 Sustainable Development Goals](https://www.un.org./sustainabledevelopment/sustainable-development-goals/). When a disaster occurs, overwhelming amounts of big data from emerging technology are produced with the intention to support disaster responders. We are seeing this now with the recent earthquakes in Turkey and Syria: [space agencies are processing satellite imagery to map faults and building damage](https://maps.disasters.nasa.gov/arcgis/apps/MinimalGallery/index.html?appid=cb116456d682456abc38b90d96a72713) or [digital humanitarians are crowdsourcing baseline data like roads and buildings](https://tasks.hotosm.org/projects/14232#description). 

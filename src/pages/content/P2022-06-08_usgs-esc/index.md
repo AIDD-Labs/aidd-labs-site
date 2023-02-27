@@ -9,7 +9,7 @@ members: ["sabine-loos"]
 project: ["Impact models for recovery", "Damage Data Integration"]
 is_featured: false
 url: "https://earthquake.usgs.gov/contactus/menlo/seminars/1382"
-thumbnail: "img/content-p-usgs-esc.jpeg"
+thumbnail: "img/content-p-usgs-esc.png"
 title: "Designing actionable and equitable earthquake impact information"
 authors: "Dr. Sabine Loos"
 publication: "US Geological Survey Earthquake Science Center Seminars"

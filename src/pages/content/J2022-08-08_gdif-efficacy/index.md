@@ -9,7 +9,7 @@ members: ["sabine-loos", "jennifer-levitt", "kei-tomozawa"] # first author's ima
 project: "Damage data integration"
 is_featured: false
 url: "https://drive.google.com/file/d/16Q01aXhOyfTMlF3jYCcOM4e97AnhXF9f/view?usp=share_link"
-thumbnail: "img/content-j-gdif-efficacy.jpg"
+thumbnail: "img/content-j-gdif-efficacy.png"
 title: "Efficacy of damage data integration: a comparative analysis of four major earthquakes"
 authors: "Sabine Loos, Jennifer Levitt, Kei Tomozawa, Jack Baker, David Lallemant"
 publication: "Natural Hazards Review"
