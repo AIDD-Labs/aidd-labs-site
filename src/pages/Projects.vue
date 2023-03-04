@@ -92,7 +92,7 @@
             <h1>Projects</h1>
         </div>
         <div class="grid">
-            <FilterBar :entities="projects" :filters="filters"/>
+            <FilterBar :entities="projects" :filters="filters" pageDescription="Our projects surround the use and design of disaster information."/>
             <Loading v-if="!isLoaded" />
             <div
                 class="projectpage__projects"
