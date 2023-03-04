@@ -5,6 +5,7 @@ title: "Masters researcher"
 affiliation: "Colorado School of Mines & USGS"
 img: "img/member-marisa.png"
 url: "https://www.usgs.gov/staff-profiles/marisa-macias"
+component: "Member"
 ---
 
 Beep boop banana pants.
