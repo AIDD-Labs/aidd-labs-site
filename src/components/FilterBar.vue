@@ -13,6 +13,10 @@
                 type: Array,
                 required: true
             },
+            pageDescription: {
+                type: String,
+                default: "",
+            },
         },
         data() {
             return {
@@ -89,12 +93,7 @@
 </script>
 <template>
     <div class="filter-bar">
-        <p>
-            We communicate our research for multiple audiences, making sure what we do
-            reaches the people who need it. 
-            <!-- Below, find our journal articles, blog posts,
-            visualizations, reports, presentations, and podcasts on our work. -->
-        </p>
+        <p>{{ pageDescription }}</p>
         <div class="filter-bar__filters">
             <div class="filter-bar__filters" v-for="filter in filters">
                 <h2 class="">{{filter.label}}</h2>
