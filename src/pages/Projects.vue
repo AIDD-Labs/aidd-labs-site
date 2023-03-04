@@ -97,7 +97,7 @@
             <div
                 class="projectpage__projects"
                 v-if="isLoaded"
-                :style="{alignItems: filteredProjects.length <= 4 && 'flex-start'}"
+                :style="{alignItems: filteredProjects.length <= 3 && 'flex-start'}"
             >
                 <div
                     v-for="project in filteredProjects"
@@ -172,7 +172,7 @@
 
         &__projects {
             display: grid;
-            grid-template-columns: repeat(4, minmax(100px, 1fr));
+            grid-template-columns: repeat(3, minmax(100px, 1fr));
             gap: 2em;
             flex: 1;
             //align-items: flex-start;
@@ -242,7 +242,8 @@
             position: relative;
             display: flex;
             align-items: flex-start;
-            background-color: rgba(30, 38, 72, 0.9);
+            background-color: rgba(30, 38, 72, 0.9); 
+            // rgba(30, 38, 72, 0.9);
             justify-content: center;
 
             img {
