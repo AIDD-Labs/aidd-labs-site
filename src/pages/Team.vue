@@ -57,12 +57,12 @@
                     <div class="img-container">
                         <img :src="members[member].meta.img" />
                     </div>
-                    <Link :to="members[member].meta.url" class="member" v-if="members[member].meta.url">
+                    <Link :to="members[member].meta.url" class="member" doOpenInNewTab v-if="members[member].meta.url">
                         <h3>{{ members[member].meta.name }}</h3>
                         <div>{{ members[member].meta.title }}</div>
                         <div>{{ members[member].meta.affiliation }}</div>
                     </Link>
-                    <div :to="members[member].meta.url" class="member" v-else>
+                    <div :to="members[member].meta.url" class="member" doOpenInNewTab v-else>
                         <h3>{{ members[member].meta.name }}</h3>
                         <div>{{ members[member].meta.title }}</div>
                         <div>{{ members[member].meta.affiliation }}</div>
@@ -72,11 +72,11 @@
         </div>
         <div class="team__alumni">
             <h2>Alumni</h2>
-            <Link to="https://www.linkedin.com/in/kei-tomozawa-640060151/"
+            <Link doOpenInNewTab to="https://www.linkedin.com/in/kei-tomozawa-640060151/"
                 >Kei Tomozawa</Link
             >, '22 - now at <Link to="https://www.fervoenergy.com/">Fervo Energy</Link>
             <br />
-            <Link to="https://www.linkedin.com/in/jenny-levitt-89b1551a2/"
+            <Link doOpenInNewTab to="https://www.linkedin.com/in/jenny-levitt-89b1551a2/ doOpenInNewTab"
                 >Jennifer Levitt</Link
             >, '23 - Stanford University
             <br />

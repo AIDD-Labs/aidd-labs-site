@@ -34,4 +34,4 @@ To make this more tangible, let’s take the example of the aftermath of the 201
 
 Because communities rely on this information after a disaster, we have brought together a team of civil engineers, disaster risk and recovery specialists, social scientists, and civic technologists to develop “Informatics for Equitable Recovery.” We’re re-evaluating how post-disaster impact information is collected and analyzed, using the 2015 Nepal earthquake as an initial case study.
 
-<Link is-button to="https://urbanresilience.stanford.edu/news/informing-equitable-disaster-recovery-more-just-economic-losses"> Read the full blog post here </Link>
+<Link is-button doOpenInNewTab to="https://urbanresilience.stanford.edu/news/informing-equitable-disaster-recovery-more-just-economic-losses"> Read the full blog post here </Link>

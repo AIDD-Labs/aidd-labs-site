@@ -21,7 +21,7 @@ abstract: "Crowdsourced analysis of satellite and aerial imagery has emerged as 
 Parallel to the crowdsourcing tests, an extensive ’demand survey’ of interviews with post-disaster practitioners was conducted to develop a timeline of six key decisions that are dependent on post-earthquake building damage data. The resulting framework can guide future research concerning rapid damage estimates to address decision-makers’ specific, and cross-cutting needs. Considering the results of the crowdsourcing tests and the demand survey, area-based approaches are promising methods to crowdsource building damage, because of its user-simplicity and ability to address specific post-disaster decisions." # add the abstract here
 ---
 
-<Link is-button to="https://purl.stanford.edu/bj915mt6570"> Read the full report here </Link>
+<Link is-button doOpenInNewTab to="https://purl.stanford.edu/bj915mt6570"> Read the full report here </Link>
 
 <br/>
 <br/>
@@ -45,4 +45,4 @@ As opposed to field-based assessments of damage which take extensive amounts of 
 Numerous technological and organizational advances have made remotely sensed data rapidly available soon after an earthquake. Now, earth observation data, from satellite or aircraft sensors, are able to actually observe the regional impact of an earthquake over a large spatial scale within a relevant time-scale (Joyce 2016). Furthermore, the growth of “digital humanitarianism” has led to an increase in valuable information delivered by online communities after a crisis. Such commu- nities, including Humanitarian OpenStreetMap Team (HOT), Standby Task Force, and Tomnod, organize after a disaster to rapidly map relevant characteristics in affected areas for on-the-ground decision-makers. The combination of remote sensing data and digital humanitarianism thereby is an extraordinary opportunity to crowdsource the assessment of earthquake-induced building damage.
 As opposed to field-based assessments of damage which take extensive amounts of time to cover the entire affected region, remote-sensing based observations can be produced within a couple of weeks. The Haiti 2010 earthquake is a remarkable example of the widespread usage of satellite imagery to rapidly map induced building damage, since the public access could access very high
 
-<Link is-button to="https://purl.stanford.edu/bj915mt6570"> Read the full report here </Link>
+<Link is-button doOpenInNewTab to="https://purl.stanford.edu/bj915mt6570"> Read the full report here </Link>

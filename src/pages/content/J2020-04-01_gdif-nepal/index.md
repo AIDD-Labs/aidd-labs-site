@@ -18,7 +18,7 @@ citation: "Loos, S., Lallemant, D., Baker, J., McCaughey, J., Yun, S.-H., Budhat
 abstract: "While unprecedented amounts of building damage data are now produced after earthquakes, stakeholders do not have a systematic method to synthesize and evaluate damage information, thus leaving many datasets unused. We propose a Geospa-tial Data Integration Framework (G-DIF) that employs regression kriging to combine a sparse sample of accurate field surveys with spatially exhaustive, though uncertain , damage data from forecasts or remote sensing. The framework can be implemented after an earthquake to produce a spatially-distributed estimate of damage and, importantly, its uncertainty. An example application with real data collected after the 2015 Nepal earthquake illustrates how regression kriging can combine a diversity of datasets-and downweight uninformative sources-reflecting its ability to accommodate context-specific variations in data type and quality. Through a sensitivity analysis on the number of field surveys, we demonstrate that with only a few surveys, this method can provide more accurate results than a standard engineering forecast."
 ---
 
-<Link is-button to="https://drive.google.com/file/d/10QQAkBe1oaiMys8Nc0su0LT7vBxpyQWq/view"> Read the full article here </Link>
+<Link is-button doOpenInNewTab to="https://drive.google.com/file/d/10QQAkBe1oaiMys8Nc0su0LT7vBxpyQWq/view"> Read the full article here </Link>
 
 <br/>
 
@@ -51,4 +51,4 @@ Therefore, instead of relying on a model that is built with training data from o
 
 In this paper, we illustrate the implementation of the framework with an example application using real damage data collected after the 2015 Nepal Earthquake. In this example, we show how G-DIF produces a single map of damage and a map of the estimation uncertainty, which can be used to model economic losses and guide further field surveying, respectively. Compared to traditional methods of rapidly estimating post-earthquake damage, G-DIF results in a damage estimate with lower overall error, higher resolution, and is specific to each context.
 
-<Link is-button to="https://drive.google.com/file/d/10QQAkBe1oaiMys8Nc0su0LT7vBxpyQWq/view"> Read More </Link>
+<Link is-button doOpenInNewTab to="https://drive.google.com/file/d/10QQAkBe1oaiMys8Nc0su0LT7vBxpyQWq/view"> Read More </Link>
