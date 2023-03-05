@@ -91,10 +91,11 @@
             </div>
         </div>
         <div class="member memberGrid" v-if="orientation == 'memberGrid'">
-            <div class="author-metas">
+            <div class="image-container">
+                <div class="block"></div>
                 <img :src="info.meta.img" />
             </div>
-            <div :to="`/team/${info.meta.slug}`" class="member">
+            <div :to="`/team/${info.meta.slug}`" class="metas">
                 <h3>{{ info.meta.name }}</h3>
                 <div>{{ info.meta.title }}</div>
                 <div>{{ info.meta.affiliation }}</div>
@@ -235,6 +236,35 @@
             .wavy {
                 padding: 0.25em 0;
                 color: var(--blue-200);
+            }
+        }
+        .memberGrid {
+            .image-container {
+                position: relative;
+
+                $bio-img-padding: 2em;
+
+                .block {
+                    border: 4px solid var(--blue-500);
+                    position: absolute;
+                    height: calc(100% - $bio-img-padding);
+                    width: calc(100% - $bio-img-padding);
+                    top: 0;
+                    left: 0;
+                }
+
+                img {
+                    padding-top: $bio-img-padding;
+                    padding-left: $bio-img-padding;
+                }
+            }
+
+            .metas {
+                h3 {
+                    margin: 0.25em 0;
+                }
+
+                text-align: center;
             }
         }
     }
