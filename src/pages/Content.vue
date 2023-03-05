@@ -145,8 +145,9 @@
 
         &__contents {
             display: grid;
-            grid-template-columns: repeat(4, minmax(100px, 1fr));
-            gap: 2em;
+            grid-template-columns: repeat(3, minmax(100px, 1fr));
+            gap: 1.5em;
+            row-gap: 3em;
             flex: 1;
             //align-items: flex-start;
 

@@ -65,14 +65,14 @@
             <h2>Lab posts by {{ name }}</h2>
             <div class="articles">
                 <ContentCard
-                v-for="article in articlesByAuthor"
-                :key="article"
-                :article="article"
+                    v-for="article in articlesByAuthor"
+                    :key="article"
+                    :article="article"
                 />
             </div>
         </MaxWidth>
         <MaxWidth size="s" class="team">
-            <h2>Other team members</h2>
+            <Link to="/team"> <h2>Other team members</h2></Link>
             <MembersGrid variant="m" :exclude="[slug]" />
         </MaxWidth>
         <MaxWidth size="s" class="content">

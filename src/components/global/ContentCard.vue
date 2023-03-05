@@ -1,5 +1,6 @@
 <script>
     import {mapState} from "vuex";
+    import {timeFormat, timeParse} from "d3";
     export default {
         name: "ContentCard",
         components: {},
@@ -11,21 +12,26 @@
         },
         emits: [],
         data() {
-            return {};
+            return {
+                ...this.article.meta,
+            };
         },
         computed: {
-            ...mapState({
-                user: state => state.user,
-                ctx: state => state.ctx,
-                features: state => state.features,
-            }),
             imageSrc() {
                 if (this.article?.meta?.thumbnail[0] != "/") {
-                    // Image paths need to start with `/` to specify root folder beginning
+                    // Image should start with `/` to specify root folder beginning
                     return `/${this.article.meta.thumbnail}`;
                 } else {
                     this.article?.meta?.thumbnail[0];
                 }
+            },
+            humanDate() {
+                if (!this.date) {
+                    return "";
+                }
+                let parseTime = timeParse("%Y-%m-%d");
+                let recentDate = parseTime(this.date);
+                return timeFormat(`%b %d, %Y`)(recentDate);
             },
         },
         methods: {},
@@ -33,109 +39,118 @@
     };
 </script>
 <template>
-    <div class="content">
-        <Link no-decoration :to="`/content/${article.meta.slug}`" class="content-card">
-            <div class="hoverwrap">
-                <div class="img-container">
-                    <img :src="imageSrc || '/img/home-hero-1.png'" />
-                </div>
-                <!-- <div class="hovercap">{{ content.meta.title }}</div> -->
-                <div class="hovercap">Read More <span class="arrow">→</span></div>
+    <Link no-decoration :to="`/content/${slug}`" class="content-card">
+        <div class="hover-plate">
+            <p class="description">
+                {{ description }}
+            </p>
+            <div>Read More <span class="arrow">→</span></div>
+        </div>
+        <div class="image-container">
+            <img :src="imageSrc" alt="" />
+        </div>
+        <div class="article-metas">
+            <TagPill :tag="tags[0]" />
+            <div class="date">
+                {{ humanDate }}
             </div>
-            <div class="metas">
-                {{ article.meta.title }}
-            </div>
-        </Link>
-    </div>
+        </div>
+        <h4 class="article-metas">
+            {{ title }}
+        </h4>
+        <AuthorBlock
+            no-link
+            orientation="landscape"
+            v-if="members"
+            :author="members[0]"
+        />
+    </Link>
 </template>
 <style lang="scss">
     .content-card {
-        .content {
-            flex: 1;
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        position: relative;
 
-        /* (A) WRAPPER */
-        .hoverwrap {
-            position: relative;
-        }
-
-        /* (B) RESPONSIVE IMAGE */
-        .hoverwrap img {
-            //display: block;
-            //width: 100%;
-        }
-
-        /* (C) CAPTION */
-        .hovercap {
-            /* (C1) DIMENSIONS */
-            box-sizing: border-box;
-            width: 100%;
-            height: 100%;
-
-            /* (C2) POSITION */
+        .hover-plate {
+            opacity: 0;
+            background-color: rgba(30, 38, 72, 0.9);
+            color: white;
+            padding: 1em;
             position: absolute;
             top: 0;
             left: 0;
-            text-align: left;
-            padding: 0.75em 1.25em;
-
-            /* (C3) COLORS */
-            background-color: rgba(30, 38, 72, 0.9);
-            color: white;
-        }
-
-        /* (D) SHOW/HIDE */
-        .hovercap {
-            visibility: none;
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-        .hoverwrap:hover .hovercap {
-            visibility: visible;
-            opacity: 1;
-        }
-
-        .img-container {
-            height: 230px;
-            overflow: hidden;
-            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            border-radius: 16px;
             display: flex;
-            align-items: flex-start;
-            background-color: rgba(30, 38, 72, 0.9);
+            flex-direction: column;
+            justify-content: space-between;
+
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+
+        &:hover {
+            .hover-plate {
+                opacity: 1;
+            }
+
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .image-container {
+            height: 10em;
+            overflow: hidden;
+            display: flex;
             justify-content: center;
+            align-items: flex-end;
+            border: 1px solid black;
 
             img {
-                height: 100%;
-                width: auto;
+                width: 500px;
+                height: auto;
             }
         }
 
-        .content {
-            text-decoration: none;
+        h4 {
+            line-height: 1.25;
+            margin: 0;
+        }
 
-            &.card {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                border-radius: 6px;
-                overflow: hidden;
-                border: 1px solid rgba(black, 0.1);
+        .article-metas {
+            display: flex;
+            justify-content: space-between;
 
-                &:hover {
-                    box-shadow: 0 5px 1em 0 rgba(black, 0.5);
-                    border: 1px solid rgba(30, 38, 72, 0.9);
+            .date {
+                font-size: 0.8em;
+                opacity: 0.5;
+            }
+        }
+        .author-block {
+            .author-metas.landscape {
+                align-items: flex-start;
+                gap: 0.5em;
+
+                .info {
+                    padding-top: 0.7em;
                 }
-
-                .hoverwrap {
+                .bio-image-container {
+                    border-radius: 30px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
 
-            .metas {
-                padding: 0.75em 1.25em;
-                flex: 1;
-                background: rgba(30, 38, 72);
-                color: white;
+            .author-metas.landscape .bio-content {
+                display: none;
             }
         }
     }

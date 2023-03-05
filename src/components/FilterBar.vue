@@ -68,6 +68,7 @@
             },
             changeQueryParams(event) {
                 let newQuery = {...this.activeFilters};
+                window.scrollTo({top: 0})
 
                 Object.keys(this.activeFilters).forEach(filter => {
                     if (this.activeFilters[filter] == "all") {
@@ -83,7 +84,6 @@
         mounted() {
             this.initActiveFilters();
             this.initFilterCounts();
-            console.log('bees')
         },
     };
 </script>
