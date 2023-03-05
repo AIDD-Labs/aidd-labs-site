@@ -8,8 +8,17 @@
         props: {
             exclude: {
                 type: Array,
-                required: false
-            }
+                required: false,
+            },
+            order: {
+                type: Array,
+                default: [
+                    "sabine-loos",
+                    "madeline-karr",
+                    "marisa-macias",
+                    "elijah-knodel",
+                ],
+            },
         },
         data() {
             return {
@@ -33,11 +42,11 @@
             }),
             filteredMembers() {
                 if (this.exclude) {
-                    return Object.keys(this.members).filter(member => !this.exclude.includes(member))
+                    return this.order.filter(member => !this.exclude.includes(member));
                 } else {
-                    return Object.keys(this.members)
+                    return this.order;
                 }
-            }
+            },
         },
 
         methods: {},
