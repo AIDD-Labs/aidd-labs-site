@@ -4,12 +4,14 @@ name: "Elijah Knodel"
 title: "Undergraduate Researcher"
 affiliation: "Colorado School of Mines & USGS"
 img: "/img/member-elijah.png"
+linkedin: 
+twitter: 
+personalWebsite: 
 component: "Member"
 ---
-
-Beep boop banana pants.
-
 ## Bio
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl purus in mollis nunc sed id semper risus. Dui sapien eget mi proin. At erat pellentesque adipiscing commodo. Vitae auctor eu augue ut lectus arcu bibendum at. Sit amet mauris commodo quis. Faucibus et molestie ac feugiat sed. Non nisi est sit amet facilisis magna etiam tempor. Fames ac turpis egestas sed.
-
+Eli Knodel is an Undergraduate Researcher with AIDD labs and student intern at the U.S. Geological Survey's Geologic Hazards Science Center. 
+His research surrounds the evaluation of user behavior and earthquake information products by combining primary survey data with secondary web analytics data.
+He is currently focusing on evaluating the accessibility of crowdsourced Did You Feel It? data.
+Eli is studying Applied Mathematics and Statistics at Colorado School of Mines and is expected to graduate in 2024.

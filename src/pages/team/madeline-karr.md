@@ -4,13 +4,13 @@ name: "Madeline Karr"
 title: "Masters Researcher"
 affiliation: "CU Boulder & USGS"
 img: "/img/member-madeline.png"
-url: "https://www.linkedin.com/in/maddie-karr"
+linkedin: "https://www.linkedin.com/in/maddie-karr"
+twitter: 
+personalWebsite: 
 component: "Member"
 ---
-
-Beep boop banana pants.
-
 ## Bio
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl purus in mollis nunc sed id semper risus. Dui sapien eget mi proin. At erat pellentesque adipiscing commodo. Vitae auctor eu augue ut lectus arcu bibendum at. Sit amet mauris commodo quis. Faucibus et molestie ac feugiat sed. Non nisi est sit amet facilisis magna etiam tempor. Fames ac turpis egestas sed.
-
+Maddie Karr is a Masters Researcher with AIDD labs and a student intern at the U.S. Geological Survey's Geologic Hazards Science Center.
+She is currently working on understanding and summarizing user needs for equity-centered disaster impact information through user-centered design techniques.
+Maddie is a Masters Student studying environmental engineering at the University of Colorado Boulder and is expected to graduate in 2023.

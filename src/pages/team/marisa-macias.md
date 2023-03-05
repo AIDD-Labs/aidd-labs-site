@@ -4,13 +4,15 @@ name: "Marísa Macías"
 title: "Masters researcher"
 affiliation: "Colorado School of Mines & USGS"
 img: "/img/member-marisa.png"
-url: "https://www.usgs.gov/staff-profiles/marisa-macias"
+linkedin: 
+twitter: 
+personalWebsite: "https://www.usgs.gov/staff-profiles/marisa-macias"
 component: "Member"
 ---
-
-Beep boop banana pants.
-
 ## Bio
 
-Marisa Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl purus in mollis nunc sed id semper risus. Dui sapien eget mi proin. At erat pellentesque adipiscing commodo. Vitae auctor eu augue ut lectus arcu bibendum at. Sit amet mauris commodo quis. Faucibus et molestie ac feugiat sed. Non nisi est sit amet facilisis magna etiam tempor. Fames ac turpis egestas sed.
+Marísa Macias is a Masters Researcher with AIDD labs and a student intern at the U.S. Geological Survey's Geologic Hazards Science Center.
+She is currently working on science communication for the Geologic Hazards Science Center, community engagement for risk reduction in landslide hazards in Prince William Sound, qualitative research for a user needs assessment of PAGER, and website content management.
+Her research employs earthquake scenario exercises to evaluate how equity-centered earthquake impact information influences emergency management decisions. 
+Marísa is in the Humanitarian Engineering and Sciences program at Colorado School of Mines and is expected to graduate in 2024.
 
