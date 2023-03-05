@@ -3,7 +3,7 @@ slug: "elijah-knodel"
 name: "Elijah Knodel"
 title: "Undergraduate Researcher"
 affiliation: "Colorado School of Mines & USGS"
-img: "img/member-elijah.png"
+img: "/img/member-elijah.png"
 component: "Member"
 ---
 

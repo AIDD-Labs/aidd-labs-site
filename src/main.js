@@ -47,7 +47,7 @@ export const createApp = ViteSSG(
 
             let metaProps = {
                 id: uuidv4(),
-                path: `/members/${componentConfig.slug}`,
+                path: `/team/${componentConfig.slug}`,
                 meta: {
                     ...componentConfig,
                 },

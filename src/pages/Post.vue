@@ -8,15 +8,9 @@
     export default {
         name: "Post",
         components: {},
-        props: {
-            frontmatter: {
-                type: Object,
-                required: true
-            }
-        },
         data() {
             return {
-                ...this.frontmatter,
+                ...this.$attrs.frontmatter,
                 
                 isLoaded: false,
 

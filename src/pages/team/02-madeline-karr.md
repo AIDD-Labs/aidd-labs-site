@@ -3,7 +3,7 @@ slug: "madeline-karr"
 name: "Madeline Karr"
 title: "Masters Researcher"
 affiliation: "CU Boulder & USGS"
-img: "img/member-madeline.png"
+img: "/img/member-madeline.png"
 url: "https://www.linkedin.com/in/maddie-karr"
 component: "Member"
 ---

@@ -23,7 +23,13 @@ export default defineConfig({
             },
         },
     },
-    assetsInclude: ["**/*.woff", "**/*.woff2", "**/*.png"],
+    assetsInclude: [
+        "**/*.woff",
+        "**/*.woff2",
+        "**/*.png",
+        "**/*.jpg",
+        "**/*.jpeg",
+    ],
     filenameHashing: false,
     plugins: [
         imagePresets({

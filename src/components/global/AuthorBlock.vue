@@ -12,8 +12,14 @@
                 type: String,
                 default: "portrait",
                 validator(value) {
-                    return ["portrait", "landscape"].includes(value);
+                    return ["portrait", "landscape", "pageHeader", "memberGrid"].includes(
+                        value
+                    );
                 },
+            },
+            noLink: {
+                type: Boolean,
+                default: false,
             },
         },
         emits: [],
@@ -33,11 +39,42 @@
     };
 </script>
 <template>
-    <div class="author-block">
+    <component
+        :is="noLink ? 'div' : 'Link'"
+        class="author-block"
+        :to="`/team/${info.meta.slug}`"
+    >
         <div class="author-metas portrait" v-if="orientation == 'portrait'">
             <div class="bio-image-wrapper">
                 <div class="bio-image-container">
-                    <img class="bio-image" :src="`../../${info.meta.img}`" />
+                    <img class="bio-image" :src="info.meta.img" />
+                </div>
+            </div>
+            <h4 class="name">{{ info.meta.name }}</h4>
+            <div class="bio-content">
+                <p>{{ info.meta.title }}</p>
+            </div>
+            <div class="wavy">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="author-metas landscape" v-if="orientation == 'landscape'">
+            <div class="bio-image-wrapper">
+                <div class="bio-image-container">
+                    <img class="bio-image" :src="info.meta.img" />
+                </div>
+            </div>
+            <div class="info">
+                <h4 class="name">{{ info.meta.name }}</h4>
+                <div class="bio-content">
+                    <p>{{ info.meta.title }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="author-metas pageHeader" v-if="orientation == 'pageHeader'">
+            <div class="bio-image-wrapper">
+                <div class="bio-image-container">
+                    <img class="bio-image" :src="info.meta.img" />
                     <!-- Todo: fix these :src paths -->
                 </div>
             </div>
@@ -53,20 +90,17 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
         </div>
-        <div class="author-metas landscape" v-if="orientation == 'landscape'">
-            <div class="bio-image-wrapper">
-                <div class="bio-image-container">
-                    <img class="bio-image" :src="`../${info.meta.img}`" />
-                </div>
+        <div class="member memberGrid" v-if="orientation == 'memberGrid'">
+            <div class="author-metas">
+                <img :src="info.meta.img" />
             </div>
-            <div class="info">
-                <h4 class="name">{{ info.meta.name }}</h4>
-                <div class="bio-content">
-                    <p>{{ info.meta.title }}</p>
-                </div>
+            <div :to="`/team/${info.meta.slug}`" class="member">
+                <h3>{{ info.meta.name }}</h3>
+                <div>{{ info.meta.title }}</div>
+                <div>{{ info.meta.affiliation }}</div>
             </div>
         </div>
-    </div>
+    </component>
 </template>
 <style lang="scss">
     .author-block {
@@ -127,6 +161,18 @@
                             opacity: 1;
                         }
                     }
+                }
+            }
+
+            &.pageHeader {
+                .bio-image-container {
+                    width: 16rem;
+                    height: 16rem;
+                    overflow: hidden;
+                    border-radius: 3px;
+                    margin-bottom: 0.6em;
+                    display: flex;
+                    align-items: center;
                 }
             }
 
