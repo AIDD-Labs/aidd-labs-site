@@ -130,6 +130,7 @@
         justify-content: center;
         padding-bottom: 5em;
         padding-top: 4em;
+        gap: 4em;
 
         > div:not(:last-child) {
             margin-bottom: 1rem;

@@ -61,6 +61,7 @@
             </div>
             <div>
                 <slot />
+                <Link :to="usgs">USGS Profile</Link>
             </div>
         </MaxWidth>
         <MaxWidth size="s" class="articles" v-if="articlesByAuthor.length">
@@ -90,6 +91,10 @@
             margin-bottom: 1.5em;
             font-size: 0.8em;
             color: var(--blue-700);
+        }
+
+        .links {
+            margin-top: 1em;
         }
 
         .bio {
