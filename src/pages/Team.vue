@@ -73,8 +73,7 @@
         <div class="team__alumni">
             <h2>Alumni</h2>
             <Link doOpenInNewTab to="https://www.linkedin.com/in/kei-tomozawa-640060151/"
-                >Kei Tomozawa</Link
-            >, '22 - now at <Link to="https://www.fervoenergy.com/">Fervo Energy</Link>
+                >Kei Tomozawa</Link>, '22 - now at <Link to="https://www.fervoenergy.com/">Fervo Energy</Link>
             <br />
             <Link doOpenInNewTab to="https://www.linkedin.com/in/jenny-levitt-89b1551a2/ doOpenInNewTab"
                 >Jennifer Levitt</Link
