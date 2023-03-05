@@ -19,6 +19,12 @@
                     "elijah-knodel",
                 ],
             },
+            variant: {
+                default: "l",
+                validator(value) {
+                    return ["m", "l"].includes(value);
+                },
+            },
         },
         data() {
             return {
@@ -57,7 +63,7 @@
 </script>
 
 <template>
-    <div class="members-grid" v-if="isLoaded">
+    <div class="members-grid" v-if="isLoaded" :class="`size-${variant}`">
         <div v-for="member in filteredMembers" :key="member" class="member">
             <AuthorBlock :author="members[member].meta.slug" orientation="memberGrid" />
         </div>
@@ -73,5 +79,20 @@
         width: 100%;
         align-items: start;
         column-gap: 30px;
+
+        &.size {
+            &-m {
+                column-gap: 1em;
+                font-size: 0.75em;
+
+                .member {
+                    max-width: 180px;
+                }
+
+                h3 {
+                    margin-bottom: 0.25em;
+                }
+            }
+        }
     }
 </style>

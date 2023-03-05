@@ -45,7 +45,18 @@
 <template>
     <MaxWidth size="xl" class="member-page" v-if="isLoaded">
         <MaxWidth size="s" class="bio">
-            <AuthorBlock no-link orientation="pageHeader" :author="slug" />
+            <div>
+                <Link class="back-link" to="/team"
+                    ><span class="arrow">← &nbsp;</span>Team</Link
+                >
+                <AuthorBlock no-link orientation="pageHeader" :author="slug" />
+                <AuthorBlock
+                    class="narrow-width"
+                    no-link
+                    orientation="landscape"
+                    :author="slug"
+                />
+            </div>
             <div>
                 <slot />
             </div>
@@ -54,18 +65,18 @@
             <h2>Lab posts by {{ name }}</h2>
             <div class="articles">
                 <ContentCard
-                    v-for="article in articlesByAuthor"
-                    :key="article"
-                    :article="article"
+                v-for="article in articlesByAuthor"
+                :key="article"
+                :article="article"
                 />
             </div>
         </MaxWidth>
+        <MaxWidth size="s" class="team">
+            <h2>Other team members</h2>
+            <MembersGrid variant="m" :exclude="[slug]" />
+        </MaxWidth>
         <MaxWidth size="s" class="content">
             <JoinTheLabBlock />
-        </MaxWidth>
-        <MaxWidth size="s" class="team">
-            <h2>The team</h2>
-            <MembersGrid :exclude="[slug]" />
         </MaxWidth>
     </MaxWidth>
 </template>
@@ -79,11 +90,42 @@
         flex-direction: column;
         gap: 5em;
 
+        .back-link {
+            margin-bottom: 1.5em;
+            font-size: 0.8em;
+            color: var(--blue-700);
+        }
+
         .bio {
             display: flex;
             gap: 6rem;
-        }
 
+            .narrow-width {
+                display: none;
+            }
+
+            @media (max-width: 900px) {
+                flex-direction: column;
+                gap: 2em;
+
+                .author-block {
+                    display: none;
+                }
+                .narrow-width {
+                    display: block;
+                    .bio-image-container {
+                        max-width: 200px;
+                        width: 100%;
+                        max-height: 300px;
+                        height: 100%;
+                    }
+
+                    .info {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
         .articles {
             display: grid;
             grid-template-columns: repeat(4, minmax(100px, 1fr));

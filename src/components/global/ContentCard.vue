@@ -19,6 +19,14 @@
                 ctx: state => state.ctx,
                 features: state => state.features,
             }),
+            imageSrc() {
+                if (this.article?.meta?.thumbnail[0] != "/") {
+                    // Image paths need to start with `/` to specify root folder beginning
+                    return `/${this.article.meta.thumbnail}`;
+                } else {
+                    this.article?.meta?.thumbnail[0];
+                }
+            },
         },
         methods: {},
         mounted() {},
@@ -29,7 +37,7 @@
         <Link no-decoration :to="`/content/${article.meta.slug}`" class="content-card">
             <div class="hoverwrap">
                 <div class="img-container">
-                    <img :src="article.meta.thumbnail || '/img/home-hero-1.png'" />
+                    <img :src="imageSrc || '/img/home-hero-1.png'" />
                 </div>
                 <!-- <div class="hovercap">{{ content.meta.title }}</div> -->
                 <div class="hovercap">Read More <span class="arrow">→</span></div>
