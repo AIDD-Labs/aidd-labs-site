@@ -23,17 +23,19 @@
                 contents: state => state.contents,
             }),
             articlesByAuthor() {
-                return this.contents.filter(article => {
+                let posts = this.contents.filter(article => {
                     if (this.name.includes("Sabine")) {
-                        // Give Sabine all the "authorless" posts bc sabine
-                        return (
-                            !article.meta.authors ||
-                            article.meta.authors.split(",")[0].includes(this.name)
-                        );
+                        return article;
                     } else {
                         return article.meta.authors.split(",")[0] == this.name;
                     }
                 });
+
+                posts.sort((a, b) => {
+                    return new Date(b.meta.date) - new Date(a.meta.date);
+                });
+
+                return posts.slice(0, 3);
             },
         },
         methods: {},
@@ -62,14 +64,8 @@
             </div>
         </MaxWidth>
         <MaxWidth size="s" class="articles" v-if="articlesByAuthor.length">
-            <h2>Lab posts by {{ name }}</h2>
-            <div class="articles">
-                <ContentCard
-                    v-for="article in articlesByAuthor"
-                    :key="article"
-                    :article="article"
-                />
-            </div>
+            <h2>Recent posts by {{ name }}</h2>
+            <ContentGrid :data="articlesByAuthor" />
         </MaxWidth>
         <MaxWidth size="s" class="team">
             <Link to="/team"> <h2>Other team members</h2></Link>
@@ -127,24 +123,9 @@
             }
         }
         .articles {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(100px, 1fr));
-            gap: 2em;
-            flex: 1;
-            //align-items: flex-start;
-
-            @media (max-width: 1100px) {
-                grid-template-columns: repeat(3, minmax(100px, 1fr));
-                gap: 1em;
-            }
-
-            @media (max-width: 900px) {
-                grid-template-columns: repeat(2, minmax(100px, 1fr));
-            }
-
-            @media (max-width: 600px) {
-                grid-template-columns: minmax(100px, 1fr);
-            }
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
         }
     }
 </style>
