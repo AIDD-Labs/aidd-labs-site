@@ -61,7 +61,7 @@
             </div>
             <div>
                 <slot />
-                <Link :to="usgs">USGS Profile</Link>
+                <Link :to="personalWebsite" doOpenInNewTab>More information</Link>
             </div>
         </MaxWidth>
         <MaxWidth size="s" class="articles" v-if="articlesByAuthor.length">
@@ -72,9 +72,9 @@
             <Link to="/team"> <h2>Other team members</h2></Link>
             <MembersGrid variant="m" :exclude="[slug]" />
         </MaxWidth>
-        <MaxWidth size="s" class="content">
+        <!-- <MaxWidth size="s" class="content">
             <JoinTheLabBlock />
-        </MaxWidth>
+        </MaxWidth> -->
     </MaxWidth>
 </template>
 <style lang="scss">
