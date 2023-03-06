@@ -72,13 +72,13 @@
                 </div>
             </div>
             <div class="socials">
-                <Link to="/" class="img-logo">
+                <Link to="/" class="img-logo" no-decoration>
                     <img src="/img/logo-light.png" alt="AIDD labs logo" />
                 </Link>
                 <div class="social">
                     <h4>Follow us</h4>
                     <div class="links">
-                        <Link v-for="link in socialLinks" :to="link.url" :key="link">{{
+                        <Link v-for="link in socialLinks" :to="link.url" :key="link" no-decoration>{{
                             link.label
                         }}</Link>
                     </div>
@@ -86,7 +86,7 @@
                 <div class="related">
                     <h4>Related</h4>
                     <div class="links">
-                        <Link v-for="link in otherLinks" :to="link.url" :key="link">{{
+                        <Link v-for="link in otherLinks" :to="link.url" :key="link" no-decoration>{{
                             link.label
                         }}</Link>
                     </div>

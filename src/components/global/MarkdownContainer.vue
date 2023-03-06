@@ -7,18 +7,17 @@
         emits: [],
         data() {
             return {
-                frontmatter: this.$attrs.frontmatter
+                frontmatter: this.$attrs.frontmatter,
             };
         },
         computed: {
             componentName() {
-                if (this.$route.path.includes("/team/") && this.frontmatter.component == "Member") {
+                if (this.frontmatter.component) {
                     return this.frontmatter.component;
+                } else {
+                    return "Post";
                 }
-                else {
-                    return "Post"
-                }
-            }
+            },
         },
         methods: {},
         mounted() {},
