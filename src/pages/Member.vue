@@ -48,7 +48,7 @@
     <MaxWidth size="xl" class="member-page" v-if="isLoaded">
         <MaxWidth size="s" class="bio">
             <div>
-                <Link class="back-link" to="/team"
+                <Link no-decoration class="back-link" to="/team"
                     ><span class="arrow">← &nbsp;</span>Team</Link
                 >
                 <AuthorBlock no-link orientation="pageHeader" :author="slug" />

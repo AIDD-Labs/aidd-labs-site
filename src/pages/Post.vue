@@ -150,7 +150,7 @@
     <MaxWidth class="post" size="m">
         <div class="post-center" v-if="isLoaded">
             <div class="metas">
-                <Link class="back-link" to="/content"
+                <Link no-decoration class="back-link" to="/content"
                     ><span class="arrow">← &nbsp;</span>Content</Link
                 >
                 <h1>{{ title }}</h1>
