@@ -55,7 +55,7 @@
             </div>
             <div>
                 <slot />
-                <Link :to="personalWebsite" doOpenInNewTab>More information</Link>
+                <!-- <Link :to="personalWebsite" doOpenInNewTab>More information</Link> -->
             </div>
         </MaxWidth>
         <MaxWidth size="s" class="articles" v-if="articlesByAuthor.length">
