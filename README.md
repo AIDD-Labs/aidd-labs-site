@@ -1,6 +1,8 @@
-# sabine-vue-vite-ssg
+# AIDD Lab Site
 
-Vue 3 + Vite + Markdown option
+Dr. Sabine Loos
+
+[https://disasterdata.engin.umich.edu](https://disasterdata.engin.umich.edu)
 
 
 ## Prereqs
