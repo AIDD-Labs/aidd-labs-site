@@ -162,11 +162,12 @@
                             <Link
                                 v-for="tag in tags"
                                 :key="tag"
+                                no-decoration
                                 :to="`/content?topic=${tag}`"
                             >
                                 <TagPill variant="topic" :tag="tag" />
                             </Link>
-                            <Link :to="`/content?type=${type}`">
+                            <Link :to="`/content?type=${type}`" no-decoration>
                                 <TagPill variant="type" :tag="type" />
                             </Link>
                         </div>
