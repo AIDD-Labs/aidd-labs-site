@@ -75,16 +75,12 @@
             <div class="bio-image-wrapper">
                 <div class="bio-image-container">
                     <img class="bio-image" :src="info.meta.img" />
-                    <!-- Todo: fix these :src paths -->
                 </div>
             </div>
-            <!-- <Link :to="info.path">
-            Todo: Link to page after we build this area!
-            <h4 class="name">{{info.meta.name}}</h4>
-        </Link> -->
             <h4 class="name">{{ info.meta.name }}</h4>
             <div class="bio-content">
-                <p>{{ info.meta.title }}</p>
+                <div>{{ info.meta.title }}</div>
+                <div v-if="info.meta.affiliation">{{ info.meta.affiliation }}</div>
             </div>
             <div class="wavy">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

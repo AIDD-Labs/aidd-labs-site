@@ -84,8 +84,6 @@ export default defineConfig({
                     // Existing file structure: /pages/content/2018-19-11_ier-nepal 
 
                     let newRoute = route.path.split("_")[1];
-
-                    console.log(newRoute)
                     return {
                         ...route,
                         path: `/content/${newRoute}`, // final route will be /content/ier-nepal
