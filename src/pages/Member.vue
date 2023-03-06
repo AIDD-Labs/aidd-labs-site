@@ -52,12 +52,6 @@
                     ><span class="arrow">← &nbsp;</span>Team</Link
                 >
                 <AuthorBlock no-link orientation="pageHeader" :author="slug" />
-                <AuthorBlock
-                    class="narrow-width"
-                    no-link
-                    orientation="landscape"
-                    :author="slug"
-                />
             </div>
             <div>
                 <slot />
@@ -103,28 +97,6 @@
 
             .narrow-width {
                 display: none;
-            }
-
-            @media (max-width: 900px) {
-                flex-direction: column;
-                gap: 2em;
-
-                .author-block {
-                    display: none;
-                }
-                .narrow-width {
-                    display: block;
-                    .bio-image-container {
-                        max-width: 200px;
-                        width: 100%;
-                        max-height: 300px;
-                        height: 100%;
-                    }
-
-                    .info {
-                        font-size: 1.2em;
-                    }
-                }
             }
         }
         .articles {
