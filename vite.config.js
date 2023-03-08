@@ -23,7 +23,13 @@ export default defineConfig({
             },
         },
     },
-    assetsInclude: ["**/*.woff", "**/*.woff2", "**/*.png"],
+    assetsInclude: [
+        "**/*.woff",
+        "**/*.woff2",
+        "**/*.png",
+        "**/*.jpg",
+        "**/*.jpeg",
+    ],
     filenameHashing: false,
     plugins: [
         imagePresets({
@@ -77,10 +83,7 @@ export default defineConfig({
                     // We want to keep this flow, keep our organization, but edit the routes to have a nicer looking url structure in the final site.
                     // Existing file structure: /pages/content/2018-19-11_ier-nepal 
 
-                    console.table(route.component)
-
                     let newRoute = route.path.split("_")[1];
-                    //ier-nepal
                     return {
                         ...route,
                         path: `/content/${newRoute}`, // final route will be /content/ier-nepal

@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="socials">
-                <Link to="/" class="img-logo">
+                <Link to="/" class="img-logo" no-decoration>
                     <img src="/img/logo-light.png" alt="AIDD labs logo" />
                 </Link>
                 <div class="social">
@@ -87,6 +87,7 @@
                 <div class="related">
                     <h4>Related</h4>
                     <div class="links">
+
                         <Link v-for="link in otherLinks" :to="link.url" :key="link" doOpenInNewTab>{{
                             link.label
                         }}</Link>

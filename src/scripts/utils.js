@@ -56,13 +56,24 @@ let utils = {
             })
             .join(" ");
     },
+    getAuthorSlug(name) {
+        let authors = {
+            "sabine-loos": "Dr. Sabine Loos",
+            "elijah-knodel": "Elijah Knodel",
+            "marisa-macias": "Marisa Macias",
+            "madeline-karr": "Madeline Karr",
+        };
+
+        return Object.values(authors).filter(val == name);
+    },
 
     filters: {
         getReadingTime: string => utils.getReadingTime(string),
         slugify: string => utils.slugify(string),
-        isUpperCase: string => utils.isUpperCase(string),
+        isUpperCase: strng => utils.isUpperCase(string),
         isEmailValid: string => utils.isEmailValid(string),
         getLabel: string => utils.getLabel(string),
+        getAuthorSlug: name => utils.getAuthorSlug(name),
     },
 };
 

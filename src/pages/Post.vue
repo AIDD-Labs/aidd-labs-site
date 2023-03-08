@@ -8,15 +8,9 @@
     export default {
         name: "Post",
         components: {},
-        props: {
-            frontmatter: {
-                type: Object,
-                required: true
-            }
-        },
         data() {
             return {
-                ...this.frontmatter,
+                ...this.$attrs.frontmatter,
                 
                 isLoaded: false,
 
@@ -156,7 +150,7 @@
     <MaxWidth class="post" size="m">
         <div class="post-center" v-if="isLoaded">
             <div class="metas">
-                <Link class="back-link" to="/content"
+                <Link no-decoration class="back-link" to="/content"
                     ><span class="arrow">← &nbsp;</span>Content</Link
                 >
                 <h1>{{ title }}</h1>
@@ -168,11 +162,12 @@
                             <Link
                                 v-for="tag in tags"
                                 :key="tag"
+                                no-decoration
                                 :to="`/content?topic=${tag}`"
                             >
                                 <TagPill variant="topic" :tag="tag" />
                             </Link>
-                            <Link :to="`/content?type=${type}`">
+                            <Link :to="`/content?type=${type}`" no-decoration>
                                 <TagPill variant="type" :tag="type" />
                             </Link>
                         </div>
