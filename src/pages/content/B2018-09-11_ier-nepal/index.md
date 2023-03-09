@@ -14,7 +14,8 @@ title: "Informing Equitable Disaster Recovery: More Than Just Economic Losses"
 authors: "Sabine Loos"
 publication: "Stanford Urban Resilience Initiative"
 description: "Why we need metrics other than economic losses for smart recovery decisions."
-citation: "Loos, S. (2018). Informing equitable disaster recovery: More than just economic losses. http://urbanresilience.stanford.edu/nepal-recovery/"
+citation: "Loos, S. (2018). Informing equitable disaster recovery: More than just economic losses."
+citationLink: "http://urbanresilience.stanford.edu/nepal-recovery/"
 abstract: 
 ---
 
