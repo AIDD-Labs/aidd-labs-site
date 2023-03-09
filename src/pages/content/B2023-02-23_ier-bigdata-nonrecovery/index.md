@@ -15,7 +15,7 @@ authors: "Sabine Loos"
 publication: "Stanford Urban Resilience Initiative"
 description: "Post-disaster data overwhelmingly focuses on immediate impacts on buildings rather than the long-term needs of populations who live inside those buildings. As shown in this study of the 2015 earthquake in Nepal, data can instead be leveraged to capture the recovery needs of vulnerable populations."
 citation: "Loos, Sabine, Jamie McCaughey, and David Lallemant. “Big Data for Whom? Data-Driven Estimates to Prioritize the Recovery Needs of Vulnerable Populations after a Disaster.” Nature Portfolio Earth and Environment Community (blog), February 24, 2023."
-citationLink: "http://earthenvironmentcommunity.nature.com/posts/big-data-for-whom-data-driven-estimates-to-prioritize-the-recovery-needs-of-vulnerable-populations-after-a-disaster."
+citationLink: "http://earthenvironmentcommunity.nature.com/posts/big-data-for-whom-data-driven-estimates-to-prioritize-the-recovery-needs-of-vulnerable-populations-after-a-disaster"
 abstract: 
 ---
 
