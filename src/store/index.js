@@ -13,8 +13,9 @@ const store = createStore({
                 tags: []
             },
             projectMetadata: {
-                tags: [],
-                methods: []
+                locations: [],
+                methods: [],
+                topic: []
             },
             infoDensity: "low",
             themeColor:
@@ -91,23 +92,34 @@ const store = createStore({
         },
 
         loadProjects(state, {projects}) {
-            state.projects = projects;
+            // state.projects = projects;
+            let sortedProjects = [...projects];
+
+            let recentDateProjects = arr => new Date(arr[arr.length - 1]);
+            sortedProjects = sortedProjects.sort((a, b) => {
+                return recentDateProjects(b.meta.date) - recentDateProjects(a.meta.date);
+            });
+
+            state.projects = sortedProjects; 
         },
 
         setProjectMetadata(state, {projects}) {
             const projectMetadata = projects.reduce((acc, project) => {
-                const { methods, tags } = project.meta;
+                const { methods, locations, topic } = project.meta;
                 const concatenatedMethods = acc.methods.concat(methods);
-                const concatenatedTags = acc.tags.concat(tags);
+                const concatenatedLocations = acc.locations.concat(locations);
+                const concatenatedTopic = acc.topic.concat(topic);
 
                 const uniqueMethods = concatenatedMethods.filter((method, idx) => concatenatedMethods.indexOf(method) === idx);
-                const uniqueTags = concatenatedTags.filter((tag, idx) => concatenatedTags.indexOf(tag) === idx);
+                const uniqueLocations = concatenatedLocations.filter((location, idx) => concatenatedLocations.indexOf(location) === idx);
+                const uniqueTopic = concatenatedTopic.filter((topic, idx) => concatenatedTopic.indexOf(topic) === idx);
 
                 acc.methods = uniqueMethods;
-                acc.tags = uniqueTags;
+                acc.locations = uniqueLocations;
+                acc.topic = uniqueTopic;
 
                 return acc;
-            }, { tags: [], methods: [] });
+            }, { locations: [], methods: [], topic: []});
 
             state.projectMetadata = projectMetadata;
         },

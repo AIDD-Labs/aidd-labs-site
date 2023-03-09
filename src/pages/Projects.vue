@@ -13,7 +13,6 @@
             ...mapState({
                 projects: state => state.projects,
                 projectMetadata: state => state.projectMetadata,
-                contents: state => state.contents
             }),
             activeFilters() {
                 return this.$route.query;
@@ -21,17 +20,24 @@
             filters() {
                 return [
                     {
+                        key: 'topic',
+                        label: "Topic",
+                        queryParam: 'topic',
+                        options: this.projectMetadata.topic,
+                    },
+                    {
                         key: 'methods',
                         label: "Methods",
-                        queryParam: 'method',
+                        queryParam: 'methods',
                         options: this.projectMetadata.methods,
                     },
                     {
-                        key: 'tags',
-                        label: "Topic",
-                        queryParam: 'topic',
-                        options: this.projectMetadata.tags,
+                        key: 'locations',
+                        label: "Location",
+                        queryParam: 'locations',
+                        options: this.projectMetadata.locations,
                     }
+                    
                 ]
             }
         },
@@ -49,10 +55,11 @@
                     if (!Object.keys(query).length) {
                         return row;
                     } else {
-                        let passesMethod = !query.method || row.meta.methods.includes(query.method);
-                        let passesTopic = !query.topic || row.meta.tags.includes(query.topic);
+                        let passesMethod = !query.methods || row.meta.methods.includes(query.methods);
+                        let passesLocation = !query.locations || row.meta.locations.includes(query.locations);
+                        let passesTopic = !query.topic || row.meta.topic.includes(query.topic);
 
-                        if (passesMethod && passesTopic) {
+                        if (passesMethod && passesLocation && passesTopic) {
                             return row;
                         }
                     }
@@ -77,33 +84,32 @@
 
 <template>
     <SEO
-        meta-title="Content"
-        description="Journal articles, blog posts,
-            visualizations, reports, presentations, and podcasts on AIDD work."
+        meta-title="Projects"
+        description="Research projects AIDD labs conducts."
     />
-    <MaxWidth class="contentpage container" size="m">
-        <div class="contentpage__about">
+    <MaxWidth class="projectpage container" size="m">
+        <div class="projectpage__about">
             <h1>Projects</h1>
         </div>
         <div class="grid">
-            <FilterBar :entities="projects" :filters="filters"/>
+            <FilterBar :entities="projects" :filters="filters" pageDescription="Our projects surround the use and design of disaster information."/>
             <Loading v-if="!isLoaded" />
             <div
-                class="contentpage__contents"
+                class="projectpage__projects"
                 v-if="isLoaded"
-                :style="{alignItems: filteredProjects.length <= 4 && 'flex-start'}"
+                :style="{alignItems: filteredProjects.length <= 3 && 'flex-start'}"
             >
                 <div
                     v-for="project in filteredProjects"
                     :key="project.slug"
-                    class="content"
+                    class="project"
                 >
                     <Link no-decoration :to="`/projects/${project.meta.slug}`" class="member card">
                         <div class="hoverwrap">
                             <div class="img-container">
                                 <img
                                     :src="
-                                        project.meta.thumbnail || '/img/home-hero-1.png'
+                                        project.meta.thumbnail ||  '/img/home-hero-1.png'
                                     "
                                 />
                             </div>
@@ -124,7 +130,7 @@
 
 <style lang="scss">
     @import "./../styles/globals";
-    .contentpage {
+    .projectpage {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -164,9 +170,9 @@
             margin-bottom: 1.5em;
         }
 
-        &__contents {
+        &__projects {
             display: grid;
-            grid-template-columns: repeat(4, minmax(100px, 1fr));
+            grid-template-columns: repeat(3, minmax(100px, 1fr));
             gap: 2em;
             flex: 1;
             //align-items: flex-start;
@@ -185,7 +191,7 @@
             }
         }
 
-        .content {
+        .project {
             flex: 1;
         }
 
@@ -236,7 +242,8 @@
             position: relative;
             display: flex;
             align-items: flex-start;
-            background-color: rgba(30, 38, 72, 0.9);
+            background-color: rgba(30, 38, 72, 0.9); 
+            // rgba(30, 38, 72, 0.9);
             justify-content: center;
 
             img {

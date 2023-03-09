@@ -90,7 +90,8 @@
             <h1>Content</h1>
         </div>
         <div class="grid">
-            <FilterBar :entities="contents" :filters="filters" />
+            <FilterBar :entities="contents" :filters="filters" pageDescription="We communicate our research for multiple audiences, making sure what we do
+            reaches the people who need it. "/>
             <Loading v-if="!isLoaded" />
             <ContentGrid :data="filteredContent" v-if="isLoaded" />
         </div>
