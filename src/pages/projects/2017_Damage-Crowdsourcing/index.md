@@ -12,7 +12,7 @@ description: "Update" # insert a one sentence description here
 ---
 <div class="hero-wrapper">
     <!-- Not totally sure why the public paths are failing the build rn. Todo. -->
-    <img src="./Bhaktapur-Loos.webp" :style="{maxWidth: '900px', margin: '0 auto'}"/>
+    <img src="./nhrm-converge.png" :style="{maxWidth: '900px', margin: '0 auto'}"/>
 </div>
 
 Monday morning, July 15, 2019, the first full day of the 44th Annual Natural Hazards Research and Applications Workshop: not quite knowing what to expect, we (Sabine Loos and Yolanda Lin) were skeptical about the first item on the agenda for the day. It looked as though a full hour and a half was blocked out for introductions — turns out, every one of those 90 minutes was completely necessary because this workshop starts with the tradition of every participant (this year, a record ~650!) standing up to introduce themselves by giving their name and affiliation. Our skepticism melted away when the introductions got underway, and in that opening hour and a half, we knew there was something very different about this conference: personal, interactive, vibrant, dynamic — a community we knew we were excited to join.
