@@ -38,7 +38,6 @@ Natural hazards often cause disproportionate impacts on vulnerable populations a
 Among many examples, four times more women than men died in the 2004 Indian Ocean Tsunami, and multi-family, Hispanic, and linguistically-isolated households had inadequate access to loss-based assistance programs following the 1994 Northridge Earthquake.
 When repeated examples of disaster-exacerbated inequality are evident over time, we must recognize that recovery policies, and the underlying information that supports them, fail to address and prevent deepening inequality.
 
-% The information that supports the actions made after a disaster have the power to improve existing inequality.
 Housing recovery policies are a powerful tool to prioritize vulnerable populations after an event.
 Early decisions can shape the long-term recovery trajectory of an entire region, both positively and negatively. 
 Currently, recovery assistance is not designed as a means of redistribution . 
