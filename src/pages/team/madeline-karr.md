@@ -7,7 +7,6 @@ img: "/img/member-madeline.png"
 linkedin: "https://www.linkedin.com/in/maddie-karr"
 twitter: 
 personalWebsite: 
-component: "Member"
 ---
 ## Bio
 

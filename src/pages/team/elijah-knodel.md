@@ -7,7 +7,6 @@ img: "/img/member-elijah.png"
 linkedin: 
 twitter: 
 personalWebsite: 
-component: "Member"
 ---
 ## Bio
 
