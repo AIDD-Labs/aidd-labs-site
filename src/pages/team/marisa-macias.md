@@ -7,7 +7,6 @@ img: "/img/member-marisa.png"
 linkedin: 
 twitter: 
 personalWebsite: "https://www.usgs.gov/staff-profiles/marisa-macias"
-component: "Member"
 ---
 ## Bio
 
