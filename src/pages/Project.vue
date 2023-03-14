@@ -1,8 +1,21 @@
 <script>
+import { mapState } from 'vuex';
+
     export default {
         name: "Project",
-        data() {},
-        computed: {},
+        data() {
+            return {
+                ...this.$attrs.frontmatter
+            }
+        },
+        computed: {
+            ...mapState({
+                teamMembers: state => state.members,
+            }),
+            nonProjectMembers () {
+                return Object.keys(this.teamMembers).filter(member => !this.members.includes(member));
+            }
+        },
         methods: {},
         mounted() {},
         beforeUnmount() {},
@@ -11,7 +24,12 @@
 
 <template>
     <MaxWidth class="post" size="m">
-        <h1>PROJECT PAGE</h1>
+        <h1>{{this.title}}</h1>
+        <h2>Members</h2>
+        <MembersGrid :exclude="nonProjectMembers"/>
+        <div class="project-text">
+            <slot />
+        </div>
     </MaxWidth>
 </template>
 
