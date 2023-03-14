@@ -8,6 +8,7 @@ import store from "./store/";
 import utils from "./scripts/utils.js";
 import Post from "@/pages/Post.vue";
 import Member from "@/pages/Member.vue";
+import Project from '@/pages/Project.vue';
 
 export const createApp = ViteSSG(
     // the root component
@@ -18,6 +19,8 @@ export const createApp = ViteSSG(
     ({app, router, routes, isClient, initialState}) => {
         app.component("Post", Post);
         app.component("Member", Member);
+        app.component("Project", Project);
+
         app.mixin({
             methods: utils.filters,
         });
