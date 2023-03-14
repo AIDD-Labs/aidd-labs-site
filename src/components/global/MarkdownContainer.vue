@@ -1,5 +1,4 @@
 <script>
-    import {mapState} from "vuex";
     export default {
         name: "MarkdownContainer",
         components: {},
@@ -15,7 +14,13 @@
                 if (this.frontmatter.component) {
                     return this.frontmatter.component;
                 } else {
-                    return "Post";
+                    const routeToComponent = {
+                        content: 'Post',
+                        projects: 'Project',
+                        team: 'Member'
+                    }
+                    const routeName = this.$route.path.split('/')[1]
+                    return routeToComponent[routeName];
                 }
             },
         },
