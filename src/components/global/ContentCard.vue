@@ -39,7 +39,7 @@
     };
 </script>
 <template>
-    <Link no-decoration :to="`/content/${slug}`" class="content-card">
+    <Link no-decoration :to="`/${this.$route.path.split('/')[1]}/${slug}`" class="content-card">
         <div class="hover-plate">
             <p class="description">
                 {{ description }}
@@ -50,7 +50,9 @@
             <img :src="imageSrc" alt="" />
         </div>
         <div class="article-metas">
-            <TagPill :tag="tags[0]" />
+            <TagPill
+                v-if="tags"
+                :tag="tags[0]" />
             <div class="date">
                 {{ humanDate }}
             </div>
