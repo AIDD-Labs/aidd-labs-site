@@ -17,7 +17,7 @@ import { mapState } from 'vuex';
                 return Object.keys(this.teamMembers).filter(member => !this.members.includes(member));
             },
             projectContent () {
-                return this.allContent.filter(content => this.content.includes(content.meta.slug));
+                return this.allContent.filter(content => this.content?.includes(content.meta.slug));
             }
         },
         methods: {},
