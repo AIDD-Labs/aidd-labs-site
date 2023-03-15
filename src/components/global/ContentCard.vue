@@ -39,7 +39,7 @@
     };
 </script>
 <template>
-    <Link no-decoration :to="`/${this.$route.path.split('/')[1]}/${slug}`" class="content-card">
+    <Link no-decoration :to="`/${$route.path.split('/')[1]}/${slug}`" class="content-card">
         <div class="hover-plate">
             <p class="description">
                 {{ description }}

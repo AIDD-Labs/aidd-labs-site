@@ -11,9 +11,13 @@ import { mapState } from 'vuex';
         computed: {
             ...mapState({
                 teamMembers: state => state.members,
+                allContent: state => state.contents
             }),
             nonProjectMembers () {
                 return Object.keys(this.teamMembers).filter(member => !this.members.includes(member));
+            },
+            projectContent () {
+                return this.allContent.filter(content => this.content.includes(content.meta.slug));
             }
         },
         methods: {},
@@ -27,6 +31,7 @@ import { mapState } from 'vuex';
         <h1>{{title}}</h1>
         <h2>Members</h2>
         <MembersGrid :exclude="nonProjectMembers"/>
+        <ContentGrid :data="projectContent"/>
         <div class="project-text">
             <slot />
         </div>
