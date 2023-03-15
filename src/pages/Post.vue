@@ -186,7 +186,7 @@
                                 <strong>Publication date:</strong> {{ date }}
                             </div>
                             <div class="citation" v-if="citation">
-                                <strong>Citation:</strong> {{ citation }}
+                                <strong>Citation:</strong> {{ citation }} <Link :to="citationLink">{{ citationLink }}</Link>
                             </div>
                             <!-- <div class="url" v-if="url">
                                 <strong>Open Access File:</strong> {{ url }}
