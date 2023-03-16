@@ -1,7 +1,7 @@
 ---
 slug: "uses-damage-data" # match folder label name
 date: "2023"
-topic: ["impact"]
+topics: ["impact"]
 locations: ["global"]
 methods: [ "qualitative" ]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"

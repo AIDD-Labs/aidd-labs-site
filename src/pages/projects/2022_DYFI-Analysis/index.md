@@ -1,7 +1,7 @@
 ---
 slug: "dyfi-analysis" # match folder label name
 date: "2022"
-topic: ["impact", "equity"]
+topics: ["impact", "equity"]
 locations: ["global"]
 methods: [ "inference"]
 members: ["sabine-loos", "elijah-knodel"] # insert your slug here, e.g., "sabine-loos"

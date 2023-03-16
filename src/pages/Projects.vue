@@ -20,10 +20,10 @@
             filters() {
                 return [
                     {
-                        key: 'topic',
+                        key: 'topics',
                         label: "Topic",
                         queryParam: 'topic',
-                        options: this.projectMetadata.topic,
+                        options: this.projectMetadata.topics,
                     },
                     {
                         key: 'methods',
