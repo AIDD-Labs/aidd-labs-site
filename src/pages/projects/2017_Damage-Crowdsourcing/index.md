@@ -1,7 +1,7 @@
 ---
 slug: "damage-crowdsourcing" # match folder label name
 date: "2017" # latest 
-topic: "impact"
+topics: ["impact"]
 locations: ["haiti"]
 methods: [ "qualitative", "inference", "mixed-methods"]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"

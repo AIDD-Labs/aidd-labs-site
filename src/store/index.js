@@ -15,7 +15,7 @@ const store = createStore({
             projectMetadata: {
                 locations: [],
                 methods: [],
-                topic: []
+                topics: []
             },
             infoDensity: "low",
             themeColor:
@@ -81,7 +81,6 @@ const store = createStore({
                 const concatenatedTopics = acc.topics.concat(topics);
 
                 !acc.types.includes(type) && acc.types.push(type);
-                debugger
                 const uniqueTopics = concatenatedTopics.filter((topic, idx) => concatenatedTopics.indexOf(topic) === idx);
                 
                 acc.topics = uniqueTopics;
@@ -106,21 +105,21 @@ const store = createStore({
 
         setProjectMetadata(state, {projects}) {
             const projectMetadata = projects.reduce((acc, project) => {
-                const { methods, locations, topic } = project.meta;
+                const { methods, locations, topics } = project.meta;
                 const concatenatedMethods = acc.methods.concat(methods);
                 const concatenatedLocations = acc.locations.concat(locations);
-                const concatenatedTopic = acc.topic.concat(topic);
+                const concatenatedTopic = acc.topics.concat(topics);
 
                 const uniqueMethods = concatenatedMethods.filter((method, idx) => concatenatedMethods.indexOf(method) === idx);
                 const uniqueLocations = concatenatedLocations.filter((location, idx) => concatenatedLocations.indexOf(location) === idx);
-                const uniqueTopic = concatenatedTopic.filter((topic, idx) => concatenatedTopic.indexOf(topic) === idx);
+                const uniqueTopic = concatenatedTopic.filter((topics, idx) => concatenatedTopic.indexOf(topics) === idx);
 
                 acc.methods = uniqueMethods;
                 acc.locations = uniqueLocations;
-                acc.topic = uniqueTopic;
+                acc.topics = uniqueTopic;
 
                 return acc;
-            }, { locations: [], methods: [], topic: []});
+            }, { locations: [], methods: [], topics: []});
 
             state.projectMetadata = projectMetadata;
         },

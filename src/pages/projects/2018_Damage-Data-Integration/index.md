@@ -1,7 +1,7 @@
 ---
 slug: "damage-data-integration" # match folder label name
 date: "2021" # latest 
-topic: "impact"
+topics: ["impact"]
 locations: ["nepal", "new-zealand", "italy", "haiti"]
 methods: [ "statistical-modeling" ]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
