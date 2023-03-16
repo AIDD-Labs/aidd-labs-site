@@ -2,7 +2,7 @@
 slug: "ier-report"
 date: "2020-04-22"
 status: "published"
-tags: ["impact", "recovery", "equity"]
+topics: ["impact", "recovery", "equity"]
 type: "report"
 section: ["contents"]
 members: ["sabine-loos"]

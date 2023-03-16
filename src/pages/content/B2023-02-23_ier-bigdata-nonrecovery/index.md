@@ -2,7 +2,7 @@
 slug: "ier-bigdata-nonrecovery"
 date: "2023-02-23"
 status: "published"
-tags: ["recovery", "impact", "equity"]
+topics: ["recovery", "impact", "equity"]
 type: "blog"
 section: ["contents"]
 members: ["sabine-loos"]

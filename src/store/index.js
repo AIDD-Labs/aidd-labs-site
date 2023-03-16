@@ -10,7 +10,7 @@ const store = createStore({
             projects: [],
             contentMetadata: {
                 types: [],
-                tags: []
+                topics: []
             },
             projectMetadata: {
                 locations: [],
@@ -72,21 +72,22 @@ const store = createStore({
                 return recentDate(b.meta.date) - recentDate(a.meta.date);
             });
 
-            state.contents = sortedContents; // might want to add content by tag
+            state.contents = sortedContents; // might want to add content by topic
         },
 
         setContentMetadata(state, {contents}) {
             const contentMetadata = contents.reduce((acc, content) => {
-                const { tags, type } = content.meta;
-                const concatenatedTags = acc.tags.concat(tags);
+                const { topics, type } = content.meta;
+                const concatenatedTopics = acc.topics.concat(topics);
 
                 !acc.types.includes(type) && acc.types.push(type);
-                const uniqueTags = concatenatedTags.filter((tag, idx) => concatenatedTags.indexOf(tag) === idx);
+                debugger
+                const uniqueTopics = concatenatedTopics.filter((topic, idx) => concatenatedTopics.indexOf(topic) === idx);
                 
-                acc.tags = uniqueTags;
+                acc.topics = uniqueTopics;
 
                 return acc;
-            }, { types: [], tags: [] });
+            }, { types: [], topics: [] });
 
             state.contentMetadata = contentMetadata;
         },

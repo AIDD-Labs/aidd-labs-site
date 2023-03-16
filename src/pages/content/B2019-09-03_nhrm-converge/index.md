@@ -2,7 +2,7 @@
 slug: "nhrm-converge" # match folder label name
 date: "2019-09-03"
 status: "published"
-tags: ["recovery", "impact"] # "recovery", "impact", "statistical-modeling"
+topics: ["recovery", "impact"] # "recovery", "impact", "statistical-modeling"
 locations: ["all"] # "nepal", "new-zealand", "haiti", "italy"
 type: "blog" # "blog", "report", "journal-article", "visualization"
 section: ["contents"]
