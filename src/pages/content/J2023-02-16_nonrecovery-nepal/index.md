@@ -2,7 +2,7 @@
 slug: "nonrecovery-nepal" # must match folder name (for now)
 date: "2023-02-16"
 status: "published"
-tags: ["recovery", "impact", "equity"]
+topics: ["recovery", "impact", "equity"]
 type: "journal-article"
 section: ["contents"]
 members: ["sabine-loos"] # first author's image will show

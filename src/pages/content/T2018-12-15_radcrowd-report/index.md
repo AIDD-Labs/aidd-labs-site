@@ -2,7 +2,7 @@
 slug: "radcrowd-report" # match folder label name
 date: "2018-12-15"
 status: "published"
-tags: ["impact"] # "recovery", "impact", "statistical-modeling"
+topics: ["impact"] # "recovery", "impact", "statistical-modeling"
 locations: ["haiti"] # "nepal", "new-zealand", "haiti", "italy"
 type: "report" # "blog", "report", "journal-article", "visualization"
 section: ["contents"]

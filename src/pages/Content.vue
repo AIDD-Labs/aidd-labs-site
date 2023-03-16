@@ -18,6 +18,7 @@
                 return this.$route.query;
             },
             filters() {
+                console.log(this.contentMetadata)
                 return [
                     {
                         key: "type",
@@ -26,10 +27,10 @@
                         options: this.contentMetadata.types,
                     },
                     {
-                        key: "tags",
+                        key: "topics",
                         label: "Topic",
                         queryParam: "topic",
-                        options: this.contentMetadata.tags,
+                        options: this.contentMetadata.topics,
                     },
                 ];
             },
@@ -50,7 +51,7 @@
                     } else {
                         let passesType = !query.type || row.meta.type == query.type;
                         let passesTopic =
-                            !query.topic || row.meta.tags.includes(query.topic);
+                            !query.topic || row.meta.topics.includes(query.topic);
 
                         if (passesType && passesTopic) {
                             return row;

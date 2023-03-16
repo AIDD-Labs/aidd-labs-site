@@ -51,8 +51,8 @@
         </div>
         <div class="article-metas">
             <TagPill
-                v-if="tags"
-                :tag="tags[0]" />
+                v-if="topics"
+                :tag="topics[0]" />
             <div class="date">
                 {{ humanDate }}
             </div>

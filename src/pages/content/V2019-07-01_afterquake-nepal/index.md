@@ -2,7 +2,7 @@
 slug: "afterquake-nepal" # match folder label name
 date: "2019-07-01"
 status: "published"
-tags: ["recovery", "impact"] # "recovery", "impact", "statistical-modeling"
+topics: ["recovery", "impact"] # "recovery", "impact", "statistical-modeling"
 locations: ["nepal"] # "nepal", "new-zealand", "haiti", "italy"
 type: "visualization" # "blog", "report", "journal-article", "visualization"
 section: ["contents"]
