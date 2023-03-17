@@ -206,7 +206,7 @@
     </MaxWidth>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
     .post {
         padding-top: 4em;
         padding-bottom: 3em;
