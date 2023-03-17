@@ -50,8 +50,8 @@ import { mapState } from 'vuex';
                 <div class="description">
                     {{ description }}
                 </div>
-                <div>
-                    <img :src="thumbnail" alt="">
+                <div class="img">
+                    <img :src="img" alt="">
                 </div>
                 </div>
             <!-- </MaxWidth> -->
@@ -125,8 +125,12 @@ import { mapState } from 'vuex';
                 gap: 6rem;
                 .description {
                     display: flex;
-                    width: 50%;
-                    height: auto;
+                    width: 100%;
+                    // height: auto;
+                }
+                .img {
+                    // height: 10px;
+                    width: max-content;
                 }
             }   
 
