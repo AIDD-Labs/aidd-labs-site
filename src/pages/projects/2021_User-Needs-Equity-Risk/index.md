@@ -7,7 +7,8 @@ methods: [ "qualitative", "mixed-methods"]
 members: ["sabine-loos", "marisa-macias", "madeline-karr", "elijah-knodel"] # insert your slug here, e.g., "sabine-loos"
 content: ["usgs-esc"]
 title: "User Needs for Equitable and Accessible Loss Models" # insert title here
-thumbnail: "/src/pages/projects/2021_User-Needs-Equity-Risk/Persona-HumResponseFund.png"
+thumbnail: "src/pages/projects/2021_User-Needs-Equity-Risk/Persona-HumResponseFund.png"
 description: "Test" # insert a one sentence description here
+img: "/src/pages/projects/2021_User-Needs-Equity-Risk/Persona-HumResponseFund.png"
 ---
 
