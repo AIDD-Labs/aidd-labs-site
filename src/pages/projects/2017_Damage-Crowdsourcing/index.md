@@ -1,6 +1,6 @@
 ---
 slug: "damage-crowdsourcing" # match folder label name
-date: "2017" # latest 
+date: "2016-10-01" # latest 
 topics: ["impact"]
 locations: ["haiti"]
 methods: [ "qualitative", "inference", "mixed-methods"]
