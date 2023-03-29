@@ -77,16 +77,19 @@ export default defineConfig({
             extensions: ["vue", "md"],
             dirs: [{dir: "src/pages", baseRoute: ""}],
             extendRoute(route, parent) {
-                if (route.component.includes("src/pages/content")) {
+                isContentRoute = route.component.includes("src/pages/content")
+                isProjectRoute = route.component.includes("src/pages/projects")
+                if (isContentRoute || isProjectRoute) {
                     // Instead of building all pages dynamically when the app loads (via main.js), 
                     // the Pages plugin will create routes for us based on file structure when we build this into the static site. 
                     // We want to keep this flow, keep our organization, but edit the routes to have a nicer looking url structure in the final site.
                     // Existing file structure: /pages/content/2018-19-11_ier-nepal 
 
+                    const routeParent = route.path.split('/')[1]; // project or content
                     let newRoute = route.path.split("_")[1];
                     return {
                         ...route,
-                        path: `/content/${newRoute}`, // final route will be /content/ier-nepal
+                        path: `/${routeParent}/${newRoute}`, // final route will be something like /content/ier-nepal
                     };
                 }
                 return route;

@@ -59,7 +59,7 @@
             </div>
         </MaxWidth>
         <MaxWidth size="s" class="articles" v-if="articlesByAuthor.length">
-            <h2>Recent posts by {{ name }}</h2>
+            <h2>Recent content by {{ name }}</h2>
             <ContentGrid :data="articlesByAuthor" />
         </MaxWidth>
         <MaxWidth size="s" class="team">

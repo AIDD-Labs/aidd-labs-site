@@ -39,7 +39,7 @@
     };
 </script>
 <template>
-    <Link no-decoration :to="`/content/${slug}`" class="content-card">
+    <Link no-decoration :to="article.path" class="content-card">
         <div class="hover-plate">
             <p class="description">
                 {{ description }}
@@ -50,7 +50,9 @@
             <img :src="imageSrc" alt="" />
         </div>
         <div class="article-metas">
-            <TagPill :tag="tags[0]" />
+            <TagPill
+                v-if="topics"
+                :tag="topics[0]" />
             <div class="date">
                 {{ humanDate }}
             </div>

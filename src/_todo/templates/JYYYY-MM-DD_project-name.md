@@ -2,7 +2,7 @@
 slug: "project-type-location" # match folder label name
 date: ["YYYY-MM-DD"]
 status: "published"
-tags: [] # "recovery", "impact", "statistical-modeling"
+topics: [] # "recovery", "impact", "statistical-modeling"
 locations: [] # "nepal", "new-zealand", "haiti", "italy"
 type: "" # "blog", "report", "journal-article", "visualization"
 section: ["contents"]

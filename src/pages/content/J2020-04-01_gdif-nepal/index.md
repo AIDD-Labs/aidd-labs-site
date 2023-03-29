@@ -2,7 +2,7 @@
 slug: "gdif-nepal"
 date: "2020-04-01"
 status: "published"
-tags: ["impact"]
+topics: ["impact"]
 type: "journal-article"
 section: ["contents"]
 members: ["sabine-loos"]

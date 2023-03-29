@@ -10,12 +10,12 @@ const store = createStore({
             projects: [],
             contentMetadata: {
                 types: [],
-                tags: []
+                topics: []
             },
             projectMetadata: {
                 locations: [],
                 methods: [],
-                topic: []
+                topics: []
             },
             infoDensity: "low",
             themeColor:
@@ -67,37 +67,34 @@ const store = createStore({
         loadContents(state, {contents}) {
             let sortedContents = [...contents];
 
-            let recentDate = arr => new Date(arr[arr.length - 1]);
             sortedContents = sortedContents.sort((a, b) => {
-                return recentDate(b.meta.date) - recentDate(a.meta.date);
+                return new Date(b.meta.date) - new Date(a.meta.date);
             });
 
-            state.contents = sortedContents; // might want to add content by tag
+            state.contents = sortedContents; // might want to add content by topic
         },
 
         setContentMetadata(state, {contents}) {
             const contentMetadata = contents.reduce((acc, content) => {
-                const { tags, type } = content.meta;
-                const concatenatedTags = acc.tags.concat(tags);
+                const { topics, type } = content.meta;
+                const concatenatedTopics = acc.topics.concat(topics);
 
                 !acc.types.includes(type) && acc.types.push(type);
-                const uniqueTags = concatenatedTags.filter((tag, idx) => concatenatedTags.indexOf(tag) === idx);
+                const uniqueTopics = concatenatedTopics.filter((topic, idx) => concatenatedTopics.indexOf(topic) === idx);
                 
-                acc.tags = uniqueTags;
+                acc.topics = uniqueTopics;
 
                 return acc;
-            }, { types: [], tags: [] });
+            }, { types: [], topics: [] });
 
             state.contentMetadata = contentMetadata;
         },
 
         loadProjects(state, {projects}) {
-            // state.projects = projects;
             let sortedProjects = [...projects];
 
-            let recentDateProjects = arr => new Date(arr[arr.length - 1]);
             sortedProjects = sortedProjects.sort((a, b) => {
-                return recentDateProjects(b.meta.date) - recentDateProjects(a.meta.date);
+                return new Date(b.meta.date) - new Date(a.meta.date);
             });
 
             state.projects = sortedProjects; 
@@ -105,21 +102,21 @@ const store = createStore({
 
         setProjectMetadata(state, {projects}) {
             const projectMetadata = projects.reduce((acc, project) => {
-                const { methods, locations, topic } = project.meta;
+                const { methods, locations, topics } = project.meta;
                 const concatenatedMethods = acc.methods.concat(methods);
                 const concatenatedLocations = acc.locations.concat(locations);
-                const concatenatedTopic = acc.topic.concat(topic);
+                const concatenatedTopic = acc.topics.concat(topics);
 
                 const uniqueMethods = concatenatedMethods.filter((method, idx) => concatenatedMethods.indexOf(method) === idx);
                 const uniqueLocations = concatenatedLocations.filter((location, idx) => concatenatedLocations.indexOf(location) === idx);
-                const uniqueTopic = concatenatedTopic.filter((topic, idx) => concatenatedTopic.indexOf(topic) === idx);
+                const uniqueTopic = concatenatedTopic.filter((topics, idx) => concatenatedTopic.indexOf(topics) === idx);
 
                 acc.methods = uniqueMethods;
                 acc.locations = uniqueLocations;
-                acc.topic = uniqueTopic;
+                acc.topics = uniqueTopic;
 
                 return acc;
-            }, { locations: [], methods: [], topic: []});
+            }, { locations: [], methods: [], topics: []});
 
             state.projectMetadata = projectMetadata;
         },

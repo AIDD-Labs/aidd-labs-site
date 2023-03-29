@@ -2,7 +2,7 @@
 slug: "ier-nepal"
 date: "2018-09-11"
 status: "published"
-tags: ["recovery", "impact", "equity"]
+topics: ["recovery", "impact", "equity"]
 type: "blog"
 section: ["contents"]
 members: ["sabine-loos"]

@@ -2,7 +2,7 @@
 slug: "dataviz-toolset"
 date: "2021-02-22"
 status: "published"
-tags: ["data-visualization"] # "recovery", "impact", "statistical-modeling"
+topics: ["data-visualization"] # "recovery", "impact", "statistical-modeling"
 locations: ["all"] # "nepal", "new-zealand", "haiti", "italy"
 type: "blog" # "blog", "report", "journal-article", "visualization"
 section: ["contents"]

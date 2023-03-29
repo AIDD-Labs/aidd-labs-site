@@ -8,7 +8,6 @@ linkedin: "https://www.linkedin.com/in/sabine-loos"
 github: "https://github.com/sabineloos"
 twitter: "https://twitter.com/sab_loos"
 personalWebsite: "https://sabine-loos.com/"
-component: "Member"
 ---
 
 ## Bio
