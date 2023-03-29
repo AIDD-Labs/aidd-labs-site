@@ -18,6 +18,9 @@ import { mapState } from 'vuex';
             },
             projectContent () {
                 return this.allContent.filter(content => this.content?.includes(content.meta.slug));
+            },
+            test() {
+                return [ "usgs", "natural-hazards-center" ]
             }
         },
         methods: {},
@@ -62,6 +65,10 @@ import { mapState } from 'vuex';
             <MaxWidth size="m" class="articles">
                 <h2>Project content</h2>
                 <ContentGrid :data="projectContent" />
+            </MaxWidth>
+            <MaxWidth size="m" class="articles">
+                <h2>Project partners/funders</h2>
+                <PartnersGrid :data="test" />
             </MaxWidth>
         </div>
 

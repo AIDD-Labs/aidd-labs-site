@@ -59,6 +59,19 @@ export const createApp = ViteSSG(
             members[metaProps.meta.slug] = metaProps;
         }
 
+        let partners = {};
+        let markdownPartners = import.meta.globEager("./pages/partners/**/*.md");
+        for (const partner in markdownPartners) {
+            let metaProps = {
+                id: uuidv4(),
+                meta: {
+                    ...markdownPartners[partner],
+                },
+            };
+
+            partners[metaProps.meta.slug] = metaProps;
+        }
+
         let mdContentRoutes = [];
         let markdownContents = import.meta.globEager("./pages/content/**/index.md");
         for (const content in markdownContents) {
@@ -107,6 +120,7 @@ export const createApp = ViteSSG(
             // perform the (user-implemented) store action to fill the store's state
             if (!store.getters.ready) {
                 store.dispatch("loadMembers", members);
+                store.dispatch("loadPartners", partners);
                 store.dispatch("loadContents", mdContentRoutes);
                 store.dispatch("loadProjects", mdProjectRoutes)
                 store.dispatch("setMode", mode);

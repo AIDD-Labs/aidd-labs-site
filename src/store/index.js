@@ -6,6 +6,7 @@ const store = createStore({
             posts: [],
             postsById: {},
             members: {},
+            partners: {},
             contents: [],
             projects: [],
             contentMetadata: {
@@ -62,6 +63,10 @@ const store = createStore({
 
         loadMembers(state, {members}) {
             state.members = members;
+        },
+
+        loadPartners(state, {partners}) {
+            state.partners = partners;
         },
 
         loadContents(state, {contents}) {
@@ -145,6 +150,12 @@ const store = createStore({
             commit("loadMembers", {
                 members: members,
             });
+        },
+
+        loadPartners({commit}, partners) {
+            commit("loadPartners", {
+                partners: partners
+            })
         },
 
         loadContents({commit}, contents) {
