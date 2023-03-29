@@ -10,12 +10,8 @@ import { mapState } from 'vuex';
         },
         computed: {
             ...mapState({
-                teamMembers: state => state.members,
                 allContent: state => state.contents
             }),
-            nonProjectMembers () {
-                return Object.keys(this.teamMembers).filter(member => !this.members?.includes(member));
-            },
             projectContent () {
                 return this.allContent.filter(content => this.content?.includes(content.meta.slug));
             }
@@ -57,7 +53,7 @@ import { mapState } from 'vuex';
             <!-- </MaxWidth> -->
             <MaxWidth size="m" class="team">
                 <h2>Project team members</h2>
-                <MembersGrid variant="m" :exclude="nonProjectMembers" />
+                <MembersGrid variant="m" :data="members" />
             </MaxWidth>
             <MaxWidth size="m" class="articles">
                 <h2>Project content</h2>
