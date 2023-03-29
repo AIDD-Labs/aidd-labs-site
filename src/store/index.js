@@ -8,6 +8,11 @@ const store = createStore({
             members: {},
             contents: [],
             projects: [],
+            memberMetadata: {
+                current: [],
+                alumni: [],
+                external: []
+            },
             contentMetadata: {
                 types: [],
                 topics: []
@@ -62,6 +67,17 @@ const store = createStore({
 
         loadMembers(state, {members}) {
             state.members = members;
+        },
+
+        setMemberMetadata(state, {members}) {
+            const memberMetadata = Object.values(members).reduce((acc, member) => {
+                const { type = "current" } = member.meta;
+                acc[type] = [ ...(acc[type] || []), member.meta.slug ];
+                
+                return acc;
+            }, {});
+
+            state.memberMetadata = memberMetadata
         },
 
         loadContents(state, {contents}) {
@@ -144,6 +160,9 @@ const store = createStore({
         loadMembers({commit}, members) {
             commit("loadMembers", {
                 members: members,
+            });
+            commit("setMemberMetadata", {
+                members: members
             });
         },
 
