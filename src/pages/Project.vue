@@ -51,7 +51,7 @@ import { mapState } from 'vuex';
                     {{ description }}
                 </div>
                 <div class="img">
-                    <img :src="img" alt="">
+                    <img :src="thumbnail" alt="">
                 </div>
                 </div>
             <!-- </MaxWidth> -->

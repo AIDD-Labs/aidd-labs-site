@@ -22,7 +22,7 @@
                     // Image should start with `/` to specify root folder beginning
                     return `/${this.article.meta.thumbnail}`;
                 } else {
-                    this.article?.meta?.thumbnail[0];
+                    return this.article?.meta?.thumbnail;
                 }
             },
             humanDate() {
