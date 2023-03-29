@@ -33,11 +33,6 @@
             info() {
                 return this.members[this.author];
             },
-            memberBlockClass() {{
-                return this.info.meta.type
-                    ? `block block--${this.info.meta.type}`
-                    : "block";
-            }}
         },
         methods: {},
         mounted() {},
@@ -143,7 +138,7 @@
         </div>
         <div class="member memberGrid" v-if="orientation == 'memberGrid'">
             <div class="image-container">
-                <div :class="memberBlockClass"></div>
+                <div :class="`block ${info.meta.type && `block--${info.meta.type}`}`"></div>
                 <img :src="info.meta.img" />
             </div>
             <div :to="`/team/${info.meta.slug}`" class="metas">
