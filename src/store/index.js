@@ -67,9 +67,8 @@ const store = createStore({
         loadContents(state, {contents}) {
             let sortedContents = [...contents];
 
-            let recentDate = arr => new Date(arr[arr.length - 1]);
             sortedContents = sortedContents.sort((a, b) => {
-                return recentDate(b.meta.date) - recentDate(a.meta.date);
+                return new Date(b.meta.date) - new Date(a.meta.date);
             });
 
             state.contents = sortedContents; // might want to add content by topic
@@ -92,12 +91,10 @@ const store = createStore({
         },
 
         loadProjects(state, {projects}) {
-            // state.projects = projects;
             let sortedProjects = [...projects];
 
-            let recentDateProjects = arr => new Date(arr[arr.length - 1]);
             sortedProjects = sortedProjects.sort((a, b) => {
-                return recentDateProjects(b.meta.date) - recentDateProjects(a.meta.date);
+                return new Date(b.meta.date) - new Date(a.meta.date);
             });
 
             state.projects = sortedProjects; 
