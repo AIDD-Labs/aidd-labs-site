@@ -124,6 +124,19 @@
             }
         }
 
+        .filter-bar {
+            position: sticky;
+            flex-basis: 280px;
+            top: 1.5em;
+            left: 0;
+            align-self: flex-start;
+
+            @media (max-width: 800px) {
+                position: initial;
+                flex-basis: 100%;
+            }
+        }
+
         &__about {
             margin-bottom: 1.5em;
         }
