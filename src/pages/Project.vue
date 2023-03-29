@@ -14,7 +14,7 @@ import { mapState } from 'vuex';
                 allContent: state => state.contents
             }),
             nonProjectMembers () {
-                return Object.keys(this.teamMembers).filter(member => !this.members.includes(member));
+                return Object.keys(this.teamMembers).filter(member => !this.members?.includes(member));
             },
             projectContent () {
                 return this.allContent.filter(content => this.content?.includes(content.meta.slug));
