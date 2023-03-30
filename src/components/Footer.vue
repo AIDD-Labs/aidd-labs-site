@@ -50,13 +50,13 @@
                 <div class="contacttext">
                     <p>
                         Send us an email
-                        <Link to="mailto:sloos@umich.edu" class="footer"
+                        <Link to="mailto:sloos@umich.edu" class="footer" doOpenInNewTab
                             >sloos [at] umich [dot] edu</Link
                         >
                     </p>
                     <p>We are looking for new team members and partners!</p>
                     <p>
-                        <Link to="https://goo.gl/maps/9JHpZbNSBSz7ajgr8" class="footer">
+                        <Link to="https://goo.gl/maps/9JHpZbNSBSz7ajgr8" class="footer" doOpenInNewTab noDecoration>
                             Office Address: GG Brown, 2350 Hayward St, Ann Arbor, MI 48109
                         </Link>
                     </p>
@@ -64,6 +64,7 @@
                         <Link
                             is-button
                             to="https://www.researchgate.net/profile/Sabine-Loos"
+                            doOpenInNewTab
                         >
                             Check out our recent articles
                         </Link>
@@ -78,7 +79,7 @@
                 <div class="social">
                     <h4>Follow us</h4>
                     <div class="links">
-                        <Link v-for="link in socialLinks" :to="link.url" :key="link" no-decoration>{{
+                        <Link v-for="link in socialLinks" :to="link.url" :key="link" doOpenInNewTab>{{
                             link.label
                         }}</Link>
                     </div>
@@ -86,7 +87,8 @@
                 <div class="related">
                     <h4>Related</h4>
                     <div class="links">
-                        <Link v-for="link in otherLinks" :to="link.url" :key="link" no-decoration>{{
+
+                        <Link v-for="link in otherLinks" :to="link.url" :key="link" doOpenInNewTab>{{
                             link.label
                         }}</Link>
                     </div>

@@ -33,4 +33,4 @@ Eight years ago, the Nepal 2015 earthquake was no exception–emergency managers
 
 In our [paper published in Communications Earth and Environment ](https://www.nature.com/articles/s43247-023-00699-4), we develop a data-driven approach to rapidly estimate which areas are likely to fall behind during recovery due to physical, environmental, and social obstacles. This approach leverages survey data on recovery progress combined with geospatial datasets that would be readily available after an event that represent factors expected to impede recovery. To identify communities with . . .
 
-<Link is-button to="https://earthenvironmentcommunity.nature.com/posts/big-data-for-whom-data-driven-estimates-to-prioritize-the-recovery-needs-of-vulnerable-populations-after-a-disaster"> Read the full blog post here </Link>
+<Link is-button doOpenInNewTab to="https://earthenvironmentcommunity.nature.com/posts/big-data-for-whom-data-driven-estimates-to-prioritize-the-recovery-needs-of-vulnerable-populations-after-a-disaster"> Read the full blog post here </Link>

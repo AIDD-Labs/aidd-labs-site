@@ -29,4 +29,4 @@ That spirit of the opening introduction session carried us through the rest of t
 
 The researcher’s meeting focused on transdisciplinary research, which is similar to convergence, except without convergence’s sense of urgency. Essentially, it is the academic cousin of convergence. The presentations we heard ranged from education (i.e. how do we build boundary-spanning curriculums for our next generation of disaster practitioners) to research methods (i.e. how do we build effective teams where disciplines converge and create together instead of just work together?).
 
-<Link is-button to="https://urbanresilience.stanford.edu/news/converging-disaster-researchers-asia-pacific"> Read the rest of the blog post here </Link>
+<Link is-button doOpenInNewTab to="https://urbanresilience.stanford.edu/news/converging-disaster-researchers-asia-pacific"> Read the rest of the blog post here </Link>
