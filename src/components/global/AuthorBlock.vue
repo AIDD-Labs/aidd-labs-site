@@ -324,6 +324,8 @@
                 img {
                     padding-top: $bio-img-padding;
                     padding-left: $bio-img-padding;
+                    aspect-ratio: 2/3;
+                    object-fit: cover;
                 }
             }
 
