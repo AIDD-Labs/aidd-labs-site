@@ -110,7 +110,9 @@ const store = createStore({
             let sortedProjects = [...projects];
 
             sortedProjects = sortedProjects.sort((a, b) => {
-                return new Date(b.meta.date) - new Date(a.meta.date);
+                const astart = a.meta.date.trim().split("-")[0]
+                const bstart = b.meta.date.trim().split("-")[0]
+                return new Date(bstart) - new Date(astart);
             });
 
             state.projects = sortedProjects; 

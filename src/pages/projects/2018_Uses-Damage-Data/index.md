@@ -1,6 +1,6 @@
 ---
 slug: "uses-damage-data" # match folder label name
-date: "2022-05-01"
+date: "2022 - 2023"
 end: "present"
 topics: ["impact"]
 locations: ["global"]
