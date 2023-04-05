@@ -1,6 +1,6 @@
 ---
 slug: "user-needs-equity-risk" # match folder label name
-date: "2021-09-01"
+date: "2021 - 2023"
 topics: ["risk", "impact", "equity"]
 locations: ["global"]
 methods: [ "qualitative", "mixed-methods"]
