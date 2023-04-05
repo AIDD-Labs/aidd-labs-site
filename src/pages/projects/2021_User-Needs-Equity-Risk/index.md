@@ -1,5 +1,5 @@
 ---
-slug: "userneeds-equity-risk" # match folder label name
+slug: "user-needs-equity-risk" # match folder label name
 date: "2021-09-01"
 topics: ["risk", "impact", "equity"]
 locations: ["global"]
