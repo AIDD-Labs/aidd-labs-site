@@ -2,7 +2,10 @@
 slug: "kei-tomozawa"
 name: "Kei Tomozawa"
 title: "Undergraduate Researcher"
-affiliation: "Stanford University"
+yearDeparted: "2022"
+affiliation: "Fervo Energy"
+affiliationLink: "https://www.fervoenergy.com/"
+type: "alumni"
 img: "/img/member-kei.png"
 linkedin: "https://www.linkedin.com/in/kei-tomozawa-640060151/"
 twitter: 

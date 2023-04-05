@@ -6,18 +6,9 @@
     export default {
         name: "MembersGrid",
         props: {
-            exclude: {
+            data: {
                 type: Array,
-                required: false,
-            },
-            order: {
-                type: Array,
-                default: [
-                    "sabine-loos",
-                    "madeline-karr",
-                    "marisa-macias",
-                    "elijah-knodel",
-                ],
+                required: true
             },
             variant: {
                 default: "l",
@@ -45,16 +36,8 @@
         computed: {
             ...mapState({
                 members: state => state.members,
-            }),
-            filteredMembers() {
-                if (this.exclude) {
-                    return this.order.filter(member => !this.exclude.includes(member));
-                } else {
-                    return this.order;
-                }
-            },
+            })
         },
-
         methods: {},
         mounted() {
             this.isLoaded = true;
@@ -64,7 +47,7 @@
 
 <template>
     <div class="members-grid" v-if="isLoaded" :class="`size-${variant}`">
-        <div v-for="member in filteredMembers" :key="member" class="member">
+        <div v-for="member in data" :key="member" class="member">
             <AuthorBlock :author="members[member].meta.slug" orientation="memberGrid" />
         </div>
     </div>

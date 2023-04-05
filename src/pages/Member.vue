@@ -20,8 +20,12 @@
         computed: {
             ...mapState({
                 members: state => state.members,
+                memberMetadata: state => state.memberMetadata,
                 contents: state => state.contents,
             }),
+            otherTeamMembers() {
+                return this.memberMetadata.current.filter(member => member !== this.slug)
+            },
             articlesByAuthor() {
                 let posts = this.contents.filter(article => {
                     if (this.name.includes("Sabine")) {
@@ -64,7 +68,7 @@
         </MaxWidth>
         <MaxWidth size="s" class="team">
             <Link to="/team"> <h2>Other team members</h2></Link>
-            <MembersGrid variant="m" :exclude="[slug]" />
+            <MembersGrid variant="m" :data="otherTeamMembers" />
         </MaxWidth>
         <!-- <MaxWidth size="s" class="content">
             <JoinTheLabBlock />

@@ -28,6 +28,7 @@
         computed: {
             ...mapState({
                 members: state => state.members,
+                memberMetadata: state => state.memberMetadata,
                 contents: state => state.contents,
                 recentPosts: state => [...state.posts.slice(0, 3)],
             }),
@@ -58,19 +59,18 @@
         </div>
         <div class="team__members">
             <h2>Current members</h2>
-            <MembersGrid />
+            <MembersGrid :data="memberMetadata.current" />
         </div>
         <div class="team__alumni">
             <h2>Alumni</h2>
-            <Link to="/team/kei-tomozawa"
-                >Kei Tomozawa</Link
-            >, '22 - now at <Link to="https://www.fervoenergy.com/">Fervo Energy</Link>
-            <br />
-            <Link to="/team/jennifer-levitt"
-                >Jennifer Levitt</Link
-            >, '23 - Stanford University
-            <br />
-            Jing Cheng Ng, '23 - Nanyang Technological University
+            <div v-for="alumni in memberMetadata.alumni" :key="alumni">
+                <Link :to="members[alumni].path">
+                    {{ members[alumni].meta.name }}
+                </Link>, '{{ members[alumni].meta.yearDeparted?.slice(2) }} - now at 
+                <Link v-if="members[alumni].meta.affiliationLink" :to="members[alumni].meta.affliationLink">{{ members[alumni].meta.affiliation }}</Link>
+                <span v-else>{{ members[alumni].meta.affiliation }}</span>
+                <br />
+            </div>
         </div>
         <div class="team__opportunities">
             <h2>Opportunities</h2>

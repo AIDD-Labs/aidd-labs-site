@@ -138,7 +138,7 @@
         </div>
         <div class="member memberGrid" v-if="orientation == 'memberGrid'">
             <div class="image-container">
-                <div class="block"></div>
+                <div :class="`block ${info.meta.type && `block--${info.meta.type}`}`"></div>
                 <img :src="info.meta.img" />
             </div>
             <div :to="`/team/${info.meta.slug}`" class="metas">
@@ -315,6 +315,10 @@
                     width: calc(100% - $bio-img-padding);
                     top: 0;
                     left: 0;
+
+                    &--external {
+                        border-color: var(--orange-500)
+                    }
                 }
 
                 img {
