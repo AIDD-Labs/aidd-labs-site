@@ -3,7 +3,7 @@ slug: "damage-data-integration" # match folder label name
 date: "2018 - 2021" # latest 
 topics: ["impact"]
 locations: ["nepal", "new-zealand", "italy", "haiti"]
-methods: [ "statistical-modeling" ]
+methods: [ "statistical-modeling"]
 members: ["sabine-loos", "jennifer-levitt", "kei-tomozawa"] # insert your slug here, e.g., "sabine-loos"
 content: ["gdif-nepal", "gdif-efficacy", "usgs-esc", "ier-report"]
 title: "Building damage estimation" # insert title here

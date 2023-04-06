@@ -3,7 +3,7 @@ slug: "damage-crowdsourcing" # match folder label name
 date: "2016 - 2018" # latest 
 topics: ["impact"]
 locations: ["haiti"]
-methods: [ "qualitative", "inference", "mixed-methods"]
+methods: [ "interviews", "statistical-inference", "mixed-methods", "surveys"]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
 content: ["radcrowd-report","damage-demandsurvey"]
 title: "Crowdsourcing Building Damage Data" # insert title here
