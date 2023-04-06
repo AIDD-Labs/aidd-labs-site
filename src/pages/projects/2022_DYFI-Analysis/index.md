@@ -1,6 +1,6 @@
 ---
 slug: "dyfi-analysis" # match folder label name
-date: "2022-10-01"
+date: "2022 - Present"
 topics: ["impact", "equity"]
 locations: ["global"]
 methods: [ "inference"]

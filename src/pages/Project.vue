@@ -55,7 +55,7 @@ import { mapState } from 'vuex';
                 <h2>Project team members</h2>
                 <MembersGrid variant="m" :data="members" />
             </MaxWidth>
-            <MaxWidth size="m" class="articles">
+            <MaxWidth size="m" class="articles" v-if="projectContent.length">
                 <h2>Project content</h2>
                 <ContentGrid :data="projectContent" />
             </MaxWidth>
@@ -118,15 +118,15 @@ import { mapState } from 'vuex';
             .top {
                 display: flex;
                 flex-direction: row;
-                gap: 6rem;
+                gap: 3rem;
                 .description {
                     display: flex;
                     width: 100%;
                     // height: auto;
                 }
                 .img {
-                    // height: 10px;
-                    width: max-content;
+                    width: 100%;
+                    height: auto;
                 }
             }   
 

@@ -1,6 +1,6 @@
 ---
 slug: "nepal-recovery" # match folder label name
-date: "2018-07-01"
+date: "2018 - 2021"
 topics: ["recovery", "impact", "equity"]
 locations: ["nepal"]
 methods: [ "statistical-modeling", "survey-collection", "mixed-methods"]

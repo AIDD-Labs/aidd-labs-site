@@ -29,9 +29,14 @@
                 if (!this.date) {
                     return "";
                 }
-                let parseTime = timeParse("%Y-%m-%d");
-                let recentDate = parseTime(this.date);
-                return timeFormat(`%b %d, %Y`)(recentDate);
+                else if (this.$route.name==="Projects") {
+                    return this.date;
+                }
+                else {
+                    let parseTime = timeParse("%Y-%m-%d");
+                    let recentDate = parseTime(this.date);
+                    return timeFormat(`%b %d, %Y`)(recentDate);
+                }
             },
         },
         methods: {},
