@@ -28,10 +28,20 @@
         computed: {
             ...mapState({
                 members: state => state.members,
-                memberMetadata: state => state.memberMetadata,
+                // memberMetadata: state => state.memberMetadata,
                 contents: state => state.contents,
                 recentPosts: state => [...state.posts.slice(0, 3)],
             }),
+            memberMetadata() {
+                return {
+                    current: [
+                        "sabine-loos",
+                        "madeline-karr",
+                        "marisa-macias",
+                        "elijah-knodel",
+                    ]
+                }
+            }
         },
 
         methods: {},
@@ -59,7 +69,8 @@
         </div>
         <div class="team__members">
             <h2>Current members</h2>
-            <MembersGrid :data="memberMetadata.current" />
+            <MembersGrid
+                :data="memberMetadata.current" />
         </div>
         <div class="team__alumni">
             <h2>Alumni</h2>
