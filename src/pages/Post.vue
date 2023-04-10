@@ -11,7 +11,7 @@
         data() {
             return {
                 ...this.$attrs.frontmatter,
-                
+
                 isLoaded: false,
 
                 breakpointWatcher: "",
@@ -37,7 +37,17 @@
         computed: {
             ...mapState({
                 posts: state => state.posts,
+                siteMetadata: state => state.siteMetadata,
             }),
+            author() {
+                return this.primaryAuthor;
+            },
+            blogSection() {
+                return this.topics[0]
+            },
+            tags() {
+                return this.topics;
+            },
             activeMarkdownComponent() {
                 return this.$route.name;
             },
@@ -54,6 +64,55 @@
                 } else {
                     return "sabine-loos";
                 }
+            },
+
+            activeMarkdownComponent() {
+                return this.$route.name;
+            },
+            pubDate() {
+                return JSON.stringify(new Date(this.$attrs.frontmatter.date));
+            },
+            canonicalUrl() {
+                return `${this.siteMetadata.siteUrl}${this.$route.path}`;
+            },
+            ogImage() {
+                return this.$attrs.frontmatter.og_image || "";
+            },
+            otherJsonLd() {
+                return {
+                    "@type": "BlogPosting",
+                    image: {
+                        "@type": "ImageObject",
+                        url: this.$attrs.frontmatter.featured_img
+                            ? `${this.siteMetadata.siteUrl}/images/metas/${this.$attrs.frontmatter.og_image}`
+                            : `${this.siteMetadata.siteUrl}/images/metas/og-image-default.png`,
+                        height: 630,
+                        width: 1200,
+                    },
+                    url: this.canonicalUrl,
+                    headline: this.$attrs.frontmatter.description,
+                    datePublished: this.date,
+                    inLanguage: "en-US",
+                    isFamilyFriendly: "true",
+                    keywords: [...this.tags, "LearningResource"],
+                    author: {
+                        "@type": "Person",
+                        name: this.author,
+                    },
+                    creator: {
+                        "@type": "Person",
+                        name: this.siteMetadata.author,
+                        url: this.siteMetadata.sabineLoosUrl,
+                    },
+                    publisher: {
+                        "@type": "Person",
+                        name: this.siteMetadata.author,
+                        url: this.siteMetadata.sabineLoosUrl,
+                    },
+                    mainEntityOfPage: "True",
+                    genre: ["SEO", "JSON-LD"],
+                    articleSection: this.blogSection,
+                };
             },
         },
         methods: {
@@ -147,6 +206,18 @@
 </script>
 
 <template>
+    <SEO
+        :meta-title="title"
+        :meta-description="description"
+        :meta-keywords="tags"
+        :canonical-url="canonicalUrl"
+        :other-json-ld="otherJsonLd"
+        page-type="post"
+        :section="blogSection"
+        :pub-date="date"
+        :author="author"
+        :meta-og-image="ogImage"
+    />
     <MaxWidth class="post" size="m">
         <div class="post-center" v-if="isLoaded">
             <div class="metas">
@@ -186,7 +257,8 @@
                                 <strong>Publication date:</strong> {{ date }}
                             </div>
                             <div class="citation" v-if="citation">
-                                <strong>Citation:</strong> {{ citation }} <Link :to="citationLink">{{ citationLink }}</Link>
+                                <strong>Citation:</strong> {{ citation }}
+                                <Link :to="citationLink">{{ citationLink }}</Link>
                             </div>
                             <!-- <div class="url" v-if="url">
                                 <strong>Open Access File:</strong> {{ url }}

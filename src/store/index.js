@@ -43,6 +43,7 @@ const store = createStore({
                 googleScholarUrl:
                     "https://scholar.google.com/citations?user=WEt_N8AAAAAJ&hl=en",
                 michCivilUrl: "https://cee.engin.umich.edu",
+                sabineLoosUrl: "https://sabineloos.com"
             },
         };
     },
