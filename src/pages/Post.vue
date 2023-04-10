@@ -43,10 +43,10 @@
                 return this.primaryAuthor;
             },
             blogSection() {
-                return this.topics[0];
+                return this.tags[0];
             },
             tags() {
-                return this.topics;
+                return this.topics ? this.topics : ["other"];
             },
             activeMarkdownComponent() {
                 return this.$route.name;
@@ -76,10 +76,9 @@
                 return `${this.siteMetadata.siteUrl}${this.$route.path}`;
             },
             ogImage() {
-                return Object.keys(this.$attrs.frontmatter).includes("og_image") &&
-                    this.$attrs.frontmatter.og_image
-                    ? this.$attrs.frontmatter.og_image
-                    : "";
+                if (this.og_image) {
+                    return this.og_image;
+                } else return "";
             },
             otherJsonLd() {
                 return {
@@ -93,7 +92,7 @@
                         width: 1200,
                     },
                     url: this.canonicalUrl,
-                    headline: this.$attrs.frontmatter.description,
+                    headline: this.description || "",
                     datePublished: this.date,
                     inLanguage: "en-US",
                     isFamilyFriendly: "true",
