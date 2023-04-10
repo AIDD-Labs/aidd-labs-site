@@ -80,8 +80,8 @@
             },
             ogImage() {
                 return this.metaOgImage
-                    ? `https://disasterdata.engin.umich.edu/images/metas/${this.metaOgImage}`
-                    : "https://disasterdata.engin.umich.edu/images/metas/og-image-aidd-default.png";
+                    ? `${this.siteMetadata.url}/metas/${this.metaOgImage}`
+                    : this.siteMetadata.ogImage;
             },
             url() {
                 return this.metaUrl ? this.metaUrl : this.siteMetadata.url;
@@ -186,7 +186,7 @@
         <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="https://disasterdata.engin.umich.edu/images/metas/apple-touch-icon.png"
+            href="https://disasterdata.engin.umich.edu/metas/apple-touch-icon.png"
         />
 
         <component :is="'script'" type="application/ld+json">

@@ -75,38 +75,40 @@
     };
 </script>
 <template>
-    <!-- <SEO
-        :meta-title="`${name} | ${siteMetadata.title}`"
-        :canonical-url="canonicalUrl"
-        :other-json-ld="otherJsonLd"
-        page-type="non-post"
-        section="Members"
-    /> -->
-    <MaxWidth size="xl" class="member-page" v-if="isLoaded">
-        <MaxWidth size="s" class="bio">
-            <div>
-                <Link no-decoration class="back-link" to="/team"
-                    ><span class="arrow">← &nbsp;</span>Team</Link
-                >
-                <AuthorBlock no-link orientation="pageHeader" :author="slug" />
-            </div>
-            <div>
-                <slot />
-                <!-- <Link :to="personalWebsite" doOpenInNewTab>More information</Link> -->
-            </div>
+    <div>
+        <SEO
+            :meta-title="`${name} | ${siteMetadata.title}`"
+            :canonical-url="canonicalUrl"
+            :other-json-ld="otherJsonLd"
+            page-type="non-post"
+            section="Members"
+        />
+        <MaxWidth size="xl" class="member-page" v-if="isLoaded">
+            <MaxWidth size="s" class="bio">
+                <div>
+                    <Link no-decoration class="back-link" to="/team"
+                        ><span class="arrow">← &nbsp;</span>Team</Link
+                    >
+                    <AuthorBlock no-link orientation="pageHeader" :author="slug" />
+                </div>
+                <div>
+                    <slot />
+                    <!-- <Link :to="personalWebsite" doOpenInNewTab>More information</Link> -->
+                </div>
+            </MaxWidth>
+            <MaxWidth size="s" class="articles" v-if="articlesByAuthor.length">
+                <h2>Recent content by {{ name }}</h2>
+                <ContentGrid :data="articlesByAuthor" />
+            </MaxWidth>
+            <MaxWidth size="s" class="team">
+                <Link to="/team"> <h2>Other team members</h2></Link>
+                <MembersGrid variant="m" :data="otherTeamMembers" />
+            </MaxWidth>
+            <!-- <MaxWidth size="s" class="content">
+                <JoinTheLabBlock />
+            </MaxWidth> -->
         </MaxWidth>
-        <MaxWidth size="s" class="articles" v-if="articlesByAuthor.length">
-            <h2>Recent content by {{ name }}</h2>
-            <ContentGrid :data="articlesByAuthor" />
-        </MaxWidth>
-        <MaxWidth size="s" class="team">
-            <Link to="/team"> <h2>Other team members</h2></Link>
-            <MembersGrid variant="m" :data="otherTeamMembers" />
-        </MaxWidth>
-        <!-- <MaxWidth size="s" class="content">
-            <JoinTheLabBlock />
-        </MaxWidth> -->
-    </MaxWidth>
+    </div>
 </template>
 <style lang="scss">
     .member-page {

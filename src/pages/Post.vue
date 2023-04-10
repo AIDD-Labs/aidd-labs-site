@@ -84,8 +84,8 @@
                     image: {
                         "@type": "ImageObject",
                         url: this.$attrs.frontmatter.featured_img
-                            ? `${this.siteMetadata.siteUrl}/images/metas/${this.$attrs.frontmatter.og_image}`
-                            : `${this.siteMetadata.siteUrl}/images/metas/og-image-default.png`,
+                            ? `${this.siteMetadata.siteUrl}/metas/${this.$attrs.frontmatter.og_image}`
+                            : `${this.siteMetadata.siteUrl}/metas/og-image-default.png`,
                         height: 630,
                         width: 1200,
                     },
