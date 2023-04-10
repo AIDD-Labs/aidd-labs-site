@@ -79,9 +79,7 @@
                     : this.siteMetadata.title;
             },
             ogImage() {
-                return this.metaOgImage
-                    ? `${this.siteMetadata.url}/metas/${this.metaOgImage}`
-                    : this.siteMetadata.ogImage;
+                return this.metaOgImage || this.siteMetadata.ogImage;
             },
             url() {
                 return this.metaUrl ? this.metaUrl : this.siteMetadata.url;

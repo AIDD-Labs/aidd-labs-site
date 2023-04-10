@@ -41,7 +41,7 @@
                 return `${this.siteMetadata.siteUrl}${this.$route.path}`;
             },
             ogImage() {
-                return this.$attrs.frontmatter.og_image || "";
+                return this.img ? `${this.siteMetadata.url}${this.img}` : "";
             },
             socials() {
                 let socials = ["twitter", "linkedin"];
@@ -82,6 +82,7 @@
             :other-json-ld="otherJsonLd"
             page-type="non-post"
             section="Members"
+            :meta-og-image="ogImage"
         />
         <MaxWidth size="xl" class="member-page" v-if="isLoaded">
             <MaxWidth size="s" class="bio">
@@ -133,6 +134,10 @@
         .bio {
             display: flex;
             gap: 6rem;
+
+            @media (max-width: 800px) {
+                flex-direction: column;
+            }
 
             .narrow-width {
                 display: none;
