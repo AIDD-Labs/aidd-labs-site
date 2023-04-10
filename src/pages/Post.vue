@@ -43,7 +43,7 @@
                 return this.primaryAuthor;
             },
             blogSection() {
-                return this.topics[0]
+                return this.topics[0];
             },
             tags() {
                 return this.topics;
@@ -76,15 +76,18 @@
                 return `${this.siteMetadata.siteUrl}${this.$route.path}`;
             },
             ogImage() {
-                return this.$attrs.frontmatter.og_image || "";
+                return Object.keys(this.$attrs.frontmatter).includes("og_image") &&
+                    this.$attrs.frontmatter.og_image
+                    ? this.$attrs.frontmatter.og_image
+                    : "";
             },
             otherJsonLd() {
                 return {
                     "@type": "BlogPosting",
                     image: {
                         "@type": "ImageObject",
-                        url: this.$attrs.frontmatter.featured_img
-                            ? `${this.siteMetadata.siteUrl}/metas/${this.$attrs.frontmatter.og_image}`
+                        url: this.ogImage
+                            ? this.ogImage
                             : `${this.siteMetadata.siteUrl}/metas/og-image-default.png`,
                         height: 630,
                         width: 1200,
