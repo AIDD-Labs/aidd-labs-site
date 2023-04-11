@@ -188,7 +188,7 @@
                 width: 4rem;
                 height: 4rem;
                 position: relative;
-                background: var(--blue-500);
+                background: var(--blue-900);
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -197,12 +197,12 @@
                 margin: 0;
 
                 &.open {
-                    background: var(--blue-300);
+                    background: var(--blue-200);
                 }
 
                 &:hover {
                     cursor: pointer;
-                    background: var(--blue-300);
+                    background: var(--blue-200);
 
                     .nav-icon {
                         span {
@@ -225,7 +225,7 @@
                 position: absolute;
                 height: 3px;
                 width: 100%;
-                background: var(--blue-300);
+                background: var(--blue-200);
                 border-radius: 9px;
                 opacity: 1;
                 left: 0;
@@ -268,14 +268,14 @@
             .nav-icon {
                 &.open {
                     span {
-                        background: var(--blue-600);
+                        background: var(--blue-900);
                     }
                 }
             }
         }
 
         .mobile-menu {
-            background: var(--blue-800);
+            background: var(--background-color);
             height: 100%;
             width: 100%;
             top: 4em;
@@ -297,7 +297,7 @@
             gap: 1em;
 
             h2 {
-                color: white;
+                color: black;
             }
 
             .nav-link {
@@ -305,7 +305,7 @@
                 padding-right: 1em;
                 padding-top: 1em;
                 padding-bottom: 1em;
-                background: var(--blue-300);
+                background: var(--blue-200);
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
@@ -314,6 +314,7 @@
 
                 .Button {
                     width: 100%;
+                    background-color: var(--green-200);
                     text-transform: capitalize;
                 }
 
@@ -330,7 +331,7 @@
                 }
 
                 &:hover {
-                    background: var(--blue-300);
+                    background: var(--blue-200);
                 }
             }
         }
