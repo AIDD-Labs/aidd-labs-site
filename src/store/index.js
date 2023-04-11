@@ -45,6 +45,7 @@ const store = createStore({
                 michCivilUrl: "https://cee.engin.umich.edu",
                 sabineLoosUrl: "https://sabineloos.com"
             },
+            isMobileMenuOpen: false,
         };
     },
 
@@ -151,6 +152,9 @@ const store = createStore({
         setMode(state, mode) {
             state.mode = mode;
         },
+        toggleMobileMenu(state) {
+            state.isMobileMenuOpen = !state.isMobileMenuOpen;
+        },
     },
 
     actions: {
@@ -196,6 +200,9 @@ const store = createStore({
 
         setMode({commit}, mode) {
             commit("setMode", mode);
+        },
+        toggleMobileMenu({commit}) {
+            commit("toggleMobileMenu");
         },
     },
 });
