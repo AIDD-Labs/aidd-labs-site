@@ -21,15 +21,6 @@
 </script>
 
 <template>
-    <!-- <Head>
-        <title>
-            {{
-                $route.meta.title
-                    ? `${$route.meta.title} | marguerite.io`
-                    : "marguerite.io"
-            }}
-        </title>
-    </Head> -->
     <div class="app" :theme="themeColor">
         <div id="tooltip-teleport"></div>
         <Layout>

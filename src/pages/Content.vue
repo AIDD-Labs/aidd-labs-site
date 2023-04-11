@@ -18,7 +18,6 @@
                 return this.$route.query;
             },
             filters() {
-                console.log(this.contentMetadata)
                 return [
                     {
                         key: "type",
