@@ -44,6 +44,7 @@ const store = createStore({
                     "https://scholar.google.com/citations?user=WEt_N8AAAAAJ&hl=en",
                 michCivilUrl: "https://cee.engin.umich.edu",
             },
+            isMobileMenuOpen: false,
         };
     },
 
@@ -150,6 +151,9 @@ const store = createStore({
         setMode(state, mode) {
             state.mode = mode;
         },
+        toggleMobileMenu(state) {
+            state.isMobileMenuOpen = !state.isMobileMenuOpen;
+        },
     },
 
     actions: {
@@ -195,6 +199,9 @@ const store = createStore({
 
         setMode({commit}, mode) {
             commit("setMode", mode);
+        },
+        toggleMobileMenu({commit}) {
+            commit("toggleMobileMenu");
         },
     },
 });
