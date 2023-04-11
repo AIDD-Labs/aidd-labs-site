@@ -11,4 +11,6 @@ linkedin: ""
 twitter: 
 personalWebsite: 
 ---
-## Bio
+
+## BIO 
+Jing Cheng (JC) Ng worked with AIDD labs while studying ecology at Nanyang Technological University. He validated Post-Disaster Needs Assessments using groundtruth data.
