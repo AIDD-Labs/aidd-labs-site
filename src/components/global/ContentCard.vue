@@ -56,20 +56,31 @@
         </div>
         <div class="article-metas">
             <TagPill
+<<<<<<< Updated upstream
                 v-if="topics"
                 :tag="topics[0]" />
+=======
+                v-if="type" 
+                    variant="type"
+                    :tag="this.article?.meta?.type"
+                 />
+            <TagPill
+                v-else-if="topics" 
+                    :tag="topics[0]"
+                 />
+>>>>>>> Stashed changes
             <div class="date">
                 {{ humanDate }}
             </div>
         </div>
         <h4 class="article-metas">
-            {{ title }}
+            {{ this.article?.meta?.title }}
         </h4>
         <AuthorBlock
             no-link
             orientation="landscape"
             v-if="members"
-            :author="members[0]"
+            :author="this.article?.meta?.members[0]"
         />
     </Link>
 </template>
