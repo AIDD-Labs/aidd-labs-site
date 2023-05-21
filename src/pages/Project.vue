@@ -123,9 +123,9 @@ import { mapState } from 'vuex';
         .flex-wrapper {
             display: flex;
             flex-direction: column;
-            gap: 1em;
+            gap: 2em;
             position: relative;
-            padding-top: 1em;
+            padding-top: 2em;
             @media (max-width: 1100px) {
                 gap: 4em;
             }
