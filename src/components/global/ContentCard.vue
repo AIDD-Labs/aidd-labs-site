@@ -17,6 +17,9 @@
             };
         },
         computed: {
+            meta() {
+                return this.article?.meta;
+            },
             imageSrc() {
                 if (this.article?.meta?.thumbnail[0] != "/") {
                     // Image should start with `/` to specify root folder beginning
@@ -56,20 +59,26 @@
         </div>
         <div class="article-metas">
             <TagPill
-                v-if="topics"
-                :tag="topics[0]" />
+                v-if="type" 
+                    variant="type"
+                    :tag="meta?.type"
+                 />
+            <TagPill
+                v-else-if="topics" 
+                    :tag="topics[0]"
+                 />
             <div class="date">
                 {{ humanDate }}
             </div>
         </div>
         <h4 class="article-metas">
-            {{ title }}
+            {{ meta?.title }}
         </h4>
         <AuthorBlock
             no-link
             orientation="landscape"
             v-if="members"
-            :author="members[0]"
+            :author="meta?.members[0]"
         />
     </Link>
 </template>
