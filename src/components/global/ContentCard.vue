@@ -56,10 +56,6 @@
         </div>
         <div class="article-metas">
             <TagPill
-<<<<<<< Updated upstream
-                v-if="topics"
-                :tag="topics[0]" />
-=======
                 v-if="type" 
                     variant="type"
                     :tag="this.article?.meta?.type"
@@ -68,7 +64,6 @@
                 v-else-if="topics" 
                     :tag="topics[0]"
                  />
->>>>>>> Stashed changes
             <div class="date">
                 {{ humanDate }}
             </div>
