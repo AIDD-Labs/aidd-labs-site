@@ -4,7 +4,7 @@ date: "2022 - 2023"
 end: "present"
 topics: ["impact"]
 locations: ["global"]
-methods: [ "qualitative-analysis" ]
+methods: [ "qualitative-methods" ] # qualitative-analysis, mixed-methods
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
 content: ["usgs-esc", "damage-demandsurvey","damage-data-uses-12NCEE"]
 title: "Evaluating Uses of Building Damage Data" # insert title here
