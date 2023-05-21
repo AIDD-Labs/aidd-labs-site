@@ -46,5 +46,10 @@
         &.type {
             background: var(--orange-500);
         }
+
+        &.method {
+            background: var(--green-200);
+            color: black;
+        }
     }
 </style>

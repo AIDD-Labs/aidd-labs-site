@@ -29,16 +29,28 @@ import { mapState } from 'vuex';
                 ><span class="arrow">← &nbsp;</span>Projects</Link
             >
             <h1>{{ title }}</h1>
-            <div class="tags">
-                <Link
-                    v-for="topic in topics"
-                    :key="topic"
-                    no-decoration
-                    :to="`/projects?topic=${topic}`"
-                >
-                    <TagPill variant="topic" :tag="topic" />
-                </Link>
+            <div class="info">
+                <div> <b>{{ date }}</b> </div>
+                <div class="tags">
+                    <Link
+                        v-for="topic in topics"
+                        :key="topic"
+                        no-decoration
+                        :to="`/projects?topic=${topic}`"
+                    >
+                        <TagPill variant="topic" :tag="topic" />
+                    </Link>
+                    <Link
+                        v-for="method in methods"
+                        :key="method"
+                        no-decoration
+                        :to="`/projects?method=${method}`"
+                    >
+                        <TagPill variant="method" :tag="method" />
+                    </Link>
+                </div>
             </div>
+            
         </div>
         <div class="flex-wrapper">
             <!-- <MaxWidth size = "l"> -->
@@ -78,6 +90,12 @@ import { mapState } from 'vuex';
             align-items: flex-start;
             gap: 1em;
 
+            .info {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                gap: 1em;
+            }
             .back-link {
                 margin-bottom: 1.5em;
                 font-size: 0.8em;
