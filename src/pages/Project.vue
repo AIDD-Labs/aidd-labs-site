@@ -64,7 +64,7 @@ import { mapState } from 'vuex';
                 </div>
             <!-- </MaxWidth> -->
             <MaxWidth size="m" class="team">
-                <h2>Project team members</h2>
+                <h2>Core team members</h2>
                 <MembersGrid variant="m" :data="members" />
             </MaxWidth>
             <MaxWidth size="m" class="articles" v-if="projectContent.length">
