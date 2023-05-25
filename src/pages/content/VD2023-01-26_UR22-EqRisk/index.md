@@ -12,7 +12,7 @@ is_featured: false
 url: "https://youtu.be/U9g7JR5dy5g" # include link to open pdf file
 thumbnail: "/src/pages/content/VD2023-01-26_UR22-EqRisk/EqRisk-UR22-Sabine.png" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.png"
 title: "Understanding Risk 2022 -- Interview with Sabine Loos." # insert title here
-authors: "Sachiko Gause" # insert full author list here, to be listed publicly
+authors: "Sachiko Gause & Sabine Loos" # insert full author list here, to be listed publicly
 publication: "The World Bank Global Facility for Disaster Risk Reduction" # insert publication location here (like the journal)
 description: "An overview of integrating social equity into risk modeling." # insert a one sentence description here
 citation: "" # add the citation here, in APA format
