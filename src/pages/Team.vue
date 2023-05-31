@@ -28,19 +28,28 @@
         computed: {
             ...mapState({
                 members: state => state.members,
-                // memberMetadata: state => state.memberMetadata,
+                memberMetadata: state => state.memberMetadata,
                 contents: state => state.contents,
                 recentPosts: state => [...state.posts.slice(0, 3)],
             }),
-            memberMetadata() {
-                return {
-                    current: [
-                        "sabine-loos",
-                        "madeline-karr",
-                        "marisa-macias",
-                        "elijah-knodel",
-                    ]
+            currentMembers() {
+                const seniorityMap = {
+                    "Professor":0,
+                    "Associate Professor":0,
+                    "Assistant Professor":0,
+                    "Postdoctoral Researcher":1,
+                    "PhD Researcher":2,
+                    "Masters Researcher":3,
+                    "Undergraduate Researcher":4
                 }
+                return this.memberMetadata.current.sort((a,b) => {
+                    return seniorityMap[this.members[a].meta.title] - seniorityMap[this.members[b].meta.title];
+                })
+            },
+            alumniMembers () {
+                return this.memberMetadata.alumni.sort((a,b) => {
+                    return this.members[b].meta.yearDeparted - this.members[a].meta.yearDeparted;
+                })
             }
         },
 
@@ -70,11 +79,11 @@
         <div class="team__members">
             <h2>Current members</h2>
             <MembersGrid
-                :data="memberMetadata.current" />
+                :data="currentMembers" />
         </div>
         <div class="team__alumni">
             <h2>Alumni</h2>
-            <div v-for="alumni in memberMetadata.alumni" :key="alumni">
+            <div v-for="alumni in alumniMembers" :key="alumni">
                 <Link :to="members[alumni].path">
                     {{ members[alumni].meta.name }}
                 </Link>, '{{ members[alumni].meta.yearDeparted?.slice(2) }} - now at 

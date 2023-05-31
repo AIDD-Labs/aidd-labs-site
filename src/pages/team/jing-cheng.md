@@ -1,8 +1,8 @@
 ---
 slug: "jing-cheng"
-name: "Jing Chen Ng"
+name: "Jing Cheng Ng"
 title: "Undergraduate Researcher"
-yearDeparted: "2023"
+yearDeparted: "2020"
 affiliation: "Nanyang Technological University"
 affiliationLink: ""
 type: "alumni"
