@@ -2,7 +2,7 @@
 slug: "jennifer-levitt"
 name: "Jenny Levitt"
 title: "Undergraduate Researcher"
-yearDeparted: "2023"
+yearDeparted: "2021"
 affiliation: "Stanford University"
 affiliationLink: ""
 type: "alumni"

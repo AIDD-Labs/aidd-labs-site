@@ -1,7 +1,7 @@
 ---
 slug: "sabine-loos"
 name: "Dr. Sabine Loos"
-title: "Principal Investigator"
+title: "Assistant Professor"
 affiliation: "University of Michigan"
 img: "/img/member-sabine.png"
 linkedin: "https://www.linkedin.com/in/sabine-loos"
