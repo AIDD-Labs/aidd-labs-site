@@ -18,13 +18,6 @@ citation: "Bhattacharjee, Gitanjali, Robert Soden, Karen Barns, Sabine Loos, and
 citationLink: "https://doi.org/10.1177/87552930211030297"
 abstract: ""
 ---
-<Link is-button doOpenInNewTab to="https://drive.google.com/file/d/16Q01aXhOyfTMlF3jYCcOM4e97AnhXF9f/view"> Read the full article here </Link>
 
-<br/>
-<br/>
 
-<div class="hero-wrapper">
-    <!-- Not totally sure why the public paths are failing the build rn. Todo. -->
-    <img src="./fig1-casestudies.png" :style="{maxWidth: '900px', margin: '0 auto'}"/>
-</div>
 
