@@ -29,16 +29,28 @@ import { mapState } from 'vuex';
                 ><span class="arrow">← &nbsp;</span>Projects</Link
             >
             <h1>{{ title }}</h1>
-            <div class="tags">
-                <Link
-                    v-for="topic in topics"
-                    :key="topic"
-                    no-decoration
-                    :to="`/projects?topic=${topic}`"
-                >
-                    <TagPill variant="topic" :tag="topic" />
-                </Link>
+            <div class="info">
+                <div> <b>{{ date }}</b> </div>
+                <div class="tags">
+                    <Link
+                        v-for="topic in topics"
+                        :key="topic"
+                        no-decoration
+                        :to="`/projects?topic=${topic}`"
+                    >
+                        <TagPill variant="topic" :tag="topic" />
+                    </Link>
+                    <Link
+                        v-for="method in methods"
+                        :key="method"
+                        no-decoration
+                        :to="`/projects?method=${method}`"
+                    >
+                        <TagPill variant="method" :tag="method" />
+                    </Link>
+                </div>
             </div>
+            
         </div>
         <div class="flex-wrapper">
             <!-- <MaxWidth size = "l"> -->
@@ -52,7 +64,7 @@ import { mapState } from 'vuex';
                 </div>
             <!-- </MaxWidth> -->
             <MaxWidth size="m" class="team">
-                <h2>Project team members</h2>
+                <h2>Core team members</h2>
                 <MembersGrid variant="m" :data="members" />
             </MaxWidth>
             <MaxWidth size="m" class="articles" v-if="projectContent.length">
@@ -78,6 +90,12 @@ import { mapState } from 'vuex';
             align-items: flex-start;
             gap: 1em;
 
+            .info {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                gap: 1em;
+            }
             .back-link {
                 margin-bottom: 1.5em;
                 font-size: 0.8em;
@@ -105,9 +123,9 @@ import { mapState } from 'vuex';
         .flex-wrapper {
             display: flex;
             flex-direction: column;
-            gap: 1em;
+            gap: 2em;
             position: relative;
-            padding-top: 1em;
+            padding-top: 2em;
             @media (max-width: 1100px) {
                 gap: 4em;
             }

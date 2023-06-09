@@ -127,12 +127,13 @@
             overflow: hidden;
             display: flex;
             justify-content: center;
-            align-items: flex-end;
+            align-items: stretch;
             border: 1px solid black;
 
             img {
                 width: 500px;
                 height: auto;
+                object-fit: cover;
             }
         }
 
