@@ -1,6 +1,7 @@
 ---
 slug: "nepal-recovery" # match folder label name
 date: "2018 - 2021"
+status: "published"
 topics: ["recovery", "impact", "equity"]
 locations: ["nepal"]
 methods: [ "statistical-modeling", "surveys", "mixed-methods", "qualitative-methods"]
