@@ -33,6 +33,15 @@
             info() {
                 return this.members[this.author];
             },
+            link() {
+                if(this.info.meta.type === "external") {
+                    return this.info.meta.personalWebsite;
+                }
+                else {
+                    return `/team/${this.info.meta.slug}`;
+                }
+                
+            },
         },
         methods: {},
         mounted() {},
@@ -43,7 +52,8 @@
         :is="noLink ? 'div' : 'Link'"
         class="author-block"
         no-decoration
-        :to="`/team/${info.meta.slug}`"
+        :to="link"
+        do-open-in-new-tab
     >
         <div class="author-metas portrait" v-if="orientation == 'portrait'">
             <div class="bio-image-wrapper">
@@ -141,7 +151,7 @@
                 <div :class="`block ${info.meta.type && `block--${info.meta.type}`}`"></div>
                 <img :src="info.meta.img" />
             </div>
-            <div :to="`/team/${info.meta.slug}`" class="metas">
+            <div :to="link" class="metas" do-open-in-new-tab>
                 <h3>{{ info.meta.name }}</h3>
                 <div>{{ info.meta.title }}</div>
                 <div>{{ info.meta.affiliation }}</div>

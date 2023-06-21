@@ -7,8 +7,6 @@ affiliation: "Nanyang Technological University"
 affiliationLink: ""
 type: "alumni"
 img: ""
-linkedin: ""
-twitter: 
 personalWebsite: 
 ---
 

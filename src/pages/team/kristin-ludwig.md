@@ -7,8 +7,6 @@ affiliation: "U.S. Geological Survey"
 affiliationLink: "https://www.usgs.gov/staff-profiles/kristin-ludwig"
 type: "external"
 img: "/img/member-kristin.png"
-linkedin: ""
-twitter: 
 personalWebsite: "https://www.usgs.gov/staff-profiles/kristin-ludwig"
 ---
 ## Bio
