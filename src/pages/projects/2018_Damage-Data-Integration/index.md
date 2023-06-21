@@ -1,6 +1,7 @@
 ---
 slug: "damage-data-integration" # match folder label name
 date: "2018 - 2021" # latest 
+status: "published"
 topics: ["impact"]
 locations: ["nepal", "new-zealand", "italy", "haiti"]
 methods: [ "statistical-modeling"]

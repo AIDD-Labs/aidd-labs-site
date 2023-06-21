@@ -1,6 +1,7 @@
 ---
 slug: "dyfi-analysis" # match folder label name
 date: "2022 - Present"
+status: "published"
 topics: ["equity","impact"]
 locations: ["global"]
 methods: [ "statistical-inference"]

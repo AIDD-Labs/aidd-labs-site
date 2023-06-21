@@ -1,6 +1,7 @@
 ---
 slug: "damage-crowdsourcing" # match folder label name
 date: "2016 - 2018" # latest 
+status: "published"
 topics: ["impact"]
 locations: ["haiti"]
 methods: [ "qualitative-methods", "statistical-inference", "mixed-methods", "surveys"]

@@ -1,7 +1,7 @@
 ---
 slug: "UR22-EqRisk" # match folder label name
 date: "2023-01-26"
-status: "published"
+status: "draft"
 topics: ["equity","risk", "impact"] 
 locations: ["global"] # "nepal", "new-zealand", "haiti", "italy"
 type: "video" # "blog", "report", "journal-article", "visualization"

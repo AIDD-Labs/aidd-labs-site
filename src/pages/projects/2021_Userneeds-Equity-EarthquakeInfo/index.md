@@ -1,6 +1,7 @@
 ---
 slug: "userneeds-equity-earthquakeinfo" # match folder label name
 date: "2021 - Present"
+status: "published"
 topics: ["impact", "equity"]
 locations: ["global"]
 methods: [ "qualitative-methods"]

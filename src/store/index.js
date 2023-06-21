@@ -87,7 +87,7 @@ const store = createStore({
 
             sortedContents = sortedContents.sort((a, b) => {
                 return new Date(b.meta.date) - new Date(a.meta.date);
-            });
+            }).filter(content => content.meta.status && content.meta.status !== "draft");
 
             state.contents = sortedContents; // might want to add content by topic
         },
@@ -115,7 +115,7 @@ const store = createStore({
                 const astart = a.meta.date.trim().split("-")[0]
                 const bstart = b.meta.date.trim().split("-")[0]
                 return new Date(bstart) - new Date(astart);
-            });
+            }).filter(project => project.meta.status && project.meta.status !== "draft");
 
             state.projects = sortedProjects; 
         },
