@@ -24,6 +24,8 @@ abstract:
     <img src="./Bhaktapur-Loos.png" :style="{maxWidth: '900px', margin: '0 auto'}"/>
 </div>
 
+TESTING
+
 About a month ago, I was standing in front of a small conference room presenting to a group of Nepali civic tech enthusiasts about my professional journey to Kathmandu Living Labs (KLL). I received many thoughtful questions at the end of my presentation, but I’ve been reflecting on my answer to one specific question since I returned from my extended visit to Nepal. This question was posed by one of KLL’s interns, who has been deciding on which subject to study at university. He asked, “Why civil engineering?” Harmless enough, but we could extrapolate. Why are buildings and infrastructure important? I said something along the lines of: well, in my opinion, buildings and infrastructure systems make up the basis of civilization. After a disaster, having these basic needs covered, like safe shelter, frees up our minds to focus more on our next level of pursuits.
 
 ![](./Loos-KLL.png)
