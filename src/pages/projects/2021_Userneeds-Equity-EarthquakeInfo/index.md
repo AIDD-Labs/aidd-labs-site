@@ -9,5 +9,6 @@ members: ["sabine-loos", "marisa-macias", "madeline-karr", "elijah-knodel", "dav
 content: ["usgs-esc", "UR22-EqRisk", "macias-mines-symposium"]
 title: "User needs for equity-centered earthquake information" # insert title here
 thumbnail: "/img/proj-userNeedsUSGS.png"
-description: "USGS" # insert a one sentence description here
+description: "" # insert a one sentence description here
 ---
+USGS
