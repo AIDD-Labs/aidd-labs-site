@@ -13,4 +13,4 @@ thumbnail: "/src/pages/projects/2018_Uses-Damage-Data/fig4-actualuses-horizontal
 description: "" # insert a one sentence description here
 ---
 
-Test
+Damage data uses
