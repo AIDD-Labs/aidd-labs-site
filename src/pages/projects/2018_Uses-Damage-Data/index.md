@@ -10,6 +10,7 @@ members: ["sabine-loos", "david-wald", "david-lallemant", "lori-peek"] # insert 
 content: ["usgs-esc", "damage-demandsurvey","damage-data-uses-12NCEE"]
 title: "Evaluating Uses of Building Damage Data" # insert title here
 thumbnail: "/src/pages/projects/2018_Uses-Damage-Data/fig4-actualuses-horizontal-v2.png"
-description: "Test" # insert a one sentence description here
+description: "" # insert a one sentence description here
 ---
 
+Damage data uses
