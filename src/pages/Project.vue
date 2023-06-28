@@ -56,7 +56,7 @@ import { mapState } from 'vuex';
             <!-- <MaxWidth size = "l"> -->
                 <div class="top">
                 <div class="description">
-                    {{ description }}
+                    <slot />
                 </div>
                 <div class="img">
                     <img :src="thumbnail" alt="">
