@@ -70,11 +70,12 @@
         &.size {
             &-m {
                 display: flex;
+                flex-flow: row wrap;
                 gap: 3em;
                 font-size: 0.75em;
 
                 .member {
-                    max-width: 180px;
+                    max-width: 140px;
                 }
 
                 h3 {
