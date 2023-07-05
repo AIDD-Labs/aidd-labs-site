@@ -9,7 +9,7 @@ members: ["sabine-loos", "david-lallemant", "karen-barns", "robert-soden", "gita
 content: ["radcrowd-report","damage-demandsurvey", "radcrowd-11NCEE"]
 title: "Crowdsourcing Building Damage Data" # insert title here
 thumbnail: "/img/proj-damage-crowdsourcing.png"
-description: "As a collaboration between the Stanford Urban Resilience Inititative, Heidelberg University, The World Bank, and Humanitarian OpenStreetMap Team, This project compares three approaches to crowdsourcing building damage data using satellite imagery to inform disaster response decisions." # insert a one sentence description here
+description: "As a collaboration between the Stanford Urban Resilience Inititative, Heidelberg University, The World Bank, and Humanitarian OpenStreetMap Team, this project compares three approaches to crowdsourcing building damage data using satellite imagery to inform disaster response decisions." # insert a one sentence description here
 ---
 Since the early 2000s, crowdsourced analysis of satellite and aerial imagery has been tested as a way to rapidly determine areas with building damage after major disasters. Compared to traditional field-based damage assessments, crowdsourcing initiatives rapidly process extensive data over a large spatial extent and can inform many important emergency response and recovery decisions.
 
