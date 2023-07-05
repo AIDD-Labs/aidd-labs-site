@@ -58,7 +58,7 @@
         <div class="author-metas portrait" v-if="orientation == 'portrait'">
             <div class="bio-image-wrapper">
                 <div class="bio-image-container">
-                    <img class="bio-image" :src="info.meta.img" />
+                    <img class="bio-image" :src="info.meta.img" v-if="info.meta.img"/>
                 </div>
             </div>
             <h4 class="name">{{ info.meta.name }}</h4>
@@ -72,7 +72,7 @@
         <div class="author-metas landscape" v-if="orientation == 'landscape'">
             <div class="bio-image-wrapper">
                 <div class="bio-image-container">
-                    <img class="bio-image" :src="info.meta.img" />
+                    <img class="bio-image" :src="info.meta.img" v-if="info.meta.img" />
                 </div>
             </div>
             <div class="info">
@@ -85,7 +85,7 @@
         <div class="author-metas pageHeader" v-if="orientation == 'pageHeader'">
             <div class="bio-image-wrapper">
                 <div class="bio-image-container">
-                    <img class="bio-image" :src="info.meta.img" />
+                    <img class="bio-image" :src="info.meta.img" v-if="info.meta.img" />
                 </div>
             </div>
             <h4 class="name">{{ info.meta.name }}</h4>
@@ -149,7 +149,8 @@
         <div class="member memberGrid" v-if="orientation == 'memberGrid'">
             <div class="image-container">
                 <div :class="`block ${info.meta.type && `block--${info.meta.type}`}`"></div>
-                <img :src="info.meta.img" />
+                <img :src="info.meta.img" class="member-grid-image" v-if="info.meta.img"/>
+                <div class="member-grid-image-placeholder" v-else/>
             </div>
             <div :to="link" class="metas" do-open-in-new-tab>
                 <h3>{{ info.meta.name }}</h3>
@@ -331,11 +332,18 @@
                     }
                 }
 
-                img {
+                .member-grid-image {
                     padding-top: $bio-img-padding;
                     padding-left: $bio-img-padding;
                     aspect-ratio: 2/3;
                     object-fit: cover;
+                }
+                .member-grid-image-placeholder {
+                    padding-top: $bio-img-padding;
+                    padding-left: $bio-img-padding;
+                    aspect-ratio: 2/3;
+                    background-color: antiquewhite;
+                    background-clip: content-box;
                 }
             }
 
