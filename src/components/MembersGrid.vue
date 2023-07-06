@@ -75,7 +75,7 @@
                 font-size: 0.75em;
 
                 .member {
-                    max-width: 170px;
+                    max-width: 140px;
                 }
 
                 h3 {
