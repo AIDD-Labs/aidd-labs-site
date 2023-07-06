@@ -7,7 +7,7 @@
         data() {
             return {
                 theme: "light",
-                navPages: ["content", "team"],
+                navPages: ["projects","content", "team"],
             };
         },
         computed: {
