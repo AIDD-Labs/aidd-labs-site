@@ -5,9 +5,9 @@ status: "published"
 topics: ["impact", "equity"]
 locations: ["global"]
 methods: [ "qualitative-methods"]
-members: ["sabine-loos", "marisa-macias", "madeline-karr", "elijah-knodel", "david-wald", "kristin-ludwig", "lori-peek", "jocelyn-west"] # insert your slug here, e.g., "sabine-loos"
+members: ["sabine-loos", "marisa-macias", "madeline-karr", "elijah-knodel", "david-wald", "kristin-ludwig", "lori-peek", "jocelyn-west", "elizabeth-reddy"] # insert your slug here, e.g., "sabine-loos"
 content: ["usgs-esc", "UR22-EqRisk", "macias-mines-symposium"]
-title: "Co-Designing Actionable Earthquake Impact Products ​to Support Equity-Focused Disaster Management​" # insert title here
+title: "Co-Designing Actionable USGS Earthquake Impact Products ​to Support Equity-Focused Disaster Management​" # insert title here
 thumbnail: "/img/proj-userNeedsUSGS.png"
 description: "" # insert a one sentence description here
 ---
