@@ -71,10 +71,11 @@
             &-m {
                 display: flex;
                 gap: 3em;
+                flex-wrap: wrap;
                 font-size: 0.75em;
 
                 .member {
-                    max-width: 180px;
+                    max-width: 140px;
                 }
 
                 h3 {
