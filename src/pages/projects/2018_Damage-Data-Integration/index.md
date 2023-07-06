@@ -8,7 +8,7 @@ methods: [ "statistical-modeling"]
 members: ["sabine-loos", "jennifer-levitt", "kei-tomozawa", "jack-baker", "david-lallemant", "sangho-yun", "nama-budhathoki"] # insert your slug here, e.g., "sabine-loos"
 content: ["gdif-nepal", "gdif-efficacy", "usgs-esc", "ier-report", "GDIF1-code", "Geo4Dev", "GDIF2-code"]
 title: "Rapid Building Damage Estimation through Data Integration" # insert title here
-thumbnail: "/src/pages/projects/2018_Damage-Data-Integration/fig1-casestudies.png"
+thumbnail: "/img/proj-damage-data-integration.png"
 description: "" # insert a one sentence description here
 ---
 
