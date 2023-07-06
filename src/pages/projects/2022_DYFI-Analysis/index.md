@@ -1,14 +1,14 @@
 ---
 slug: "dyfi-analysis" # match folder label name
 date: "2022 - Present"
-status: "published"
+status: "draft"
 topics: ["equity","impact"]
 locations: ["global"]
 methods: [ "statistical-inference"]
 members: ["elijah-knodel","sabine-loos"] # insert your slug here, e.g., "sabine-loos"
 content: []
 title: "Accessibility of Crowdsourced Shaking Data" # insert title here
-thumbnail: "/src/pages/projects/2022_DYFI-Analysis/dyfi-response-rate.png"
+thumbnail: "/img/proj-dyfi.png"
 description: "" # insert a one sentence description here
 ---
 
