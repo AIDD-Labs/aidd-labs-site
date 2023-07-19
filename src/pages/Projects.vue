@@ -57,7 +57,7 @@
                     } else {
                         let passesMethod = !query.methods || row.meta.methods.includes(query.methods);
                         let passesLocation = !query.locations || row.meta.locations.includes(query.locations);
-                        let passesTopic = !query.topic || row.meta.topic.includes(query.topic);
+                        let passesTopic = !query.topic || row.meta.topics.includes(query.topic);
 
                         if (passesMethod && passesLocation && passesTopic) {
                             return row;
