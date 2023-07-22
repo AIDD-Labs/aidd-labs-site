@@ -1,6 +1,7 @@
 ---
 slug: "sangho-yun"
 name: "Sang-Ho Yun"
+createdDate:
 title: "Geophysicst"
 yearDeparted: "2021"
 affiliation: "NASA JPL-ARIA"

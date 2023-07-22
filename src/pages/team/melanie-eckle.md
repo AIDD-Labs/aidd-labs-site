@@ -1,6 +1,7 @@
 ---
 slug: "melanie-eckle"
 name: "Melanie Eckle"
+createdDate:
 title: "Research Associate"
 yearDeparted: "2019"
 affiliation: "Heidelberg University"

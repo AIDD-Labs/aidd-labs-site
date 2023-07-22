@@ -1,6 +1,7 @@
 ---
 slug: "robert-soden"
 name: "Robert Soden"
+createdDate:
 title: "Assistant Professor"
 yearDeparted: "2019"
 affiliation: "University of Toronto"

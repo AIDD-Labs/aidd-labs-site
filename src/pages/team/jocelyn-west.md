@@ -1,6 +1,7 @@
 ---
 slug: "jocelyn-west"
 name: "Jocelyn West"
+createdDate:
 title: "PhD Candidate"
 yearDeparted: ""
 affiliation: "Natural Hazards Center, CU Boulder"

@@ -1,6 +1,7 @@
 ---
 slug: "ritika-singh"
 name: "Ritika Singh"
+createdDate:
 title: "Research Assistant"
 yearDeparted: "2019"
 affiliation: "Kathmandu Living Labs"

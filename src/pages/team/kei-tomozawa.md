@@ -1,6 +1,7 @@
 ---
 slug: "kei-tomozawa"
 name: "Kei Tomozawa"
+createdDate:
 title: "Undergraduate Researcher"
 yearDeparted: "2019"
 affiliation: "Fervo Energy"

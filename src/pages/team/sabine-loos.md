@@ -1,6 +1,7 @@
 ---
 slug: "sabine-loos"
 name: "Sabine Loos"
+createdDate:
 title: "Assistant Professor"
 affiliation: "University of Michigan"
 img: "/img/member-sabine.png"

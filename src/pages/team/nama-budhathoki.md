@@ -1,6 +1,7 @@
 ---
 slug: "nama-budhathoki"
 name: "Nama Raj Budhathoki"
+createdDate:
 title: "Executive Director"
 yearDeparted: "2021"
 affiliation: "Kathmandu Living Labs"

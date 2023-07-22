@@ -1,6 +1,7 @@
 ---
 slug: "jack-baker"
 name: "Jack Baker"
+createdDate:
 title: "Professor"
 yearDeparted: "2021"
 affiliation: "Stanford University"

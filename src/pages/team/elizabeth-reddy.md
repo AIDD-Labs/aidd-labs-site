@@ -1,6 +1,7 @@
 ---
 slug: "elizabeth-reddy"
 name: "Elizabeth Reddy"
+createdDate:
 title: "Assistant Professor"
 yearDeparted: 
 affiliation: "Colorado School of Mines"

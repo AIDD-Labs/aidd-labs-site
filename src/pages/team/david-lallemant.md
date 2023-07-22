@@ -1,6 +1,7 @@
 ---
 slug: "david-lallemant"
 name: "David Lallemant"
+createdDate:
 title: "Assistant Professor"
 yearDeparted: "2021"
 affiliation: "Earth Observatory of Singapore"

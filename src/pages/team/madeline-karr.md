@@ -1,6 +1,7 @@
 ---
 slug: "madeline-karr"
 name: "Madeline Karr"
+createdDate:
 title: "Masters Researcher"
 yearDeparted: "2023"
 affiliation: "Dig Deep"

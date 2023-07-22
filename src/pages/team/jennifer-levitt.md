@@ -1,6 +1,7 @@
 ---
 slug: "jennifer-levitt"
 name: "Jenny Levitt"
+createdDate:
 title: "Undergraduate Researcher"
 yearDeparted: "2021"
 affiliation: "Stanford University"

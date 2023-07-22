@@ -1,6 +1,7 @@
 ---
 slug: "robert-banick"
 name: "Robert Banick"
+createdDate:
 title: "Consultant"
 yearDeparted: "2019"
 affiliation: "The World Bank"

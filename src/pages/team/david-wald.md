@@ -1,6 +1,7 @@
 ---
 slug: "david-wald"
 name: "David Wald"
+createdDate:
 title: "Research Geophysicist"
 yearDeparted: ""
 affiliation: "U.S. Geological Survey"

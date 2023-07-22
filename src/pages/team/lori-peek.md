@@ -1,6 +1,7 @@
 ---
 slug: "lori-peek"
 name: "Lori Peek"
+createdDate:
 title: "Director"
 yearDeparted: ""
 affiliation: "Natural Hazards Center, CU Boulder"

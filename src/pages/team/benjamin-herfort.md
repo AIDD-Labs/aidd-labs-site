@@ -1,6 +1,7 @@
 ---
 slug: "benjamin-herfort"
 name: "Benjamin Herfort"
+createdDate:
 title: "Research Assistant"
 yearDeparted: "2019"
 affiliation: "Heidelberg University"

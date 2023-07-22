@@ -1,6 +1,7 @@
 ---
 slug: "feroz-khan"
 name: "Feroz Khan"
+createdDate:
 title: "Researcher"
 yearDeparted: "2020"
 affiliation: "Dillard University"

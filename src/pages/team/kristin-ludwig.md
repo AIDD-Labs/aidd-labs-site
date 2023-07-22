@@ -1,6 +1,7 @@
 ---
 slug: "kristin-ludwig"
 name: "Kristin Ludwig"
+createdDate:
 title: "Science Advisor for Risk Reduction"
 yearDeparted: ""
 affiliation: "U.S. Geological Survey"

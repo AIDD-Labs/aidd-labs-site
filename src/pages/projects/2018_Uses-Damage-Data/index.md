@@ -1,5 +1,6 @@
 ---
 slug: "uses-damage-data" # match folder label name
+createdDate:
 date: "2022 - 2023"
 status: "draft"
 end: "present"

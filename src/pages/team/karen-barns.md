@@ -1,6 +1,7 @@
 ---
 slug: "karen-barns"
 name: "Karen Barns"
+createdDate:
 title: "Associate"
 yearDeparted: "2019"
 affiliation: "Arup"
