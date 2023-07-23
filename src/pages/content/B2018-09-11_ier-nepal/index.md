@@ -1,19 +1,18 @@
 ---
 slug: "ier-nepal"
+type: "blog"
+title: "Informing Equitable Disaster Recovery: More Than Just Economic Losses"
+description: "Why we need metrics other than economic losses for smart recovery decisions."
+# is_featured: false
 date: "2018-09-11"
 status: "published"
 topics: ["recovery", "impact", "equity"]
-type: "blog"
-section: ["contents"]
+# section: ["contents"]
 members: ["sabine-loos"]
-project: "Impact models for recovery"
-is_featured: false
-url: "https://urbanresilience.stanford.edu/news/informing-equitable-disaster-recovery-more-just-economic-losses"
-thumbnail: "img/content-b-ier-nepal.png"
-title: "Informing Equitable Disaster Recovery: More Than Just Economic Losses"
 authors: "Sabine Loos"
+thumbnail: "img/content-b-ier-nepal.png"
 publication: "Stanford Urban Resilience Initiative"
-description: "Why we need metrics other than economic losses for smart recovery decisions."
+url: "https://urbanresilience.stanford.edu/news/informing-equitable-disaster-recovery-more-just-economic-losses"
 citation: "Loos, S. (2018). Informing equitable disaster recovery: More than just economic losses."
 citationLink: "http://urbanresilience.stanford.edu/nepal-recovery/"
 abstract: 
