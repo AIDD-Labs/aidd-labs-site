@@ -1,5 +1,6 @@
 ---
 slug: "robert-banick"
+createdDate:
 name: "Robert Banick"
 title: "Consultant"
 yearDeparted: "2019"

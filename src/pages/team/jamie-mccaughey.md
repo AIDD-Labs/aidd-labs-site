@@ -1,5 +1,6 @@
 ---
 slug: "jamie-mccaughey"
+createdDate:
 name: "Jamie W McCaughey"
 title: "Postdoctoral Researcher"
 yearDeparted: "2021"

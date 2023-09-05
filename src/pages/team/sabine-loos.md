@@ -1,5 +1,6 @@
 ---
 slug: "sabine-loos"
+createdDate: "2023-01-01"
 name: "Sabine Loos"
 title: "Assistant Professor"
 affiliation: "University of Michigan"

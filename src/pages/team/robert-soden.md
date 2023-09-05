@@ -1,5 +1,6 @@
 ---
 slug: "robert-soden"
+createdDate:
 name: "Robert Soden"
 title: "Assistant Professor"
 yearDeparted: "2019"

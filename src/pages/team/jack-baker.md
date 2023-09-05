@@ -1,5 +1,6 @@
 ---
 slug: "jack-baker"
+createdDate:
 name: "Jack Baker"
 title: "Professor"
 yearDeparted: "2021"

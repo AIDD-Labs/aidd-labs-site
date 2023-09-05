@@ -1,5 +1,6 @@
 ---
 slug: "karen-barns"
+createdDate:
 name: "Karen Barns"
 title: "Associate"
 yearDeparted: "2019"

@@ -1,5 +1,6 @@
 ---
 slug: "ritika-singh"
+createdDate:
 name: "Ritika Singh"
 title: "Research Assistant"
 yearDeparted: "2019"

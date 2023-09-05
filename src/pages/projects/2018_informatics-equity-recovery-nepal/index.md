@@ -1,5 +1,6 @@
 ---
 slug: "informatics-equity-recovery-nepal" # match folder label name
+createdDate:
 date: "2018 - 2021"
 status: "published"
 topics: ["recovery", "impact", "equity"]

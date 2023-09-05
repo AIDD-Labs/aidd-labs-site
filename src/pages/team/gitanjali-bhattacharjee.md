@@ -1,5 +1,6 @@
 ---
 slug: "gitanjali-bhattacharjee"
+createdDate:
 name: "Gitanjali Bhattacharjee"
 title: "Associate"
 yearDeparted: "2018"

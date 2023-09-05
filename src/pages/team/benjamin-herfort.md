@@ -1,5 +1,6 @@
 ---
 slug: "benjamin-herfort"
+createdDate:
 name: "Benjamin Herfort"
 title: "Research Assistant"
 yearDeparted: "2019"

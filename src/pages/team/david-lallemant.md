@@ -1,5 +1,6 @@
 ---
 slug: "david-lallemant"
+createdDate:
 name: "David Lallemant"
 title: "Assistant Professor"
 yearDeparted: "2021"
