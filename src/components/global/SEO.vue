@@ -1,6 +1,5 @@
 <script>
-    import utils from "@/scripts/utils.js";
-    import {Head, useHead} from "@vueuse/head";
+    import {Head} from "@vueuse/head";
     import {mapState} from "vuex";
     export default {
         name: "SEO",
