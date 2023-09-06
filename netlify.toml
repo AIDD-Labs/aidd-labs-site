@@ -6,5 +6,3 @@
 [[redirects]]
     from = "/dvs"
     to = "/bananas"
-[functions]
-  node_bundler = "esbuild"
