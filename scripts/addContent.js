@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const inquirer = require('inquirer');
 const yaml = require('yaml');
-
+const utils = require('./utils')
 
 const CONTENT_DIRECTORY = path.resolve(__dirname, `../src/pages/content`);
 
@@ -39,12 +39,7 @@ const questions = [
   {
     type: 'checkbox',
     name: 'members',
-    choices: [
-      {name: 'risk',}, // possible to dynamically add these?
-      {name: 'impact',},
-      {name: 'recovery',},
-      {name: 'equity',},
-    ],
+    choices: utils.getMemberChoices(),
     message: 'Please select the team members who created this content:',
   }
 
@@ -57,7 +52,7 @@ const init = async () => {
   }
   const result = await inquirer.prompt(questions);
   const { title, type, topics} = result;
-
+  
   const date = new Date().toLocaleDateString('en-CA');
   const typeId = typeMap[type] || type[0];
   const dasherizedTitle = title.toLowerCase().split(' ').join('-');
