@@ -62,11 +62,11 @@ const questions = [
     name: 'personalWebsite',
     message: '[8/8] Please enter your Personal Website URL (if you have one):'
   },
-  {
-    type: 'editor',
-    name: 'bio',
-    message: 'Please write a short bio of at least 3 sentences.',
-  },
+  // {
+  //   type: 'editor',
+  //   name: 'bio',
+  //   message: 'Please write a short bio of at least 3 sentences.',
+  // },
 ];
 
 const init = async () => {
@@ -88,7 +88,7 @@ const init = async () => {
     personalWebsite
   };
 
-  const data = `---\n${yaml.stringify(meta)}---\n\n## Bio\n${bio}`;
+  const data = `---\n${yaml.stringify(meta)}---\n\n## Bio\n${''}`;
   fs.writeFileSync(`${TEAM_DIRECTORY}/${slug}.md`, data);
 }
 
