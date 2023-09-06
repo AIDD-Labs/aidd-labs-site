@@ -1,5 +1,6 @@
 ---
 slug: "radcrowd-11NCEE"
+createdDate:
 date: "2018-06-12"
 status: "published"
 topics: ["impact"]

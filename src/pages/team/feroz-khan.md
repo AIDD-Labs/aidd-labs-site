@@ -1,5 +1,6 @@
 ---
 slug: "feroz-khan"
+createdDate:
 name: "Feroz Khan"
 title: "Researcher"
 yearDeparted: "2020"

@@ -1,6 +1,4 @@
 import {ViteSSG} from "vite-ssg";
-import {createRouter, createWebHistory} from "vue-router";
-import {createHead} from "@vueuse/head";
 import {v4 as uuidv4} from "uuid";
 import App from "./App.vue";
 import routes from "~pages";

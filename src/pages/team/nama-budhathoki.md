@@ -1,5 +1,6 @@
 ---
 slug: "nama-budhathoki"
+createdDate:
 name: "Nama Raj Budhathoki"
 title: "Executive Director"
 yearDeparted: "2021"

@@ -1,5 +1,6 @@
 ---
 slug: "ier-nepal"
+createdDate:
 date: "2018-09-11"
 status: "published"
 topics: ["recovery", "impact", "equity"]

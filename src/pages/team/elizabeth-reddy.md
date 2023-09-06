@@ -1,5 +1,6 @@
 ---
 slug: "elizabeth-reddy"
+createdDate:
 name: "Elizabeth Reddy"
 title: "Assistant Professor"
 yearDeparted: 

@@ -1,5 +1,6 @@
 ---
 slug: "afterquake-nepal" # match folder label name
+createdDate:
 date: "2019-07-01"
 status: "published"
 topics: ["recovery", "impact"] # "recovery", "impact", "statistical-modeling"

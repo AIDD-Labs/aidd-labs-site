@@ -4,7 +4,9 @@
     "scripts": {
         "dev": "vite",
         "build": "vite-ssg build",
-        "preview": "vite preview --port=8888"
+        "preview": "vite preview --port=8888",
+        "addContent": "node ./scripts/addContent.js",
+        "addTeamMember": "node ./scripts/addTeamMember.js"
     },
     "dependencies": {
         "axios": "^0.24.0",
@@ -29,6 +31,8 @@
     "devDependencies": {
         "@vitejs/plugin-vue": "^2.0.0",
         "@vueuse/head": "^0.7.6",
+        "inquirer": "^8.2.6",
+        "lodash": "^4.17.21",
         "prettier": "2.4.1",
         "prismjs": "^1.26.0",
         "sass": "^1.43.4",
@@ -40,6 +44,10 @@
         "vite-plugin-pages": "^0.23.0",
         "vite-plugin-pages-sitemap": "^1.3.0",
         "vite-ssg": "^0.20.0",
-        "vue-router": "^4.0.14"
+        "vue-router": "^4.0.14",
+        "yaml": "^2.3.2"
+    },
+    "volta": {
+        "node": "14.17.0"
     }
 }

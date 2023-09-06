@@ -1,5 +1,6 @@
 ---
 slug: "dyfi-analysis" # match folder label name
+createdDate:
 date: "2022 - Present"
 status: "draft"
 topics: ["equity","impact"]

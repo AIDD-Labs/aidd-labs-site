@@ -1,5 +1,6 @@
 ---
 slug: "radcrowd-report" # match folder label name
+createdDate:
 date: "2018-12-15"
 status: "published"
 topics: ["impact"] # "recovery", "impact", "statistical-modeling"

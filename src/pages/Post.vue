@@ -1,7 +1,5 @@
 <script>
     import {mapState} from "vuex";
-    import {useRoute} from "vue-router";
-    import {useHead} from "@vueuse/head";
     import Prism from "prismjs";
     import utils from "@/scripts/utils.js";
 

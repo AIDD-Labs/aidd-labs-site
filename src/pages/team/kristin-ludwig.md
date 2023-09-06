@@ -1,5 +1,6 @@
 ---
 slug: "kristin-ludwig"
+createdDate:
 name: "Kristin Ludwig"
 title: "Science Advisor for Risk Reduction"
 yearDeparted: ""

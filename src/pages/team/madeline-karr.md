@@ -1,5 +1,6 @@
 ---
 slug: "madeline-karr"
+createdDate:
 name: "Madeline Karr"
 title: "Masters Researcher"
 yearDeparted: "2023"

@@ -1,5 +1,6 @@
 ---
 slug: "melanie-eckle"
+createdDate:
 name: "Melanie Eckle"
 title: "Research Associate"
 yearDeparted: "2019"

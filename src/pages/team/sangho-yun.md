@@ -1,5 +1,6 @@
 ---
 slug: "sangho-yun"
+createdDate:
 name: "Sang-Ho Yun"
 title: "Geophysicst"
 yearDeparted: "2021"

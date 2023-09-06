@@ -1,5 +1,6 @@
 ---
 slug: "kei-tomozawa"
+createdDate:
 name: "Kei Tomozawa"
 title: "Undergraduate Researcher"
 yearDeparted: "2019"

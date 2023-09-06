@@ -1,5 +1,6 @@
 ---
 slug: "dataviz-toolset"
+createdDate:
 date: "2021-02-22"
 status: "published"
 topics: ["data-visualization"] # "recovery", "impact", "statistical-modeling"

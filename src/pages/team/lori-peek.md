@@ -1,5 +1,6 @@
 ---
 slug: "lori-peek"
+createdDate:
 name: "Lori Peek"
 title: "Director"
 yearDeparted: ""

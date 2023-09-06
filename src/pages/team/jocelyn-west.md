@@ -1,5 +1,6 @@
 ---
 slug: "jocelyn-west"
+createdDate:
 name: "Jocelyn West"
 title: "PhD Candidate"
 yearDeparted: ""
