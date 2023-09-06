@@ -62,21 +62,21 @@ const questions = [
     name: 'personalWebsite',
     message: '[8/8] Please enter your Personal Website URL (if you have one):'
   },
-  // {
-  //   type: 'editor',
-  //   name: 'bio',
-  //   message: 'Please write a short bio of at least 3 sentences.',
-  // },
+  {
+    type: 'editor',
+    name: 'bio',
+    message: 'Please write a short bio of at least 3 sentences.',
+  },
 ];
 
 const init = async () => {
   const result = await inquirer.prompt(questions);
 
-  const { name, title, affiliation, linkedin, twitter, personalWebsite } = result;
+  const { name, title, affiliation, linkedin, twitter, personalWebsite, bio } = result;
 
   const slug = name.toLowerCase().split(' ').join('-');
   const img =   `/img/member-${slug}.png`
-  const mdResult = {
+  const meta = {
     slug,
     name,
     createdDate: new Date().toLocaleDateString('en-CA'),
@@ -88,7 +88,8 @@ const init = async () => {
     personalWebsite
   };
 
-  fs.writeFileSync(`${TEAM_DIRECTORY}/${slug}.md`, yaml.stringify(mdResult));
+  const data = `---\n${yaml.stringify(meta)}---\n\n## Bio\n${bio}`;
+  fs.writeFileSync(`${TEAM_DIRECTORY}/${slug}.md`, data);
 }
 
 init ();

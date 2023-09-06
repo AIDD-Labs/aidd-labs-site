@@ -58,8 +58,9 @@ const init = async () => {
   const dasherizedTitle = title.toLowerCase().split(' ').join('-');
   const NEW_CONTENT_DIRECTORY = `${CONTENT_DIRECTORY}/${typeId.toUpperCase()}${date}_${dasherizedTitle}`;
 
+  const data = `---\n${yaml.stringify(result)}---`;
   fs.mkdirSync(NEW_CONTENT_DIRECTORY, { recursive: true });
-  fs.writeFileSync(`${NEW_CONTENT_DIRECTORY}/index.md`, yaml.stringify(result));
+  fs.writeFileSync(`${NEW_CONTENT_DIRECTORY}/index.md`, data);
 }
 
 init ();
