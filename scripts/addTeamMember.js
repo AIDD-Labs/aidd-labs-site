@@ -10,9 +10,9 @@ const questions = [
     type: 'confirm',
     name: 'begin',
     message: "Have you uploaded a headshot of yourself named member-firstname-lastname.png to /public/img/?",
-    validate(answer) {
+    validate: async function(answer) {
       if (answer == 'No') {
-        return 'Please upload your headshot then return to this menu.';
+        return 'Please upload your headshot then return to this menu.'; // make them exit and go do it
       }
 
       return true;
@@ -22,7 +22,7 @@ const questions = [
     type: 'input',
     name: 'name',
     message: '[1/8] Please enter your full name (First and Last):',
-    validate(answer) {
+    validate: function(answer) {
       if (answer.length < 1) {
         return 'You must enter your first and last name.';
       }
@@ -79,7 +79,7 @@ const init = async () => {
   const meta = {
     slug,
     name,
-    createdDate: new Date().toLocaleDateString('en-CA'),
+    createdDate: new Date().toISOString().split('T')[0],
     title,
     affiliation,
     img,

@@ -53,7 +53,7 @@ const init = async () => {
   const result = await inquirer.prompt(questions);
   const { title, type, topics} = result;
   
-  const date = new Date().toLocaleDateString('en-CA');
+  const date = new Date().toISOString().split('T')[0];
   const typeId = typeMap[type] || type[0];
   const dasherizedTitle = title.toLowerCase().split(' ').join('-');
   const NEW_CONTENT_DIRECTORY = `${CONTENT_DIRECTORY}/${typeId.toUpperCase()}${date}_${dasherizedTitle}`;
