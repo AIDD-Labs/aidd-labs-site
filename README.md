@@ -1,7 +1,7 @@
 # AIDD Labs Site
-This github repo is 
+This github repo is for the website for AIDD Labs at The University of Michigan, led by Dr. Sabine Loos. The website can be found at: 
+[https://disasterdata.engin.umich.edu](https://disasterdata.engin.umich.edu).
 
-[https://disasterdata.engin.umich.edu](https://disasterdata.engin.umich.edu)
 
 
 ## Before you begin
@@ -44,3 +44,11 @@ If you have uncommitted changes, stash them or save them.
 ```
 git stash
 ```
+## Making changes and requesting review
+1. Checkout branch
+2. Git add .
+3. Git push
+4. Open pull request
+5. Tag reviewers
+6. Switch to main branch
+7. Git pull
