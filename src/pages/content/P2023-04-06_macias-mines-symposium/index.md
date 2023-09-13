@@ -1,14 +1,12 @@
 ---
 slug: "macias-mines-symposium"
-createdDate:
+createdDate: "2023-05-11"
 date: ["2023-04-06"]
 status: "published"
 topics: ["impact", "risk", "equity"]
 type: "presentation"
-section: ["contents"]
 members: ["marisa-macias"]
-is_featured: false
-url: ""
+# url: ""
 thumbnail: "img/content-p-MinesEQImpactWorkshop.png"
 title: "Designing Earthquake Scenario Exercises to Evaluate Actionable Earthquake Impact Products"
 authors: "Marísa Macías"

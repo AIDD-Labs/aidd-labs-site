@@ -1,16 +1,13 @@
 ---
 slug: "nhrm-converge" # match folder label name
-createdDate:
+createdDate: "2023-02-11"
 date: "2019-09-03"
 status: "published"
 topics: ["recovery", "impact"] # "recovery", "impact", "statistical-modeling"
 locations: ["all"] # "nepal", "new-zealand", "haiti", "italy"
 type: "blog" # "blog", "report", "journal-article", "visualization"
-section: ["contents"]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
-project: "Informatics for equitable recovery" # associate this with the slug for a project
-is_featured: false
-url: "https://urbanresilience.stanford.edu/news/converging-disaster-researchers-asia-pacific" # include link to open pdf file
+# url: "https://urbanresilience.stanford.edu/news/converging-disaster-researchers-asia-pacific" # include link to open pdf file
 thumbnail: "img/content-b-nhrm-converge.png" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.png"
 title: "Converging Disaster Researchers in the Asia Pacific" # insert title here
 authors: "Sabine Loos and Yolanda Lin" # insert full author list here, to be listed publicly

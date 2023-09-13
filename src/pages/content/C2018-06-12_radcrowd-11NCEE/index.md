@@ -1,14 +1,12 @@
 ---
 slug: "radcrowd-11NCEE"
-createdDate:
+createdDate: "2023-05-11"
 date: "2018-06-12"
 status: "published"
 topics: ["impact"]
 type: "conference-paper"
-section: ["contents"]
 members: ["sabine-loos"]
-is_featured: false
-url: "https://drive.google.com/file/d/1iG1ZH-fMWpK_QtWbWf9NKsFfFgKCiZFT/view?usp=sharing"
+# url: "https://drive.google.com/file/d/1iG1ZH-fMWpK_QtWbWf9NKsFfFgKCiZFT/view?usp=sharing"
 thumbnail: "/img/content-cp-11NCEE-radcrowd.png"
 title: "Crowd-sourced remote assessments of regional-scale post-disaster damage"
 authors: "Sabine Loos, Karen Barns, Gitanjali Bhattacharjee, Robert Soden, Benjamin Herfort, Melanie Eckle, Cristiano Giovando, Blake Girardot, Keiko Saito, Gregory Deierlein, Anne Kiremidjian, Jack Baker, and David Lallemant"

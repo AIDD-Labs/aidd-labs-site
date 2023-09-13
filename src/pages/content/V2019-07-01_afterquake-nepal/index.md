@@ -1,16 +1,13 @@
 ---
 slug: "afterquake-nepal" # match folder label name
-createdDate:
+createdDate: "2023-02-11"
 date: "2019-07-01"
 status: "published"
 topics: ["recovery", "impact"] # "recovery", "impact", "statistical-modeling"
 locations: ["nepal"] # "nepal", "new-zealand", "haiti", "italy"
 type: "visualization" # "blog", "report", "journal-article", "visualization"
-section: ["contents"]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
-project: "Informatics for Equitable Recovery" # associate this with the slug for a project
-is_featured: false
-url: "https://afterthequake.surge.sh/" # include link to open pdf file
+# url: "https://afterthequake.surge.sh/" # include link to open pdf file
 thumbnail: "img/content-v-afterthequake.png" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.png"
 title: "Nepal after the quake." # insert title here
 authors: "Arogya Koirala, Sabine Loos, and Karen Barns" # insert full author list here, to be listed publicly

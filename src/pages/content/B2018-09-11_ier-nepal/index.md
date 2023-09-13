@@ -1,15 +1,12 @@
 ---
 slug: "ier-nepal"
-createdDate:
+createdDate: "2023-02-11"
 date: "2018-09-11"
 status: "published"
 topics: ["recovery", "impact", "equity"]
 type: "blog"
-section: ["contents"]
 members: ["sabine-loos"]
-project: "Impact models for recovery"
-is_featured: false
-url: "https://urbanresilience.stanford.edu/news/informing-equitable-disaster-recovery-more-just-economic-losses"
+# url: "https://urbanresilience.stanford.edu/news/informing-equitable-disaster-recovery-more-just-economic-losses"
 thumbnail: "img/content-b-ier-nepal.png"
 title: "Informing Equitable Disaster Recovery: More Than Just Economic Losses"
 authors: "Sabine Loos"

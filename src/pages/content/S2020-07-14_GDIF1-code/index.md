@@ -1,16 +1,13 @@
 ---
 slug: "GDIF1-code" # match folder label name
-createdDate:
+createdDate: "2023-05-11"
 date: "2020-07-20"
 status: "published"
 topics: ["impact", "statistical-modeling"] # "recovery", "impact", "statistical-modeling"
 locations: [] # "nepal", "new-zealand", "haiti", "italy"
 type: "software" # "blog", "report", "journal-article", "visualization"
-section: ["contents"]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
-project: "all" # associate this with the slug for a project
-is_featured: false
-url: "https://sabineloos.github.io/GDIF-damageprediction/GDIF_nb.html" # include link to open pdf file
+# url: "https://sabineloos.github.io/GDIF-damageprediction/GDIF_nb.html" # include link to open pdf file
 thumbnail: "img/content-s-gdif1-software.png" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.png"
 title: "Geostatistical Data Integration Framework Software" # insert title here
 authors: "Sabine Loos" # insert full author list here, to be listed publicly

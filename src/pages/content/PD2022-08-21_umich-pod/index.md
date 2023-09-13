@@ -1,16 +1,13 @@
 ---
 slug: "umich-pod" # match folder label name
-createdDate:
+createdDate: "2023-02-11"
 date: "2022-08-21"
 status: "published"
 topics: ["equity"] # "recovery", "impact", "statistical-modeling"
 locations: [] # "nepal", "new-zealand", "haiti", "italy"
 type: "podcast" # "blog", "report", "journal-article", "visualization"
-section: ["contents"]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
-project: "all" # associate this with the slug for a project
-is_featured: false
-url: "https://www.youtube.com/watch?v=AMn1zFrZ7fU&list=PL9kHckJ1TSJJd2MKd--MuDwA1HS2kRvYy&index=3" # include link to open pdf file
+# url: "https://www.youtube.com/watch?v=AMn1zFrZ7fU&list=PL9kHckJ1TSJJd2MKd--MuDwA1HS2kRvYy&index=3" # include link to open pdf file
 thumbnail: "img/content-pd-umichconnections.png" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.png"
 title: "University of Michigan CEE - Introducing Dr. Sabine Loos" # insert title here
 authors: "" # insert full author list here, to be listed publicly

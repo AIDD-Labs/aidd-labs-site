@@ -1,16 +1,13 @@
 ---
 slug: "Geo4Dev" # match folder label name
-createdDate:
+createdDate: "2023-05-11"
 date: "2019-01-03"
 status: "published"
 topics: ["equity","impact", "recovery"] 
 locations: ["nepal"] # "nepal", "new-zealand", "haiti", "italy"
 type: "presentation" # "blog", "report", "journal-article", "visualization"
-section: ["contents"]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
-project: "Nepal-Recovery" # associate this with the slug for a project
-is_featured: false
-url: "https://www.youtube.com/watch?v=M1Q_fQ6UrNk&ab_channel=CenterforEffectiveGlobalAction" # include link to open pdf file
+# url: "https://www.youtube.com/watch?v=M1Q_fQ6UrNk&ab_channel=CenterforEffectiveGlobalAction" # include link to open pdf file
 thumbnail: "/img/content-vd-geo4dev.png" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.png"
 title: "Rapid integration of post-disaster data sources - Sabine Loos" # insert title here
 authors: "Sabine Loos" # insert full author list here, to be listed publicly

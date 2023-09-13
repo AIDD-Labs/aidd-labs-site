@@ -1,15 +1,12 @@
 ---
 slug: "ier-bigdata-nonrecovery"
-createdDate:
+createdDate: "2023-02-23"
 date: "2023-02-23"
 status: "published"
 topics: ["recovery", "impact", "equity"]
 type: "blog"
-section: ["contents"]
 members: ["sabine-loos"]
-project: "Impact models for recovery"
-is_featured: false
-url: "https://earthenvironmentcommunity.nature.com/posts/big-data-for-whom-data-driven-estimates-to-prioritize-the-recovery-needs-of-vulnerable-populations-after-a-disaster"
+# url: "https://earthenvironmentcommunity.nature.com/posts/big-data-for-whom-data-driven-estimates-to-prioritize-the-recovery-needs-of-vulnerable-populations-after-a-disaster"
 thumbnail: "img/content-b-ier-bigdata-nonrecovery.png"
 title: "Big data for whom? Data-driven estimates to prioritize the recovery needs of vulnerable populations after a disaster"
 authors: "Sabine Loos"

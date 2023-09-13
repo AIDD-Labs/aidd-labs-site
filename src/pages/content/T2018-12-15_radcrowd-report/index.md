@@ -1,16 +1,13 @@
 ---
 slug: "radcrowd-report" # match folder label name
-createdDate:
+createdDate: "2023-02-11"
 date: "2018-12-15"
 status: "published"
 topics: ["impact"] # "recovery", "impact", "statistical-modeling"
 locations: ["haiti"] # "nepal", "new-zealand", "haiti", "italy"
 type: "report" # "blog", "report", "journal-article", "visualization"
-section: ["contents"]
 members: ["sabine-loos"] # insert your slug here, e.g., "sabine-loos"
-project: "crowdsourced-damage-assessment" # associate this with the slug for a project
-is_featured: false
-url: "https://purl.stanford.edu/bj915mt6570" # include link to open pdf file
+# url: "https://purl.stanford.edu/bj915mt6570" # include link to open pdf file
 thumbnail: "img/content-t-radcrowd-report.png" # upload square version of the content to img folder and add source here, e.g., "img/content-b-ier-nepal.png"
 title: "The Development and Uses of Crowdsourced Building Damage Information based on Remote-Sensing" # insert title here
 authors: "Sabine Loos, Karen Barns, Gitanjali Bhattacharjee, Rober Soden, Benjamin Herfort, Melanie Eckle, Cristiano Giovando, Blake Girardot, Gregory Deierlein, Anne Kiremidjian, Jack Baker, and David Lallemant" # insert full author list here, to be listed publicly

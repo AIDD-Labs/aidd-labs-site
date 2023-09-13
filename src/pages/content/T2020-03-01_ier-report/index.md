@@ -1,15 +1,12 @@
 ---
 slug: "ier-report"
-createdDate:
+createdDate: "2023-02-11"
 date: "2020-04-22"
 status: "published"
 topics: ["impact", "recovery", "equity"]
 type: "report"
-section: ["contents"]
 members: ["sabine-loos"]
-project: "Informatics for Equitable Recovery"
-is_featured: false
-url: "https://dr.ntu.edu.sg/handle/10356/137836"
+# url: "https://dr.ntu.edu.sg/handle/10356/137836"
 thumbnail: "img/content-t-ier-report.png"
 title: "Informatics for equitable recovery: supporting equitable disaster recovery through mapping and integration of social vulnerability into post-disaster impact assessments
 "

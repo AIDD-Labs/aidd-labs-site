@@ -1,15 +1,12 @@
 ---
 slug: "usgs-esc"
-createdDate:
+createdDate: "2022-12-11"
 date: ["2022-06-08"]
 status: "published"
 topics: ["recovery", "impact", "risk", "equity"]
 type: "presentation"
-section: ["contents"]
 members: ["sabine-loos"]
-project: ["Impact models for recovery", "Damage Data Integration"]
-is_featured: false
-url: "https://earthquake.usgs.gov/contactus/menlo/seminars/1382"
+# url: "https://earthquake.usgs.gov/contactus/menlo/seminars/1382"
 thumbnail: "img/content-p-usgs-esc.png"
 title: "Designing actionable and equitable earthquake impact information"
 authors: "Dr. Sabine Loos"
