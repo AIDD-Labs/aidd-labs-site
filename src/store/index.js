@@ -8,6 +8,7 @@ const store = createStore({
             members: {},
             contents: [],
             projects: [],
+            partners: {},
             memberMetadata: {
                 current: [],
                 alumni: [],
@@ -140,7 +141,9 @@ const store = createStore({
 
             state.projectMetadata = projectMetadata;
         },
-
+        loadPartners(state, {partners}) {
+            state.partners = partners;
+        },
         setInfoDensity(state, density) {
             state.infoDensity = density;
         },
@@ -190,7 +193,11 @@ const store = createStore({
                 projects: projects
             })
         },
-
+        loadPartners({commit}, partners) {
+            commit("loadPartners", {
+                partners: partners
+            })
+        },
         setThemeColor({commit}, theme) {
             if (!["light", "dark"].includes(theme)) {
                 return;
