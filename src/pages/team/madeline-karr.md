@@ -14,6 +14,6 @@ personalWebsite:
 ---
 ## Bio
 
-Maddie Karr is a Masters Researcher with AIDD labs and a student intern at the U.S. Geological Survey's Geologic Hazards Science Center.
-She is currently working on understanding and summarizing user needs for equity-centered disaster impact information through user-centered design techniques.
+Maddie Karr was a Masters Researcher with AIDD labs and a student intern at the U.S. Geological Survey's Geologic Hazards Science Center.
+She worked on understanding and summarizing user needs for equity-centered disaster impact information through user-centered design techniques.
 Maddie is a Masters Student studying environmental engineering at the University of Colorado Boulder and is expected to graduate in 2023.
