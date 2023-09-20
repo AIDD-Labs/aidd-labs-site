@@ -9,7 +9,7 @@ const CONTENT_DIRECTORY = path.resolve(__dirname, `../src/pages/content`);
 const questions = [
   {
     type: 'input',
-    name: 'title',
+    name: 'title!!',
     message: 'Please enter the title of your content:'
   },
   {
