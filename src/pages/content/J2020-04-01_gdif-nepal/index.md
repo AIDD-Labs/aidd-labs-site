@@ -1,7 +1,7 @@
 ---
 slug: "gdif-nepal"
 createdDate:
-date: "2020-04-01"
+date: 2020-04-01
 status: "published"
 topics: ["impact"]
 type: "journal-article"
