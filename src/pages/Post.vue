@@ -61,7 +61,7 @@
                 }
             },
             humanDate() {
-                return this.date.split('T')[0];
+                return this.date?.split('T')[0];
             },
             activeMarkdownComponent() {
                 return this.$route.name;
