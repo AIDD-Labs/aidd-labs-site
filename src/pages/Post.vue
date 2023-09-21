@@ -49,9 +49,6 @@
             activeMarkdownComponent() {
                 return this.$route.name;
             },
-            pubDates() {
-                return this.$route.meta.date;
-            },
             authorList() {
                 return this.authors?.split() || ["Sabine Loos"];
             },
@@ -63,12 +60,11 @@
                     return "sabine-loos";
                 }
             },
-
+            humanDate() {
+                return this.date.split('T')[0];
+            },
             activeMarkdownComponent() {
                 return this.$route.name;
-            },
-            pubDate() {
-                return JSON.stringify(new Date(this.$attrs.frontmatter.date));
             },
             canonicalUrl() {
                 return `${this.siteMetadata.siteUrl}${this.$route.path}`;
@@ -91,7 +87,7 @@
                     },
                     url: this.canonicalUrl,
                     headline: this.description || "",
-                    datePublished: this.date,
+                    datePublished: this.humanDate,
                     inLanguage: "en-US",
                     isFamilyFriendly: "true",
                     keywords: [...this.tags, "LearningResource"],
@@ -214,7 +210,7 @@
         :other-json-ld="otherJsonLd"
         page-type="post"
         :section="blogSection"
-        :pub-date="date"
+        :pub-date="humanDate"
         :author="author"
         :meta-og-image="ogImage"
     />
@@ -253,8 +249,8 @@
                             <div class="publication" v-if="publication">
                                 <strong>Publication:</strong> {{ publication }}
                             </div>
-                            <div class="date" v-if="date">
-                                <strong>Publication date:</strong> {{ date }}
+                            <div class="date" v-if="humanDate">
+                                <strong>Publication date:</strong> {{ humanDate }}
                             </div>
                             <div class="citation" v-if="citation">
                                 <strong>Citation:</strong> {{ citation }}
