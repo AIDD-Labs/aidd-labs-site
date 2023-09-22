@@ -81,28 +81,48 @@ The server will default to : http://localhost:3000/, which you can open in Chrom
 
 ## General process to make changes to the website
 Whenever you want to make a change to the website you can follow the below steps:
-1. [Open the `aidd-labs-site` folder in VsCode]()
-2. [Checkout a branch for your changes]()
-3. [Make changes]()
-4. [Commit and push your changes to the remote repository]()
-5. [Open a pull request and tag reviewers]()
-6. [Switch to main branch and pull changes once merged]()
+1. [Open the `aidd-labs-site` folder in VsCode](#1-open-the-aidd-labs-site-folder-in-vscode)
+2. [Checkout a branch for your changes](#2-checkout-a-branch-for-your-changes)
+3. [Make changes](#3-make-changes-see-below)
+4. [Commit and push your changes to the remote repository](#4-commit-and-push-your-changes-to-the-remote-repository)
+5. [Open a pull request and tag reviewers](#5-open-a-pull-request-and-tag-reviewers)
+6. [Switch to main branch and pull changes once merged](#6-switch-to-main-branch-and-pull-changes-once-merged)
 
 ### 1. Open the `aidd-labs-site` folder in VsCode
+The first thing you need to do is open the website in VsCode. You can do this by going into VsCode and going to File >> Open Folder.
+
+This should give you something like the following, with your folder on the left, and your terminal on the bottom.
+
+![Screenshot of VsCode](image.png)
 ### 2. Checkout a branch for your changes
+Before you make any changes to the code, **YOU NEED TO CHECKOUT A BRANCH TO MAKE ALL YOUR CHANGES ON**. 
+This is best practice when working on any collaborative code. That way you don't mess up whatever the working code is with your changes.
+
+To create a new branch, type the following into the terminal:
 ```
 git checkout -b "<insert branch name>"
 ```
+
+You will automatically be in a new branch, but you can always check what branch you're in by typing the following:
+```
+git rev-parse --abbrev-ref HEAD
+```
 ### 3. Make changes (see below)
+Once you're in your new branch, you can update any part of the code that's relevant to you (See below on updating your profile or adding new content).
 ### 4. Commit and push your changes to the remote repository
+Once you're done making changes, you need to add and commit those changes to git. 
+
+You first need to add all your changes by typing the following in the terminal:
 ```
 git add .
 ```
+You then want to commit your changes. Please use a descriptive message for your changes.
 
 ```
 git commit -m "<insert short message>"
 ```
 
+Finally, you can push your changes to the remote repository. Make sure to insert your branch name!
 ```
 git push -u origin "<insert branch name>"
 ```
@@ -120,3 +140,5 @@ git pull
 ```
 
 ## Add a new team member (aka you)
+```
+npm run addTeamMember
