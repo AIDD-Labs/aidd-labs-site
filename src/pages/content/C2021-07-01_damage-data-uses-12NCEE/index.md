@@ -1,7 +1,7 @@
 ---
 slug: "damage-data-uses-12NCEE"
 createdDate:
-date: "2021-07-01"
+date: 2021-07-01
 status: "draft"
 topics: ["impact"]
 type: "conference-paper"

@@ -1,7 +1,7 @@
 ---
 slug: "damage-demandsurvey" # must match folder name (for now)
 createdDate:
-date: "2021-07-21"
+date: 2021-07-21
 status: "published"
 topics: ["impact"]
 type: "journal-article"
