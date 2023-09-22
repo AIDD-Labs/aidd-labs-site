@@ -127,18 +127,58 @@ Finally, you can push your changes to the remote repository. Make sure to insert
 git push -u origin "<insert branch name>"
 ```
 ### 5. Open a pull request and tag reviewers
-screenshot
+Once you push your changes to git and you think they are ready to go live, you can open github and create a pull request. Typically github will recognize if there was a recent push to a branch and will recommend that branch for a pull request:
+![Alt text](image-1.png)
 
-there might be a link that says "to create a pull request" after you have pushed a change
+Hit the compare & pull request.
+
+When you're opening your pull request, please do the following:
+
+* Add a descriptive enough comment for me to understand what changes you made.
+* Add me as a "Reviewer"
+* Add a Label (likely "newpage")
+
+![Alt text](image-2.png)
+
+Once you create a pull request, I'll be notified and will review your changes and merge it into the main branch if it's okay to merge. 
 ### 6. Switch to main branch and pull changes once merged
+After I've merged your pull request, you'll want to update your local repository. To do this you will need to first switch to the main branch using the following in your terminal:
+
 ```
 git checkout main
 ```
 
+Once you're in the main branch, you can then pull in the latest changes:
 ```
 git pull
 ```
+And voila! You've successfully updated the website.
 
-## Add a new team member (aka you)
+## Add or update your team member profile (aka you)
+All team members are listed here: [https://disasterdata.engin.umich.edu/team](https://disasterdata.engin.umich.edu/team). You can add yourself to the website (or update your website profile). Make sure you have the following ready:
+
+* A photo/headshot of yourself
+* A short bio
+* Any websites or social media links you want to include
+
+To add or update your profile, follow the below steps:
+
+### 1. Upload your headshot
+Name your headshot "member-firstname.png". Make sure it's a png! You can upload this into the public>>img folder.
+
+### 2. Run addTeamMember to add yourself
+Then, in your terminal, run the following command:
+
 ```
 npm run addTeamMember
+```
+This will prompt you through several items:
+![Alt text](image-3.png)
+
+### 3. Confirm and complete your profile page
+Once you complete these prompts, you sould find a markdown file under src >> pages >> team with your name on it and all the information you filled out:
+![Alt text](image-4.png)
+
+The final thing to do is add your bio in the markdown file under the Bio header
+
+![Alt text](image-5.png)
