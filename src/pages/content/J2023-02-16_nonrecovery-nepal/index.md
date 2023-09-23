@@ -1,7 +1,7 @@
 ---
 slug: "nonrecovery-nepal" # must match folder name (for now)
 createdDate:
-date: "2023-02-16"
+date: 2023-02-16
 status: "published"
 topics: ["recovery", "impact", "equity"]
 type: "journal-article"

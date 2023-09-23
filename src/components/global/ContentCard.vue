@@ -37,7 +37,7 @@
                 }
                 else {
                     let parseTime = timeParse("%Y-%m-%d");
-                    let recentDate = parseTime(this.date);
+                    let recentDate = parseTime(this.date.split('T')[0]);
                     return timeFormat(`%b %d, %Y`)(recentDate);
                 }
             },

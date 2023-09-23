@@ -1,7 +1,7 @@
 ---
 slug: "Geo4Dev" # match folder label name
 createdDate:
-date: "2019-01-03"
+date: 2019-01-03
 status: "published"
 topics: ["equity","impact", "recovery"] 
 locations: ["nepal"] # "nepal", "new-zealand", "haiti", "italy"
