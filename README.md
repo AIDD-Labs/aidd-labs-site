@@ -6,13 +6,13 @@ The below instructions should help you as a lab member update your webpage(s) on
 
 This website was made based on the initial Vue-Vite framework created by [@marguerite-roth](https://github.com/margueriteroth) and updated with [@juliannemarik](https://github.com/juliannemarik).
 
-## Table of contents
+## Table of Contents
 Specifically, this guide will help you do the following:
 - [Understand the main components of the AIDD Labs website](#components-of-the-AIDD-Labs-website)
 - [Set up the website locally on your computer](#setting-up-your-local-environment)
 - [Make changes to the website and request a review](#general-process-to-make-changes-to-the-website)
 - [Add and/or update *your profile* on the "Team" page](#add-or-update-your-team-member-profile-aka-you)
-- [Add and/or update *new content* to the "Content" page](#insert)
+- [Add and/or update *new content* to the "Content" page](#add-or-update-a-content-page-aka-a-blog-journal-article-poster-etc)
 <!-- - [Add and/or update a *new project* to the "Projects" page](#insert) -->
 
 ## Components of the AIDD Labs website
