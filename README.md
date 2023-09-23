@@ -11,7 +11,7 @@ Specifically, this guide will help you do the following:
 - [Understand the main components of the AIDD Labs website](#components-of-the-AIDD-Labs-website)
 - [Set up the website locally on your computer](#setting-up-your-local-environment)
 - [Make changes to the website and request a review](#general-process-to-make-changes-to-the-website)
-- [Add and/or update *your profile* on the "Team" page](#insert)
+- [Add and/or update *your profile* on the "Team" page](#add-or-update-your-team-member-profile-aka-you)
 - [Add and/or update *new content* to the "Content" page](#insert)
 <!-- - [Add and/or update a *new project* to the "Projects" page](#insert) -->
 
@@ -79,6 +79,7 @@ npm run dev
 ```
 The server will default to : http://localhost:3000/, which you can open in Chrome or any other platform.
 
+[^ Back to Table of Contents](#table-of-contents)
 ## General process to make changes to the website
 Whenever you want to make a change to the website you can follow the below steps:
 1. [Open the `aidd-labs-site` folder in VsCode](#1-open-the-aidd-labs-site-folder-in-vscode)
@@ -154,6 +155,7 @@ git pull
 ```
 And voila! You've successfully updated the website.
 
+[^ Back to Table of Contents](#table-of-contents)
 ## Add or update your team member profile (aka you)
 All team members are listed here: [https://disasterdata.engin.umich.edu/team](https://disasterdata.engin.umich.edu/team). You can add yourself to the website (or update your website profile). Make sure you have the following ready:
 
@@ -166,7 +168,7 @@ To add or update your profile, follow the below steps:
 ### 1. Upload your headshot
 Name your headshot "member-firstname.png". Make sure it's a png! You can upload this into the public>>img folder.
 
-### 2. Run addTeamMember to add yourself
+### 2. Run addTeamMember to create a page for yourself
 Then, in your terminal, run the following command:
 
 ```
@@ -182,3 +184,22 @@ Once you complete these prompts, you sould find a markdown file under src >> pag
 The final thing to do is add your bio in the markdown file under the Bio header
 
 ![Alt text](image-5.png)
+
+[^ Back to Table of Contents](#table-of-contents)
+
+## Add or update a content page (aka a blog, journal article, poster, etc.)
+"Content" is any output that is produced by you that you would like to post on our website. This can be a blog, a conference paper, journal article, presentation, visualization... you name it.  All current content is here: [https://disasterdata.engin.umich.edu/content](https://disasterdata.engin.umich.edu/content). This content should be linked to any projects you're on and your profile.
+
+To upload content, please prepare the following
+
+* A thumbnail image (which will be shown in the tiles on [https://disasterdata.engin.umich.edu/content](https://disasterdata.engin.umich.edu/content))
+* A short 1 sentence description of the content
+* A longer (1-2 paragraph) summary of the content, which will be used on the content's page (see [https://disasterdata.engin.umich.edu/content/macias-mines-symposium](https://disasterdata.engin.umich.edu/content/macias-mines-symposium))
+* Any relevant URL's
+### 1. Upload all content images
+
+### 2. Run addContent to create a page for the content
+
+## 3. Confirm and complete your content page
+
+[^ Back to Table of Contents](#table-of-contents)
