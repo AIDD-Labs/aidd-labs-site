@@ -72,6 +72,10 @@ import { mapState } from 'vuex';
                 <h2>Project content</h2>
                 <ContentGrid :data="projectContent" />
             </MaxWidth>
+            <MaxWidth size="m" class="articles" v-if="partners.length">
+                <h2>Project partners/funders</h2>
+                <PartnersGrid :partners="partners" />
+            </MaxWidth>
         </div>
 
     </MaxWidth>
