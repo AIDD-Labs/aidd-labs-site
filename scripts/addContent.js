@@ -10,7 +10,14 @@ const questions = [
   {
     type: 'input',
     name: 'title',
-    message: 'Please enter the title of your content:'
+    message: 'Please enter the title of your content:',
+    validate: function(answer) {
+      if (answer.length < 1) {
+        return 'You must enter a title for your content.';
+      }
+
+      return true;
+    }
   },
   {
     type: 'list',
@@ -51,7 +58,7 @@ const init = async () => {
     'video': 'VD'
   }
   const result = await inquirer.prompt(questions);
-  const { title, type, topics} = result;
+  const { title, type } = result;
   
   const date = new Date().toISOString().split('T')[0];
   const typeId = typeMap[type] || type[0];
