@@ -64,7 +64,10 @@ const init = async () => {
   const typeId = typeMap[type] || type[0];
   const dasherizedTitle = title.toLowerCase().split(' ').join('-');
   const NEW_CONTENT_DIRECTORY = `${CONTENT_DIRECTORY}/${typeId.toUpperCase()}${date}_${dasherizedTitle}`;
-
+  const meta = {
+    ...result, 
+    createdDate: new Date().toISOString().split('T')[0]
+  }
   const data = `---\n${yaml.stringify(result)}---`;
   fs.mkdirSync(NEW_CONTENT_DIRECTORY, { recursive: true });
   fs.writeFileSync(`${NEW_CONTENT_DIRECTORY}/index.md`, data);

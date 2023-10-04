@@ -174,6 +174,8 @@
                         <a href="#"><img src="/img/partner-WBibrd.png" /></a>
                     </div>
                 </div>
+                <h1>News</h1>
+                <NewsGrid/>
                 <!-- <div class="FeedItem">
                 <div class="FeedItem__image" src="/img/partner-tfscb.png"></div>
             </div> -->
