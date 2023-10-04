@@ -1,6 +1,7 @@
 {
     "name": "sabine-vue-vite-ssg",
     "version": "0.0.0",
+    "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "vite-ssg build",
@@ -31,7 +32,7 @@
     "devDependencies": {
         "@vitejs/plugin-vue": "^2.0.0",
         "@vueuse/head": "^0.7.6",
-        "inquirer": "^8.2.6",
+        "inquirer": "^9.2.11",
         "lodash": "^4.17.21",
         "prettier": "2.4.1",
         "prismjs": "^1.26.0",

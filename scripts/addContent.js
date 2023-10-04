@@ -1,8 +1,8 @@
-const path = require('path');
-const fs = require('fs');
-const inquirer = require('inquirer');
-const yaml = require('yaml');
-const utils = require('./utils')
+import path from "path";
+import { mkdirSync, writeFileSync } from 'fs'
+import { stringify } from 'yaml';
+import { getMemberChoices } from './utils';
+import { prompt } from 'inquirer'
 
 const CONTENT_DIRECTORY = path.resolve(__dirname, `../src/pages/content`);
 
@@ -39,7 +39,7 @@ const questions = [
   {
     type: 'checkbox',
     name: 'members',
-    choices: utils.getMemberChoices(),
+    choices: getMemberChoices(),
     message: 'Please select the team members who created this content:',
   }
 
@@ -50,7 +50,7 @@ const init = async () => {
     'podcast': 'PD',
     'video': 'VD'
   }
-  const result = await inquirer.prompt(questions);
+  const result = await prompt(questions);
   const { title, type, topics} = result;
   
   const date = new Date().toISOString().split('T')[0];
@@ -58,9 +58,9 @@ const init = async () => {
   const dasherizedTitle = title.toLowerCase().split(' ').join('-');
   const NEW_CONTENT_DIRECTORY = `${CONTENT_DIRECTORY}/${typeId.toUpperCase()}${date}_${dasherizedTitle}`;
 
-  const data = `---\n${yaml.stringify(result)}---`;
-  fs.mkdirSync(NEW_CONTENT_DIRECTORY, { recursive: true });
-  fs.writeFileSync(`${NEW_CONTENT_DIRECTORY}/index.md`, data);
+  const data = `---\n${stringify(result)}---`;
+  mkdirSync(NEW_CONTENT_DIRECTORY, { recursive: true });
+  writeFileSync(`${NEW_CONTENT_DIRECTORY}/index.md`, data);
 }
 
 init ();
