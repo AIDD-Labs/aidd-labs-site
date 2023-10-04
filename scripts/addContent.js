@@ -1,16 +1,26 @@
 import path from "path";
+import { fileURLToPath } from 'url';
 import { mkdirSync, writeFileSync } from 'fs'
 import { stringify } from 'yaml';
-import { getMemberChoices } from './utils';
-import { prompt } from 'inquirer'
+import inquirer from 'inquirer';
+import { getMemberChoices } from './utils.js';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const CONTENT_DIRECTORY = path.resolve(__dirname, `../src/pages/content`);
 
 const questions = [
   {
     type: 'input',
     name: 'title',
-    message: 'Please enter the title of your content:'
+    message: 'Please enter the title of your content:',
+    validate: function(answer) {
+      if (answer.length < 1) {
+        return 'You must enter a title for your content.';
+      }
+
+      return true;
+    },
   },
   {
     type: 'list',
@@ -42,7 +52,6 @@ const questions = [
     choices: getMemberChoices(),
     message: 'Please select the team members who created this content:',
   }
-
 ];
 
 const init = async () => {
@@ -50,7 +59,7 @@ const init = async () => {
     'podcast': 'PD',
     'video': 'VD'
   }
-  const result = await prompt(questions);
+  const result = await inquirer.prompt(questions);
   const { title, type, topics} = result;
   
   const date = new Date().toISOString().split('T')[0];
