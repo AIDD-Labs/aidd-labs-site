@@ -3,7 +3,7 @@ slug: yue-zeng
 name: Yue "Major" Zeng
 createdDate: 2023-10-19
 title: PhD Researcher
-affiliation: UM
+affiliation: University of Michigan
 img: /img/member-Major-FullSize.png
 linkedin: https://www.linkedin.com/in/majorzeng/
 twitter: ""
