@@ -4,7 +4,7 @@ name: Yue "Major" Zeng
 createdDate: 2023-10-19
 title: PhD Researcher
 affiliation: UM
-img: /img/member-Major.png
+img: /img/member-major.png
 linkedin: https://www.linkedin.com/in/majorzeng/
 twitter: ""
 personalWebsite: ""
