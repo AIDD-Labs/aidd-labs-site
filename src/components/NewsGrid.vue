@@ -28,7 +28,7 @@
                     return new Date(b.meta.createdDate) - new Date(a.meta.createdDate)
                 })
                 console.log(sortedItems)
-                return "hi!"
+                return sortedItems.slice(0,10)
             }
         },
         methods: {},
@@ -40,7 +40,7 @@
 
 <template>
     <div class="news-grid" v-if="isLoaded" :class="`size-${variant}`">
-        <h1>{{this.recentNews}}</h1>
+        <div v-for="newsitem in recentNews" :key="newsitem.id"> <NewsCard :newsitem="newsitem"/> </div>
     </div>
 </template>
 
