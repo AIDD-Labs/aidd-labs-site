@@ -2,7 +2,7 @@
 slug: "damage-demandsurvey" # must match folder name (for now)
 createdDate:
 date: 2021-07-21
-status: "published"
+status: "draft"
 topics: ["impact"]
 type: "journal-article"
 section: ["contents"]
@@ -10,7 +10,7 @@ members: ["sabine-loos"] # first author's image will show
 project: ["Uses-Damage-Data", "Damage-Crowdsourcing"]
 is_featured: false
 url: "https://doi.org./10.1177/87552930211030297"
-thumbnail: "/src/pages/content/J2021-07-21_damage-demandsurvey/damage-demandsurvey.png"
+thumbnail: "img/content-j-damage-demandsurvey.png"
 title: "Factors affecting earthquake responders’ building damage information needs and use"
 authors: "Gitanjali Bhattacharjee, Robert Soden, Karen Barns, Sabine Loos, and David Lallemant"
 publication: "Earthquake Spectra"
