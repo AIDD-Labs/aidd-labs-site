@@ -53,16 +53,17 @@ import { mapState } from 'vuex';
             
         </div>
         <div class="flex-wrapper">
-            <!-- <MaxWidth size = "l"> -->
-                <div class="top">
-                <div class="description">
-                    <slot />
-                </div>
-                <div class="img">
-                    <img :src="thumbnail" alt="">
-                </div>
-                </div>
-            <!-- </MaxWidth> -->
+                    <div class="top">
+                        <figure>
+                            <img :src="thumbnail" alt="">
+                            <figcaption>
+                                <p><em> {{ thumbnailCaption }}</em></p>
+                            </figcaption>
+                        </figure>
+                        <p>
+                            <slot />
+                        </p>
+                    </div>
             <MaxWidth size="m" class="team">
                 <h2>Core team members</h2>
                 <MembersGrid variant="m" :data="members" />
@@ -133,20 +134,16 @@ import { mapState } from 'vuex';
             @media (max-width: 1000px) {
                 gap: 2em;
             }
-            .top {
-                display: flex;
-                flex-direction: row;
-                gap: 3rem;
-                .description {
-                    display: flex;
-                    width: 100%;
-                    // height: auto;
-                }
-                .img {
-                    width: 100%;
-                    height: auto;
-                }
-            }   
+
+            .top figure {
+                float:right;
+                max-width: 50%;
+                margin: 18px 0px 4px 40px;
+            }
+            .top p {
+                margin-top:0;
+                text-align: justify;
+            }
 
         }
 
