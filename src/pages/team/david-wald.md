@@ -1,6 +1,6 @@
 ---
 slug: "david-wald"
-createdDate:
+createdDate: 2021-09-18
 name: "David Wald"
 title: "Research Geophysicist"
 yearDeparted: ""
