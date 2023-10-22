@@ -31,3 +31,5 @@ If you are part of the Working Group, below are details (members only pages):
 
 * <a href="https://docs.google.com/document/d/1bTJzDHz8W3ps3l2jYYV-rfnHzEoLkCijd_uElXdG8a0/edit?usp=share_link" target="_blank">Schedule of weekly meeting topics, readings, and speakers</a>
 * <a href="https://docs.google.com/spreadsheets/d/18N31wSQXesR31waQU9_qqFHiyKPID_qaQV8eBPub1FM/edit?usp=sharing" target="_blank">Contact information of members of the working group</a>
+* <a href="https://calendar.google.com/calendar/u/0?cid=Y185MzIxMjE5MzJjY2JlMTQzMTFhMGQ4MzE4NTM0YWYzMmZjZDQzNTNiNDIyOTUwMzcyMmJkOGU4NDc0ODYzM2VhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank">Google Calendar of Events</a>
+
