@@ -7,7 +7,7 @@ topics: ["risk", "equity"]
 locations: ["global"]
 methods: [ "qualitative-methods", "risk-analysis"]
 members: ["simone-curtis","shreyasha-paudel","sabine-loos", "robert-soden","rashmin-gunasekera","bramka-jafino", "karen-barns", "david-lallemant", "jocelyn-west"] # shreyasha, rashmin, bramka
-content: ["UR22-EqRisk"]
+content: ["UR22-EqRisk", "the-importance-of-accounting-for-equity-in-disaster-risk-models","anti-colonial-critique-of-climate-and-disaster-risk-models"]
 title: "Methods for equity-aware risk assessments"
 thumbnail: "/img/proj-equity-aware-risk2.jpeg"
 thumbnailCaption: "Sabine Loos leading a Working Group Session at Understanding Risk 2022 in Florianopolis, Brazil."
