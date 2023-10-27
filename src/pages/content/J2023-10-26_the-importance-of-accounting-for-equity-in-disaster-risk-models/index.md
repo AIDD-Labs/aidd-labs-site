@@ -2,6 +2,7 @@
 slug: the-importance-of-accounting-for-equity-in-disaster-risk-models
 title: The importance of accounting for equity in disaster risk models
 createdDate: 2023-10-24
+date: 2023-10-23
 type: journal-article
 topics:
   - risk
@@ -9,7 +10,6 @@ topics:
 members:
   - robert-soden
   - david-lallemant
-date: 2023-02-16
 status: "published"
 section: ["contents"]
 is_featured: false
