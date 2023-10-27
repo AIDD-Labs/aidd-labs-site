@@ -3,6 +3,7 @@ slug: anti-colonial-critique-of-climate-and-disaster-risk-models
 title: Towards the Development of an Anti-Colonial Critique of Climate and
   Disaster Risk Models
 createdDate: 2023-10-24
+date: 2023-06-14
 type: conference_paper
 topics:
   - risk
@@ -11,7 +12,6 @@ members:
   - shreyasha-paudel
   - sabine-loos
   - robert-soden
-date: 2023-02-16
 status: "published"
 section: ["contents"]
 is_featured: false
