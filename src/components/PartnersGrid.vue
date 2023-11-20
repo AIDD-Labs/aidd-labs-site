@@ -31,8 +31,8 @@
         class="first"
         target="_blank"
         rel="noopener noreferrer"
-        :href="allPartners[partner]?.meta?.url">
-        <img :src="allPartners[partner]?.meta?.img"/>
+        :href="allPartners[`partner-${partner}`]?.meta?.url">
+        <img :src="allPartners[`partner-${partner}`]?.meta?.img"/>
       </Link>
     </div>
   </div>
