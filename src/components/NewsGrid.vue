@@ -22,8 +22,14 @@
                 contents: state => state.contents,
                 projects: state => state.projects,
             }),
+            filteredMembers() {
+                return Object.values(this.members).filter(member=>member.meta.type!=="external")
+            },
+            filteredProjects() {
+                return this.projects.filter(project=>project.meta.status!=="draft")
+            },
             recentNews() {
-                const allItems = [...this.contents, ...this.projects, ...Object.values(this.members)]
+                const allItems = [...this.contents, ...this.filteredProjects, ...this.filteredMembers]
                 const sortedItems = allItems.sort((a,b) => {
                     return new Date(b.meta.createdDate) - new Date(a.meta.createdDate)
                 })
