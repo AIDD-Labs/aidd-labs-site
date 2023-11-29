@@ -1,5 +1,6 @@
 <script>
     import {mapState} from "vuex";
+    import {timeFormat, timeParse} from "d3";
 
     export default {
         name: "NewsCard",
@@ -46,7 +47,10 @@
                 if (this.family==="content"){
                     date=this.newsitem.meta.date
                 }
-                return date
+
+                let parseTime = timeParse("%Y-%m-%d");
+                let parsedDate = parseTime(date.split('T')[0]);
+                return timeFormat(`%b %d, %Y`)(parsedDate);
             }
         },
         methods: {},
@@ -57,12 +61,34 @@
 </script>
 
 <template>
-    <TagPill :tag= "newsType"/>
-    <div>{{ newsTitle }}</div>
-    <div>{{ newsDate }}</div>
+    <Link no-decoration :to="newsLink" class="news-card">
+        <div class="news-card__header">
+            <TagPill :tag= "newsType"/>
+            <p>{{ newsDate }}</p>
+        </div>
+        <h4>{{ newsTitle }}</h4>
+        <p>{{ this.newsitem.meta?.description }}</p>
+    </Link>
 </template>
 
 <style lang="scss">
+    .news-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
 
+        & p {
+            margin: 0;
+            font-weight: 400;
+        }
+
+        & h4 {
+            margin: 0;
+        }
+    }
+    .news-card__header {
+        display: flex;
+        justify-content: space-between;
+    }
 </style>
 

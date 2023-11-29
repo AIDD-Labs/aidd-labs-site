@@ -46,11 +46,18 @@
 
 <template>
     <div class="news-grid" v-if="isLoaded" :class="`size-${variant}`">
-        <div v-for="newsitem in recentNews" :key="newsitem.id"> <NewsCard :newsitem="newsitem"/> </div>
+        <div class="news-grid-item" v-for="newsitem in recentNews" :key="newsitem.id"> <NewsCard :newsitem="newsitem"/> </div>
     </div>
 </template>
 
 <style lang="scss">
-
+    .news-grid {
+        display: grid;
+        row-gap: 0.5rem;
+    }
+    .news-grid-item {
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid #EAEAEA;
+    }
 </style>
 
