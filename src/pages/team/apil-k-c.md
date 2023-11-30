@@ -8,6 +8,7 @@ img: /img/member-apil-k-c.png
 linkedin: https://www.linkedin.com/in/apilkc
 twitter: https://twitter.com/arapilkc
 personalWebsite: https://taubmancollege.umich.edu/student/apil-kc/
+description: "Apil K C is a PhD student at A. Alfred Taubman College of Architecture and Urban Planning, University of Michigan and researcher at AIDD labs. "
 ---
 
 ## Bio

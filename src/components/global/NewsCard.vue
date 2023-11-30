@@ -34,7 +34,7 @@
             },
             newsTitle(){
                 if (this.family==="team"){
-                    return `New ${this.newsitem.meta.title}: ${this.newsitem.meta.name}`
+                    return `Welcome ${this.newsitem.meta.name}, new ${this.newsitem.meta.title}!`
                 }else if(this.family==="content"){
                     const type=this.newsitem.meta.type.split("-").map(str=>str.charAt(0).toUpperCase() + str.slice(1)).join(" ")
                     return `New ${type}: ${this.newsitem.meta.title}`
@@ -51,6 +51,9 @@
                 let parseTime = timeParse("%Y-%m-%d");
                 let parsedDate = parseTime(date.split('T')[0]);
                 return timeFormat(`%b %d, %Y`)(parsedDate);
+            },
+            newsLink(){
+                return this.newsitem.path
             }
         },
         methods: {},
@@ -63,7 +66,7 @@
 <template>
     <Link no-decoration :to="newsLink" class="news-card">
         <div class="news-card__header">
-            <TagPill :tag= "newsType"/>
+            <TagPill :tag= "newsType" :variant="family"/>
             <p>{{ newsDate }}</p>
         </div>
         <h4>{{ newsTitle }}</h4>
@@ -89,6 +92,17 @@
     .news-card__header {
         display: flex;
         justify-content: space-between;
+        & .tag-pill{
+            &.team{
+                background: var(--orange-500);
+            }
+            &.projects{
+                background: var(--blue-500);
+            }
+            &.content{
+                background: var(--purple-500);
+            }
+        }
     }
 </style>
 
