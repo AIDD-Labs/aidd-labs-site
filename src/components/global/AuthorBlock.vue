@@ -53,7 +53,7 @@
         class="author-block"
         no-decoration
         :to="link"
-        :do-open-in-new-tab="this.info.meta.type==='external'"
+        :do-open-in-new-tab="info.meta.type==='external'"
     >
         <div class="author-metas portrait" v-if="orientation == 'portrait'">
             <div class="bio-image-wrapper">
