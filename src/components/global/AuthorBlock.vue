@@ -53,7 +53,7 @@
         class="author-block"
         no-decoration
         :to="link"
-        do-open-in-new-tab
+        :do-open-in-new-tab="this.info.meta.type==='external'"
     >
         <div class="author-metas portrait" v-if="orientation == 'portrait'">
             <div class="bio-image-wrapper">
@@ -96,7 +96,7 @@
                     <div class="socials">
                         <Link
                             :to="info.meta.linkedin"
-                            v-if="info.meta.linkedin"
+                            v-if="info.meta.linkedin"                            
                             do-open-in-new-tab
                         >
                             <svg viewBox="0 0 448 512" width="24" height="24">
