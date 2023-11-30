@@ -37,6 +37,7 @@
                     "Professor":0,
                     "Associate Professor":0,
                     "Assistant Professor":0,
+                    "Postdoctoral Fellow":1,
                     "Postdoctoral Researcher":1,
                     "PhD Researcher":2,
                     "Masters Researcher":3,
