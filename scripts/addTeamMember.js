@@ -71,7 +71,7 @@ const questions = [
 const init = async () => {
   const result = await inquirer.prompt(questions);
 
-  const { hasImg, name, title, affiliation, linkedin, twitter, personalWebsite } = result;
+  const { hasImg, name, title, affiliation, linkedin, twitter, personalWebsite, type } = result;
 
   if(hasImg) {
     const slug = name.toLowerCase().split(' ').join('-');
@@ -80,6 +80,7 @@ const init = async () => {
       slug,
       name,
       createdDate: new Date().toISOString().split('T')[0],
+      type,
       title,
       affiliation,
       img,
