@@ -15,7 +15,7 @@ description: "The Himalayan Climate Data Field Lab is a month-long, flexible unc
 ---
 The Himalayan Climate Data Field Lab is a **month-long, flexible unconference** that will gather scholars, practitioners, activists, community leaders, and storytellers to examine the ways that climate change data and information infrastructures shape adaptation and mitigation in the Himalayan region. Join the Field Lab to **co-design, test and produce new ideas, analytic tools, maps, sensing technologies, data protocols, artistic pieces and communication products** that address climate change and its impacts, with the aim of creating a more equitable and pluralistic data landscape in the Himalayan region.
 
-You are invited to[ apply by January 15, 2024](https://urfieldlab.com/applications-open-for-the-himalayan-climate-data-field-lab-2024/) and to share your ideas for projects and activities you would like to participate in during the Field Lab. 
+You are invited to [apply by January 15, 2024](https://urfieldlab.com/applications-open-for-the-himalayan-climate-data-field-lab-2024/) and to share your ideas for projects and activities you would like to participate in during the Field Lab. 
 
 For more details, visit [the call for applications here](https://urfieldlab.com/applications-open-for-the-himalayan-climate-data-field-lab-2024/)
 
