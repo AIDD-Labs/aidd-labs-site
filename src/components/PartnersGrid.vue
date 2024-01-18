@@ -1,5 +1,4 @@
 <script>
-  import {mapState} from "vuex";
   export default {
     name: "PartnersGrid",
     props: {
@@ -10,14 +9,54 @@
     },
     data() {
       return {
-        isLoaded: false
+        isLoaded: false,
+        allPartners: {
+          gpsdd: {
+            meta: {
+              name: "Global Partnership for Sustainable Development Data",
+              img: "/img/partner-gpsdd.png",
+              url: "https://www.data4sdgs.org/"
+            }
+          },
+          irishAid: {
+            meta: {
+              name: "IrishAid",
+              img: "/img/partner-irishAid.png",
+              url: ""
+            }
+          },
+          kwpf: {
+            meta: {
+              name: "Korea-World Bank Group Partnership Facility",
+              img: "/img/partner-kwpf.png",
+              url: ""
+            }
+          },
+          nhc: {
+            meta: {
+              name: "Natural Hazards Center",
+              img: "/img/partner-nhc.png",
+              url: "https://hazards.colorado.edu/"
+            }
+          },
+          tfscb: {
+            meta: {
+              name: "Trust Fund for Statistical Capabity Building",
+              img: "/img/partner-tfscb.png",
+              url: ""
+            }
+          },
+          usgs: {
+            meta: {
+              name: "USGS",
+              img: "/img/partner-usgs.png",
+              url: "https://earthquake.usgs.gov/"
+            }
+          }
+        }
       };
     },
-    computed: {
-      ...mapState({
-          allPartners: state => state.partners,
-      })
-    },
+    computed: {},
     mounted() {
       this.isLoaded = true;
     },
@@ -31,8 +70,8 @@
         class="first"
         target="_blank"
         rel="noopener noreferrer"
-        :href="allPartners[`partner-${partner}`]?.meta?.url">
-        <img :src="allPartners[`partner-${partner}`]?.meta?.img"/>
+        :href="allPartners[partner]?.meta?.url">
+        <img :src="allPartners[partner]?.meta?.img"/>
       </Link>
     </div>
   </div>
