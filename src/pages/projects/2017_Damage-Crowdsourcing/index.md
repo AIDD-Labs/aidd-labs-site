@@ -8,7 +8,7 @@ locations: ["haiti"]
 methods: [ "qualitative-methods", "statistical-inference", "mixed-methods", "surveys"]
 members: ["sabine-loos", "david-lallemant", "karen-barns", "robert-soden", "gitanjali-bhattacharjee", "melanie-eckle", "benjamin-herfort"] # insert your slug 
 content: ["radcrowd-report","damage-demandsurvey", "radcrowd-11NCEE"]
-partners: ["usgs"]
+partners: []
 title: "Crowdsourcing Building Damage Data" # insert title here
 thumbnail: "/img/proj-damage-crowdsourcing.png"
 description: "As a collaboration between the Stanford Urban Resilience Inititative, Heidelberg University, The World Bank, and Humanitarian OpenStreetMap Team, this project compares three approaches to crowdsourcing building damage data using satellite imagery to inform disaster response decisions." # insert a one sentence description here
