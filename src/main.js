@@ -106,7 +106,7 @@ export const createApp = ViteSSG(
             if (!store.getters.ready) {
                 store.dispatch("loadMembers", members);
                 store.dispatch("loadContents", mdContentRoutes);
-                store.dispatch("loadProjects", mdProjectRoutes)
+                store.dispatch("loadProjects", mdProjectRoutes);
                 store.dispatch("setMode", mode);
             }
 

@@ -140,7 +140,6 @@ const store = createStore({
 
             state.projectMetadata = projectMetadata;
         },
-
         setInfoDensity(state, density) {
             state.infoDensity = density;
         },
@@ -190,7 +189,6 @@ const store = createStore({
                 projects: projects
             })
         },
-
         setThemeColor({commit}, theme) {
             if (!["light", "dark"].includes(theme)) {
                 return;
