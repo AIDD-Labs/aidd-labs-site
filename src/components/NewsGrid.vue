@@ -10,6 +10,7 @@
                     return ["m", "l"].includes(value);
                 },
             },
+            newsCount: Number
         },
         data() {
             return {
@@ -33,8 +34,7 @@
                 const sortedItems = allItems.sort((a,b) => {
                     return new Date(b.meta.createdDate) - new Date(a.meta.createdDate)
                 })
-                console.log(sortedItems)
-                return sortedItems.slice(0,10)
+                return this.newsCount ? sortedItems.slice(0,this.newsCount) : sortedItems
             }
         },
         methods: {},

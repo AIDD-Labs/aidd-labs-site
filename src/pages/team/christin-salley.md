@@ -8,6 +8,7 @@ img: /img/member-christin-salley.png
 linkedin: https://www.linkedin.com/in/christin-j-salley-phd-mse-35b01911a/
 twitter: ""
 personalWebsite: https://midas.umich.edu/faculty-member/christin-salley/
+description: "Dr. Christin Salley is a Schmidt AI in Science Postdoctoral Fellow with the Michigan Institute for Data Science (MIDAS)."
 ---
 
 ## Bio

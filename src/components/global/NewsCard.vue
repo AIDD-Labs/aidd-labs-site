@@ -43,14 +43,18 @@
                 }
             },
             newsDate(){
+                let ret=''
                 let date=this.newsitem.meta.createdDate
                 if (this.family==="content"){
                     date=this.newsitem.meta.date
                 }
-
-                let parseTime = timeParse("%Y-%m-%d");
-                let parsedDate = parseTime(date.split('T')[0]);
-                return timeFormat(`%b %d, %Y`)(parsedDate);
+                
+                if (date){
+                    let parseTime = timeParse("%Y-%m-%d");
+                    let parsedDate = parseTime(date.split('T')[0]);
+                    ret = timeFormat(`%b %d, %Y`)(parsedDate);
+                }
+                return ret
             },
             newsLink(){
                 return this.newsitem.path
