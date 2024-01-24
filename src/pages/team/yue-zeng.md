@@ -8,6 +8,7 @@ img: /img/member-Major-FullSize.png
 linkedin: https://www.linkedin.com/in/majorzeng/
 twitter: ""
 personalWebsite: ""
+description: "Major is a first-year Ph.D. student at the University of Michigan Ann Arbor. Her research interest is modeling disaster's impact on infrastructure systems."
 ---
 
 ## Bio

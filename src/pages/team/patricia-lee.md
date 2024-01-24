@@ -8,6 +8,7 @@ img: /img/member-patricia.png
 linkedin: https://www.linkedin.com/in/patricia-lee-k333/
 twitter: ""
 personalWebsite: ""
+description: "Patricia Lee is an undergraduate student at the University of Michigan studying Civil Engineering and Architecture."
 ---
 
 ## Bio

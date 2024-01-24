@@ -4,7 +4,7 @@ title: Towards the Development of an Anti-Colonial Critique of Climate and
   Disaster Risk Models
 createdDate: 2023-10-24
 date: 2023-06-14
-type: conference_paper
+type: conference-paper
 topics:
   - risk
   - equity

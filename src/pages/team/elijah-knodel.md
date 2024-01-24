@@ -1,6 +1,6 @@
 ---
 slug: "elijah-knodel"
-createdDate: "2023-01-01"
+createdDate: 2022-06-01
 name: "Elijah Knodel"
 title: "Undergraduate Researcher"
 affiliation: "Colorado School of Mines & USGS"

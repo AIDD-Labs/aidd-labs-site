@@ -8,6 +8,7 @@ img: /img/member-simone.png
 linkedin: https://www.linkedin.com/in/simoneac
 twitter: https://twitter.com/simoneacurtis
 personalWebsite: 
+description: "Simone Curtis is a PhD Researcher with AIDD labs in the Civil Engineering program at the University of Michigan. "
 ---
 
 ## Bio
