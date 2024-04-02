@@ -107,7 +107,6 @@ const store = createStore({
 
             state.contentMetadata = contentMetadata;
         },
-
         loadProjects(state, {projects}) {
             let sortedProjects = [...projects];
 
@@ -118,6 +117,7 @@ const store = createStore({
             }).filter(project => project.meta.status && project.meta.status !== "draft");
 
             state.projects = sortedProjects; 
+            console.log("loading projects")
         },
 
         setProjectMetadata(state, {projects}) {
@@ -139,6 +139,20 @@ const store = createStore({
             }, { locations: [], methods: [], topics: []});
 
             state.projectMetadata = projectMetadata;
+            console.log("loading project metadata")
+        },
+        loadNews(state, {news}) {
+            console.log("loading news...")
+            const filteredMembers = Object.values(state.members).filter(member=>member.meta.type!=="external");
+            const filteredProjects = state.projects.filter(project=>project.meta.status!=="draft");
+
+            let sortedNews = [...news,...filteredMembers, ...filteredProjects,...state.contents];
+
+            sortedNews = sortedNews.sort((a, b) => {
+                return new Date(b.meta.createdDate) - new Date(a.meta.createdDate);
+            })
+
+            state.news = sortedNews; 
         },
         setInfoDensity(state, density) {
             state.infoDensity = density;
@@ -189,6 +203,13 @@ const store = createStore({
                 projects: projects
             })
         },
+
+        loadNews({commit}, news) {
+            commit("loadNews", {
+                news: news
+            })
+        },
+
         setThemeColor({commit}, theme) {
             if (!["light", "dark"].includes(theme)) {
                 return;

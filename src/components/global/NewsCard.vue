@@ -40,6 +40,8 @@
                     return `New ${type}: ${this.newsitem.meta.title}`
                 }else if(this.family==="projects"){
                     return `New Project: ${this.newsitem.meta.title}`
+                }else{
+                    return this.newsitem.meta.title
                 }
             },
             newsDate(){
@@ -104,6 +106,9 @@
                 background: var(--blue-500);
             }
             &.content{
+                background: var(--purple-500);
+            }
+            &.news{
                 background: var(--purple-500);
             }
         }

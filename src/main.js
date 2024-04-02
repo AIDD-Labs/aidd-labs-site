@@ -89,6 +89,22 @@ export const createApp = ViteSSG(
             mdProjectRoutes.push(metaProps);
         }
 
+        let mdNewsRoutes = [];
+        let markdownNews = import.meta.globEager("./pages/news/**/index.md");
+        for (const news in markdownNews) {
+            let componentConfig = markdownNews[news];
+
+            let metaProps = {
+                id: uuidv4(),
+                path: `/news/${componentConfig.slug}`,
+                meta: {
+                    ...componentConfig,
+                },
+            };
+
+            mdNewsRoutes.push(metaProps);
+        }
+
         app.use(store);
 
         if (import.meta.env.SSR) {
@@ -107,6 +123,7 @@ export const createApp = ViteSSG(
                 store.dispatch("loadMembers", members);
                 store.dispatch("loadContents", mdContentRoutes);
                 store.dispatch("loadProjects", mdProjectRoutes);
+                store.dispatch("loadNews", mdNewsRoutes);
                 store.dispatch("setMode", mode);
             }
 

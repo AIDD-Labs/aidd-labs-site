@@ -19,22 +19,10 @@
         },
         computed: {
             ...mapState({
-                members: state => state.members,
-                contents: state => state.contents,
-                projects: state => state.projects,
+                news: state => state.news,
             }),
-            filteredMembers() {
-                return Object.values(this.members).filter(member=>member.meta.type!=="external")
-            },
-            filteredProjects() {
-                return this.projects.filter(project=>project.meta.status!=="draft")
-            },
             recentNews() {
-                const allItems = [...this.contents, ...this.filteredProjects, ...this.filteredMembers]
-                const sortedItems = allItems.sort((a,b) => {
-                    return new Date(b.meta.createdDate) - new Date(a.meta.createdDate)
-                })
-                return this.newsCount ? sortedItems.slice(0,this.newsCount) : sortedItems
+                return this.newsCount ? this.news.slice(0,this.newsCount) : this.news
             }
         },
         methods: {},
