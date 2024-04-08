@@ -79,7 +79,8 @@ export default defineConfig({
             extendRoute(route, parent) {
                 isContentRoute = route.component.includes("src/pages/content")
                 isProjectRoute = route.component.includes("src/pages/projects")
-                if (isContentRoute || isProjectRoute) {
+                isNewsRoute = route.component.includes("src/pages/news")
+                if (isContentRoute || isProjectRoute || isNewsRoute) {
                     // Instead of building all pages dynamically when the app loads (via main.js), 
                     // the Pages plugin will create routes for us based on file structure when we build this into the static site. 
                     // We want to keep this flow, keep our organization, but edit the routes to have a nicer looking url structure in the final site.
