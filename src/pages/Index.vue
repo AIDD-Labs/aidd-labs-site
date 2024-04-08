@@ -362,7 +362,7 @@
         .news {
             display: flex;
             flex-direction: row;
-            margin: 10px;
+            margin: 0px;
         }
         .news-featured {
             width: 50%;
