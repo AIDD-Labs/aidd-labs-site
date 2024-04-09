@@ -109,7 +109,7 @@
                 background: var(--purple-500);
             }
             &.news{
-                background: var(--purple-500);
+                background: var(--green-600);
             }
         }
     }
