@@ -13,7 +13,7 @@
                     },
                     {
                         label: "Github",
-                        url: "https://github.com/sabineloos",
+                        url: "https://github.com/AIDD-Labs",
                     },
                     {
                         label: "Researchgate",
@@ -32,6 +32,10 @@
                     {
                         label: "University of Michigan Civil & Environmental Engineering",
                         url: "https://cee.engin.umich.edu/",
+                    },
+                    {
+                        label: "Urban Collaboratory",
+                        url: "https://urbanlab.umich.edu/",
                     },
                 ],
             };
