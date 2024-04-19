@@ -1,6 +1,6 @@
 ---
 slug: "damage-crowdsourcing" # match folder label name
-createdDate:
+createdDate: 2017-10-01
 date: "2016 - 2018" # latest 
 status: "published"
 topics: ["impact"]
