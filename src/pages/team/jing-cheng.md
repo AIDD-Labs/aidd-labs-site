@@ -1,6 +1,6 @@
 ---
 slug: "jing-cheng"
-createdDate:
+createdDate: 2020-01-01
 name: "Jing Cheng Ng"
 title: "Undergraduate Researcher"
 yearDeparted: "2020"

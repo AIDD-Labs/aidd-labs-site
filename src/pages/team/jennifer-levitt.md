@@ -1,6 +1,6 @@
 ---
 slug: "jennifer-levitt"
-createdDate:
+createdDate: 2019-06-01
 name: "Jenny Levitt"
 title: "Undergraduate Researcher"
 yearDeparted: "2021"
