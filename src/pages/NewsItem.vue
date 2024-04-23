@@ -124,7 +124,7 @@
             <div class="content">
                 <div class="metas">
                     <div class="tags">
-                                <TagPill variant="type" :tag="type" />
+                                <TagPill variant="news" :tag="type" />
                             </div>
                             <div class="description" v-if="description">
                                 {{ description }}

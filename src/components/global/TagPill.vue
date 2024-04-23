@@ -12,7 +12,7 @@
                 type: String,
                 default: "topic",
                 validator(value) {
-                    return ["type", "topic", "method"].includes(value);
+                    return ["type", "topic", "method", "news"].includes(value);
                 },
             },
         },
@@ -45,6 +45,10 @@
 
         &.type {
             background: var(--orange-500);
+        }
+
+        &.news {
+            background: var(--green-600);
         }
 
         &.method {
