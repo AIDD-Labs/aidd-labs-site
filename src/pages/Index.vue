@@ -174,6 +174,12 @@
                         <a href="#"><img src="/img/partner-WBibrd.png" /></a>
                     </div>
                 </div>
+                <h1>Recent News</h1>
+                <NewsGrid newsCount="5"/>
+                <div class = "all-news">
+                    <Link is-button to="/news"> All News → </Link>
+                </div>
+                
                 <!-- <div class="FeedItem">
                 <div class="FeedItem__image" src="/img/partner-tfscb.png"></div>
             </div> -->
@@ -262,7 +268,11 @@
         .show {
             display: block;
         }
-
+        .all-news {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 1em;
+        }
         // BODY
         .grid-container {
         }
@@ -352,7 +362,7 @@
         .news {
             display: flex;
             flex-direction: row;
-            margin: 10px;
+            margin: 0px;
         }
         .news-featured {
             width: 50%;

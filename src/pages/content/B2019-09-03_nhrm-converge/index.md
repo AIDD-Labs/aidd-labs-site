@@ -1,6 +1,6 @@
 ---
 slug: "nhrm-converge" # match folder label name
-createdDate:
+createdDate: 2019-09-03
 date: 2019-09-03
 status: "published"
 topics: ["recovery", "impact"] # "recovery", "impact", "statistical-modeling"

@@ -7,6 +7,7 @@ import utils from "./scripts/utils.js";
 import Post from "@/pages/Post.vue";
 import Member from "@/pages/Member.vue";
 import Project from '@/pages/Project.vue';
+import NewsItem from "@/pages/NewsItem.vue";
 
 export const createApp = ViteSSG(
     // the root component
@@ -18,6 +19,7 @@ export const createApp = ViteSSG(
         app.component("Post", Post);
         app.component("Member", Member);
         app.component("Project", Project);
+        app.component("NewsItem", NewsItem);
 
         app.mixin({
             methods: utils.filters,
@@ -89,6 +91,22 @@ export const createApp = ViteSSG(
             mdProjectRoutes.push(metaProps);
         }
 
+        let mdNewsRoutes = [];
+        let markdownNews = import.meta.globEager("./pages/news/**/index.md");
+        for (const news in markdownNews) {
+            let componentConfig = markdownNews[news];
+
+            let metaProps = {
+                id: uuidv4(),
+                path: `/news/${componentConfig.slug}`,
+                meta: {
+                    ...componentConfig,
+                },
+            };
+
+            mdNewsRoutes.push(metaProps);
+        }
+
         app.use(store);
 
         if (import.meta.env.SSR) {
@@ -107,6 +125,7 @@ export const createApp = ViteSSG(
                 store.dispatch("loadMembers", members);
                 store.dispatch("loadContents", mdContentRoutes);
                 store.dispatch("loadProjects", mdProjectRoutes);
+                store.dispatch("loadNews", mdNewsRoutes);
                 store.dispatch("setMode", mode);
             }
 

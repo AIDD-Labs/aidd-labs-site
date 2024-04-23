@@ -1,6 +1,6 @@
 ---
 slug: "damage-data-integration" # match folder label name
-createdDate:
+createdDate: 2018-01-01
 date: "2018 - 2021" # latest 
 status: "published"
 topics: ["impact"]

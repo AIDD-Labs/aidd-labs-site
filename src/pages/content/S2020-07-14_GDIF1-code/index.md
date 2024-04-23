@@ -1,6 +1,6 @@
 ---
 slug: "GDIF1-code" # match folder label name
-createdDate:
+createdDate: 2020-07-20
 date: 2020-07-20
 status: "published"
 topics: ["impact", "statistical-modeling"] # "recovery", "impact", "statistical-modeling"

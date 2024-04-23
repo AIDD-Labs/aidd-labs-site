@@ -1,6 +1,6 @@
 ---
 slug: "usgs-esc"
-createdDate:
+createdDate: 2022-06-08
 date: 2022-06-08
 status: "published"
 topics: ["recovery", "impact", "risk", "equity"]

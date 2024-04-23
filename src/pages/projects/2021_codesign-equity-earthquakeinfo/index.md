@@ -1,6 +1,6 @@
 ---
 slug: "codesign-equity-earthquakeinfo" # match folder label name
-createdDate:
+createdDate: 2021-09-01
 date: "2021 - Present"
 status: "published"
 topics: ["impact", "equity"]

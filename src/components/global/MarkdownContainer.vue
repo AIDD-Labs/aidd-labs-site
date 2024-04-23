@@ -17,7 +17,8 @@
                     const routeToComponent = {
                         content: 'Post',
                         projects: 'Project',
-                        team: 'Member'
+                        team: 'Member',
+                        news: 'NewsItem'
                     }
                     const routeName = this.$route.path.split('/')[1]
                     return routeToComponent[routeName];

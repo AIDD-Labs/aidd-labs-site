@@ -1,6 +1,6 @@
 ---
 slug: "ier-report"
-createdDate:
+createdDate: 2020-04-22
 date: 2020-04-22
 status: "published"
 topics: ["impact", "recovery", "equity"]

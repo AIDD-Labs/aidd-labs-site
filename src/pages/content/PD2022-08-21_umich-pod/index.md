@@ -1,6 +1,6 @@
 ---
 slug: "umich-pod" # match folder label name
-createdDate:
+createdDate: 2022-08-21
 date: 2022-08-21
 status: "published"
 topics: ["equity"] # "recovery", "impact", "statistical-modeling"

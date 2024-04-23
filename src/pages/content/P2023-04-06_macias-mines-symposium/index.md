@@ -1,6 +1,6 @@
 ---
 slug: "macias-mines-symposium"
-createdDate:
+createdDate: 2023-04-06
 date: 2023-04-06
 status: "published"
 topics: ["impact", "risk", "equity"]

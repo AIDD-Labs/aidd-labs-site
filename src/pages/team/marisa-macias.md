@@ -1,11 +1,11 @@
 ---
 slug: "marisa-macias"
-createdDate:
+createdDate: 2022-01-01
 name: "Marísa Macías"
 title: "Masters Researcher"
 affiliation: "Colorado School of Mines & USGS"
 img: "/img/member-marisa.png"
-linkedin: 
+linkedin: https://www.linkedin.com/in/marisa-macias/
 twitter: 
 personalWebsite: "https://www.usgs.gov/staff-profiles/marisa-macias"
 ---
