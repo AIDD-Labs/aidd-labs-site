@@ -5,7 +5,7 @@ date: 2024-04-10
 status: "published"
 type: "conference"
 members: ["marisa-macias"]
-title: "Marísa Macías presents on panel on Achieving Collective Impact through Human Centered Design at the EERI Annual Meeting."
+title: "Marísa Macías presents on panel on Achieving Collective Impact through Human Centered Design at the EERI Annual Meeting"
 description: "Marísa Macías joined a panel held by the Center for Collective Impact in Earthquake Science (C-CIES) at the 2024 Earthquake Engineering Research Institute's (EERI) Annual Meeting to describe the human-centered design research to improve equity and accessibility of earthquake information."
 url: "https://www.c-cies.org/"
 ---
