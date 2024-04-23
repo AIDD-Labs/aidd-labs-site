@@ -2,7 +2,7 @@
 slug: "KTM-field-lab" # match folder label name
 createdDate: 2023-12-20
 date: "2024 - Present"
-status: "published"
+status: "current"
 topics: ["risk", "climate", "equity", "impact", "recovery"]
 locations: ["nepal", "global"]
 methods: [ "mixed-methods", "risk-analysis"]

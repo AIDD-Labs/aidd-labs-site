@@ -26,6 +26,12 @@
                         options: this.projectMetadata.topics,
                     },
                     {
+                        key: 'status',
+                        label: "Status",
+                        queryParam: 'status',
+                        options: ["current", "complete"],
+                    },
+                    {
                         key: 'methods',
                         label: "Methods",
                         queryParam: 'methods',
@@ -55,11 +61,12 @@
                     if (!Object.keys(query).length) {
                         return row;
                     } else {
+                        let passesStatus = !query.status || row.meta.status === query.status;
                         let passesMethod = !query.methods || row.meta.methods.includes(query.methods);
                         let passesLocation = !query.locations || row.meta.locations.includes(query.locations);
                         let passesTopic = !query.topic || row.meta.topics.includes(query.topic);
 
-                        if (passesMethod && passesLocation && passesTopic) {
+                        if (passesMethod && passesLocation && passesTopic && passesStatus) {
                             return row;
                         }
                     }

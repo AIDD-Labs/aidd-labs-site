@@ -2,7 +2,7 @@
 slug: "dyfi-analysis" # match folder label name
 createdDate: 2023-05-20
 date: "2022 - Present"
-status: "published"
+status: "current"
 topics: ["hazard", "equity"]
 locations: ["global"]
 methods: [ "statistical-inference"]

@@ -2,7 +2,7 @@
 slug: "informatics-equity-recovery-nepal" # match folder label name
 createdDate: 2018-01-01
 date: "2018 - 2021"
-status: "published"
+status: "complete"
 topics: ["recovery", "impact", "equity"]
 locations: ["nepal"]
 methods: [ "statistical-modeling", "surveys", "mixed-methods", "qualitative-methods"]
