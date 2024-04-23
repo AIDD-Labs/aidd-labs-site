@@ -8,7 +8,7 @@ locations: ["global"]
 methods: [ "statistical-inference"]
 members: ["elijah-knodel","sabine-loos", "david-wald", "vince-quitoriano"] # insert your slug here, e.g., "sabine-loos"
 content: [knodel-NHW-DYFI-poster]
-partners: []
+partners: ["usgs"]
 title: "Accessibility of Crowdsourced Shaking Data" # insert title here
 thumbnail: "/img/proj-dyfi.png"
 description: "Who responds (and does not respond) to crowdsourced shaking intensity data, Did You Feel It?" # insert a one sentence description here
