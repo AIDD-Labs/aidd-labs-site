@@ -31,7 +31,6 @@
         methods: {
             initFilterCounts() {
                 let filterCounts = {};
-                // debugger
     
                 // Set up starting empty counts of 0
                 this.filters.forEach(filter => {
