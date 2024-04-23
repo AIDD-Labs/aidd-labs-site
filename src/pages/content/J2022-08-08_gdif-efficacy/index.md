@@ -1,6 +1,6 @@
 ---
 slug: "gdif-efficacy" # must match folder name (for now)
-createdDate:
+createdDate: 2022-08-08
 date: 2022-08-08
 status: "published"
 topics: ["impact"]

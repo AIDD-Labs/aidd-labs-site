@@ -1,6 +1,6 @@
 ---
 slug: "Geo4Dev" # match folder label name
-createdDate:
+createdDate: 2019-01-03
 date: 2019-01-03
 status: "published"
 topics: ["equity","impact", "recovery"] 

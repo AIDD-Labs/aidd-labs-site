@@ -1,6 +1,6 @@
 ---
 slug: "UR22-EqRisk" # match folder label name
-createdDate:
+createdDate: 2023-01-26
 date: 2023-01-26
 status: "published"
 topics: ["equity","risk", "impact"] 
