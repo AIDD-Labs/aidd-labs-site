@@ -14,10 +14,11 @@
                 isLoaded: false,
                 lightbox: {
                     images: {
-                        thumbnails: ["team-usgs.png"],
-                        large: ["team-usgs.png"],
+                        thumbnails: ["team-2024-SummerKickOff-2.jpg","team-2023-Kanako-1.jpg","team-2022-retreat.jpeg","team-2022-usgs-goodbye.jpeg"],
+                        large: ["team-2024-SummerKickOff-2.jpg","team-2023-Kanako-1.jpg","team-2022-retreat.jpeg","team-2022-usgs-goodbye.jpeg"],
                     },
                     captions: [
+                        "AIDD labs after our summer retreat at the Botanical Gardens. Pictured L to R: Apil K C, Sabine Loos, Shriya Kethireddy, Christin Salley, Simone Curtis, Major Zeng.",
                         "AIDD labs getting ice cream after work. Pictured clockwise: Sabine Loos, Marísa Macías, David Wald, Alex Brunson, Eli Knodel, Maddie Karr.",
                     ],
                     thumbnailsPath: "/img/",
@@ -70,8 +71,7 @@
         <div class="team__about">
             <h1>Team</h1>
             Our team is a group of disaster analysts with multiple
-            backgrounds&mdash;including humanitarian engineering, civil engineering,
-            statistics&mdash;and we're looking to grow. We strive to conduct convergent
+            backgrounds&mdash;including engineering, data science, and urban planning. We strive to conduct convergent
             research, blending our knowledge of data and statistics on disasters and/or
             the built environment with an understanding of the social and natural systems
             that surround them. Therefore, our team members employ multiple methods
@@ -99,18 +99,19 @@
                 <b>Interested in joining our team?</b> <br /><br />
                 <b
                     >If you’d like to pursue a PhD in AIDD labs, please consider applying
-                    to Civil & Environmental Engineering program at University of
+                    to Civil & Environmental Engineering program at the University of
                     Michigan.</b
                 >
                 Please indicate in your application that you’re interested in working with
                 Professor Loos to ensure she is sent your application for review. We are
-                open to folks from multiple disciplines, including engineering, geography,
-                urban planning, computer science, geology, among many more. You are also
-                more than welcome to email Professor Loos with the subject line
-                “Prospective PhD student: ___” before applying, including your CV, a
+                open to folks from multiple disciplines, including engineering, geography, geoinformatics,
+                urban planning, computer science, geology, among many more. 
+                <br /><br />
+                You are also more than welcome to email Professor Loos with 
+                “Prospective PhD student:” at the beginning of the subject line before applying. Please include your CV, a
                 description of your research interests and how they align with AIDD labs
                 research, what you're hoping to gain from a PhD, and any other relevant
-                material. Please know that while she would like to be able to respond to
+                material. While Professor Loos would like to be able to respond to
                 all inquiries, you may not receive a personal response given the number of
                 emails received each year.
                 <br /><br />
@@ -120,7 +121,7 @@
                     mentorship, and conducting research.</b
                 >
                 If you are interested in joining our team as a postdoc, please email
-                Professor Loos with the subject line “Prospective Postdoc: ___” including
+                Professor Loos with “Prospective Postdoc: " at the beginning of the subject line. Please also include
                 your CV and the ways you believe you can contribute to AIDD labs.
                 <br /><br />
                 <b
@@ -132,14 +133,24 @@
                 <br />
             </p>
             <!-- <div class="img-fullwidth"><img src="/img/team-usgs.png" alt="AIDD team USGS"></div> -->
-            <LightBox
+            <div class="gallery">
+                <LightBox
                 :thumbnails="lightbox.images.thumbnails"
                 :largeImages="lightbox.images.large"
                 :thumbnailsPath="lightbox.thumbnailsPath"
                 :largePath="lightbox.largePath"
                 :captions="lightbox.captions"
-                class="lightBox"
+                class="light-box"
             />
+            </div>
+            <!-- <LightBox
+                :thumbnails="lightbox.images.thumbnails"
+                :largeImages="lightbox.images.large"
+                :thumbnailsPath="lightbox.thumbnailsPath"
+                :largePath="lightbox.largePath"
+                :captions="lightbox.captions"
+                class="light-box"
+            /> -->
         </div>
     </MaxWidth>
 </template>
@@ -157,12 +168,26 @@
             margin-bottom: 1rem;
         }
     }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+        column-gap: 100px;
+        flex-grow: 1;
+        flex-basis: 125px;
+        max-width: 100%;
+        row-gap: 10px;
+    }
+    .gallery img {
+        width: 100%;
+        max-width: 50%;
+    }
     .light-box {
         &__thumbnail {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            height: auto;
+            border-radius: 8px;
             max-width: 60%;
         }
     }
