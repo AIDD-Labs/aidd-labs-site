@@ -39,8 +39,8 @@ const questions = [
     type: 'list',
     name: 'type',
     when: imageIsUploaded,
-    choices: [ 'internal', 'external'],
-    message: '[3/8] Are you an internal or external AIDD labs team member?'
+    choices: [ 'current', 'alumni', 'external'],
+    message: '[3/8] Are you a current, alumni, or external AIDD labs team member?'
   },
   {
     type: 'input',
