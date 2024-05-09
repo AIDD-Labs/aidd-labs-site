@@ -6,6 +6,7 @@
         "build": "vite-ssg build",
         "preview": "vite preview --port=8888",
         "addContent": "node ./scripts/addContent.js",
+        "addProject": "node ./scripts/addProject.js",
         "addTeamMember": "node ./scripts/addTeamMember.js"
     },
     "dependencies": {
