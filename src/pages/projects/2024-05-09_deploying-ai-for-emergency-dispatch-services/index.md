@@ -4,9 +4,9 @@ title: Deploying AI for Emergency Dispatch Services
 createdDate: 2024-05-09
 date: "2024 - Present"
 status: "current"
-topics: ["response"]
-methods: [ "qualitative-methods", "mixed-methods"]
-members: ["christin-salley","sabine-loos", "aditya-tambe", "tomas-garcia-lavanchy"]
+topics: ["emergency-management", "equity"]
+methods: [ "qualitative-methods", "mixed-methods","statistical-learning"]
+members: ["christin-salley","sabine-loos", "aditya-tambe"] # , "tomas-garcia-lavanchy"
 locations: ["United States"]
 content: []
 thumbnail: "/img/proj-dispatcher-ai-bots.jpg" 
@@ -20,3 +20,7 @@ The United States faces a critical challenge with over one-third of emergency ca
 **By leveraging large language models**, the study seeks to take the insights gained from the interviews and develop advanced bots capable of responding to non-emergency events with human-like text (e.g., creating prompts that mimic operator responses to gather detailed information from callers), while actively mitigating potential biases present in the model and evaluating its effectiveness via algorithmic fairness testing metrics.
 
 **The expected results** from this study will explicitly delineate challenges to AI implementation in emergency dispatch systems, an area with significant paucity in existing research, and propose solutions to overcome these barriers with equity-driven models. This interdisciplinary research intersects emergency management, public health, and natural language processing, to set ethical precedents for AI deployment in vital emergency services. 
+
+**If you have experience with managing 911 dispatch centers in the state of Michigan and would like to participate in this study, please contact Christin Salley at [cjsalley@umich.edu](mailto:cjsalley@8mich.edu)**
+
+To learn more information about this study, please visit the project [information sheet](https://docs.google.com/document/d/1gXDipnKMi0AXrHpalmVg-n8WsQvzRCbzKyQXgK8UJXw/edit?usp=sharing).
