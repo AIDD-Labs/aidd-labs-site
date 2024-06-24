@@ -12,17 +12,6 @@
         data() {
             return {
                 isLoaded: false,
-                lightbox: {
-                    images: {
-                        thumbnails: ["team-2022-usgs-goodbye.jpeg"],
-                        large: ["team-2024-SummerKickOff-2.jpg","team-2023-Kanako-1.jpg","team-2022-retreat.jpeg","team-2022-usgs-goodbye.jpeg"],
-                    },
-                    captions: [
-                        "AIDD labs getting ice cream after work. Pictured clockwise: Sabine Loos, Marísa Macías, David Wald, Alex Brunson, Eli Knodel, Maddie Karr.",
-                    ],
-                    thumbnailsPath: "/img/",
-                    largePath: "/img/",
-                },
             };
         },
         computed: {
@@ -277,6 +266,7 @@
         height: calc(100vh - 10px);
         grid-template: repeat(6, 1fr)/repeat(6, 1fr);
         grid-gap: 0.5em;
+        padding-top: 20px
     }
     @media (max-width: 800px) {
     #gallery {
