@@ -125,7 +125,7 @@
 <div id="gallery">
     <div><img src="/img/team-2024-FullLab.jpg"/><a href="#lightbox-1"></a></div>
     <div><img src="/img/team-2024-SummerKickOff-2.jpg"/><a href="#lightbox-2"></a></div>
-    <!-- <div><img src="/img/team-2022-retreat.jpeg"/><a href="#lightbox-3"></a></div>
+    <div><img src="/img/team-2022-retreat.jpeg"/><a href="#lightbox-3"></a></div>
     <div><img src="/img/team-2024-chitwan-drone.jpg"/><a href="#lightbox-4"></a></div>
     <div><img src="/img/team-2024-chitwan-group.jpg"/><a href="#lightbox-5"></a></div>
     <div><img src="/img/team-2022-usgs-goodbye.jpeg"/><a href="#lightbox-6"></a></div>
@@ -140,7 +140,7 @@
     <div><img src="/img/team-2024-maggie-FL.jpg"/><a href="#lightbox-15"></a></div>
     <div><img src="/img/team-2024-brad.jpg"/><a href="#lightbox-16"></a></div>
     <div><img src="/img/proj-2023-landslide.jpg"/><a href="#lightbox-17"></a></div>
-    <div><img src="/img/team-2023-nhwMacias.jpg"/><a href="#lightbox-18"></a></div>  -->
+    <div><img src="/img/team-2023-nhwMacias.jpg"/><a href="#lightbox-18"></a></div> 
 </div>
 
 <div class="lightbox" id="lightbox-1">
@@ -153,7 +153,7 @@
     <div class="caption">AIDD labs after our summer retreat at the Botanical Gardens. Pictured L to R: Apil K C, Sabine Loos, Shriya Kethireddy, Christin Salley, Simone Curtis, Major Zeng.</div><a class="close" href="#gallery"></a>
   </div>
 </div>
-<!-- <div class="lightbox" id="lightbox-3">
+<div class="lightbox" id="lightbox-3">
   <div class="content"><img src="/img/team-2022-retreat.jpeg"/>
     <div class="caption">Painting pumpkins at research workshop and retreat</div><a class="close" href="#gallery"></a>
   </div>
@@ -232,8 +232,8 @@
 <div class="lightbox" id="lightbox-18">
   <div class="content"><img src="/img/team-2023-nhwMacias.jpg"/>
     <div class="caption">Marisa presenting her work at the Natural Hazards Workshop.</div><a class="close" href="#gallery"></a>
-  </div> -->
-<!-- </div>  -->
+  </div>
+</div> 
         </div>
     </MaxWidth>
 </template>
