@@ -129,18 +129,18 @@
     <div><img src="/img/team-2024-chitwan-drone.jpg"/><a href="#lightbox-4"></a></div>
     <div><img src="/img/team-2024-chitwan-group.jpg"/><a href="#lightbox-5"></a></div>
     <div><img src="/img/team-2022-usgs-goodbye.jpeg"/><a href="#lightbox-6"></a></div>
-    <!-- <div><img src="/img/team-2023-Kanako-1.jpg"/><a href="#lightbox-7"></a></div> -->
-    <!-- <div><img src="https://picsum.photos/600/600/?image=519"/><a href="#lightbox-8"></a></div>
-    <div><img src="https://picsum.photos/600/600/?image=520"/><a href="#lightbox-9"></a></div>
-    <div><img src="https://picsum.photos/600/600/?image=521"/><a href="#lightbox-10"></a></div>
-    <div><img src="https://picsum.photos/600/600/?image=522"/><a href="#lightbox-11"></a></div>
-    <div><img src="https://picsum.photos/600/600/?image=523"/><a href="#lightbox-12"></a></div>
-    <div><img src="https://picsum.photos/600/600/?image=524"/><a href="#lightbox-13"></a></div>
-    <div><img src="https://picsum.photos/600/600/?image=525"/><a href="#lightbox-14"></a></div>
-    <div><img src="https://picsum.photos/600/600/?image=526"/><a href="#lightbox-15"></a></div>
-    <div><img src="https://picsum.photos/600/600/?image=527"/><a href="#lightbox-16"></a></div>
-    <div><img src="https://picsum.photos/600/600/?image=528"/><a href="#lightbox-17"></a></div>
-    <div><img src="https://picsum.photos/600/600/?image=529"/><a href="#lightbox-18"></a></div> -->
+    <div><img src="/img/team-2023-Kanako-1.jpg"/><a href="#lightbox-7"></a></div>
+    <div><img src="/img/team-usgs.png"/><a href="#lightbox-8"></a></div>
+    <div><img src="/img/team-2024-sabine-major.jpg"/><a href="#lightbox-9"></a></div>
+    <div><img src="/img/team-2023-nhw.jpg"/><a href="#lightbox-10"></a></div>
+    <div><img src="/img/team-2023-nepal.jpg"/><a href="#lightbox-11"></a></div>
+    <div><img src="/img/team-2024-chitwan-river.jpg"/><a href="#lightbox-12"></a></div>
+    <div><img src="/img/team-2024-majorPresentation.jpg"/><a href="#lightbox-13"></a></div>
+    <div><img src="/img/team-2024-simoneApil.jpg"/><a href="#lightbox-14"></a></div>
+    <div><img src="/img/team-2024-maggie-FL.jpg"/><a href="#lightbox-15"></a></div>
+    <div><img src="/img/team-2024-brad.jpg"/><a href="#lightbox-16"></a></div>
+    <div><img src="/img/proj-2023-landslide.jpg"/><a href="#lightbox-17"></a></div>
+    <div><img src="/img/team-2023-nhwMacias.jpg"/><a href="#lightbox-18"></a></div> 
 </div>
 
 <div class="lightbox" id="lightbox-1">
@@ -178,61 +178,62 @@
     <div class="caption">AIDD labs getting ice cream after work. Pictured clockwise: Sabine Loos, Marísa Macías, David Wald, Alex Brunson, Eli Knodel, Maddie Karr.</div><a class="close" href="#gallery"></a>
   </div>
 </div>
-<!-- <div class="lightbox" id="lightbox-8">
-  <div class="content"><img src="https://picsum.photos/1920/1080/?image=518"/>
-    <div class="caption">No. <b>518</b> from Picsum</div><a class="close" href="#gallery"></a>
+<div class="lightbox" id="lightbox-8">
+  <div class="content"><img src="/img/team-usgs.png"/>
+    <div class="caption">Group outing to get ice cream!</div><a class="close" href="#gallery"></a>
   </div>
 </div>
+
 <div class="lightbox" id="lightbox-9">
-  <div class="content"><img src="https://picsum.photos/1920/1080/?image=520"/>
-    <div class="caption">No. <b>520</b> from Picsum</div><a class="close" href="#gallery"></a>
+  <div class="content"><img src="/img/team-2024-sabine-major.jpg"/>
+    <div class="caption">Sabine and Major</div><a class="close" href="#gallery"></a>
   </div>
 </div>
 <div class="lightbox" id="lightbox-10">
-  <div class="content"><img src="https://picsum.photos/1920/1080/?image=521"/>
-    <div class="caption">No. <b>521</b> from Picsum</div><a class="close" href="#gallery"></a>
+  <div class="content"><img src="/img/team-2023-nhw.jpg"/>
+    <div class="caption">Team at the Natural Hazards Workshop 2023</div><a class="close" href="#gallery"></a>
   </div>
 </div>
 <div class="lightbox" id="lightbox-11">
-  <div class="content"><img src="https://picsum.photos/1920/1080/?image=522"/>
-    <div class="caption">No. <b>522</b> from Picsum</div><a class="close" href="#gallery"></a>
+  <div class="content"><img src="/img/team-2023-nepal.jpg"/>
+    <div class="caption">Team in field trip to NSET in Nepal in 2023.</div><a class="close" href="#gallery"></a>
   </div>
 </div>
 <div class="lightbox" id="lightbox-12">
-  <div class="content"><img src="https://picsum.photos/1920/1080/?image=523"/>
-    <div class="caption">No. <b>523</b> from Picsum</div><a class="close" href="#gallery"></a>
+  <div class="content"><img src="/img/team-2024-chitwan-river.jpg"/>
+    <div class="caption"> Field visit to Chitwan flooding.</div><a class="close" href="#gallery"></a>
   </div>
 </div>
 <div class="lightbox" id="lightbox-13">
-  <div class="content"><img src="https://picsum.photos/1920/1080/?image=524"/>
-    <div class="caption">No. <b>524</b> from Picsum</div><a class="close" href="#gallery"></a>
+  <div class="content"><img src="/img/team-2024-majorPresentation.jpg"/>
+    <div class="caption">Major presenting on disaster risk modeling.</div><a class="close" href="#gallery"></a>
   </div>
 </div>
 <div class="lightbox" id="lightbox-14">
-  <div class="content"><img src="https://picsum.photos/1920/1080/?image=525"/>
-    <div class="caption">No. <b>525</b> from Picsum</div><a class="close" href="#gallery"></a>
+  <div class="content"><img src="/img/team-2024-simoneApil.jpg"/>
+    <div class="caption">Simone and Apil at a group outing to BaraSinghe Brewery.</div><a class="close" href="#gallery"></a>
   </div>
 </div>
 <div class="lightbox" id="lightbox-15">
-  <div class="content"><img src="https://picsum.photos/1920/1080/?image=526"/>
-    <div class="caption">No. <b>526</b> from Picsum</div><a class="close" href="#gallery"></a>
+  <div class="content"><img src="/img/team-2024-maggie-FL.jpg"/>
+    <div class="caption">Maggie at a user needs session at the Field Lab.</div><a class="close" href="#gallery"></a>
   </div>
 </div>
 <div class="lightbox" id="lightbox-16">
-  <div class="content"><img src="https://picsum.photos/1920/1080/?image=527"/>
-    <div class="caption">No. <b>527</b> from Picsum</div><a class="close" href="#gallery"></a>
+  <div class="content"><img src="/img/team-2024-brad.jpg"/>
+    <div class="caption">Brad speaking at the 2024 Field Lab.</div><a class="close" href="#gallery"></a>
   </div>
 </div>
 <div class="lightbox" id="lightbox-17">
-  <div class="content"><img src="https://picsum.photos/1920/1080/?image=528"/>
-    <div class="caption">No. <b>528</b> from Picsum</div><a class="close" href="#gallery"></a>
+  <div class="content"><img src="/img/proj-2023-landslide.jpg"/>
+    <div class="caption">Landslides and roads in Nepal.</div><a class="close" href="#gallery"></a>
   </div>
 </div>
 <div class="lightbox" id="lightbox-18">
-  <div class="content"><img src="https://picsum.photos/1920/1080/?image=529"/>
-    <div class="caption">No. <b>529</b> from Picsum</div><a class="close" href="#gallery"></a>
+  <div class="content"><img src="/img/team-2023-nhwMacias.jpg"/>
+    <div class="caption">Marisa presenting her work at the Natural Hazards Workshop.</div><a class="close" href="#gallery"></a>
   </div>
-</div> -->
+</div> 
         </div>
     </MaxWidth>
 </template>
