@@ -138,12 +138,12 @@
     <div><img src="/img/team-2024-majorPresentation.jpg"/><a href="#lightbox-13"></a></div>
     <div><img src="/img/team-2024-simoneApil.jpg"/><a href="#lightbox-14"></a></div>
     <div><img src="/img/team-2024-maggie-FL.jpg"/><a href="#lightbox-15"></a></div>
-    <!-- <div><img src="/img/team-2024-brad.jpg"/><a href="#lightbox-16"></a></div> -->
-    <!-- <div><img src="/img/proj-2023-landslide.jpg"/><a href="#lightbox-17"></a></div> -->
-    <!-- <div><img src="/img/team-2023-nhwMacias.jpg"/><a href="#lightbox-18"></a></div>  -->
+    <div><img src="/img/team-2024-brad.jpg"/><a href="#lightbox-16"></a></div>
+    <div><img src="/img/proj-2023-landslide.jpg"/><a href="#lightbox-17"></a></div>
+    <div><img src="/img/team-2023-nhwMacias.jpg"/><a href="#lightbox-18"></a></div> 
 </div>
 
-<!-- <div class="lightbox" id="lightbox-1">
+<div class="lightbox" id="lightbox-1">
   <div class="content"><img src="/img/team-2024-FullLab.jpg"/>
     <div class="caption">Full team at breakfast in Nepal</div><a class="close" href="#gallery"></a>
   </div>
@@ -232,7 +232,7 @@
   <div class="content"><img src="/img/team-2023-nhwMacias.jpg"/>
     <div class="caption">Marisa presenting her work at the Natural Hazards Workshop.</div><a class="close" href="#gallery"></a>
   </div>
-</div>  -->
+</div> 
         </div>
     </MaxWidth>
 </template>
