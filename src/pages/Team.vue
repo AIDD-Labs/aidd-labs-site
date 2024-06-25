@@ -134,10 +134,10 @@
     <div><img src="/img/team-2024-sabine-major.jpg"/><a href="#lightbox-9"></a></div>
     <div><img src="/img/team-2023-nhw.jpg"/><a href="#lightbox-10"></a></div>
     <div><img src="/img/team-2023-nepal.jpg"/><a href="#lightbox-11"></a></div>
-    <!-- <div><img src="/img/team-2024-chitwan-river.jpg"/><a href="#lightbox-12"></a></div> -->
-    <!-- <div><img src="/img/team-2024-majorPresentation.jpg"/><a href="#lightbox-13"></a></div> -->
-    <!-- <div><img src="/img/team-2024-simoneApil.jpg"/><a href="#lightbox-14"></a></div> -->
-    <!-- <div><img src="/img/team-2024-maggie-FL.jpg"/><a href="#lightbox-15"></a></div> -->
+    <div><img src="/img/team-2024-chitwan-river.jpg"/><a href="#lightbox-12"></a></div>
+    <div><img src="/img/team-2024-majorPresentation.jpg"/><a href="#lightbox-13"></a></div>
+    <div><img src="/img/team-2024-simoneApil.jpg"/><a href="#lightbox-14"></a></div>
+    <div><img src="/img/team-2024-maggie-FL.jpg"/><a href="#lightbox-15"></a></div>
     <!-- <div><img src="/img/team-2024-brad.jpg"/><a href="#lightbox-16"></a></div> -->
     <!-- <div><img src="/img/proj-2023-landslide.jpg"/><a href="#lightbox-17"></a></div> -->
     <!-- <div><img src="/img/team-2023-nhwMacias.jpg"/><a href="#lightbox-18"></a></div>  -->
