@@ -154,7 +154,7 @@
   </div>
 </div>
 <div class="lightbox" id="lightbox-3">
-  <div class="content"><img src="/img/team-2022-retreat.jpeg"/>
+  <div class="content"><img src="/img/team-2022-Retreat.jpeg"/>
     <div class="caption">Painting pumpkins at research workshop and retreat</div><a class="close" href="#gallery"></a>
   </div>
 </div>
