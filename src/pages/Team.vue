@@ -12,18 +12,6 @@
         data() {
             return {
                 isLoaded: false,
-                lightbox: {
-                    images: {
-                        thumbnails: ["team-2024-SummerKickOff-2.jpg","team-2023-Kanako-1.jpg","team-2022-retreat.jpeg","team-2022-usgs-goodbye.jpeg"],
-                        large: ["team-2024-SummerKickOff-2.jpg","team-2023-Kanako-1.jpg","team-2022-retreat.jpeg","team-2022-usgs-goodbye.jpeg"],
-                    },
-                    captions: [
-                        "AIDD labs after our summer retreat at the Botanical Gardens. Pictured L to R: Apil K C, Sabine Loos, Shriya Kethireddy, Christin Salley, Simone Curtis, Major Zeng.",
-                        "AIDD labs getting ice cream after work. Pictured clockwise: Sabine Loos, Marísa Macías, David Wald, Alex Brunson, Eli Knodel, Maddie Karr.",
-                    ],
-                    thumbnailsPath: "/img/",
-                    largePath: "/img/",
-                },
             };
         },
         computed: {
@@ -98,11 +86,11 @@
             <p>
                 <b>Interested in joining our team?</b> <br /><br />
                 <b
-                    >If you’d like to pursue a PhD in AIDD labs, please consider applying
+                    >If you'd like to pursue a PhD in AIDD labs, please consider applying
                     to Civil & Environmental Engineering program at the University of
                     Michigan.</b
                 >
-                Please indicate in your application that you’re interested in working with
+                Please indicate in your application that you're interested in working with
                 Professor Loos to ensure she is sent your application for review. We are
                 open to folks from multiple disciplines, including engineering, geography, geoinformatics,
                 urban planning, computer science, geology, among many more. 
@@ -116,7 +104,7 @@
                 emails received each year.
                 <br /><br />
                 <b
-                    >If you’d like to be a postdoc at AIDD labs, we are always looking for
+                    >If you'd like to be a postdoc at AIDD labs, we are always looking for
                     talented individuals to contribute to our team through skill sharing,
                     mentorship, and conducting research.</b
                 >
@@ -125,32 +113,126 @@
                 your CV and the ways you believe you can contribute to AIDD labs.
                 <br /><br />
                 <b
-                    >If you’d like to collaborate or partner with AIDD labs, especially as
+                    >If you'd like to collaborate or partner with AIDD labs, especially as
                     a community organization or as a user of disaster information, please
-                    email Professor Loos with a description of your ideas and she’ll
+                    email Professor Loos with a description of your ideas and she'll
                     respond as soon as she can.
                 </b>
                 <br />
             </p>
-            <!-- <div class="img-fullwidth"><img src="/img/team-usgs.png" alt="AIDD team USGS"></div> -->
-            <div class="gallery">
-                <LightBox
-                :thumbnails="lightbox.images.thumbnails"
-                :largeImages="lightbox.images.large"
-                :thumbnailsPath="lightbox.thumbnailsPath"
-                :largePath="lightbox.largePath"
-                :captions="lightbox.captions"
-                class="light-box"
-            />
-            </div>
-            <!-- <LightBox
-                :thumbnails="lightbox.images.thumbnails"
-                :largeImages="lightbox.images.large"
-                :thumbnailsPath="lightbox.thumbnailsPath"
-                :largePath="lightbox.largePath"
-                :captions="lightbox.captions"
-                class="light-box"
-            /> -->
+
+   <!-- Gallery items -->
+<div id="gallery">
+    <div><img src="/img/team-2024-FullLab.jpg"/><a href="#lightbox-1"></a></div>
+    <div><img src="/img/team-2024-SummerKickOff-2.jpg"/><a href="#lightbox-2"></a></div>
+    <div><img src="/img/team-2022-Retreat.jpeg"/><a href="#lightbox-3"></a></div>
+    <div><img src="/img/team-2024-chitwan-drone.jpg"/><a href="#lightbox-4"></a></div>
+    <div><img src="/img/team-2024-chitwan-group.jpg"/><a href="#lightbox-5"></a></div>
+    <div><img src="/img/team-2022-usgs-goodbye.jpeg"/><a href="#lightbox-6"></a></div>
+    <div><img src="/img/team-2023-Kanako-1.jpg"/><a href="#lightbox-7"></a></div>
+    <div><img src="/img/team-usgs.png"/><a href="#lightbox-8"></a></div>
+    <div><img src="/img/team-2024-sabine-major.jpg"/><a href="#lightbox-9"></a></div>
+    <div><img src="/img/team-2023-nhw.jpg"/><a href="#lightbox-10"></a></div>
+    <div><img src="/img/team-2023-nepal.jpg"/><a href="#lightbox-11"></a></div>
+    <div><img src="/img/team-2024-chitwan-river.jpg"/><a href="#lightbox-12"></a></div>
+    <div><img src="/img/team-2024-majorPresentation.jpg"/><a href="#lightbox-13"></a></div>
+    <div><img src="/img/team-2024-simoneApil.jpg"/><a href="#lightbox-14"></a></div>
+    <div><img src="/img/team-2024-maggie-FL.jpg"/><a href="#lightbox-15"></a></div>
+    <div><img src="/img/team-2024-brad.jpg"/><a href="#lightbox-16"></a></div>
+    <div><img src="/img/proj-2023-landslide.jpg"/><a href="#lightbox-17"></a></div>
+    <div><img src="/img/team-2023-nhwMacias.jpg"/><a href="#lightbox-18"></a></div> 
+</div>
+
+<div class="lightbox" id="lightbox-1">
+  <div class="content"><img src="/img/team-2024-FullLab.jpg"/>
+    <div class="caption">Full team at breakfast in Nepal</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-2">
+  <div class="content"><img src="/img/team-2024-SummerKickOff-2.jpg"/>
+    <div class="caption">AIDD labs after our summer retreat at the Botanical Gardens. Pictured L to R: Apil K C, Sabine Loos, Shriya Kethireddy, Christin Salley, Simone Curtis, Major Zeng.</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-3">
+  <div class="content"><img src="/img/team-2022-Retreat.jpeg"/>
+    <div class="caption">Painting pumpkins at research workshop and retreat</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-4">
+  <div class="content"><img src="/img/team-2024-chitwan-drone.jpg"/>
+    <div class="caption">Brad Bottoms and Apil KC managing a drone session. </div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-5">
+  <div class="content"><img src="/img/team-2024-chitwan-group.jpg"/>
+    <div class="caption">Team on field trip to visit Chitwan Nepal to study flooding.</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-6">
+  <div class="content"><img src="/img/team-2022-usgs-goodbye.jpeg"/>
+    <div class="caption">USGS team. Pictured L to R: Marísa Macías, Eli Knodel, Maddie Karr, Sabine Loos.</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-7">
+  <div class="content"><img src="/img/team-2023-Kanako-1.jpg"/>
+    <div class="caption">AIDD labs getting ice cream after work. Pictured clockwise: Sabine Loos, Marísa Macías, David Wald, Alex Brunson, Eli Knodel, Maddie Karr.</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-8">
+  <div class="content"><img src="/img/team-usgs.png"/>
+    <div class="caption">Group outing to get ice cream!</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-9">
+  <div class="content"><img src="/img/team-2024-sabine-major.jpg"/>
+    <div class="caption">Sabine and Major</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-10">
+  <div class="content"><img src="/img/team-2023-nhw.jpg"/>
+    <div class="caption">Team at the Natural Hazards Workshop 2023</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-11">
+  <div class="content"><img src="/img/team-2023-nepal.jpg"/>
+    <div class="caption">Team in field trip to NSET in Nepal in 2023.</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-12">
+  <div class="content"><img src="/img/team-2024-chitwan-river.jpg"/>
+    <div class="caption"> Field visit to Chitwan flooding.</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-13">
+  <div class="content"><img src="/img/team-2024-majorPresentation.jpg"/>
+    <div class="caption">Major presenting on disaster risk modeling.</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-14">
+  <div class="content"><img src="/img/team-2024-simoneApil.jpg"/>
+    <div class="caption">Simone and Apil at a group outing to BaraSinghe Brewery.</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-15">
+  <div class="content"><img src="/img/team-2024-maggie-FL.jpg"/>
+    <div class="caption">Maggie at a user needs session at the Field Lab.</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-16">
+  <div class="content"><img src="/img/team-2024-brad.jpg"/>
+    <div class="caption">Brad speaking at the 2024 Field Lab.</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-17">
+  <div class="content"><img src="/img/proj-2023-landslide.jpg"/>
+    <div class="caption">Landslides and roads in Nepal.</div><a class="close" href="#gallery"></a>
+  </div>
+</div>
+<div class="lightbox" id="lightbox-18">
+  <div class="content"><img src="/img/team-2023-nhwMacias.jpg"/>
+    <div class="caption">Marisa presenting her work at the Natural Hazards Workshop.</div><a class="close" href="#gallery"></a>
+  </div>
+</div> 
         </div>
     </MaxWidth>
 </template>
@@ -168,27 +250,175 @@
             margin-bottom: 1rem;
         }
     }
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: flex-start;
-        justify-content: space-between;
-        gap: 20px;
-        column-gap: 100px;
-        flex-grow: 1;
-        flex-basis: 125px;
-        max-width: 100%;
-        row-gap: 10px;
-    }
-    .gallery img {
-        width: 100%;
-        max-width: 50%;
-    }
-    .light-box {
-        &__thumbnail {
-            border-radius: 8px;
-            max-width: 60%;
+
+// gallery items
+    * {
+        box-sizing: border-box;
         }
+
+    body {
+        margin: 5px;
+        position: relative;
+    }
+
+    #gallery {
+        display: grid;
+        height: calc(100vh - 10px);
+        grid-template: repeat(6, 1fr)/repeat(6, 1fr);
+        grid-gap: 0.5em;
+        padding-top: 20px
+    }
+    @media (max-width: 800px) {
+    #gallery {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #gallery > div {
+        width: 48%;
+        margin: 1%;
+    }
+    }
+    @media (max-width: 800px) and (max-width: 350px) {
+    #gallery > div {
+        width: 98%;
+    }
+    }
+    #gallery > div:nth-child(6n+1) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    #gallery > div:nth-child(2) {
+        grid-column: span 3;
+        grid-row: span 3;
+    }
+    #gallery > div:nth-child(4) {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    #gallery > div > a {
+        opacity: 0;
+        position: absolute;
+        color: #000;
+        background-color: #000;
+        padding: 2rem;
+        mix-blend-mode: difference;
+        width: 100%;
+        height: 100%;
+        transition: all ease 1s;
+    }
+    #gallery > div > img {
+        width: 100%;
+        min-height: 100%;
+        transition: all ease 1s;
+    }
+    #gallery > div:hover img {
+        filter: blur(4px);
+    }
+    #gallery > div:hover a {
+        opacity: 1;
+    }
+    #gallery > div {
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #gallery div,
+    #gallery a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    [id^=lightbox-] {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(168, 185, 241, 0.4);
+        display: flex;
+        opacity: 0;
+        transition: opacity 450ms ease-in-out;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+    }
+    [id^=lightbox-]:target {
+        opacity: 1;
+        pointer-events: inherit;
+    }
+    [id^=lightbox-]:target img {
+        filter: blur(0);
+    }
+    [id^=lightbox-] .content {
+        max-width: 90%;
+        position: relative;
+        color: #000;
+    }
+    [id^=lightbox-] .content:hover > a.close {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+    [id^=lightbox-] .content:hover > .caption {
+        opacity: 1;
+        transform: translateY(-3px);
+    }
+    [id^=lightbox-] .content:hover > .caption::after {
+        opacity: 1;
+    }
+    [id^=lightbox-] .content > * {
+        transition: all 450ms ease-in-out;
+    }
+    [id^=lightbox-] .caption {
+        display: block;
+        margin: 0;
+        padding: 1em;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(50%);
+        font-size: 1.2em;
+        opacity: 0;
+    }
+    [id^=lightbox-] .caption::after {
+        content: " ";
+        background-color: rgba(168, 185, 241, 0.6);
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all 350ms ease-in-out 250ms;
+        opacity: 0;
+        transform-origin: bottom;
+        mix-blend-mode: soft-light;
+    }
+    [id^=lightbox-] img {
+        max-height: 90vh;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        filter: blur(50px);
+    }
+    [id^=lightbox-] a.close {
+        width: 2em;
+        height: 2em;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0, 0);
+        opacity: 0;
+        transform-origin: right top;
+        text-decoration: none;
+        color: #000;
+        }
+        [id^=lightbox-] a.close::after {
+        content: "X";
     }
 </style>

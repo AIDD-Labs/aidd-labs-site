@@ -56,7 +56,7 @@
 <style lang="scss">
     .members-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         row-gap: 30px;
         justify-items: start;
         width: 100%;
