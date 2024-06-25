@@ -125,7 +125,7 @@
 <div id="gallery">
     <div><img src="/img/team-2024-FullLab.jpg"/><a href="#lightbox-1"></a></div>
     <div><img src="/img/team-2024-SummerKickOff-2.jpg"/><a href="#lightbox-2"></a></div>
-    <div><img src="/img/team-2022-retreat.jpeg"/><a href="#lightbox-3"></a></div>
+    <div><img src="/img/team-2022-Retreat.jpeg"/><a href="#lightbox-3"></a></div>
     <div><img src="/img/team-2024-chitwan-drone.jpg"/><a href="#lightbox-4"></a></div>
     <!-- <div><img src="/img/team-2024-chitwan-group.jpg"/><a href="#lightbox-5"></a></div> -->
     <!-- <div><img src="/img/team-2022-usgs-goodbye.jpeg"/><a href="#lightbox-6"></a></div> -->
