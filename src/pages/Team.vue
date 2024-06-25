@@ -127,9 +127,9 @@
     <div><img src="/img/team-2024-SummerKickOff-2.jpg"/><a href="#lightbox-2"></a></div>
     <div><img src="/img/team-2022-Retreat.jpeg"/><a href="#lightbox-3"></a></div>
     <div><img src="/img/team-2024-chitwan-drone.jpg"/><a href="#lightbox-4"></a></div>
-    <!-- <div><img src="/img/team-2024-chitwan-group.jpg"/><a href="#lightbox-5"></a></div> -->
-    <!-- <div><img src="/img/team-2022-usgs-goodbye.jpeg"/><a href="#lightbox-6"></a></div> -->
-    <!-- <div><img src="/img/team-2023-Kanako-1.jpg"/><a href="#lightbox-7"></a></div> -->
+    <div><img src="/img/team-2024-chitwan-group.jpg"/><a href="#lightbox-5"></a></div>
+    <div><img src="/img/team-2022-usgs-goodbye.jpeg"/><a href="#lightbox-6"></a></div>
+    <div><img src="/img/team-2023-Kanako-1.jpg"/><a href="#lightbox-7"></a></div>
     <!-- <div><img src="/img/team-usgs.png"/><a href="#lightbox-8"></a></div> -->
     <!-- <div><img src="/img/team-2024-sabine-major.jpg"/><a href="#lightbox-9"></a></div> -->
     <!-- <div><img src="/img/team-2023-nhw.jpg"/><a href="#lightbox-10"></a></div> -->
