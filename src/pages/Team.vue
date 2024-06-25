@@ -124,7 +124,7 @@
    <!-- Gallery items -->
 <div id="gallery">
     <div><img src="/img/team-2024-FullLab.jpg"/><a href="#lightbox-1"></a></div>
-    <!-- <div><img src="/img/team-2024-SummerKickOff-2.jpg"/><a href="#lightbox-2"></a></div> -->
+    <div><img src="/img/team-2024-SummerKickOff-2.jpg"/><a href="#lightbox-2"></a></div>
     <!-- <div><img src="/img/team-2022-retreat.jpeg"/><a href="#lightbox-3"></a></div>
     <div><img src="/img/team-2024-chitwan-drone.jpg"/><a href="#lightbox-4"></a></div>
     <div><img src="/img/team-2024-chitwan-group.jpg"/><a href="#lightbox-5"></a></div>
@@ -148,11 +148,11 @@
     <div class="caption">Full team at breakfast in Nepal</div><a class="close" href="#gallery"></a>
   </div>
 </div>
-<!-- <div class="lightbox" id="lightbox-2">
+<div class="lightbox" id="lightbox-2">
   <div class="content"><img src="/img/team-2024-SummerKickOff-2.jpg"/>
     <div class="caption">AIDD labs after our summer retreat at the Botanical Gardens. Pictured L to R: Apil K C, Sabine Loos, Shriya Kethireddy, Christin Salley, Simone Curtis, Major Zeng.</div><a class="close" href="#gallery"></a>
   </div>
-</div> -->
+</div>
 <!-- <div class="lightbox" id="lightbox-3">
   <div class="content"><img src="/img/team-2022-retreat.jpeg"/>
     <div class="caption">Painting pumpkins at research workshop and retreat</div><a class="close" href="#gallery"></a>
