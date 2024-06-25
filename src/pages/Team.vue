@@ -127,23 +127,23 @@
     <div><img src="/img/team-2024-SummerKickOff-2.jpg"/><a href="#lightbox-2"></a></div>
     <div><img src="/img/team-2022-retreat.jpeg"/><a href="#lightbox-3"></a></div>
     <div><img src="/img/team-2024-chitwan-drone.jpg"/><a href="#lightbox-4"></a></div>
-    <div><img src="/img/team-2024-chitwan-group.jpg"/><a href="#lightbox-5"></a></div>
-    <div><img src="/img/team-2022-usgs-goodbye.jpeg"/><a href="#lightbox-6"></a></div>
-    <div><img src="/img/team-2023-Kanako-1.jpg"/><a href="#lightbox-7"></a></div>
-    <div><img src="/img/team-usgs.png"/><a href="#lightbox-8"></a></div>
-    <div><img src="/img/team-2024-sabine-major.jpg"/><a href="#lightbox-9"></a></div>
-    <div><img src="/img/team-2023-nhw.jpg"/><a href="#lightbox-10"></a></div>
-    <div><img src="/img/team-2023-nepal.jpg"/><a href="#lightbox-11"></a></div>
-    <div><img src="/img/team-2024-chitwan-river.jpg"/><a href="#lightbox-12"></a></div>
-    <div><img src="/img/team-2024-majorPresentation.jpg"/><a href="#lightbox-13"></a></div>
-    <div><img src="/img/team-2024-simoneApil.jpg"/><a href="#lightbox-14"></a></div>
-    <div><img src="/img/team-2024-maggie-FL.jpg"/><a href="#lightbox-15"></a></div>
-    <div><img src="/img/team-2024-brad.jpg"/><a href="#lightbox-16"></a></div>
-    <div><img src="/img/proj-2023-landslide.jpg"/><a href="#lightbox-17"></a></div>
-    <div><img src="/img/team-2023-nhwMacias.jpg"/><a href="#lightbox-18"></a></div> 
+    <!-- <div><img src="/img/team-2024-chitwan-group.jpg"/><a href="#lightbox-5"></a></div> -->
+    <!-- <div><img src="/img/team-2022-usgs-goodbye.jpeg"/><a href="#lightbox-6"></a></div> -->
+    <!-- <div><img src="/img/team-2023-Kanako-1.jpg"/><a href="#lightbox-7"></a></div> -->
+    <!-- <div><img src="/img/team-usgs.png"/><a href="#lightbox-8"></a></div> -->
+    <!-- <div><img src="/img/team-2024-sabine-major.jpg"/><a href="#lightbox-9"></a></div> -->
+    <!-- <div><img src="/img/team-2023-nhw.jpg"/><a href="#lightbox-10"></a></div> -->
+    <!-- <div><img src="/img/team-2023-nepal.jpg"/><a href="#lightbox-11"></a></div> -->
+    <!-- <div><img src="/img/team-2024-chitwan-river.jpg"/><a href="#lightbox-12"></a></div> -->
+    <!-- <div><img src="/img/team-2024-majorPresentation.jpg"/><a href="#lightbox-13"></a></div> -->
+    <!-- <div><img src="/img/team-2024-simoneApil.jpg"/><a href="#lightbox-14"></a></div> -->
+    <!-- <div><img src="/img/team-2024-maggie-FL.jpg"/><a href="#lightbox-15"></a></div> -->
+    <!-- <div><img src="/img/team-2024-brad.jpg"/><a href="#lightbox-16"></a></div> -->
+    <!-- <div><img src="/img/proj-2023-landslide.jpg"/><a href="#lightbox-17"></a></div> -->
+    <!-- <div><img src="/img/team-2023-nhwMacias.jpg"/><a href="#lightbox-18"></a></div>  -->
 </div>
 
-<div class="lightbox" id="lightbox-1">
+<!-- <div class="lightbox" id="lightbox-1">
   <div class="content"><img src="/img/team-2024-FullLab.jpg"/>
     <div class="caption">Full team at breakfast in Nepal</div><a class="close" href="#gallery"></a>
   </div>
@@ -183,7 +183,6 @@
     <div class="caption">Group outing to get ice cream!</div><a class="close" href="#gallery"></a>
   </div>
 </div>
-
 <div class="lightbox" id="lightbox-9">
   <div class="content"><img src="/img/team-2024-sabine-major.jpg"/>
     <div class="caption">Sabine and Major</div><a class="close" href="#gallery"></a>
@@ -233,7 +232,7 @@
   <div class="content"><img src="/img/team-2023-nhwMacias.jpg"/>
     <div class="caption">Marisa presenting her work at the Natural Hazards Workshop.</div><a class="close" href="#gallery"></a>
   </div>
-</div> 
+</div>  -->
         </div>
     </MaxWidth>
 </template>
