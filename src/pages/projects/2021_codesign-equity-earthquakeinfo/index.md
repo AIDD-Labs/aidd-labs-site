@@ -7,7 +7,7 @@ topics: ["impact", "equity"]
 locations: ["global"]
 methods: [ "qualitative-methods"]
 members: ["sabine-loos", "marisa-macias", "madeline-karr", "elijah-knodel", "david-wald", "kristin-ludwig", "lori-peek", "jocelyn-west", "elizabeth-reddy"] # insert your slug here, e.g., "sabine-loos"
-content: ["usgs-esc", "UR22-EqRisk", "macias-mines-symposium"]
+content: ["usgs-esc", "UR22-EqRisk", "macias-mines-symposium","achieving-collective-impact-in-earthquake-science-podcast"]
 partners: []
 title: "Co-Designing Actionable USGS Earthquake Impact Products ​to Support Equity-Focused Disaster Management​" # insert title here
 thumbnail: "/img/proj-userNeedsUSGS.png"
