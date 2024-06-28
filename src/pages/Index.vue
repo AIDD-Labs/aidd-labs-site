@@ -16,7 +16,7 @@
                         thumbnails: ["home-approach.png"],
                         large: ["home-approach.png"],
                     },
-                    captions: ["The AIDD labs approach"],
+                    captions: ["The AIDD Labs approach"],
                     thumbnailsPath: "/img/",
                     largePath: "/img/",
                 },
@@ -30,12 +30,12 @@
             aboutContent() {
                 const aboutContentHash = {
                     mission: `
-                        <p> The AIDD (Actionable Information for Disasters and Development) labs’ mission is to leverage data and information to prioritize populations in need before, during, and after disasters. 
-                            Led by Dr. Sabine Loos and housed at the University of Michigan, AIDD labs aims to continuously improve upon (and in some cases, break down) current disaster data 
+                        <p> The AIDD (Actionable Information for Disasters and Development) Labs’ mission is to leverage data and information to prioritize populations in need before, during, and after disasters. 
+                            Led by Dr. Sabine Loos and housed at the University of Michigan, AIDD Labs aims to continuously improve upon (and in some cases, break down) current disaster data 
                             by integrating voices of communities and organizations who have historically been excluded from design,
                             by developing approaches that can be used in data-scarce regions, and
                             by understanding past applications to better design future information systems.
-                        <p> Our lab website is under construction, but please explore our research and approach here. If you are interested in joining our lab, please see our 
+                        <p> If you are interested in joining our lab, please visit the 'Opportunities' section of the
                             <a href="http://disasterdata.engin.umich.edu/team">Team</a> page.</p>`,
                     research: `
                         <p> Our research takes multiple forms, both to understand our current information systems and to design new systems that reduce risk to those most vulnerable.  
@@ -51,7 +51,7 @@
                         </ul>
                         `,
                     approach: `
-                        <p> AIDD labs designs information by first understanding what the needs are for that information—either by engaging with those living in communities at risk or those responding to and managing those risks.
+                        <p> AIDD Labs designs information by first understanding what the needs are for that information—either by engaging with those living in communities at risk or those responding to and managing those risks.
                             We then develop approaches to address these needs by leveraging statistical learning, crowdsourcing, remote sensing, among other techniques. 
                             Importantly, we consider the implications of the information we design through evaluating the effects of data-driven decisions and continued engagement with our users. </p>
                         <p> Our general approach to our research integrates the many disciplines needed to develop more holistic disaster information, blending engineering, the earth sciences, the social sciences, and information systems. 
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                     <div class="about-img">
-                        <!-- <img src="/img/home-approach.png" alt="AIDD labs approach diagram showing flows from users to decisions to data"> -->
+                        <!-- <img src="/img/home-approach.png" alt="AIDD Labs approach diagram showing flows from users to decisions to data"> -->
                         <LightBox
                             :thumbnails="lightbox.images.thumbnails"
                             :largeImages="lightbox.images.large"
