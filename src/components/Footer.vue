@@ -71,10 +71,9 @@
                     <p>
                         <Link
                             is-button
-                            to="https://www.researchgate.net/profile/Sabine-Loos"
-                            doOpenInNewTab
+                            to="/AboutWebsite"
                         >
-                            Check out our recent articles
+                            How this website was made →
                         </Link>
                     </p>
                     <div class="copyright">© Sabine Loos 2024</div>
