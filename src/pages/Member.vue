@@ -22,7 +22,7 @@
             },
             articlesByAuthor() {
                 let posts = this.contents.filter(article => {
-                    return article.meta.authors.split(",")[0] == this.name; // only returns first author articles
+                    return article.meta.authors.split(",")[0] == this.name; 
                 });
 
                 posts.sort((a, b) => {
@@ -32,15 +32,20 @@
                 return posts.slice(0, 3);
             },
             newsByAuthor() {
-                let newsItems = this.news.filter(newsPost => {
-                    return newsPost.meta.members.split(",")[0] == this.name;
+                let newsPosts = this.news.filter(newsitem => {
+                    // if (this.name.includes("Marísa")) {
+                    //     return newsitem;
+                    // } else {
+                        return newsitem.meta.members.split(",")[0] == this.slug; //not sure why this isn't working
+                    // }
                 });
 
-                newsItems.sort((a, b) => {
+                newsPosts.sort((a, b) => {
                     return new Date(b.meta.date) - new Date(a.meta.date);
                 });
 
-                return newsItems.slice(0, 3);
+                return newsPosts.slice(0, 3);
+                // return newsPosts
             },
             activeMarkdownComponent() {
                 return this.$route.name;
@@ -109,10 +114,10 @@
                 <h2>Recent content by {{ name }}</h2>
                 <ContentGrid :data="articlesByAuthor" />
             </MaxWidth>
-            <!-- <MaxWidth size="s" class="articles" v-if="newsByAuthor.length">
-                <h2>Recent news about {{ name }}</h2>
+            <MaxWidth size="s" class="articles" v-if="newsByAuthor.length">
+                <h2>Recent news about {{ name }} </h2>
                 <NewsGrid :data="newsByAuthor" newsCount="3"/>
-            </MaxWidth> -->
+            </MaxWidth>
             <!-- <MaxWidth size="s" class="team">
                 <Link to="/team"> <h2>Other team members</h2></Link>
                 <MembersGrid variant="m" :data="otherTeamMembers" />
