@@ -12,12 +12,16 @@
         },
         data() {
             return {
-                isLoaded: false
+                // isLoaded: false,
+                ...this.newsitem.meta,
             };
         },
         computed: {
             family(){
                 return this.newsitem.path.split("/")[1]
+            },
+            newsMember(){
+                return this.newsitem.meta.members
             },
             newsType(){
                 let type
