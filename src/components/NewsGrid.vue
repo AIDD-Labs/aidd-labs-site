@@ -10,7 +10,8 @@
                     return ["m", "l"].includes(value);
                 },
             },
-            newsCount: Number
+            newsCount: Number,
+            data: Array
         },
         data() {
             return {
@@ -22,7 +23,7 @@
                 news: state => state.news,
             }),
             recentNews() {
-                return this.newsCount ? this.news.slice(0,this.newsCount) : this.news
+                return this.data || (this.newsCount ? this.news.slice(0,this.newsCount) : this.news)
             }
         },
         methods: {},

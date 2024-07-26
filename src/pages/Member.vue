@@ -14,6 +14,7 @@
                 members: state => state.members,
                 memberMetadata: state => state.memberMetadata,
                 contents: state => state.contents,
+                news: state => state.news,
                 siteMetadata: state => state.siteMetadata,
             }),
             otherTeamMembers() {
@@ -21,11 +22,7 @@
             },
             articlesByAuthor() {
                 let posts = this.contents.filter(article => {
-                    if (this.name.includes("Sabine")) {
-                        return article;
-                    } else {
-                        return article.meta.authors.split(",")[0] == this.name;
-                    }
+                    return article.meta.authors.split(",")[0] == this.name; 
                 });
 
                 posts.sort((a, b) => {
@@ -33,6 +30,19 @@
                 });
 
                 return posts.slice(0, 3);
+            },
+            newsByAuthor() {
+                let newsPosts = this.news.filter(newsitem => {
+                    const members = newsitem.meta.members || []
+                    return members[0] == this.slug;
+                });
+
+                newsPosts.sort((a, b) => {
+                    return new Date(b.meta.date) - new Date(a.meta.date);
+                });
+
+                return newsPosts.slice(0, 3);
+                // return newsPosts
             },
             activeMarkdownComponent() {
                 return this.$route.name;
@@ -101,10 +111,14 @@
                 <h2>Recent content by {{ name }}</h2>
                 <ContentGrid :data="articlesByAuthor" />
             </MaxWidth>
-            <MaxWidth size="s" class="team">
+            <MaxWidth size="s" class="articles" v-if="newsByAuthor.length">
+                <h2>Recent news about {{ name }} </h2>
+                <NewsGrid :data="newsByAuthor" newsCount="3"/>
+            </MaxWidth>
+            <!-- <MaxWidth size="s" class="team">
                 <Link to="/team"> <h2>Other team members</h2></Link>
                 <MembersGrid variant="m" :data="otherTeamMembers" />
-            </MaxWidth>
+            </MaxWidth> -->
             <!-- <MaxWidth size="s" class="content">
                 <JoinTheLabBlock />
             </MaxWidth> -->
