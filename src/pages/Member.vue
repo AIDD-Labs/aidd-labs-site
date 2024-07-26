@@ -33,11 +33,8 @@
             },
             newsByAuthor() {
                 let newsPosts = this.news.filter(newsitem => {
-                    // if (this.name.includes("Marísa")) {
-                    //     return newsitem;
-                    // } else {
-                        return newsitem.meta.members.split(",")[0] == this.slug; //not sure why this isn't working
-                    // }
+                    const members = newsitem.meta.members || []
+                    return members[0] == this.slug;
                 });
 
                 newsPosts.sort((a, b) => {
