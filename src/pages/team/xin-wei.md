@@ -9,11 +9,11 @@ img: /img/member-xin-wei.png
 linkedin: https://www.linkedin.com/in/xin-wei-calvin
 twitter: https://x.com/Calvin_XinWEi
 personalWebsite: https://scholar.google.com.au/citations?user=Bs4I0eAAAAAJ&hl=en
+description: "Dr. Xin Wei is a Schmidt AI in Science Postdoctoral Fellow with the Michigan Institute for Data Science (MIDAS)"
 ---
 
 ## Bio
-**Dr. Xin Wei**
-[Schmidt AI in Science Postdoctoral Fellow with the Michigan Institute for Data Science (MIDAS)](https://midas.umich.edu/faculty-member/xin-wei/)
+**Dr. Xin Wei** is a [Schmidt AI in Science Postdoctoral Fellow with the Michigan Institute for Data Science (MIDAS)](https://midas.umich.edu/faculty-member/xin-wei/).
 
 He will be working with [Prof. Sabine Loos](https://cee.engin.umich.edu/people/loos-sabine/), [Prof. F. Estéfan T. Garcia](https://cee.engin.umich.edu/people/garcia-f-estefan-t/), and [Prof. Elizabeth Bondi-Kelly](https://sites.google.com/view/elizabethbondi) to explore integrated AI-Physics solutions for understanding the impact of past landslides on communities and developing risk assessment tools to mitigate future impacts.
 
