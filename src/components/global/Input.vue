@@ -31,7 +31,8 @@
 
 <template>
     <label class="Input">
-        <input :type="type" :placeholder="placeholder" @change="$emit('input', $event.target.checked)" v-model="value" />
+        <!-- <input :type="type" :placeholder="placeholder" @change="$emit('input', $event.target.checked)" v-model="value" /> -->
+        <input :type="type" :placeholder="placeholder" @change="$emit('input', $event.target.checked)" v-bind="value" />
         <span><slot /></span>
     </label>
 </template>

@@ -114,12 +114,11 @@
         }
 
         &:hover {
+            border-radius: 16px;
+            overflow: hidden;
             .hover-plate {
                 opacity: 1;
             }
-
-            border-radius: 16px;
-            overflow: hidden;
         }
 
         .image-container {
