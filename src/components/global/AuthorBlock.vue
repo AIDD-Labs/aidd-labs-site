@@ -171,6 +171,7 @@
             &.landscape {
                 flex-direction: row;
                 gap: 1em;
+                font-size: 0.8em;
 
                 .bio-image-wrapper {
                     width: fit-content;
@@ -181,8 +182,6 @@
                     width: 2.75rem;
                     height: 2.75rem;
                 }
-
-                font-size: 0.8em;
 
                 .info {
                     display: flex;
@@ -348,11 +347,10 @@
             }
 
             .metas {
+                text-align: center;
                 h3 {
                     margin: 0.25em 0;
                 }
-
-                text-align: center;
             }
         }
     }
