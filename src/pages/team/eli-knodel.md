@@ -13,7 +13,9 @@ personalWebsite: ""
 
 ## Bio
 
-Eli Knodel is an Undergraduate Researcher with AIDD labs and student intern at the U.S. Geological Survey's Geologic Hazards Science Center. 
-His research surrounds the evaluation of user behavior and earthquake information products by combining primary survey data with secondary web analytics data.
-He is currently focusing on evaluating the accessibility of crowdsourced Did You Feel It? data.
-Eli is studying Applied Mathematics and Statistics at Colorado School of Mines and is expected to graduate in 2024.
+Eli Knodel is a masters researcher with AIDD labs and a student in the School for Environment and Sustatinability (SEAS) at University of Michigan. 
+In SEAS, Eli is specializing in Geospatial Data Sciences and is expected to graduate in May 2026. 
+
+Prior to coming to Ann Arbor, Eli got his bachelor's degree in Applied Mathematics and Statistics at Colorado School of Mines and worked at the U.S. Geological Survey (USGS).
+At the USGS, he developed software and performed statistical analyses, including an analysis of the global accessibility of "Did You Feel It?" (DYFI), an earthquake information product from the USGS that uses crowdsourced data.
+In addition to finishing his work with DYFI, Eli will be beginning a new project with AIDD labs to model the recurrent flooding taking place in the Chitwan Valley of Nepal.
