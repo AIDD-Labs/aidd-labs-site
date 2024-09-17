@@ -6,7 +6,7 @@ status: "current"
 topics: ["hazard", "equity"]
 locations: ["global"]
 methods: [ "statistical-inference"]
-members: ["elijah-knodel","sabine-loos", "david-wald", "vince-quitoriano"] # insert your slug here, e.g., "sabine-loos"
+members: [eli-knodel,"sabine-loos", "david-wald", "vince-quitoriano"] # insert your slug here, e.g., "sabine-loos"
 content: [knodel-NHW-DYFI-poster]
 partners: []
 title: "Accessibility of Crowdsourced Shaking Data" # insert title here

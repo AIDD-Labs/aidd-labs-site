@@ -6,7 +6,7 @@ status: "published"
 topics: ["impact", "equity"]
 type: "presentation"
 section: ["contents"]
-members: ["elijah-knodel"]
+members: [eli-knodel]
 is_featured: false
 url: ""
 thumbnail: "img/content-p-Knodel_2023_NHW-DYFI.png"
