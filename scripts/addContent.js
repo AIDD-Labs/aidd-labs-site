@@ -147,11 +147,11 @@ const init = async () => {
       citationLink: link
     };
 
-    const data = `---\n${yaml.stringify(meta)}---\n\n`;
+    const data = `---\n${yaml.stringify(meta)}---\n\n ADD TEXT HERE\n${''}`;
     fs.mkdirSync(NEW_CONTENT_DIRECTORY, { recursive: true });
     fs.writeFileSync(`${NEW_CONTENT_DIRECTORY}/index.md`, data);
   }else {
-    console.info(">>> Please upload a headshot of yourself named member-firstname-lastname.png to /public/img/");
+    console.info(">>> Please upload a thumbnail of your content to /public/img/");
   }
 }
 
