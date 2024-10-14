@@ -146,6 +146,7 @@
                             href="https://www.data4sdgs.org/"
                             ><img src="/img/partner-GPSDD.png"
                         /></a>
+                        <a href="#"><img src="/img/partner-nsf.png" /></a>
                         <a href="#"><img src="/img/partner-tfscb.png" /></a>
                         <a href="#"><img src="/img/partner-WBibrd.png" /></a>
                         <a href="#"><img src="/img/partner-kwpf.png" /></a>
