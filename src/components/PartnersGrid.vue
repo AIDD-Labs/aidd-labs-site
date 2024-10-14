@@ -53,6 +53,20 @@
               url: ""
             }
           },
+          umISR: {
+            meta: {
+              name: "University of Michigan Institute for Social Research",
+              img: "/img/partner-um-isr.png",
+              url: "https://isr.umich.edu/"
+            }
+          },    
+          umCOE: {
+            meta: {
+              name: "University of Michigan College of Engineering",
+              img: "/img/partner-um-coe.png",
+              url: "https://www.engin.umich.edu/about/"
+            }
+          },        
           usgs: {
             meta: {
               name: "USGS",

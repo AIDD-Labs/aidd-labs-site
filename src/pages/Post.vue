@@ -243,9 +243,9 @@
                         </div>
                         <AuthorBlock :author="primaryAuthor" orientation="landscape" />
                         <div class="other-metas">
-                            <div class="authors" v-if="authors.length">
+                            <!-- <div class="authors" v-if="authors.length">
                                 <strong>Authors:</strong> {{ authors }}
-                            </div>
+                            </div> -->
                             <div class="publication" v-if="publication">
                                 <strong>Publication:</strong> {{ publication }}
                             </div>
