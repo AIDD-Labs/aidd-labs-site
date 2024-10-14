@@ -11,6 +11,13 @@
       return {
         isLoaded: false,
         allPartners: {
+          nsf: {
+            meta: {
+              name: "National Science Foundation",
+              img: "/img/partner-nsf.png",
+              url: "https://new.nsf.gov/funding/opportunities/hdbe-humans-disasters-built-environment"
+            }
+          },
           gpsdd: {
             meta: {
               name: "Global Partnership for Sustainable Development Data",
