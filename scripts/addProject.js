@@ -11,6 +11,12 @@ const imageIsUploaded = (answers) => {
 };
 
 const questions = [
+  // {
+  //   type: 'checkbox',
+  //   name: 'content',
+  //   choices: utils.getContentChoices(),
+  //   message: 'Please select the team members who are part of this project:',
+  // },
   {
     type: 'confirm',
     name: 'hasImg',
