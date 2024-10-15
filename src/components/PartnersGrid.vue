@@ -18,6 +18,20 @@
               url: "https://new.nsf.gov/funding/opportunities/hdbe-humans-disasters-built-environment"
             }
           },
+          hot: {
+            meta: {
+              name: "Humanitarian OpenStreetMap Team",
+              img: "/img/partner-hot-osm.png",
+              url: "https://www.hotosm.org/"
+            }
+          },
+          suri: {
+            meta: {
+              name: "Stanford Urban Resilience Initiative",
+              img: "/img/partner-suri.png",
+              url: "https://urbanresilience.stanford.edu/"
+            }
+          },
           gpsdd: {
             meta: {
               name: "Global Partnership for Sustainable Development Data",
