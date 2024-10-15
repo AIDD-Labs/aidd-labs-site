@@ -115,7 +115,70 @@
               img: "/img/partner-um-coe.png",
               url: "https://www.engin.umich.edu/about/"
             }
+          },
+          NDRRMA: {
+            meta: {
+              name: "National Disaster Risk Reduction and Management Authority",
+              img: "/img/partner-ndrrma.png",
+              url: "https://bipad.gov.np/"
+            }
+          }, 
+          icimod: {
+            meta: {
+              name: "ICIMOD",
+              img: "/img/partner-icimod.png",
+              url: ""
+            }
+          },  
+          huc: {
+            meta: {
+              name: "HUC",
+              img: "/img/partner-huc.png",
+              url: ""
+            }
+          }, 
+          drfi: {
+            meta: {
+              name: "DRFI",
+              img: "/img/partner-drfi.png",
+              url: ""
+            }
+          },     
+          UoT: {
+            meta: {
+              name: "University of Toronto",
+              img: "/img/partner-UoT.png",
+              url: ""
+            }
           },        
+          UJL: {
+            meta: {
+              name: "Urban Justice League",
+              img: "/img/partner-urbanjusticeleague.png",
+              url: ""
+            }
+          }, 
+          plan8: {
+            meta: {
+              name: "Plan 8",
+              img: "/img/partner-plan8.png",
+              url: ""
+            }
+          },    
+          ssBAHA: {
+            meta: {
+              name: "Social Science Baha",
+              img: "/img/partner-ss-baha.png",
+              url: ""
+            }
+          },     
+          sshrc: {
+            meta: {
+              name: "SSHRC",
+              img: "/img/partner-SSHRC.png",
+              url: ""
+            }
+          },     
           usgs: {
             meta: {
               name: "USGS",
