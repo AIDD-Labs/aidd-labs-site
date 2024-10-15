@@ -60,6 +60,13 @@
               url: "https://www.data4sdgs.org/"
             }
           },
+          taf: {
+            meta: {
+              name: "The Asia Foundation",
+              img: "/img/partner-taf.png",
+              url: "https://asiafoundation.org/"
+            }
+          },
           irishAid: {
             meta: {
               name: "IrishAid",

@@ -155,6 +155,7 @@
                         <a href="#"><img src="/img/partner-hot-osm.png" /></a>
                         <a href="#"><img src="/img/partner-suri.png" /></a>
                         <a href="#"><img src="/img/partner-eos.png" /></a>
+                        <a href="#"><img src="/img/partner-taf.png" /></a>
                         <a href="#"><img src="/img/partner-tfscb.png" /></a>
                         <a href="#"><img src="/img/partner-kwpf.png" /></a>
                         <a href="#"><img src="/img/partner-UKaid.png" /></a>
