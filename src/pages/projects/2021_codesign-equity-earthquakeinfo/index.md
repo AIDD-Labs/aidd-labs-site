@@ -5,10 +5,21 @@ date: "2021 - Present"
 status: "current"
 topics: ["impact", "equity"]
 locations: ["global"]
-methods: [ "qualitative-methods"]
-members: ["sabine-loos", "marisa-macias", "madeline-karr", "elijah-knodel", "david-wald", "kristin-ludwig", "lori-peek", "jocelyn-west", "elizabeth-reddy"] # insert your slug here, e.g., "sabine-loos"
+methods: [ "qualitative-methods", "risk-analysis"]
+members: 
+    - sabine-loos
+    - marisa-macias
+    - madeline-karr
+    - eli-knodel
+    - david-wald
+    - kristin-ludwig
+    - lori-peek
+    - jocelyn-west
+    - elizabeth-reddy
 content: ["usgs-esc", "UR22-EqRisk", "macias-mines-symposium","achieving-collective-impact-in-earthquake-science-podcast"]
-partners: []
+partners: 
+    - usgs
+    - nhc
 title: "Co-Designing Actionable USGS Earthquake Impact Products ​to Support Equity-Focused Disaster Management​" # insert title here
 thumbnail: "/img/proj-userNeedsUSGS.png"
 description: "In a collaboration between the USGS and the Natural Hazards Center at CU Boulder, we take a human-centered design approach to co-design the update of USGS earthquake impact products to be more actionable and accessible." # insert a one sentence description here
