@@ -29,8 +29,9 @@
                     "Postdoctoral Fellow":1,
                     "Postdoctoral Researcher":1,
                     "PhD Researcher":2,
-                    "Masters Researcher":3,
-                    "Undergraduate Researcher":4
+                    "Masters Researcher":4,
+                    "Affiliate":3,
+                    "Undergraduate Researcher":5
                 }
                 return this.memberMetadata.current.sort((a,b) => {
                     return seniorityMap[this.members[a].meta.title] - seniorityMap[this.members[b].meta.title];

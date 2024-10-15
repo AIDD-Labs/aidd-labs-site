@@ -13,6 +13,7 @@ methods:
   - Statistical Inference
   - Mixed Methods
 members:
+  - brad-bottoms
   - eli-knodel
   - apil-k-c
   - sabine-loos
