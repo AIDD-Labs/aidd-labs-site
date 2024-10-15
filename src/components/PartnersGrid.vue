@@ -32,6 +32,27 @@
               url: "https://urbanresilience.stanford.edu/"
             }
           },
+          kll: {
+            meta: {
+              name: "Kathmandu Living Labs",
+              img: "/img/partner-kll.png",
+              url: "https://kathmandulivinglabs.org/"
+            }
+          },
+          eos: {
+            meta: {
+              name: "Earth Observatory of Singapore",
+              img: "/img/partner-eos.png",
+              url: "https://earthobservatory.sg/"
+            }
+          },
+          nasaJPL: {
+            meta: {
+              name: "NASA JPL Aria",
+              img: "/img/partner-nasa-jpl.png",
+              url: "https://aria.jpl.nasa.gov/"
+            }
+          },
           gpsdd: {
             meta: {
               name: "Global Partnership for Sustainable Development Data",

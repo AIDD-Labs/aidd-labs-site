@@ -8,7 +8,16 @@ locations: ["nepal", "new-zealand", "italy", "haiti"]
 methods: [ "statistical-modeling"]
 members: ["sabine-loos", "jennifer-levitt", "kei-tomozawa", "jack-baker", "david-lallemant", "sangho-yun", "nama-budhathoki"] # insert your slug here, e.g., "sabine-loos"
 content: ["gdif-nepal", "gdif-efficacy", "usgs-esc", "ier-report", "GDIF1-code", "Geo4Dev", "GDIF2-code"]
-partners: []
+partners: 
+    - suri
+    - kll
+    - eos
+    - nasaJPL
+    - gpsdd
+    # - irishAid
+    # - kwpf
+    - tfscb
+    # - nsf
 title: "Rapid Building Damage Estimation through Data Integration" # insert title here
 thumbnail: "/img/proj-damage-data-integration.png"
 description: "From remote sensing to crowdsourcing, an overwhelming amount of building damage data is produced after disasters. While this amount of data signifies impressive technological progress, it does not necessarily mean that all building damage data is usable for post-earthquake decision-making. This research applies geostatistical methods to integrate multiple sources of data to produce rapid estimates of building damage, primarily to support regional decision making." # insert a one sentence description here
