@@ -60,6 +60,13 @@
               url: "https://www.data4sdgs.org/"
             }
           },
+          gfdrr: {
+            meta: {
+              name: "Global Facility for Disaster Reduction and Recovery",
+              img: "/img/partner-gfdrr.png",
+              url: "https://www.gfdrr.org/en"
+            }
+          },
           taf: {
             meta: {
               name: "The Asia Foundation",

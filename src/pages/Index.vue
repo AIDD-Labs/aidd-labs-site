@@ -150,6 +150,7 @@
                         <a href="#"><img src="/img/partner-nasa-jpl.png" /></a>
                         <a href="#"><img src="/img/partner-um-coe.png" /></a>
                         <a href="#"><img src="/img/partner-um-isr.png" /></a>
+                        <a href="#"><img src="/img/partner-gfdrr.png" /></a>
                         <a href="#"><img src="/img/partner-WBibrd.png" /></a>
                         <a href="#"><img src="/img/partner-kll.png" /></a>
                         <a href="#"><img src="/img/partner-hot-osm.png" /></a>
