@@ -8,7 +8,16 @@ locations: ["nepal"]
 methods: [ "statistical-modeling", "surveys", "mixed-methods", "qualitative-methods"]
 members: ["sabine-loos", "david-lallemant", "feroz-khan","nama-budhathoki", "jamie-mccaughey", "ritika-singh", "robert-banick"] # insert your slug here, e.g., "sabine-loos"
 content: ["nonrecovery-nepal","ier-bigdata-nonrecovery","gdif-nepal","ier-nepal", "nhrm-converge", "usgs-esc", "ier-report", "afterquake-nepal", "Geo4Dev"]
-partners: []
+partners: 
+    - suri
+    - kll
+    - eos
+    - gpsdd
+    - taf
+    # - irishAid
+    # - kwpf
+    - tfscb
+    # - nsf
 title: "Informatics for Equitable Recovery in Nepal" # insert title here
 thumbnail: "/img/proj-IER.png"
 description: "Informatics for Equitable Recovery is a transdisciplinary research collaboration that brings together data scientists, engineers, social scientists, and civic organizations to improve post-disaster information systems and decision support tools. " # insert a one sentence description here
