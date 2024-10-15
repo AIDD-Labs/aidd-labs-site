@@ -60,7 +60,7 @@
         <div class="team__about">
             <h1>Team</h1>
             Our team is a group of disaster analysts with multiple
-            backgrounds&mdash;including engineering, data science, and urban planning. We strive to conduct convergent
+            backgrounds&mdash;including engineering, data science, urban planning, geography, and more. We strive to conduct convergent
             research, blending our knowledge of data and statistics on disasters and/or
             the built environment with an understanding of the social and natural systems
             that surround them. Therefore, our team members employ multiple methods
@@ -89,8 +89,9 @@
                 <b
                     >If you'd like to pursue a PhD in AIDD labs, please consider applying
                     to Civil & Environmental Engineering program at the University of
-                    Michigan.</b
-                >
+                    Michigan. Most of our students get their degrees in the <a href="https://cee.engin.umich.edu/2024/08/30/u-m-cee-launches-new-hazards-risk-and-resilience-specialization-to-address-emerging-challenges/"> Hazards, Risk, and Resilience Program.</a></b
+
+                    >
                 Please indicate in your application that you're interested in working with
                 Professor Loos to ensure she is sent your application for review. We are
                 open to folks from multiple disciplines, including engineering, geography, geoinformatics,
