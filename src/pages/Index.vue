@@ -155,8 +155,8 @@
                         <a href="#"><img src="/img/partner-kll.png" /></a>
                         <a href="#"><img src="/img/partner-hot-osm.png" /></a>
                         <a href="#"><img src="/img/partner-suri.png" /></a>
-                        <a href="#"><img src="/img/partner-icimod.png" /></a>
-                        <a href="#"><img src="/img/partner-ndrrma.png" /></a>
+                        <a href="#"><img src="/img/partner-ICIMOD.png" /></a>
+                        <a href="#"><img src="/img/partner-NDRRMA.png" /></a>
                         <a href="#"><img src="/img/partner-eos.png" /></a>
                         <a href="#"><img src="/img/partner-taf.png" /></a>
                         <a href="#"><img src="/img/partner-tfscb.png" /></a>

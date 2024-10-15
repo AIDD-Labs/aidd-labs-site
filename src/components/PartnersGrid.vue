@@ -126,21 +126,21 @@
           NDRRMA: {
             meta: {
               name: "National Disaster Risk Reduction and Management Authority",
-              img: "/img/partner-ndrrma.png",
+              img: "/img/partner-NDRRMA.png",
               url: "https://bipad.gov.np/"
             }
           }, 
           icimod: {
             meta: {
               name: "ICIMOD",
-              img: "/img/partner-icimod.png",
+              img: "/img/partner-ICIMOD.png",
               url: ""
             }
           },  
           huc: {
             meta: {
               name: "HUC",
-              img: "/img/partner-huc.png",
+              img: "/img/partner-HUC.png",
               url: ""
             }
           }, 
