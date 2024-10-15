@@ -3,7 +3,7 @@ slug: "KTM-field-lab" # match folder label name
 createdDate: 2023-12-20
 date: "2024 - Present"
 status: "current"
-topics: ["risk", "climate", "equity", "impact", "recovery"]
+topics: ["climate", "risk", "equity", "impact", "recovery"]
 locations: ["nepal", "global"]
 methods: [ "mixed-methods", "risk-analysis"]
 members: ["apil-k-c", "sabine-loos","austin-lord", "robert-soden", "giuseppe-molinario", "karen-barns", "david-lallemant"] 

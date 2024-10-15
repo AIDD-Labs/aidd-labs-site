@@ -116,6 +116,13 @@
               url: "https://www.engin.umich.edu/about/"
             }
           },
+          MIDAS: {
+            meta: {
+              name: "University of Michigan College of Engineering",
+              img: "/img/partner-midas.png",
+              url: "https://midas.umich.edu/"
+            }
+          },
           NDRRMA: {
             meta: {
               name: "National Disaster Risk Reduction and Management Authority",
