@@ -17,6 +17,7 @@ methods:
   - Risk Analysis
 members:
   - yue-zeng
+  - jacob-diaz
   - sabine-loos
   - seth-guikema
   - kanako-iuchi
