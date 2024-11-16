@@ -29,8 +29,9 @@
                     "Postdoctoral Fellow":1,
                     "Postdoctoral Researcher":1,
                     "PhD Researcher":2,
-                    "Masters Researcher":3,
-                    "Undergraduate Researcher":4
+                    "Masters Researcher":4,
+                    "Affiliate":3,
+                    "Undergraduate Researcher":5
                 }
                 return this.memberMetadata.current.sort((a,b) => {
                     return seniorityMap[this.members[a].meta.title] - seniorityMap[this.members[b].meta.title];
@@ -59,7 +60,7 @@
         <div class="team__about">
             <h1>Team</h1>
             Our team is a group of disaster analysts with multiple
-            backgrounds&mdash;including engineering, data science, and urban planning. We strive to conduct convergent
+            backgrounds&mdash;including engineering, data science, urban planning, geography, and more. We strive to conduct convergent
             research, blending our knowledge of data and statistics on disasters and/or
             the built environment with an understanding of the social and natural systems
             that surround them. Therefore, our team members employ multiple methods
@@ -88,8 +89,9 @@
                 <b
                     >If you'd like to pursue a PhD in AIDD labs, please consider applying
                     to Civil & Environmental Engineering program at the University of
-                    Michigan.</b
-                >
+                    Michigan. Most of our students get their degrees in the <a href="https://cee.engin.umich.edu/2024/08/30/u-m-cee-launches-new-hazards-risk-and-resilience-specialization-to-address-emerging-challenges/"> Hazards, Risk, and Resilience Program.</a></b
+
+                    >
                 Please indicate in your application that you're interested in working with
                 Professor Loos to ensure she is sent your application for review. We are
                 open to folks from multiple disciplines, including engineering, geography, geoinformatics,

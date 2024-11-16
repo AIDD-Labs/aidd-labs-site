@@ -9,6 +9,8 @@ methods: [ "qualitative-methods", "mixed-methods","statistical-learning"]
 members: ["christin-salley","sabine-loos", "aditya-tambe", "lu-wang"] # , "tomas-garcia-lavanchy"
 locations: ["United States"]
 content: []
+partners:
+    - MIDAS
 thumbnail: "/img/proj-dispatcher-ai-bots.jpg" 
 thumbnailCaption: ""
 description: "This study aims to address gaps in understanding regarding the effective implementation of AI into emergency dispatch infrastructure by identifying barriers to AI implementation in dispatch systems and addressing potential biases by controlling for the identified obstacles. By leveraging large language models, the study seeks to take the insights gained from regional dispatcher interviews and develop advanced bots capable of responding to non-emergency events with human-like text (e.g., creating prompts that mimic operator responses to gather detailed information from callers), while actively mitigating potential biases present in the model and evaluating its effectiveness via algorithmic fairness testing metrics."

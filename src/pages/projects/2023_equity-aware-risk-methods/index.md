@@ -7,6 +7,8 @@ topics: ["risk", "equity"]
 locations: ["global"]
 methods: [ "qualitative-methods", "risk-analysis"]
 members: ["simone-curtis","shreyasha-paudel","sabine-loos", "robert-soden","rashmin-gunasekera","bramka-jafino", "karen-barns", "david-lallemant", "jocelyn-west"] # shreyasha, rashmin, bramka
+partners:
+    - gfdrr
 content: ["UR22-EqRisk", "the-importance-of-accounting-for-equity-in-disaster-risk-models","anti-colonial-critique-of-climate-and-disaster-risk-models"]
 title: "Methods for equity-aware risk assessments"
 thumbnail: "/img/proj-equity-aware-risk2.jpeg"
