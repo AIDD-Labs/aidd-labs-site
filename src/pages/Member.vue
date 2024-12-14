@@ -22,7 +22,8 @@
             },
             articlesByAuthor() {
                 let posts = this.contents.filter(article => {
-                    return article.meta.authors.split(",")[0] == this.name; 
+                    const authors = article.meta.authors.split(", ") || [];
+                    return authors.includes(this.name); 
                 });
 
                 posts.sort((a, b) => {
@@ -34,7 +35,7 @@
             newsByAuthor() {
                 let newsPosts = this.news.filter(newsitem => {
                     const members = newsitem.meta.members || []
-                    return members[0] == this.slug;
+                    return members.includes(this.slug);
                 });
 
                 newsPosts.sort((a, b) => {
@@ -42,7 +43,6 @@
                 });
 
                 return newsPosts.slice(0, 3);
-                // return newsPosts
             },
             activeMarkdownComponent() {
                 return this.$route.name;
