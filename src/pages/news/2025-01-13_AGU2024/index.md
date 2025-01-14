@@ -6,10 +6,10 @@ status: "published"
 type: "conference"
 members: 
   - xin-wei
-  # - simone-curtis
+  - simone-curtis
   - sabine-loos
 title: "AIDD Lab Participates in the AGU Fall Meeting 2024"
-description: "Members of the AIDD Lab, including Prof. Sabine Loos and Schmidt AI in Science Postdoctoral Fellow Dr. Xin Wei, actively participated in the 2024 American Geophysical Union (AGU) Fall Meeting, held December 9–13 in Washington, D.C."
+description: "Members of the AIDD Lab, including Prof. Sabine Loos, Schmidt AI in Science Postdoctoral Fellow Dr. Xin Wei, and Simone Curtis, actively participated in the 2024 American Geophysical Union (AGU) Fall Meeting, held December 9–13 in Washington, D.C."
 url: "https://www.agu.org/annual-meeting"
 ---
 
@@ -57,6 +57,12 @@ For more details and related research, please refer to her Google Scholar profil
   alt="Oral Session"
   style="width:80%; display:block; margin:0 auto;"
 />
+
+### 4️⃣ **Invited Oral Presentation (First Author: Simone Curtis): “Advancing Equity in Disaster Risk Assessment: A Practitioner’s Perspective”**<br>
+<div style="margin-left: 1em; font-size: 0.9em;">
+“Although disasters disproportionately impact marginalized groups, disaster risk models are often developed without consulting these communities and primarily quantify risk as damages and losses to physical assets, overlooking disparities in these impacts and the needs of disproportionately affected groups. While emerging methods have been proposed to address the inequities that exist in the disaster risk modeling framework, it is unclear how these methods have been applied in practice. This project aims to understand practitioner experiences, and challenges, with integrating concepts of equity into disaster risk models through semi-structured interviews (n=10) and structured group discussions (n=10) with 35 technical experts whose work focuses on applications in low- and middle-income countries. Results highlight the need for more equity-centered processes and illustrate a variety of current methods experts use to integrate justice concerns and conceptualize equity in a disaster risk assessment project. Challenges, however, remain due to limited data availability, lack of user feedback, globally distributed stakeholder networks, and limited local context of project area amongst all project members. Overall, this research study highlights opportunities for future disaster risk assessment projects to more successfully implement more equity-focused approaches, ideally leading to more just risk reduction outcomes.”
+</div>
+
 
 <br>
 
