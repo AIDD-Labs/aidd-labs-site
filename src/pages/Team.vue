@@ -59,8 +59,7 @@
     <MaxWidth class="team-page container" size="m" v-if="isLoaded">
         <div class="team__about">
             <h1>Team</h1>
-            Our team is a group of disaster analysts with multiple
-            backgrounds&mdash;including engineering, data science, urban planning, geography, and more. We strive to conduct convergent
+            Our team is a group of disaster analysts with backgrounds spanning engineering, data science, urban planning, geography, sociology, and more. We strive to conduct convergent
             research, blending our knowledge of data and statistics on disasters and/or
             the built environment with an understanding of the social and natural systems
             that surround them. Therefore, our team members employ multiple methods

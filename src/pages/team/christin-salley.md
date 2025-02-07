@@ -1,9 +1,12 @@
 ---
 slug: christin-salley
 name: Christin Salley
+type: "alumni"
 createdDate: 2023-11-30
 title: Postdoctoral Fellow
-affiliation: MIDAS, University of Michigan
+yearDeparted: "2024"
+affiliation: "Virginia Tech"
+affiliationLink: "https://www.webapps.cee.vt.edu/index.php?category=people&pagetype=bio&do=getprofile&user=csalley.html"
 img: /img/member-christin-salley.png
 linkedin: https://www.linkedin.com/in/christin-j-salley-phd-mse-35b01911a/
 twitter: ""

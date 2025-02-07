@@ -2,7 +2,7 @@
 slug: aditya-tambe
 name: Aditya Tambe
 createdDate: 2024-05-11
-type: current
+type: external
 title: Undergraduate Researcher
 affiliation: University of Michigan
 img: /img/member-aditya-tambe.png
