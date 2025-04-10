@@ -39,6 +39,20 @@
               url: "https://kathmandulivinglabs.org/"
             }
           },
+          guycarp: {
+            meta: {
+              name: "Guy Carpenter",
+              img: "/img/partner-guycarp.png",
+              url: "https://www.guycarp.com/"
+            }
+          },
+          cac: {
+            meta: {
+              name: "Climate Adaptation Center",
+              img: "/img/partner-cac.png",
+              url: "https://www.theclimateadaptationcenter.org/"
+            }
+          },
           eos: {
             meta: {
               name: "Earth Observatory of Singapore",

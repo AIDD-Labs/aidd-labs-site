@@ -1,6 +1,6 @@
 ---
 slug: examining-community-needs-for-parametric-insurance
-title: Examining Community Needs for Parametric Insurance
+title: Examining Community Needs for Reciprocal Parametric Insurance
 createdDate: 2025-03-07
 date: 2025 - Present
 status: current
@@ -15,10 +15,15 @@ members:
   - margaret-miles
   - sabine-loos
   - guillermo-franco
+  - julia-kramer
+  - bob-bunting
+  - enrique-villamor
 locations:
   - united-states
 thumbnail: /img/proj-2025-insurance.png
 partners: 
+  - cac
+  - guycarp
 description: As natural hazards are becoming more frequent, insurance companies
   are withdrawing from high-risk areas in the United States, leaving homeowners
   without adequate financial protection. While parametric insurance presents a
