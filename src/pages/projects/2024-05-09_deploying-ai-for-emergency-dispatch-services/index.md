@@ -2,8 +2,8 @@
 slug: "deploying-ai-for-emergency-dispatch-services"
 title: Deploying AI for Emergency Dispatch Services 
 createdDate: 2024-05-09
-date: "2024 - Present"
-status: "current"
+date: "2024 - 2025"
+status: "complete"
 topics: ["emergency-management", "equity"]
 methods: [ "qualitative-methods", "mixed-methods","statistical-learning"]
 members: ["christin-salley","sabine-loos", "aditya-tambe", "lu-wang"] # , "tomas-garcia-lavanchy"

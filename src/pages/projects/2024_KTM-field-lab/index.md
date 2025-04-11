@@ -1,8 +1,8 @@
 ---
 slug: "KTM-field-lab" # match folder label name
 createdDate: 2023-12-20
-date: "2024 - Present"
-status: "current"
+date: "2024 - 2025"
+status: "complete"
 topics: ["climate", "risk", "equity", "impact", "recovery"]
 locations: ["nepal", "global"]
 methods: [ "mixed-methods", "risk-analysis"]
@@ -44,7 +44,7 @@ Themes that Field Lab activities focused on included:
 ## Outputs
 Outputs from the field lab included art installations, visualizations, machine learning models, field visits, and more.
 
-To see all of the outputs from the Field Lab, visit: https://urfieldlab.com/UR2024/.
+To see all of the outputs from the Field Lab, visit: https://urfieldlab.com.
 
 ## Event Organizers 
 
