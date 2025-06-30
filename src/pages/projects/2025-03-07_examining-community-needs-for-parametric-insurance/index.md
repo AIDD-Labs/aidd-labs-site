@@ -35,7 +35,7 @@ description: As natural hazards are becoming more frequent, insurance companies
   working with households, business owners, and city planners in Sarasota, FL.
 ---
 
-**About the Study**
+## About the Study
 
 As natural hazards are becoming more frequent, insurance companies
   are withdrawing from high-risk areas in the United States, leaving homeowners
@@ -50,7 +50,9 @@ As natural hazards are becoming more frequent, insurance companies
   parametric reciprocal insurance: an emerging model that pays out based on storm 
   conditions (like wind speed or rainfall) rather than waiting for damage assessments.
 
-**Are you a Sarasota resident?** Help shape the future of community-based hurricane insurance.
+## Are you a Sarasota resident?
+
+Help shape the future of community-based hurricane insurance.
 As hurricane seasons grow more severe, traditional insurance models leave too many Floridians uncertain about their financial recovery. Our team is conducting a research study to better understand how Sarasota residents experience and perceive hurricane risk and insurance—and how we might co-design better, fairer, and more transparent solutions to this growing problem. Interested in participating? Fill out this form: https://bit.ly/4kcdWmH
 
 **We want to learn:**
@@ -62,12 +64,12 @@ As hurricane seasons grow more severe, traditional insurance models leave too ma
 
 This study is being led by researchers from the University of Michigan and is supported by local partners.
 
-**Why This Matters**
+## Why This Matters
 
 This research is key to developing solutions to the growing expense of disasters in high-risk areas such as Sarasota, Florida. Participation can help develop novel financial or insurance tools to better protect areas that experience severe weather. 
 
 
-**Who Can Participate?**
+## Who Can Participate?
 We’re looking to hear from:
 
  - Homeowners and renters in Sarasota County
@@ -78,9 +80,10 @@ We’re looking to hear from:
 We want to hear from you, whether you’ve used insurance before or have never had coverage.
 
 
-**Want to participate or learn more?**
- Fill out our interest form: [[Interst Form]](https://bit.ly/4kcdWmH)
- Email us: magmiles@umich.edu
+## Want to participate or learn more?
+
+ - Fill out our interest form: [[Interest Form]](https://bit.ly/4kcdWmH)
+ - Email us: magmiles@umich.edu
 
 We’re also connecting with local groups to host workshops and info sessions. If you represent a community organization, we'd love to collaborate. Please contact us using the information above.
 
