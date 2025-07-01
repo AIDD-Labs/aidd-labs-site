@@ -1,7 +1,7 @@
 ---
 slug: "jennifer-levitt"
 createdDate: 2019-06-01
-name: "Jenny Levitt"
+name: "Jennifer Levitt"
 title: "Undergraduate Researcher"
 yearDeparted: "2021"
 affiliation: "Stanford University"
@@ -14,5 +14,5 @@ personalWebsite:
 ---
 ## Bio
 
-Jenny Levitt is an undergraduate researcher at Stanford University.
+Jenny Levitt was an undergraduate researcher at Stanford University.
 While working with AIDD labs, she researched building damage estimation and unequal recovery trajectories in Nepal.
