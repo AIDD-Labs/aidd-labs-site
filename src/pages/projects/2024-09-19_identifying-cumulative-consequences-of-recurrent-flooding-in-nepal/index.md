@@ -14,8 +14,8 @@ methods:
   - Mixed Methods
 members:
   - brad-bottoms
-  - eli-knodel
   - apil-k-c
+  - eli-knodel
   - sabine-loos
   - william-axinn
   - dirgha-ghimire
