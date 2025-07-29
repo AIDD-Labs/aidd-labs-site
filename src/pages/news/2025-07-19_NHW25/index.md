@@ -1,5 +1,5 @@
 ---
-slug: "NHW25"
+slug: "NHW25" # should match folder name
 createdDate: 2025-07-19
 date: 2024-07-19
 status: "draft"
