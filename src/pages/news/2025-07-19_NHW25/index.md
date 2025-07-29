@@ -2,7 +2,7 @@
 slug: "NHW25" # should match folder name
 createdDate: 2025-07-19
 date: 2024-07-19
-status: "draft"
+status: "published"
 type: "conference"
 members: 
   - margaret-miles
@@ -21,17 +21,18 @@ AIDD Labs members Margaret Miles and Dr. Sabine Loos attended the 75th Annual Na
 
 ## Poster Session 
 <img
-  src="./Poster-announcement.JPG"
+  src="./poster_announcement.jpg"
   alt="Poster"
   style="width:100%; display:block; margin:0 auto;"
 /> 
+
 <img
   src="./speaking-poster.JPG"
   alt="PosterPresentation"
   style="width:100%; display:block; margin:0 auto;"
 /> 
 
-At the poster session, Margaret presented preliminary insights from ongoing research on community parametric disaster insurance. Her poster, titled Understanding Challenges in Community Adoption of Parametric Insurance in High-Risk Regions, explored how Sarasota County, FL residents perceive novel, community-based insurance models intended to close the growing disaster protection gap. The work, co-led by Dr. Loos and Dr. Kramer of EDGE labs, with support from Dr. Guillermo Franco of Guy Carpenter, emphasizes participatory methods and cross-sector collaboration in developing actionable resilience tools.
+At the poster session, Margaret presented preliminary insights from ongoing research on community parametric disaster insurance. Her poster, titled Understanding Challenges in Community Adoption of Parametric Insurance in High-Risk Regions, explored how Sarasota County, FL residents perceive novel, community-based insurance models intended to close the growing disaster protection gap. [The work](/projects/examining-community-needs-for-parametric-insurance), co-led by Dr. Loos and Dr. Kramer of EDGE labs, with support from Dr. Guillermo Franco of Guy Carpenter, emphasizes participatory methods and cross-sector collaboration in developing actionable resilience tools.
 
 <img
   src="./Margaret_poster_award.jpg"
