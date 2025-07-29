@@ -27,7 +27,7 @@ AIDD Labs members Margaret Miles and Dr. Sabine Loos attended the 75th Annual Na
 /> 
 
 <img
-  src="./speaking-poster.JPG"
+  src="./speaking_poster.jpg"
   alt="PosterPresentation"
   style="width:100%; display:block; margin:0 auto;"
 /> 
