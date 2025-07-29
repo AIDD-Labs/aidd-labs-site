@@ -1,5 +1,5 @@
 ---
-slug: "NaturalHazardsWorkshop25"
+slug: "NHW25"
 createdDate: 2025-07-19
 date: 2024-07-19
 status: "draft"
@@ -16,9 +16,10 @@ url: "https://hazards.colorado.edu/workshop/2025/abstract/poster-session#underst
   alt="PearlSt."
   style="width:100%; display:block; margin:0 auto;"
 /> 
+
 AIDD Labs members Margaret Miles and Dr. Sabine Loos attended the 75th Annual Natural Hazards Workshop, held July 14–17, 2025, in Broomfield, Colorado. Hosted by the Natural Hazards Center, this long-standing event brought together a diverse community of practitioners, researchers, and policymakers focused on advancing disaster risk reduction and resilience.
 
-## ** Poster Session **
+## Poster Session 
 <img
   src="./Poster-announcement.JPG"
   alt="Poster"
@@ -29,6 +30,7 @@ AIDD Labs members Margaret Miles and Dr. Sabine Loos attended the 75th Annual Na
   alt="PosterPresentation"
   style="width:100%; display:block; margin:0 auto;"
 /> 
+
 At the poster session, Margaret presented preliminary insights from ongoing research on community parametric disaster insurance. Her poster, titled Understanding Challenges in Community Adoption of Parametric Insurance in High-Risk Regions, explored how Sarasota County, FL residents perceive novel, community-based insurance models intended to close the growing disaster protection gap. The work, co-led by Dr. Loos and Dr. Kramer of EDGE labs, with support from Dr. Guillermo Franco of Guy Carpenter, emphasizes participatory methods and cross-sector collaboration in developing actionable resilience tools.
 
 <img
@@ -37,7 +39,7 @@ At the poster session, Margaret presented preliminary insights from ongoing rese
   style="width:100%; display:block; margin:0 auto;"
 /> 
 
-## ** Margaret awarded the Rising Star Award from NAAHDRI **
+## Margaret awarded the Rising Star Award from NAAHDRI 
 At the Natural Hazard Workshop, Margaret was one of three graduate students to be awarded the Rising Star Award from the North American Alliance of Hazards and Disaster Research Institutes (NAAHDRI). This award recognized the three best graduate student posters at the conference, acknowledging technical and presentation quality, novelty, and contribution to the field.  
 
 <img
@@ -46,5 +48,5 @@ At the Natural Hazard Workshop, Margaret was one of three graduate students to b
   style="width:50%; display:block; margin:0 auto;"
 /> 
 
-## ** Other Learnings **
+## Other Learnings
 Beyond sharing AIDD Labs’ research, attending the workshop offered a valuable opportunity to connect with interdisciplinary experts, explore emerging hazard mitigation strategies, and reflect on the systemic barriers that affect equitable disaster preparedness and recovery. We look forward to building on these conversations in our future projects.
