@@ -26,7 +26,6 @@
         "vue-html2pdf": "^1.8.0",
         "vue-meta": "^3.0.0-alpha.8",
         "vue-router": "^4.1.6",
-        "vue-tailwind": "^2.5.1",
         "vuex": "^4.0.2"
     },
     "devDependencies": {
