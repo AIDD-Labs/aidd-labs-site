@@ -11,4 +11,4 @@ twitter: ""
 personalWebsite: ""
 ---
 
-Sagar Khanal is a first-year PhD researcher at the University of Michigan. His primary interest in the disaster field lies in the field of earthquakes focosuing on immediate earthquake impact assessment to long-term post-earthquake recovery. Prior to Michigan, Sagar compelted his undergraduate studies in civil engineering from Pulchowk Campus,Lalitpur and worked for more than a year in Nepal as a researcher and civil engineer. In his freetime, Sagar loves to cook and play soccer.
+Sagar Khanal is a first-year PhD researcher in AIDD Labs at the University of Michigan. His primary interest in the disaster field lies in earthquakes focusing on immediate earthquake impact assessment to long-term post-earthquake recovery. Prior to Michigan, Sagar completed his undergraduate studies in civil engineering from Pulchowk Campus, Lalitpur, under the Institute of Engineering (IOE) of Tribhuvan University. He also worked for more than a year in Nepal as a researcher and civil engineer. In his freetime, Sagar loves to cook and play soccer.
