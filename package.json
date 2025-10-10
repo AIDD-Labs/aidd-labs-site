@@ -5,6 +5,7 @@
         "dev": "vite",
         "build": "vite-ssg build",
         "preview": "vite preview --port=8888",
+        "addNews": "node ./scripts/addNews.js",
         "addContent": "node ./scripts/addContent.js",
         "addProject": "node ./scripts/addProject.js",
         "addTeamMember": "node ./scripts/addTeamMember.js"
