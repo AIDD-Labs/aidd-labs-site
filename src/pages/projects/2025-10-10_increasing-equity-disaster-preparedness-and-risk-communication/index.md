@@ -14,7 +14,7 @@ methods:
   - mixed-methods
 members:
   - margaret-miles
-  # - clara-medina ## ADD
+  - clara-medina ## ADD
   - sabine-loos
   # - khalid-osman ## ADD
   # - elliott-white ## ADD
