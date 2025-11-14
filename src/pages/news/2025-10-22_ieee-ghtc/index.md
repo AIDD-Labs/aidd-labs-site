@@ -7,8 +7,8 @@ status: draft
 type: "conference"
 url: "https://ieeeghtc.org/program-2025/"
 members:
-  - julia-kramer
   - margaret-miles
+  - julia-kramer
 description: "In October, Margaret Miles presented preliminary research results on Parametric Insurance at the IEEE Global Humanitarian Technology Conference at Colorado School of Mines."
 ---
 
