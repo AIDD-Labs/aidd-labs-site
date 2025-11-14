@@ -31,11 +31,14 @@
                 const aboutContentHash = {
                     mission: `
                         <p> The AIDD (Actionable Information for Disasters and Development) Labs’ mission is to leverage data and information to prioritize populations in need before, during, and after disasters. 
-                            Led by Dr. Sabine Loos and housed at the University of Michigan, AIDD Labs aims to continuously improve upon (and in some cases, break down) current disaster data 
+                            Led by Dr. Sabine Loos and housed at the University of Michigan, AIDD Labs aims to continuously improve upon current disaster information systems 
                             by integrating voices of communities and organizations who have historically been excluded from design,
                             by developing approaches that can be used in data-scarce regions, and
                             by understanding past applications to better design future information systems.
-                        <p> If you are interested in joining our lab, please visit the 'Opportunities' section of the
+                            </p>
+                        <p> The main outputs of our work are data, models, and tools that can be used to identify (1) who is affected by disaster,
+                            (2) how they can be supported, and, importantly, (3) integrate the context of the place and institutions that support these populations.
+                        <p> If you are interested in joining, please visit the 'Opportunities' section of the
                             <a href="http://disasterdata.engin.umich.edu/team">Team</a> page.</p>`,
                     research: `
                         <p> Our research takes multiple forms, both to understand our current information systems and to design new systems that reduce risk to those most vulnerable.  
@@ -43,19 +46,19 @@
                             We consider various aspects of disaster information, whether it be the hazard, its physical impacts, its social impacts, or a combination of the three. 
                             Some of our research areas include: </p> 
                         <ul>
-                            <li> Rapidly estimating post-disaster building damage </li>
-                            <li> Conducting user needs assessments for disaster information </li>
-                            <li> Surveying and modeling post-disaster recovery </li>
-                            <li> Designing user and equity-centered risk information </li>
-                            <li> Evaluating differences in crowdsourced hazard data responses </li>
+                            <li> <a href = "/projects/population-mobility-low-attention-flooding"> Data integration on population movement from recurrent flooding </a> </li>
+                            <li> <a href = "/projects/informatics-equity-recovery-nepal"> Data-driven models and surveys of post-disaster recovery </a> </li>
+                            <li> <a href = "/projects/codesign-equity-earthquakeinfo"> Designing user and equity-centered risk information </a> </li>
+                            <li> <a href = "/projects/dyfi-analysis"> Evaluating accessibiity of crowdsourced hazard intensity reporting </a> </li>
+                            <li> <a href="/projects/damage-data-integration">Rapidly estimating post-disaster building damage</a> </li>
                         </ul>
                         `,
                     approach: `
                         <p> AIDD Labs designs information by first understanding what the needs are for that information—either by engaging with those living in communities at risk or those responding to and managing those risks.
-                            We then develop approaches to address these needs by leveraging statistical learning, crowdsourcing, remote sensing, among other techniques. 
-                            Importantly, we consider the implications of the information we design through evaluating the effects of data-driven decisions and continued engagement with our users. </p>
-                        <p> Our general approach to our research integrates the many disciplines needed to develop more holistic disaster information, blending engineering, the earth sciences, the social sciences, and information systems. 
-                            We also include the opinions of users as much as possible to improve our data development, especially those who have historically been excluded from disaster data development and decision making.</p>`,
+                            We then develop approaches to address these needs by leveraging data integration (of surveys and remote sensing), data mining, or risk modeling techniques. 
+                            Importantly, we consider the implications of the information we design through evaluating the effects of data-driven decisions and continued engagement with our partners. </p>
+                        <p> Our general approach to our research integrates the many disciplines needed to develop more sociotechnical disaster information, blending engineering, the earth sciences, the social sciences, and information systems. 
+                            We also include the opinions of partners as much as possible to improve our data development, especially those who have historically been excluded from disaster data development and decision making.</p>`,
                 };
                 return aboutContentHash[this.aboutState];
             },
