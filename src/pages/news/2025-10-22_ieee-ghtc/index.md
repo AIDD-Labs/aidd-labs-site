@@ -18,7 +18,7 @@ This year's conference was hosted at the Colorado School of Mines and brings tog
 
 Margaret presented her work, **"Understanding Public Perceptions and Adoption of Community Parametric Reciprocal Disaster Insurance in Sarasota County, FL". Margaret introduced people to Carol, a homeowner in a high-risk area without financial resources to cover increasing damage. The presentation included preliminary results from a semi-structured interview study focused on identifying gaps and potential users on parametric community insurance in Sarasota, FL. 
 
-![](./session-photo.JPG)
+![](./session-photo.jpg)
 <em> Margaret presenting during her session </em>
 
 In addition, Margaret was joined by Dr. Kramer and EDGE lab member, Lauren from University of Michigan.
