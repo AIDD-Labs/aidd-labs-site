@@ -3,7 +3,7 @@ slug: compassDC
 title: Sabine Loos co-chairs the ACM COMPASS Doctoral Consortium
 createdDate: 2025-07-22
 date: 2025-07-22
-status: draft
+status: published
 type: conference
 url: https://compass.acm.org/call-for-doctoral-consortium/
 members:
