@@ -8,10 +8,6 @@
             return {
                 socialLinks: [
                     {
-                        label: "Twitter",
-                        url: "https://twitter.com/sab_loos",
-                    },
-                    {
                         label: "Github",
                         url: "https://github.com/AIDD-Labs",
                     },
@@ -30,16 +26,16 @@
                         url: "https://datartathon.com/",
                     },
                     {
-                        label: "University of Michigan Civil & Environmental Engineering",
-                        url: "https://cee.engin.umich.edu/",
+                        label: "UMich Hazards, Risk, and Resilience",
+                        url: "https://cee.engin.umich.edu/research/infrastructure/hazards-risks-and-resilience/",
                     },
                     {
                         label: "Understanding Risk Field Lab",
                         url: "https://urfieldlab.com/",
                     },
                     {
-                        label: "Urban Collaboratory",
-                        url: "https://urbanlab.umich.edu/",
+                        label: "Equity and Climate/Disaster Risk",
+                        url: "https://equityandclimatedisasterrisk.com/",
                     },
                 ],
             };
