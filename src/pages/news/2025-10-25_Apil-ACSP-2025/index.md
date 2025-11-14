@@ -1,5 +1,5 @@
 --- 
-slug: acsp2025apil
+slug: Apil-ACSP-2025
 title: Apil presents at ACSP 2025 "What Happens to the Promise of Equity in Post-Disaster Recovery?"
 createdDate: 2025-10-22
 date: 2025-07-22
@@ -9,7 +9,7 @@ url:
 members:
   - apil-k-c
 
-description: "At the 2024 conference of the Association of Collegiate Schools of Planning (ACSP) in Minneapolis, Apil K.C. presented research titled 'What Happens to the Promise of Equity in Post-Disaster Recovery?' exploring why equity in post-disaster housing recovery fades from policy to practice, using comparative PDNA analysis and Nepal’s 2015 earthquake recovery as case study."
+description: "At the 2025 conference of the Association of Collegiate Schools of Planning (ACSP) in Minneapolis, Apil K.C. presented research titled 'What Happens to the Promise of Equity in Post-Disaster Recovery?' exploring why equity in post-disaster housing recovery fades from policy to practice, using comparative PDNA analysis and Nepal’s 2015 earthquake recovery as case study."
 ---
 
 ![](./grp.png)
