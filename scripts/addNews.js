@@ -33,7 +33,7 @@ const questions = [
   {
     type: 'list',
     name: 'type',
-    choices: [ 'conference', 'presentation', 'award'],
+    choices: [ 'conference', 'award', 'workshop'],
     message: 'Please select the type of your news item:',
   },
   {
@@ -75,8 +75,8 @@ const init = async () => {
       members: members,
       description: description,
     }
-    const data = `---\n${yaml.stringify(meta)}---\n\n ADD NEWS TEXT HERE\n\n you can upload an image into the same folder than reference it using the following: \n ![](./<insert image.jpg>)
-<em> caption</em>
+    const data = `---\n${yaml.stringify(meta)}---\n\n ADD NEWS TEXT HERE\n\n you can upload an image into the same folder than reference it using the following: \n ![](./filename.jpg)
+<em> add caption here </em> \n Make sure you don't use a .jpeg! it doesn't work for some reason.
 ${''}`;
     fs.mkdirSync(NEW_NEWS_DIRECTORY, { recursive: true });
     fs.writeFileSync(`${NEW_NEWS_DIRECTORY}/index.md`, data);

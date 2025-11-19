@@ -33,7 +33,7 @@ const questions = [
     type: 'list',
     name: 'type',
     when: imageIsUploaded,
-    choices: [ 'blog', 'conference_paper', 'journal_article', 'presentation', 'podcast', 'software', 'report', 'visualization', 'video' ],
+    choices: [ 'blog', 'conference-paper', 'journal-article', 'presentation', 'podcast', 'software', 'report', 'visualization', 'video' ],
     message: 'Please select the type of your content:',
   },
   {
@@ -147,7 +147,8 @@ const init = async () => {
       citationLink: link
     };
 
-    const data = `---\n${yaml.stringify(meta)}---\n\n ADD TEXT HERE\n${''}`;
+    const data = `---\n${yaml.stringify(meta)}---\n\n ADD NEWS TEXT HERE\n\n you can upload an image into the same folder than reference it using the following: \n ![](./filename.jpg)
+<em> add caption here </em> \n Make sure you don't use a .jpeg! it doesn't work for some reason.${''}`;
     fs.mkdirSync(NEW_CONTENT_DIRECTORY, { recursive: true });
     fs.writeFileSync(`${NEW_CONTENT_DIRECTORY}/index.md`, data);
   }else {
