@@ -67,6 +67,13 @@
               url: "https://aria.jpl.nasa.gov/"
             }
           },
+          nasa: {
+            meta: {
+              name: "NASA",
+              img: "/img/partner-nasa.png",
+              url: "https://science.nasa.gov/earth/"
+            }
+          },
           gpsdd: {
             meta: {
               name: "Global Partnership for Sustainable Development Data",
