@@ -7,12 +7,12 @@ status: published
 topics:
   - recovery
   - equity
-type: journal_article
+type: journal-article
 members:
   - apil-k-c
   - sabine-loos
 thumbnail: /img/content-j-ijdrr-satisfaction.png
-description: TBD
+description: This study examines how short- and long-term household housing satisfaction can serve as a more meaningful measure of reconstruction outcomes reflecting affected households’ lived experiences.
 citation: KC, A., Loos, S., & Larsen, L. (2025). Rethinking housing recovery
   policy evaluation through assessing satisfaction. International Journal of
   Disaster Risk Reduction, 105948. https://doi.org/10.1016/j.ijdrr.2025.105948
