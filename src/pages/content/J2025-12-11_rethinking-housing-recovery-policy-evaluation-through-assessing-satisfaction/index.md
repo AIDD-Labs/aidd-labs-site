@@ -1,0 +1,40 @@
+---
+slug: rethinking-housing-recovery-policy-evaluation-through-assessing-satisfaction
+title: Rethinking housing recovery policy evaluation through assessing satisfaction
+createdDate: 2025-12-11
+date: 2025-12-11
+status: published
+topics:
+  - recovery
+  - equity
+type: journal-article
+members:
+  - apil-k-c
+  - sabine-loos
+thumbnail: /img/content-j-ijdrr-satisfaction.png
+description: This study examines how short- and long-term household housing satisfaction can serve as a more meaningful measure of reconstruction outcomes reflecting affected households’ lived experiences.
+citation: KC, A., Loos, S., & Larsen, L. (2025). Rethinking housing recovery
+  policy evaluation through assessing satisfaction. International Journal of
+  Disaster Risk Reduction, 105948. https://doi.org/10.1016/j.ijdrr.2025.105948
+url: https://www.sciencedirect.com/science/article/pii/S2212420925007721
+citationLink: https://doi.org/10.1016/j.ijdrr.2025.105948
+---
+
+<Link is-button doOpenInNewTab to="https://doi.org/10.1016/j.ijdrr.2025.105948"> Read More </Link>
+
+### Abstract
+As disasters increase in frequency and intensity, governments and non-governmental organizations (NGOs) face the recurring challenge of reconstructing large numbers of housing units. Dominant post-disaster housing recovery (PDHR) policies often emphasize objective measures, such as structural durability and timely completion, while overlooking household priorities and long-term needs. This study examines how short- and long-term household housing satisfaction can serve as a more meaningful measure of reconstruction outcomes reflecting affected households’ lived experiences. Drawing on the 2015 Nepal earthquake, we analyze how policy inputs shaped household satisfaction over time, assessed through objective and subjective measures. We interviewed 33 households that rebuilt through: government funded owner-driven reconstruction (ODR), NGO-led programs, and self-funded without external assistance. Our findings reveal that autonomy in designing one's own house is a key determinant of long-term satisfaction. In the short term, residents were more satisfied with the NGO-supported projects due to reconstruction speed. However, ODR households reported greater long-term satisfaction, despite receiving six times less financial support. Households without support reported low satisfaction in both short and long term. Financial capacity of aid recipients was a crucial moderating factor, as residents with savings or access to loans could modify their homes to suit their needs and reported higher satisfaction. These variations in lived experience, shaped by the economic disparities and the uneven effects of policy inputs, are not captured by conventional objective measures. We argue that PDHR policies should move beyond objective targets and incorporate household satisfaction as a core metric for equitable and effective recovery outcomes.
+
+### 1. Introduction
+As disasters increase in frequency and intensity, their impact on human life and housing becomes more severe (Comerio, 1997; IPCC, 2023). These impacts are particularly severe in lower-income countries, where housing is often a household’s most valuable asset and directly linked to its livelihood activities (Geekiyanage et al., 2021). Hence, it demands effective planning, management, and implementation in post-disaster housing recovery (PDHR), to ensure long-term satisfaction and well-being of the household (Berke et al., 1993).
+In practice, PDHR in low- and middle-income countries (LMICs) is often shaped by multiple stakeholders, including national governments and international organizations such as the World Bank, United Nations agencies and the International Federation of Red Cross and Red Crescent Societies. These institutions typically use objective measures to assess outcomes of PDHR programs, as a tool to monitor progress and document success (Berke et al., 1993; Tierney & Oliver-Smith, 2012). These objective measures include the reconstruction speed, the number of housing units rebuilt, the number of households that received financial assistance, the number of families relocated from hazard-prone areas, the number of building code compliance certificates issued, and the total amount spent on reconstruction (Jha & Barenstein, 2010; NRA, 2021). While these objective measures are essential for gauging the effectiveness of immediate response, they frequently overlook the complex realities of recovery as experienced by disaster-affected communities. For instance, following the 2015 Gorkha earthquake in Nepal, the government reported that over 91.46% of the total 829,667 houses had been reconstructed by early 2021 (NRA, 2021). 
+
+While this indicates substantial progress on structural rebuilding, it overlooks the critical dimensions of holistic recovery, including livelihoods, economic resilience, and sociocultural rehabilitation (Raut, 2021; Spoon et al., 2020).
+In addition to the objective evaluation measures used in practice, housing advocates argue that more subjective measures should be used to capture residents' lived experiences and long-term well-being. Scholars have proposed subjective measures as core recovery outcomes, including the restoration of livelihoods and improvements in social well-being (Contreras et al., 2018; Siddiq et al., 2025), the achievement of economic stability and distributive justice (Douglass & Miller, 2018; Tan et al., 2024), community participation and empowerment in recovery efforts(Davidson et al., 2007), and the long-term sustainability and resilience of reconstructed environments (Lizarralde et al., 2009). While these subjective measures are important for evaluating PDHR beyond objective measures, they often present a fragmented thematic picture and fail to capture the overall state of household recovery.
+
+In this study, we argue that augmenting objective and subjective outputs used for evaluation to include household (HH) satisfaction can shift the priorities of reconstruction approaches toward addressing what matters most to affected communities, as recognized in multiple studies (Clapham et al., 2018; Oo et al., 2018). Researchers in the domain of humanitarian aid have long identified the need of assessing recipients’ satisfaction as a measure of program relevance and effectiveness (Lentz et al., 2013; Lentz & Barrett, 2013; Violette et al., 2013). Satisfaction in post disaster recovery reflects individuals’ perceptions of the gap between their housing needs and aspirations, and their actual residential conditions (David Jiboye, 2012; Zheng, 2024). Household satisfaction in PDHR is inherently multidimensional, encompassing not only physical reconstruction but also the social and cultural dimensions of recovery experiences (Bhusal & Bhattarai, 2023).
+
+
+<br/>
+
+<Link is-button doOpenInNewTab to="https://doi.org/10.1016/j.ijdrr.2025.105948"> Read More </Link>
