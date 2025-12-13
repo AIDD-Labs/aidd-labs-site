@@ -3,7 +3,7 @@ slug: eli-knodel
 name: Eli Knodel
 createdDate: 2024-09-15
 type: current
-title: Masters Researcher
+title: Researcher
 affiliation: University of Michigan
 img: /img/member-eli-knodel.png
 linkedin: https://www.linkedin.com/in/eli-knodel/
@@ -13,9 +13,10 @@ personalWebsite: ""
 
 ## Bio
 
-Eli Knodel is a masters researcher with AIDD labs and a student in the School for Environment and Sustatinability (SEAS) at University of Michigan. 
-In SEAS, Eli is specializing in Geospatial Data Sciences and is expected to graduate in May 2026. 
+Eli Knodel is a geospatial data scientist with the Eastern Band of Cherokee Indians (EBCI) and a researcher with AIDD labs at University of Michigan. 
 
 Prior to coming to Ann Arbor, Eli got his bachelor's degree in Applied Mathematics and Statistics at Colorado School of Mines and worked at the U.S. Geological Survey (USGS).
 At the USGS, he developed software and performed statistical analyses, including an analysis of the global accessibility of "Did You Feel It?" (DYFI), an earthquake information product from the USGS that uses crowdsourced data.
-In addition to finishing his work with DYFI, Eli will be beginning a new project with AIDD labs to model the recurrent flooding taking place in the Chitwan Valley of Nepal.
+With AIDD labs, he has published his analysis of DYFI and developed FieldImage, which is a tool for processing, organizing, and mapping field-collected reconnaissance photographs. 
+
+Currently, Eli works in the natural resources department for the EBCI in Cherokee, North Carolina. 
