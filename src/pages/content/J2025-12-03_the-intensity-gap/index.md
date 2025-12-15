@@ -15,7 +15,7 @@ members:
   - sabine-loos
 section: ["contents"]
 thumbnail: img/content-j-srl-dyfi.png
-authors: "Elijah Knodel, David Wald, Vince Quitoriano, Sabine Loos"
+authors: "Eli Knodel, David Wald, Vince Quitoriano, Sabine Loos"
 publication: "Seismological Research Letters"
 description: A global analysis of the characteristics that drive interaction with the U.S. Geological Survey's "Did You Feel It?" product
 citation: "Knodel, E., D. J. Wald, V. Quitoriano, and S. Loos (2025). The Intensity Gap: A Global Analysis of Who Responds to the Crowdsourced “Did You Feel It?” System, Seismol. Res. Lett. XX, 1–25, doi: 10.1785/0220250168."

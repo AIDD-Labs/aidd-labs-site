@@ -20,7 +20,7 @@
             otherTeamMembers() {
                 return this.memberMetadata.current.filter(member => member !== this.slug);
             },
-            articlesByAuthor() {
+           articlesByAuthor() {
                 let posts = this.contents.filter(article => {
                     // Get authors from either 'authors' or 'members' field
                     const authorField = article.meta.authors || article.meta.members;
@@ -31,7 +31,7 @@
                     // Handle both array and string formats
                     let authorList;
                     if (Array.isArray(authorField)) {
-                        // Already an array
+                        // Already an array (likely slugs from 'members')
                         authorList = authorField;
                     } else if (typeof authorField === 'string') {
                         // Split comma-separated string and trim whitespace
@@ -41,8 +41,12 @@
                         return false;
                     }
                     
-                    // Check if this.name matches any author in the list
-                    return authorList.some(author => author === this.name);
+                    // Check both slug AND name to handle both formats
+                    return authorList.some(author => 
+                        author === this.slug ||           // Matches slugs like "eli-knodel"
+                        author === this.name ||           // Matches full names like "Elijah Knodel"
+                        author.toLowerCase().replace(/\s+/g, '-') === this.slug  // Converts "Elijah Knodel" to "elijah-knodel"
+                    );
                 });
 
                 posts.sort((a, b) => {
