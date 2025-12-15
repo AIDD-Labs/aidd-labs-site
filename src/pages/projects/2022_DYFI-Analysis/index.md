@@ -1,13 +1,13 @@
 ---
 slug: "dyfi-analysis" # match folder label name
 createdDate: 2023-05-20
-date: "2022 - Present"
+date: "2022 - 2025"
 status: "current"
 topics: ["hazard", "equity"]
 locations: ["global"]
 methods: [ "statistical-inference"]
 members: [eli-knodel,"sabine-loos", "david-wald", "vince-quitoriano"] # insert your slug here, e.g., "sabine-loos"
-content: [knodel-NHW-DYFI-poster]
+content: [the-intensity-gap,knodel-NHW-DYFI-poster]
 partners: 
     - usgs
 title: "Accessibility of Crowdsourced Shaking Data" # insert title here
