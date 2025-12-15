@@ -20,29 +20,42 @@
             otherTeamMembers() {
                 return this.memberMetadata.current.filter(member => member !== this.slug);
             },
-            articlesByAuthor() {
+           articlesByAuthor() {
                 let posts = this.contents.filter(article => {
-                    // Get authors from either 'authors' or 'members' field
-                    const authorField = article.meta.authors || article.meta.members;
+                    // Collect authors from BOTH 'authors' and 'members' fields
+                    let allAuthors = [];
                     
-                    // Skip if neither field exists
-                    if (!authorField) return false;
-                    
-                    // Handle both array and string formats
-                    let authorList;
-                    if (Array.isArray(authorField)) {
-                        // Already an array
-                        authorList = authorField;
-                    } else if (typeof authorField === 'string') {
-                        // Split comma-separated string and trim whitespace
-                        authorList = authorField.split(",").map(a => a.trim());
-                    } else {
-                        // Unexpected format, skip this article
-                        return false;
+                    // Add from 'authors' field
+                    if (article.meta.authors) {
+                        if (Array.isArray(article.meta.authors)) {
+                            allAuthors = allAuthors.concat(article.meta.authors);
+                        } else if (typeof article.meta.authors === 'string') {
+                            allAuthors = allAuthors.concat(
+                                article.meta.authors.split(",").map(a => a.trim())
+                            );
+                        }
                     }
                     
-                    // Check if this.name matches any author in the list
-                    return authorList.some(author => author === this.name);
+                    // Add from 'members' field
+                    if (article.meta.members) {
+                        if (Array.isArray(article.meta.members)) {
+                            allAuthors = allAuthors.concat(article.meta.members);
+                        } else if (typeof article.meta.members === 'string') {
+                            allAuthors = allAuthors.concat(
+                                article.meta.members.split(",").map(a => a.trim())
+                            );
+                        }
+                    }
+                    
+                    // Skip if no authors found
+                    if (allAuthors.length === 0) return false;
+                    
+                    // Check both slug AND name to handle both formats
+                    return allAuthors.some(author => 
+                        author === this.slug ||           // Matches slugs like "eli-knodel"
+                        author === this.name ||           // Matches full names like "Elijah Knodel"
+                        author.toLowerCase().replace(/\s+/g, '-') === this.slug  // Converts "Elijah Knodel" to "elijah-knodel"
+                    );
                 });
 
                 posts.sort((a, b) => {
@@ -53,8 +66,28 @@
             },
             newsByAuthor() {
                 let newsPosts = this.news.filter(newsitem => {
-                    const members = newsitem.meta.members || []
-                    return members[0] == this.slug;
+                    // Get members field
+                    const members = newsitem.meta.members;
+                    
+                    // Skip if no members
+                    if (!members) return false;
+                    
+                    // Handle both array and string formats
+                    let memberList;
+                    if (Array.isArray(members)) {
+                        memberList = members;
+                    } else if (typeof members === 'string') {
+                        memberList = members.split(",").map(m => m.trim());
+                    } else {
+                        return false;
+                    }
+                    
+                    // Check if this person is in the member list (any position)
+                    return memberList.some(member => 
+                        member === this.slug ||           // Matches slugs like "eli-knodel"
+                        member === this.name ||           // Matches full names like "Elijah Knodel"
+                        member.toLowerCase().replace(/\s+/g, '-') === this.slug  // Converts names to slugs
+                    );
                 });
 
                 newsPosts.sort((a, b) => {
@@ -62,7 +95,6 @@
                 });
 
                 return newsPosts.slice(0, 3);
-                // return newsPosts
             },
             activeMarkdownComponent() {
                 return this.$route.name;
