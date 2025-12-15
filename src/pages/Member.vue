@@ -22,7 +22,27 @@
             },
             articlesByAuthor() {
                 let posts = this.contents.filter(article => {
-                    return article.meta.authors.split(",")[0] == this.name; 
+                    // Get authors from either 'authors' or 'members' field
+                    const authorField = article.meta.authors || article.meta.members;
+                    
+                    // Skip if neither field exists
+                    if (!authorField) return false;
+                    
+                    // Handle both array and string formats
+                    let authorList;
+                    if (Array.isArray(authorField)) {
+                        // Already an array
+                        authorList = authorField;
+                    } else if (typeof authorField === 'string') {
+                        // Split comma-separated string and trim whitespace
+                        authorList = authorField.split(",").map(a => a.trim());
+                    } else {
+                        // Unexpected format, skip this article
+                        return false;
+                    }
+                    
+                    // Check if this.name matches any author in the list
+                    return authorList.some(author => author === this.name);
                 });
 
                 posts.sort((a, b) => {
