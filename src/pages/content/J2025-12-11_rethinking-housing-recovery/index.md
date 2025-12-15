@@ -1,5 +1,5 @@
 ---
-slug: rethinking-housing-recovery-policy-evaluation-through-assessing-satisfaction
+slug: rethinking-housing-recovery
 title: Rethinking housing recovery policy evaluation through assessing satisfaction
 createdDate: 2025-12-11
 date: 2025-12-11
@@ -11,13 +11,16 @@ type: journal-article
 members:
   - apil-k-c
   - sabine-loos
-thumbnail: /img/content-j-ijdrr-satisfaction.png
+authors: "Apil K C, Larissa Larsen, Sabine Loos"
+publication: "IJDRR"
+thumbnail: img/content-j-ijdrr-satisfaction.png
 description: This study examines how short- and long-term household housing satisfaction can serve as a more meaningful measure of reconstruction outcomes reflecting affected households’ lived experiences.
 citation: KC, A., Loos, S., & Larsen, L. (2025). Rethinking housing recovery
   policy evaluation through assessing satisfaction. International Journal of
   Disaster Risk Reduction, 105948. https://doi.org/10.1016/j.ijdrr.2025.105948
 url: https://www.sciencedirect.com/science/article/pii/S2212420925007721
 citationLink: https://doi.org/10.1016/j.ijdrr.2025.105948
+abstract: "As disasters increase in frequency and intensity, governments and non-governmental organizations (NGOs) face the recurring challenge of reconstructing large numbers of housing units. Dominant post-disaster housing recovery (PDHR) policies often emphasize objective measures, such as structural durability and timely completion, while overlooking household priorities and long-term needs. This study examines how short- and long-term household housing satisfaction can serve as a more meaningful measure of reconstruction outcomes reflecting affected households’ lived experiences. Drawing on the 2015 Nepal earthquake, we analyze how policy inputs shaped household satisfaction over time, assessed through objective and subjective measures. We interviewed 33 households that rebuilt through: government funded owner-driven reconstruction (ODR), NGO-led programs, and self-funded without external assistance. Our findings reveal that autonomy in designing one's own house is a key determinant of long-term satisfaction. In the short term, residents were more satisfied with the NGO-supported projects due to reconstruction speed. However, ODR households reported greater long-term satisfaction, despite receiving six times less financial support. Households without support reported low satisfaction in both short and long term. Financial capacity of aid recipients was a crucial moderating factor, as residents with savings or access to loans could modify their homes to suit their needs and reported higher satisfaction. These variations in lived experience, shaped by the economic disparities and the uneven effects of policy inputs, are not captured by conventional objective measures. We argue that PDHR policies should move beyond objective targets and incorporate household satisfaction as a core metric for equitable and effective recovery outcomes."
 ---
 
 <Link is-button doOpenInNewTab to="https://doi.org/10.1016/j.ijdrr.2025.105948"> Read More </Link>
