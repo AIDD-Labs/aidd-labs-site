@@ -1,24 +1,27 @@
 ---
 slug: the-intensity-gap
-title: "The Intensity Gap: A Global Analysis of Who Responds to the Crowdsourced
-  “Did You Feel It?” System"
+title: "The Intensity Gap: A Global Analysis of Who Responds to the Crowdsourced Did You Feel It? System"
 createdDate: 2025-12-03
 date: 2025-11-03
 status: published
 topics:
   - impact
   - accessibility
-type: Journal Article
+type: journal-article
 members:
   - eli-knodel
   - david-wald
-  - sabine-loos
   - vince-quitoriano
+  - sabine-loos
+section: ["contents"]
 thumbnail: img/content-j-srl-dyfi.png
+authors: "Elijah Knodel, David Wald, Vince Quitoriano, Sabine Loos"
+publication: "Seismological Research Letters"
 description: A global analysis of the characteristics that drive interaction with the U.S. Geological Survey's "Did You Feel It?" product
 citation: "Knodel, E., D. J. Wald, V. Quitoriano, and S. Loos (2025). The Intensity Gap: A Global Analysis of Who Responds to the Crowdsourced “Did You Feel It?” System, Seismol. Res. Lett. XX, 1–25, doi: 10.1785/0220250168."
 url: https://doi.org/10.1785/0220250168
 citationLink: https://doi.org/10.1785/0220250168
+abstract: "The U.S. Geological Survey’s (USGS) “Did You Feel It?” (DYFI) system is an internet tool that collects shaking intensity observations through crowdsourcing. It produces maps and provides supplementary data to ShakeMap, which offers near-real-time maps of ground motion resulting from significant earthquakes around the globe."
 ---
 
 <Link is-button doOpenInNewTab to="https://doi.org/10.1785/0220250168"> View the journal-published version here </Link>
