@@ -5,6 +5,9 @@ date: 2023-07-15
 status: "published"
 type: "conference"
 members: ["sabine-loos", "marisa-macias", eli-knodel]
+projects:
+  - codesign-equity-earthquakeinfo
+  - dyfi-analysis
 thumbnail: "img/content-b-ier-nepal.png"
 title: "AIDD Labs members attend and present at the 2023 Annual Natural Hazards Workshop and Researchers Meeting"
 description: "Marísa Macías, Eli Knodel, and Sabine Loos presented on work regarding user needs for equity-centered information, Did You Feel It?, and Equity and Risk Assessments."
