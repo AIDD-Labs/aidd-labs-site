@@ -32,6 +32,20 @@
               url: "https://urbanresilience.stanford.edu/"
             }
           },
+          stanfordsustainability: {
+            meta: {
+              name: "Stanford Sustainability Accelerator",
+              img: "/img/partner-stanford-accelerator.png",
+              url: "https://sustainability-accelerator.stanford.edu/"
+            }
+          },
+          elr: {
+            meta: {
+              name: "Emergency Legal Responders",
+              img: "/img/partner-elr.png",
+              url: "https://www.emergencylegalresponders.org/"
+            }
+          },
           kll: {
             meta: {
               name: "Kathmandu Living Labs",
