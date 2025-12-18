@@ -6,9 +6,9 @@ type: external
 title: PhD Researcher
 affiliation: Stanford University
 img: /img/member-clara-medina.png
-linkedin: ""
+linkedin: "https://www.linkedin.com/in/clara-medina"
 twitter: ""
-personalWebsite: ""
+personalWebsite: "https://www.linkedin.com/in/clara-medina"
 ---
 
 ## Bio

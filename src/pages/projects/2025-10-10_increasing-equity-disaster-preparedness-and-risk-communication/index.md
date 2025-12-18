@@ -16,9 +16,9 @@ members:
   - margaret-miles
   - clara-medina
   - sabine-loos
-  # - khalid-osman ## ADD
-  # - elliott-white ## ADD
-  # - eliza-mcdermott ## ADD
+  - khalid-osman ## ADD
+  - elliott-white ## ADD
+  - eliza-mcdermott ## ADD
 locations:
   - united-states
 partners: 
