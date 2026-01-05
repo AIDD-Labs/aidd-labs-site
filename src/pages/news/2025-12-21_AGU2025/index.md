@@ -8,6 +8,8 @@ members:
   - xin-wei
   - shriya-kethireddy
 title: "AIDD Lab Participates in the AGU Fall Meeting 2025"
+# projects: 
+  # - population-mobility-low-attention-flooding
 description: "Members of the AIDD Lab, including Schmidt AI in Science Postdoctoral Fellow Dr. Xin Wei and Shriya Kethireddy, actively participated in the 2025 American Geophysical Union (AGU) Fall Meeting, held 15–19 December in New Orleans, Louisiana."
 url: "https://www.agu.org/annual-meeting"
 ---
