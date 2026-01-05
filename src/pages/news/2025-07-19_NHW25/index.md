@@ -7,6 +7,9 @@ type: "conference"
 members: 
   - margaret-miles
   - sabine-loos
+projects:
+  - codesign-equity-earthquakeinfo
+  - examining-community-needs-for-parametric-insurance
 title: "AIDD Labs Members attend the 75th Natural Hazards Workshop"
 description: "AIDD Labs members Margaret and Dr. Loos attended the 2025 workshop in Broomfield, CO. The workshop brings together federal, state, and local mitigation and emergency management officials and planning professionals; representatives of nonprofit, private sector, and humanitarian organizations; hazards and disaster researchers; and others dedicated to alleviating the impacts of disasters."
 url: "https://hazards.colorado.edu/workshop/2025/abstract/poster-session#understanding-challenges-in-community-adoption-of-parametric-insurance-in-high-risk-regions"
