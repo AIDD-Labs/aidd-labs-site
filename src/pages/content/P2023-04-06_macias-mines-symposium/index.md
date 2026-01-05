@@ -6,7 +6,10 @@ status: "published"
 topics: ["impact", "risk", "equity"]
 type: "presentation"
 section: ["contents"]
-members: ["marisa-macias"]
+members: 
+ - marisa-macias
+ - sabine-loos
+ - elizabeth-reddy
 is_featured: false
 url: ""
 thumbnail: "img/content-p-MinesEQImpactWorkshop.png"

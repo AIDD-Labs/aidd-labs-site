@@ -6,6 +6,8 @@ date: 2025-10-22
 status: draft
 type: "conference"
 url: "https://ieeeghtc.org/program-2025/"
+projects:
+  - examining-community-needs-for-parametric-insurance
 members:
   - margaret-miles
   - julia-kramer
