@@ -1,5 +1,5 @@
 ---
-slug: kanako-iuchi
+slug: riccardo-vitale
 name: Riccardo Vitale
 createdDate: 2025-12-15
 type: external
@@ -8,7 +8,7 @@ affiliation: University of Houston
 img: /img/member-riccardo-vitale.png
 linkedin: ""
 twitter: ""
-personalWebsite: 
+personalWebsite: https://www.linkedin.com/in/riccardo-vitale-aa2134124/ 
 ---
 
 ## Bio

@@ -1,6 +1,6 @@
 ---
-slug: pietro-mililo
-name: Pietro Mililo
+slug: pietro-milillo
+name: Pietro Milillo
 createdDate: 2025-12-15
 type: external
 title: Assistant Professor
