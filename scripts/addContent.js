@@ -10,6 +10,14 @@ const imageIsUploaded = (answers) => {
   return answers.hasImg;
 };
 
+const includesPDF = (answers) => {
+  return answers.yesPDF;
+};
+
+const pdfIsUploaded = (answers) => {
+  return answers.hasPDF;
+};
+
 const questions = [
   {
     type: 'confirm',
@@ -24,6 +32,30 @@ const questions = [
     validate: function(answer) {
       if (answer.length < 1) {
         return 'You must enter a filename for your Thumnail Image.';
+      }
+
+      return true;
+    }
+  },
+  {
+    type: 'confirm',
+    name: 'yesPDF',
+    message: "Do you want to include a pdf for this content?"
+  },
+  {
+    type: 'confirm',
+    name: 'hasPDF',
+    when: includesPDF,
+    message: "Have you uploaded a PDF for this content to /public/files/?"
+  },
+  {
+    type: 'input',
+    name: 'pdfName',
+    when: pdfIsUploaded,
+    message: "Please enter the filename of your PDF including filetype (e.g.,): Knodel_et_al_2025_Global_DYFI_Analysis_AIDD.pdf",
+    validate: function(answer) {
+      if (answer.length < 1) {
+        return 'You must enter a filename for your PDF.';
       }
 
       return true;
