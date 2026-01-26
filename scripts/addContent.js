@@ -70,7 +70,7 @@ const questions = [
     type: 'list',
     name: 'type',
     when: (answers) => imageIsUploaded(answers) && pdfNotMissing(answers),
-    choices: [ 'blog', 'conference_paper', 'journal_article', 'presentation', 'podcast', 'software', 'report', 'visualization', 'video' ],
+    choices: [ 'blog', 'conference_paper', 'journal-article', 'presentation', 'podcast', 'software', 'report', 'visualization', 'video' ],
     message: 'Please select the type of your content:',
   },
   {
@@ -166,9 +166,9 @@ const init = async () => {
     if(yesPDF){
       if(hasPDF){
         embedPDF = 
-`<iframe src="${pdfName}" width="100%" height="600px"></iframe>
+`<iframe src="/files/${pdfName}" width="100%" height="600px"></iframe>
 
-<a href="${pdfName}" download class="btn">
+<a href="/files/${pdfName}" download class="btn">
   Download PDF
 </a>`;
       } else {
@@ -198,13 +198,11 @@ const init = async () => {
       citationLink: link
     };
 
-    // const data = `---\n${yaml.stringify(meta)}---\n\n ADD TEXT HERE\n${''}`;
     let data = `---\n${yaml.stringify(meta)}---\n\n`;
     data += embedPDF ? embedPDF + '\n\n' : '';
     data += 'ADD TEXT HERE\n';
-    console.info(data)
-    // fs.mkdirSync(NEW_CONTENT_DIRECTORY, { recursive: true });
-    // fs.writeFileSync(`${NEW_CONTENT_DIRECTORY}/index.md`, data);
+    fs.mkdirSync(NEW_CONTENT_DIRECTORY, { recursive: true });
+    fs.writeFileSync(`${NEW_CONTENT_DIRECTORY}/index.md`, data);
   } else {
     console.info(">>> Please upload a thumbnail of your content to /public/img/");
   }
