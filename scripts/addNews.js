@@ -23,7 +23,13 @@ const questions = [
     type: 'checkbox',
     name: 'members',
     choices: utils.getMemberChoices(),
-    message: 'Please select the team members who are part of this project:',
+    message: 'Please select the team members who are part of this news post:',
+  },
+  {
+    type: 'checkbox',  
+    name: 'projects',
+    choices: utils.getProjectChoices(),
+    message: 'Please select the projects related to this news post (optional):',
   },
   {
     type: 'input',
@@ -58,7 +64,7 @@ const questions = [
 
 const init = async () => {
   const result = await inquirer.prompt(questions);
-  const {title, type, members, date, url, description } = result;
+  const {title, type, members, date, url, description, projects } = result;
   
     const createdDate = new Date().toISOString().split('T')[0];
     const dasherizedTitle = title.toLowerCase().split(' ').join('-');
@@ -73,6 +79,7 @@ const init = async () => {
       type: type,
       url: url,
       members: members,
+      projects: projects,
       description: description,
     }
     const data = `---\n${yaml.stringify(meta)}---\n\n ADD NEWS TEXT HERE\n\n you can upload an image into the same folder than reference it using the following: \n ![](./<insert image.jpg>)

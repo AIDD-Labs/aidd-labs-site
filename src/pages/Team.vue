@@ -31,6 +31,7 @@
                     "PhD Researcher":2,
                     "Masters Researcher":4,
                     "Affiliate":3,
+                    "Researcher":3,
                     "Undergraduate Researcher":5
                 }
                 return this.memberMetadata.current.sort((a,b) => {

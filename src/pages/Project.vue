@@ -1,25 +1,77 @@
 <script>
 import { mapState } from 'vuex';
 
-    export default {
-        name: "Project",
-        data() {
-            return {
-                ...this.$attrs.frontmatter
-            }
+export default {
+    name: "Project",
+    data() {
+        return {
+            ...this.$attrs.frontmatter
+        }
+    },
+    computed: {
+        ...mapState({
+            allContent: state => state.contents,
+            news: state => state.news || []  // ← Added fallback to empty array
+        }),
+        projectContent () {
+            return this.allContent.filter(content => this.content?.includes(content.meta.slug));
         },
-        computed: {
-            ...mapState({
-                allContent: state => state.contents
-            }),
-            projectContent () {
-                return this.allContent.filter(content => this.content?.includes(content.meta.slug));
+        newsByProject() {
+            if (!this.news || !Array.isArray(this.news)) {
+                return [];
             }
-        },
-        methods: {},
-        mounted() {},
-        beforeUnmount() {},
-    };
+            
+            if (!this.slug) {
+                return [];
+            }
+            
+            console.log('Current project slug:', this.slug);  // ← ADD THIS
+            
+            let newsPosts = this.news.filter(newsitem => {
+                if (!newsitem || !newsitem.meta) return false;
+                
+                const projects = newsitem.meta.projects;
+                
+                if (!projects) return false;
+                
+                let projectList;
+                if (Array.isArray(projects)) {
+                    projectList = projects;
+                } else if (typeof projects === 'string') {
+                    projectList = projects.split(",").map(p => p.trim());
+                } else {
+                    return false;
+                }
+                
+                // ← ADD THESE DEBUG LOGS
+                const matches = projectList.includes(this.slug);
+                if (projectList.length > 1) {
+                    console.log('News item:', newsitem.meta.title);
+                    console.log('  Projects:', projectList);
+                    console.log('  Looking for:', this.slug);
+                    console.log('  Matches:', matches);
+                }
+                
+                return matches;
+            });
+
+            newsPosts.sort((a, b) => {
+                const dateA = a.meta?.date ? new Date(a.meta.date) : new Date(0);
+                const dateB = b.meta?.date ? new Date(b.meta.date) : new Date(0);
+                return dateB - dateA;
+            });
+
+            return newsPosts.slice(0, 5);
+        }
+    },
+    methods: {},
+    mounted() {
+        console.log('Project slug:', this.slug);
+        console.log('News available:', this.news?.length || 0);
+        console.log('Filtered news:', this.newsByProject);
+    },
+    beforeUnmount() {},
+};
 </script>
 
 <template>
@@ -68,13 +120,17 @@ import { mapState } from 'vuex';
                 <h2>Core team members</h2>
                 <MembersGrid variant="m" :data="members" />
             </MaxWidth>
+            <MaxWidth size="m" class="articles" v-if="partners?.length">
+                <h2>Project partners/funders</h2>
+                <PartnersGrid :partners="partners" />
+            </MaxWidth>
             <MaxWidth size="m" class="articles" v-if="projectContent.length">
                 <h2>Project content</h2>
                 <ContentGrid :data="projectContent" />
             </MaxWidth>
-            <MaxWidth size="m" class="articles" v-if="partners?.length">
-                <h2>Project partners/funders</h2>
-                <PartnersGrid :partners="partners" />
+            <MaxWidth size="m" class="articles" v-if="newsByProject.length">
+                <h2>Recent news</h2>
+                <NewsGrid :data="newsByProject" newsCount="3"/>
             </MaxWidth>
         </div>
 

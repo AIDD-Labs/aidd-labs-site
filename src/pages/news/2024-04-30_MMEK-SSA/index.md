@@ -5,6 +5,9 @@ date: 2024-04-30
 status: "published"
 type: "conference"
 members: ["marisa-macias", eli-knodel, "sabine-loos"]
+projects:
+  - codesign-equity-earthquakeinfo
+  - DYFI-Analysis
 title: "AIDD Lab Members, Marísa Macías and Eli Knodel convene sessions and present at Seismological Society of America Annual Meeting"
 description: "Marísa Macías co-convened a session with Sabine Loos, David Wald, and Tiegan Hobbs on ''Creating Actionable Earthquake Information Products''. Marísa also gives an Oral Presentation on ''Improving Earthquake Impact Data for Equity-Focused Emergency Management.'' Eli Knodel presents a poster on ''Making the Crowdsourced 'Did You Feel It?' System More Accessible: A Global Analysis''."
 url: "https://www.c-cies.org/"

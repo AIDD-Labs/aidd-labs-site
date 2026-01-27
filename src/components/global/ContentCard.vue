@@ -162,6 +162,14 @@
                     border-radius: 30px;
                     width: 30px;
                     height: 30px;
+                    overflow: hidden;
+                }
+
+                img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;        /* Crops to fill the circle */
+                object-position: center;  /* Centers the image */
                 }
             }
 

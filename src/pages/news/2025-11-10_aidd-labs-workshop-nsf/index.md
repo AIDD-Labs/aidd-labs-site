@@ -7,6 +7,8 @@ date: 2025-11-04
 status: published
 type: workshop
 url: ""
+projects: 
+  - population-mobility-low-attention-flooding
 members:
   - sabine-loos
   - jacob-diaz
