@@ -5,7 +5,7 @@ createdDate: 2026-07-22
 date: 07/29/2026
 status: draft
 type: presentation
-url: https://sure.engin.umich.edu/2026-student-cohort/#cee
+url: https://sure.engin.umich.edu/sure-showcase/
 members: [Olivia Croftchik]
 projects:
   - examining-community-needs-for-parametric-insurance
@@ -21,6 +21,6 @@ Olivia presented her poster, "Leveraging Qualitative Methods for Community-Cente
 Show Image
 
  you can upload an image into the same folder than reference it using the following: 
- ![](./<insert image.jpg>)
- Show Image
+ ![Olivia presenting her poster at the SURE Summer Showcase](./olivia-poster.jpg)
+
 <em> Olivia presenting her poster at the SURE Summer Showcase </em>
