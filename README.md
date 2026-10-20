@@ -63,7 +63,7 @@ ls
 ```
 git clone git@github.com:AIDD-Labs/aidd-labs-site.git
 ```
-If that doens't work, this code worked for me.
+If that doesn't work, this code might instead.
 
 ````
 git clone https://github.com/AIDD-Labs/aidd-labs-site.git
