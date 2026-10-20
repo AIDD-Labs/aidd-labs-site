@@ -7,7 +7,7 @@ status: "current"
 topics: ["emergency-management", "equity"]
 methods: [ "qualitative-methods", "mixed-methods","statistical-learning"]
 members: ["christin-salley","sabine-loos", "aditya-tambe", "lu-wang"] # , "tomas-garcia-lavanchy"
-locations: ["United States"]
+locations: ["united-states"]
 content: []
 partners:
     - MIDAS
