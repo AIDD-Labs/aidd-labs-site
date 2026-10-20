@@ -2,7 +2,7 @@
 slug: "david-lallemant"
 createdDate:
 name: "David Lallemant"
-title: "Assistant Professor"
+title: "Associate Professor"
 yearDeparted: "2021"
 affiliation: "Earth Observatory of Singapore"
 affiliationLink: "https://disaster-analytics.com/team/david-lallemant/"

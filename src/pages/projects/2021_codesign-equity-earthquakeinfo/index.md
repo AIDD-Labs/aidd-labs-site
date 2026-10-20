@@ -16,7 +16,7 @@ members:
     - lori-peek
     - jocelyn-west
     - elizabeth-reddy
-content: ["usgs-esc", "UR22-EqRisk", "macias-mines-symposium","achieving-collective-impact-in-earthquake-science-podcast"]
+content: ["beyond-deaths-and-dollars","operationalizing-equity","usgs-esc", "UR22-EqRisk", "macias-mines-symposium","achieving-collective-impact-in-earthquake-science-podcast"]
 partners: 
     - usgs
     - nhc
