@@ -2,13 +2,12 @@
 slug: shriya-kethireddy
 name: Shriya Kethireddy
 createdDate: 2024-05-08
-type: current
+type: "alumni"
 title: Undergraduate Researcher
-affiliation: University of Michigan
+yearDeparted: "2026"
+affiliation: Google
 img: /img/member-Shriya-Kethireddy.png
-linkedin: www.linkedin.com/in/shriya-kethireddy-406182247
-twitter: ""
-personalWebsite: ""
+linkedin: https://www.linkedin.com/in/shriya-kethireddy-406182247/
 ---
 
 ## Bio

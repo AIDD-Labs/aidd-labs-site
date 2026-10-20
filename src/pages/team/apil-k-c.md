@@ -2,7 +2,7 @@
 slug: apil-k-c
 name: Apil K C
 createdDate: 2023-11-14
-title: PhD Researcher
+title: Affiliate
 affiliation: University of Michigan
 img: /img/member-apil-k-c.png
 linkedin: https://www.linkedin.com/in/apilkc
