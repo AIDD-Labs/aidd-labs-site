@@ -2,7 +2,7 @@
 slug: "jamie-mccaughey"
 createdDate:
 name: "Jamie W McCaughey"
-title: "Postdoctoral Researcher"
+title: "Lecturer"
 yearDeparted: "2021"
 affiliation: "ETH Zürich"
 type: "external"
