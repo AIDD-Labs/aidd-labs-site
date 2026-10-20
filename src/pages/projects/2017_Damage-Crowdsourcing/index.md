@@ -7,7 +7,7 @@ topics: ["impact"]
 locations: ["haiti"]
 methods: [ "qualitative-methods", "statistical-inference", "mixed-methods", "surveys"]
 members: ["sabine-loos", "david-lallemant", "karen-barns", "robert-soden", "gitanjali-bhattacharjee", "melanie-eckle", "benjamin-herfort"] # insert your slug 
-content: ["radcrowd-report","damage-demandsurvey", "radcrowd-11NCEE"]
+content: ["radcrowd-report","damage-demandsurvey","damage-assessments-catalysts-recovery", "radcrowd-11NCEE"]
 partners: 
     - nsf
     - suri
