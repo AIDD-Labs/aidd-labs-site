@@ -22,6 +22,7 @@
                 recentPosts: state => [...state.posts.slice(0, 3)],
             }),
             currentMembers() {
+                // Lower number = more senior. Titles not listed here sort last.
                 const seniorityMap = {
                     "Professor":0,
                     "Associate Professor":0,
@@ -29,17 +30,23 @@
                     "Postdoctoral Fellow":1,
                     "Postdoctoral Researcher":1,
                     "PhD Researcher":2,
-                    "Masters Researcher":4,
-                    "Affiliate":3,
-                    "Researcher":3,
-                    "Undergraduate Researcher":5
+                    "Affiliate":4,
+                    "Researcher":4,
+                    "Masters Researcher":3,
+                    "Undergraduate Researcher":5,
+                    "Project Manager":6
                 }
-                return this.memberMetadata.current.sort((a,b) => {
-                    return seniorityMap[this.members[a].meta.title] - seniorityMap[this.members[b].meta.title];
+                const rank = slug => seniorityMap[this.members[slug].meta.title] ?? 99;
+                // Alphabetical tiebreak by last name, then full name
+                const lastName = slug => this.members[slug].meta.name.trim().split(/\s+/).pop();
+                return [...this.memberMetadata.current].sort((a,b) => {
+                    return rank(a) - rank(b)
+                        || lastName(a).localeCompare(lastName(b))
+                        || this.members[a].meta.name.localeCompare(this.members[b].meta.name);
                 })
             },
             alumniMembers () {
-                return this.memberMetadata.alumni.sort((a,b) => {
+                return [...this.memberMetadata.alumni].sort((a,b) => {
                     return this.members[b].meta.yearDeparted - this.members[a].meta.yearDeparted;
                 })
             }
