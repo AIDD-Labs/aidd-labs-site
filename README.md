@@ -37,6 +37,7 @@ In the VsCode terminal, enter the following to configure git.
 ```
 git config --global user.name “<enter username>“
 ```
+Use your credentials to sign in to git hub. Don't include <>
 
 2. **Set VsCode as your git text editor** 
 ```
@@ -62,6 +63,11 @@ ls
 ```
 git clone git@github.com:AIDD-Labs/aidd-labs-site.git
 ```
+If that doesn't work, this code might instead.
+
+````
+git clone https://github.com/AIDD-Labs/aidd-labs-site.git
+````
 
 2. **Go into the lab-site folder**. You now want to go into your `aidd-labs-site` folder.
 ```

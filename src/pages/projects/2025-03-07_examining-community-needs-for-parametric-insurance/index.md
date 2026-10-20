@@ -13,6 +13,7 @@ methods:
   - mixed-methods
 members:
   - margaret-miles
+  - olivia-croftchik
   - sabine-loos
   - guillermo-franco
   - julia-kramer
