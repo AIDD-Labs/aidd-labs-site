@@ -1,4 +1,5 @@
 import {createStore} from "vuex";
+import utils from "@/scripts/utils.js";
 
 const store = createStore({
     state() {
@@ -196,6 +197,19 @@ const store = createStore({
         },
 
         loadProjects({commit}, projects) {
+            // Normalize tag values to slugs (e.g. "Qualitative Methods" -> "qualitative-methods",
+            // "Nepal" -> "nepal") so filters don't show duplicate options and counts/filtering match.
+            const toSlugList = value => {
+                const list = Array.isArray(value) ? value : (value ? [value] : []);
+                return [...new Set(list.map(v => utils.slugify(String(v).trim())))];
+            };
+            projects.forEach(project => {
+                if (!project.meta) return;
+                ["methods", "locations", "topics"].forEach(key => {
+                    project.meta[key] = toSlugList(project.meta[key]);
+                });
+            });
+
             commit("loadProjects", {
                 projects: projects
             });

@@ -10,11 +10,11 @@ topics:
   - recovery
   - equity
 methods:
-  - Qualitative Methods
-  - Statistical Inference
-  - Mixed Methods
-  - Surveys
-  - Risk Analysis
+  - qualitative-methods
+  - statistical-inference
+  - mixed-methods
+  - surveys
+  - risk-analysis
 members:
   - yue-zeng
   - yeremia-sihombing
@@ -25,7 +25,7 @@ members:
   - kanako-iuchi
   - jeremy-bricker
   - seymour-spence
-locations: ["United States"]
+locations: ["united-states"]
 partners: 
   - nsf
 content: []

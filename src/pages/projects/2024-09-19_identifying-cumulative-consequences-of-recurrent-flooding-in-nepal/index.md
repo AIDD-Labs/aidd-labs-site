@@ -9,9 +9,9 @@ topics:
   - equity
 status: current
 methods:
-  - Qualitative Methods
-  - Statistical Inference
-  - Mixed Methods
+  - qualitative-methods
+  - statistical-inference
+  - mixed-methods
 members:
   - brad-bottoms
   - eli-knodel
@@ -19,7 +19,7 @@ members:
   - sabine-loos
   - william-axinn
   - dirgha-ghimire
-locations: ["Nepal"]
+locations: ["nepal"]
 content: []
 thumbnail: "/img/proj-2024-chitwan-flooding.jpg" 
 partners: 
