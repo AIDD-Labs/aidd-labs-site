@@ -6,8 +6,10 @@ status: "current"
 topics: ["impact", "response", "recovery"]
 locations: ["global"]
 methods: ["mixed-methods"]
-members: ["sabine-loos", "sagar-khanal"]
-content: ["best-practices-damage-data-12ncee", "fieldimage-reconnaissance-photos-13ncee", "vert-ende-indonesia", "vert-san-jose-del-palmar-colombia", "vert-uto-japan", "vert-yumare-venezuela", "vert-mindanao-philippines", "turkiye-observations-of-recovery"]
+members: ["sabine-loos", "sagar-khanal", "eli-knodel"]
+content: ["turkiye-recovery-photos-notes", "fieldimage-software", 
+"clash-trishuli-flood-storymap",
+"best-practices-damage-data-12ncee", "fieldimage-reconnaissance-photos-13ncee", "vert-ende-indonesia", "vert-san-jose-del-palmar-colombia", "vert-uto-japan", "vert-yumare-venezuela", "vert-mindanao-philippines", "turkiye-observations-of-recovery"]
 title: "Post-Disaster Reconnaissance"
 thumbnail: "/img/proj-reconnaissance.jpg"
 thumbnailCaption: "Newly built village homes in Emiroğlu, Türkiye, documented during the EERI-SSEER recovery reconnaissance 20 months after the 2023 Kahramanmaraş earthquakes."
