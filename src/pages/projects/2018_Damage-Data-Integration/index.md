@@ -7,7 +7,7 @@ topics: ["impact"]
 locations: ["nepal", "new-zealand", "italy", "haiti"]
 methods: [ "statistical-modeling"]
 members: ["sabine-loos", "jennifer-levitt", "kei-tomozawa", "jack-baker", "david-lallemant", "sangho-yun", "nama-budhathoki"] # insert your slug here, e.g., "sabine-loos"
-content: ["gdif-nepal", "gdif-efficacy", "usgs-esc", "ier-report", "GDIF1-code", "Geo4Dev", "GDIF2-code"]
+content: ["spatial-correlation-damage-icossar", "gdif-nepal", "gdif-efficacy", "usgs-esc", "ier-report", "GDIF1-code", "Geo4Dev", "GDIF2-code"]
 partners: 
     - suri
     - kll

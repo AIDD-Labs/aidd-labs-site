@@ -34,6 +34,7 @@ description: As natural hazards are becoming more frequent, insurance companies
   provided and community expectations.  This study aims to explore the
   feasibility of reciprocal parametric insurance  at the community level,
   working with households, business owners, and city planners in Sarasota, FL.
+content: ["parametric-reciprocal-insurance-ghtc"]
 ---
 
 ## About the Study
