@@ -3,7 +3,7 @@ slug: "GDIF2-code" # match folder label name
 createdDate: 2022-01-16
 date: 2022-01-16
 status: "published"
-topics: ["impact", "statistical-modeling"] # "recovery", "impact", "statistical-modeling"
+topics: ["impact"] # "recovery", "impact", "statistical-modeling"
 locations: [] # "nepal", "new-zealand", "haiti", "italy"
 type: "software" # "blog", "report", "journal-article", "visualization"
 section: ["contents"]
