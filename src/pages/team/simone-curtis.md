@@ -6,7 +6,7 @@ title: Masters Researcher
 type: "alumni"
 yearDeparted: "2025"
 affiliation: "University of Michigan"
-affiliationLink: "https://www.linkedin.com/in/simoneac"
+affiliationLink: ""
 img: /img/member-simone.png
 linkedin: https://www.linkedin.com/in/simoneac
 twitter: https://twitter.com/simoneacurtis

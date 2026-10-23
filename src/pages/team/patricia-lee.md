@@ -4,8 +4,8 @@ name: Patricia Lee
 createdDate: 2023-10-20
 yearDeparted: "2024"
 title: Undergraduate Researcher
-affiliation: Massuchesetts Institute of Technology
-affiliationLink: 
+affiliation: "Thornton Tomasetti"
+affiliationLink: "https://www.thorntontomasetti.com/"
 img: /img/member-patricia.png
 linkedin: https://www.linkedin.com/in/patricia-lee-k333/
 type: "alumni"
