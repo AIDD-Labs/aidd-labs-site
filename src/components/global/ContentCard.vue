@@ -58,11 +58,14 @@
             <img :src="imageSrc" alt="" />
         </div>
         <div class="article-metas">
-            <TagPill
-                v-if="type" 
+            <div v-if="type" class="type-pills">
+                <TagPill
+                    v-for="t in [].concat(meta?.type || [])"
+                    :key="t"
                     variant="type"
-                    :tag="meta?.type"
-                 />
+                    :tag="t"
+                />
+            </div>
             <TagPill
                 v-else-if="topics" 
                     :tag="topics[0]"
@@ -144,6 +147,12 @@
         .article-metas {
             display: flex;
             justify-content: space-between;
+
+            .type-pills {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.3em;
+            }
 
             .date {
                 font-size: 0.8em;

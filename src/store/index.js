@@ -98,7 +98,8 @@ const store = createStore({
                 const { topics, type } = content.meta;
                 const concatenatedTopics = acc.topics.concat(topics);
 
-                !acc.types.includes(type) && acc.types.push(type);
+                // type can be a single string or a list (e.g. [dataset, protocol])
+                [].concat(type || []).forEach(t => !acc.types.includes(t) && acc.types.push(t));
                 const uniqueTopics = concatenatedTopics.filter((topic, idx) => concatenatedTopics.indexOf(topic) === idx);
                 
                 acc.topics = uniqueTopics;

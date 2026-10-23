@@ -26,7 +26,8 @@
             newsType(){
                 let type
                 if (this.newsitem.meta.type) {
-                    type=this.newsitem.meta.type
+                    const t=this.newsitem.meta.type
+                    type=Array.isArray(t) ? t.join(" / ") : t
                 }else{
                     const map={
                         projects:"Project",
@@ -40,7 +41,8 @@
                 if (this.family==="team"){
                     return `Welcome ${this.newsitem.meta.name}, new ${this.newsitem.meta.title}!`
                 }else if(this.family==="content"){
-                    const type=this.newsitem.meta.type.split("-").map(str=>str.charAt(0).toUpperCase() + str.slice(1)).join(" ")
+                    const label=s=>s.split("-").map(str=>str.charAt(0).toUpperCase() + str.slice(1)).join(" ")
+                    const type=[].concat(this.newsitem.meta.type).map(label).join(" & ")
                     return `New ${type}: ${this.newsitem.meta.title}`
                 }else if(this.family==="projects"){
                     return `New Project: ${this.newsitem.meta.title}`

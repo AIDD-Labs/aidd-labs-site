@@ -48,7 +48,7 @@
                     if (!Object.keys(query).length) {
                         return row;
                     } else {
-                        let passesType = !query.type || row.meta.type == query.type;
+                        let passesType = !query.type || [].concat(row.meta.type || []).includes(query.type);
                         let passesTopic =
                             !query.topic || row.meta.topics.includes(query.topic);
 

@@ -196,7 +196,7 @@
             }
         },
         beforeUnmount() {
-            window.removEventListener("scroll", this.onScroll);
+            window.removeEventListener("scroll", this.onScroll);
         },
     };
 </script>
@@ -234,8 +234,13 @@
                             >
                                 <TagPill variant="topic" :tag="topic" />
                             </Link>
-                            <Link :to="`/content?type=${type}`" no-decoration>
-                                <TagPill variant="type" :tag="type" />
+                            <Link
+                                v-for="t in [].concat(type || [])"
+                                :key="t"
+                                :to="`/content?type=${t}`"
+                                no-decoration
+                            >
+                                <TagPill variant="type" :tag="t" />
                             </Link>
                         </div>
                         <div class="description" v-if="description">
