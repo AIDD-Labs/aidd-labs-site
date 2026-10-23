@@ -15,7 +15,7 @@ members:
   - marisa-macias
   - madeline-karr
   - lori-peek
-is_featured: false
+is_featured: true
 authors: "Sabine Loos, Marísa Macías, Madeline Karr, Lori Peek"
 publication: "Earthquake Spectra"
 thumbnail: img/content-j-beyond-deaths-dollars.png

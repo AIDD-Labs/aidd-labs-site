@@ -3,6 +3,7 @@ slug: the-intensity-gap
 title: "The Intensity Gap: A Global Analysis of Who Responds to the Crowdsourced Did You Feel It? System"
 createdDate: 2025-12-03
 date: 2025-11-03
+is_featured: true
 status: published
 topics:
   - impact

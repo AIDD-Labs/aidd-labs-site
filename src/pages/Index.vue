@@ -25,6 +25,8 @@
         computed: {
             ...mapState({
                 recentPosts: state => [...state.posts.slice(0, 3)],
+                // Content pages with `is_featured: true` in their frontmatter (newest first, max 6)
+                featuredContent: state => state.contents.filter(c => c.meta.is_featured === true).slice(0, 6),
                 siteMetadata: state => state.siteMetadata,
             }),
             aboutContent() {
@@ -189,6 +191,13 @@
                         <a href="#"><img src="/img/partner-WBibrd.png" /></a>
                     </div>
                 </div>
+                <template v-if="featuredContent.length">
+                    <h1>Featured Work</h1>
+                    <ContentGrid :data="featuredContent" />
+                    <div class="all-news">
+                        <Link is-button to="/content"> All Content → </Link>
+                    </div>
+                </template>
                 <h1>Recent News</h1>
                 <NewsGrid newsCount="5"/>
                 <div class = "all-news">

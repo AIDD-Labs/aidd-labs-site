@@ -14,7 +14,7 @@ members:
   - shreyasha-paudel
   - sabine-loos
   - robert-soden
-is_featured: false
+is_featured: true
 authors: "Shreyasha Paudel, Sabine Loos, Robert Soden"
 publication: "CHI 2025"
 thumbnail: img/content-j-hype-historical-continuity.png
