@@ -77,12 +77,7 @@
         <h4 class="article-metas">
             {{ meta?.title }}
         </h4>
-        <AuthorBlock
-            no-link
-            orientation="landscape"
-            v-if="members"
-            :author="meta?.members[0]"
-        />
+        <AuthorList v-if="meta?.members?.length" :authors="meta.members" :max="3" />
     </Link>
 </template>
 <style lang="scss">
