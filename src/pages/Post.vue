@@ -246,7 +246,8 @@
                         <div class="description" v-if="description">
                             {{ description }}
                         </div>
-                        <AuthorBlock :author="primaryAuthor" orientation="landscape" />
+                        <AuthorList v-if="members?.length" :authors="members" variant="full" />
+                        <AuthorBlock v-else :author="primaryAuthor" orientation="landscape" />
                         <div class="other-metas">
                             <!-- <div class="authors" v-if="authors.length">
                                 <strong>Authors:</strong> {{ authors }}
@@ -272,6 +273,13 @@
                 </div>
                 <div class="post-right">
                     <AuthorBlock :author="primaryAuthor" />
+                    <AuthorList
+                        v-if="members?.length > 1"
+                        class="co-authors"
+                        :authors="members.slice(1)"
+                        :max="4"
+                        label="With"
+                    />
                     <TOC :active-heading="activeHeadingId" />
                 </div>
             </div>

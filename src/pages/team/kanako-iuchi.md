@@ -2,8 +2,8 @@
 slug: kanako-iuchi
 name: Kanako Iuchi
 createdDate: 2024-10-14
-type: external
-title: Associate Professor
+type: current
+title: Affiliate
 affiliation: Tohoku University, IRIDeS
 img: /img/member-kanako-iuchi.png
 linkedin: ""

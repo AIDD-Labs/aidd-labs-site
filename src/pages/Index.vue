@@ -11,6 +11,23 @@
             return {
                 isLoaded: false,
                 aboutState: "mission",
+                // HERO CAROUSEL: add/remove/reorder slides here (images live in public/img/).
+                // `position` is an optional CSS background-position to control the crop.
+                heroSlides: [
+                    { src: "/img/hero/hero-malaysia-flood-sensor.jpg", alt: "Installing a flood sensor over a stream in Malaysia", position: "center center" },
+                    { src: "/img/hero/hero-chitwan-flooding.jpg", alt: "AIDD Labs members capturing drone data along a river in Chitwan, Nepal", position: "center 40%" },
+                    { src: "/img/hero/hero-nepal-landslide.jpg", alt: "Landslide-prone hillside above a river in Nepal", position: "center center" },
+                    { src: "/img/hero/hero-workshop-synthesis.jpg", alt: "AIDD Labs members designing actionability at a research retreat", position: "center 30%" },
+                    { src: "/img/hero/hero-turkiye-recon.jpg", alt: "Village in Türkiye after the 2023 earthquakes", position: "center center" },
+                    { src: "/img/hero/hero-bigdata-nonrecovery.jpg", alt: "Damaged buildings in Nepal years after the 2015 earthquake", position: "center center" },
+                    { src: "/img/hero/hero-sarasota-house.jpg", alt: "A house beneath oak trees in Sarasota, Florida", position: "center 60%" },
+                    { src: "/img/hero/hero-nepal-damage.jpg", alt: "Earthquake-damaged buildings in Nepal", position: "center center" },
+                ],
+                heroIndex: 0,
+                heroLoaded: [0, 1], // only the current + next photo are downloaded up front
+                heroIntervalMs: 6000,
+                heroTimer: null,
+                heroPaused: false,
                 lightbox: {
                     images: {
                         thumbnails: ["home-approach.png"],
@@ -66,13 +83,43 @@
             },
         },
 
+        watch: {
+            heroIndex(i) {
+                // preload the photo after the one now showing
+                const next = (i + 1) % this.heroSlides.length;
+                [i, next].forEach(k => { if (!this.heroLoaded.includes(k)) this.heroLoaded.push(k); });
+            },
+        },
         methods: {
             handleClick(e) {
                 this.aboutState = e.target.value;
             },
+            goToSlide(i) {
+                const n = this.heroSlides.length;
+                this.heroIndex = (i + n) % n;
+                this.startHeroTimer(); // restart the countdown after a manual change
+            },
+            startHeroTimer() {
+                this.stopHeroTimer();
+                if (this.heroSlides.length < 2) return;
+                if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
+                this.heroTimer = setInterval(() => {
+                    if (!this.heroPaused && !document.hidden) {
+                        this.heroIndex = (this.heroIndex + 1) % this.heroSlides.length;
+                    }
+                }, this.heroIntervalMs);
+            },
+            stopHeroTimer() {
+                if (this.heroTimer) clearInterval(this.heroTimer);
+                this.heroTimer = null;
+            },
         },
         mounted() {
             this.isLoaded = true;
+            this.startHeroTimer();
+        },
+        beforeUnmount() {
+            this.stopHeroTimer();
         },
     };
 </script>
@@ -80,7 +127,36 @@
 <template>
     <SEO meta-title="Actionable Information for Disasters and Development Labs" />
     <div class="index-page">
-        <section class="hero">
+        <section
+            class="hero"
+            aria-roledescription="carousel"
+            aria-label="Photos from AIDD Labs research"
+            @mouseenter="heroPaused = true"
+            @mouseleave="heroPaused = false"
+        >
+            <div class="hero-slides">
+                <div
+                    v-for="(slide, i) in heroSlides"
+                    :key="slide.src"
+                    class="hero-slide"
+                    :class="{ active: i === heroIndex }"
+                    role="img"
+                    :aria-label="slide.alt"
+                    :aria-hidden="i !== heroIndex"
+                    :style="{ backgroundImage: heroLoaded.includes(i) ? `url('${slide.src}')` : 'none', backgroundPosition: slide.position || 'center center' }"
+                />
+            </div>
+            <div v-if="heroSlides.length > 1" class="hero-dots">
+                <button
+                    v-for="(slide, i) in heroSlides"
+                    :key="'dot-' + slide.src"
+                    class="hero-dot"
+                    :class="{ active: i === heroIndex }"
+                    :aria-label="`Show photo ${i + 1} of ${heroSlides.length}`"
+                    :aria-current="i === heroIndex"
+                    @click="goToSlide(i)"
+                />
+            </div>
             <MaxWidth size="m" class="hero-content">
                 <h1 class="hero-title">
                     Designing disaster and development information for <em>action</em>.
@@ -235,18 +311,62 @@
                 height: 400px;
             }
 
-            &:before {
-                content: "";
+            .hero-slides {
                 position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: url("/img/home-hero-1.png");
+                inset: 0;
+                overflow: hidden;
+            }
+
+            .hero-slide {
+                position: absolute;
+                inset: 0;
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: center center;
                 filter: brightness(80%);
+                opacity: 0;
+                transform: scale(1.04);
+                transition: opacity 1.2s ease-in-out, transform 7s ease-out;
+
+                &.active {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+
+                @media (prefers-reduced-motion: reduce) {
+                    transition: opacity 0.3s linear;
+                    transform: none;
+                    &.active { transform: none; }
+                }
+            }
+
+            .hero-dots {
+                position: absolute;
+                z-index: 400;
+                bottom: 2em;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                gap: 0.6em;
+
+                @media (max-width: 600px) {
+                    bottom: 1em;
+                }
+            }
+
+            .hero-dot {
+                width: 10px;
+                height: 10px;
+                padding: 0;
+                border-radius: 50%;
+                border: 1.5px solid white;
+                background: transparent;
+                cursor: pointer;
+                opacity: 0.85;
+                transition: background 0.3s, transform 0.3s;
+
+                &:hover { transform: scale(1.2); }
+                &.active { background: white; opacity: 1; }
+                &:focus-visible { outline: 2px solid white; outline-offset: 3px; }
             }
 
             .hero-content {

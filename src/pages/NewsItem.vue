@@ -135,6 +135,13 @@
             </div>
                 <div class="sidebar">
                         <AuthorBlock :author="primaryAuthor" />
+                        <AuthorList
+                            v-if="members?.length > 1"
+                            class="co-authors"
+                            :authors="members.slice(1)"
+                            :max="4"
+                            label="With"
+                        />
                         <TOC :active-heading="activeHeadingId" />
                 </div>
             </div>
