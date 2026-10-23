@@ -149,9 +149,9 @@
     <div><img src="/img/team-2024-chitwan-river.jpg"/><a href="#lightbox-12"></a></div>
     <div><img src="/img/team-2024-majorPresentation.jpg"/><a href="#lightbox-13"></a></div>
     <div><img src="/img/team-2024-simoneApil.jpg"/><a href="#lightbox-14"></a></div>
-    <div><img src="/img/team-2024-maggie-FL.jpg"/><a href="#lightbox-15"></a></div>
+    <div><img src="/img/team-2026-maggie-facilitating.jpg"/><a href="#lightbox-15"></a></div>
     <div><img src="/img/team-2024-brad.jpg"/><a href="#lightbox-16"></a></div>
-    <div><img src="/img/proj-2023-landslide.jpg"/><a href="#lightbox-17"></a></div>
+    <div><img src="/img/team-2026-workshop-group.jpg"/><a href="#lightbox-17"></a></div>
     <div><img src="/img/team-2023-nhwMacias.jpg"/><a href="#lightbox-18"></a></div> 
 </div>
 
@@ -226,8 +226,8 @@
   </div>
 </div>
 <div class="lightbox" id="lightbox-15">
-  <div class="content"><img src="/img/team-2024-maggie-FL.jpg"/>
-    <div class="caption">Maggie at a user needs session at the Field Lab.</div><a class="close" href="#gallery"></a>
+  <div class="content"><img src="/img/team-2026-maggie-facilitating.jpg"/>
+    <div class="caption">Maggie facilitating a session.</div><a class="close" href="#gallery"></a>
   </div>
 </div>
 <div class="lightbox" id="lightbox-16">
@@ -236,8 +236,8 @@
   </div>
 </div>
 <div class="lightbox" id="lightbox-17">
-  <div class="content"><img src="/img/proj-2023-landslide.jpg"/>
-    <div class="caption">Landslides and roads in Nepal.</div><a class="close" href="#gallery"></a>
+  <div class="content"><img src="/img/team-2026-workshop-group.jpg"/>
+    <div class="caption">AIDD Labs team photo.</div><a class="close" href="#gallery"></a>
   </div>
 </div>
 <div class="lightbox" id="lightbox-18">
@@ -290,6 +290,7 @@
     #gallery > div {
         width: 48%;
         margin: 1%;
+        aspect-ratio: 4 / 3;
     }
     }
     @media (max-width: 800px) and (max-width: 350px) {
@@ -322,7 +323,9 @@
     }
     #gallery > div > img {
         width: 100%;
-        min-height: 100%;
+        height: 100%;
+        object-fit: cover; /* crop to fill the tile instead of squashing */
+        display: block;
         transition: all ease 1s;
     }
     #gallery > div:hover img {
