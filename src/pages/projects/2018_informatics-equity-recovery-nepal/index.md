@@ -7,7 +7,7 @@ topics: ["recovery", "impact", "equity"]
 locations: ["nepal"]
 methods: [ "statistical-modeling", "surveys", "mixed-methods", "qualitative-methods"]
 members: ["sabine-loos", "david-lallemant", "feroz-khan","nama-budhathoki", "jamie-mccaughey", "ritika-singh", "robert-banick"] # insert your slug here, e.g., "sabine-loos"
-content: ["seen-and-unseen-vulnerabilities","nonrecovery-nepal","ier-bigdata-nonrecovery","gdif-nepal","ier-nepal", "nhrm-converge", "usgs-esc", "ier-report", "afterquake-nepal", "Geo4Dev"]
+content: ["beyond-building-damage-17wcee", "seen-and-unseen-vulnerabilities","nonrecovery-nepal","ier-bigdata-nonrecovery","gdif-nepal","ier-nepal", "nhrm-converge", "usgs-esc", "ier-report", "afterquake-nepal", "Geo4Dev"]
 partners: 
     - suri
     - kll
