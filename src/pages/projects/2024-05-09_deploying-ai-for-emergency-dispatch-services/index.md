@@ -8,7 +8,7 @@ topics: ["emergency-management", "equity"]
 methods: [ "qualitative-methods", "mixed-methods","statistical-learning"]
 members: ["christin-salley","sabine-loos", "aditya-tambe", "lu-wang"] # , "tomas-garcia-lavanchy"
 locations: ["united-states"]
-content: []
+content: ["dispatcher-stress-detection-cogmi"]
 partners:
     - MIDAS
 thumbnail: "/img/proj-dispatcher-ai-bots.jpg" 
