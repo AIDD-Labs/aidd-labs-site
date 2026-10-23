@@ -1,7 +1,8 @@
 ---
 slug: eli-knodel
 name: Eli Knodel
-createdDate: 2024-09-15
+# createdDate: 2024-09-15 # createdDate for Masters
+createdDate: 2026-08-15 # createdDate for PhD
 type: current
 title: PhD Researcher
 affiliation: University of Michigan

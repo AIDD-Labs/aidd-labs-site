@@ -37,11 +37,14 @@
                     "Project Manager":6
                 }
                 const rank = slug => seniorityMap[this.members[slug].meta.title] ?? 99;
-                // Alphabetical tiebreak by last name, then full name
-                const lastName = slug => this.members[slug].meta.name.trim().split(/\s+/).pop();
+                // Tiebreak by createdDate, earliest first (missing dates sort last), then name
+                const created = slug => {
+                    const t = new Date(this.members[slug].meta.createdDate).getTime();
+                    return Number.isNaN(t) ? Infinity : t;
+                };
                 return [...this.memberMetadata.current].sort((a,b) => {
                     return rank(a) - rank(b)
-                        || lastName(a).localeCompare(lastName(b))
+                        || (created(a) - created(b) || 0)
                         || this.members[a].meta.name.localeCompare(this.members[b].meta.name);
                 })
             },
