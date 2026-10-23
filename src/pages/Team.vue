@@ -87,7 +87,7 @@
                 <Link :to="members[alumni].path">
                     {{ members[alumni].meta.name }}
                 </Link>, '{{ members[alumni].meta.yearDeparted?.slice(2) }} - now at 
-                <Link v-if="members[alumni].meta.affiliationLink" :to="members[alumni].meta.affliationLink">{{ members[alumni].meta.affiliation }}</Link>
+                <Link v-if="members[alumni].meta.affiliationLink" :to="members[alumni].meta.affiliationLink">{{ members[alumni].meta.affiliation }}</Link>
                 <span v-else>{{ members[alumni].meta.affiliation }}</span>
                 <br />
             </div>

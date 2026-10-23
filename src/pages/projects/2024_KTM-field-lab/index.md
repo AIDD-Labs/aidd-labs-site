@@ -1,8 +1,8 @@
 ---
 slug: "KTM-field-lab" # match folder label name
 createdDate: 2023-12-20
-date: "2024 - Present"
-status: "current"
+date: "2024 - 2025"
+status: "complete"
 topics: ["climate", "risk", "equity", "impact", "recovery"]
 locations: ["nepal", "global"]
 methods: [ "mixed-methods", "risk-analysis"]
@@ -20,11 +20,15 @@ partners:
     - ssBAHA
     - sshrc
 title: "Himalayan Climate Data Field Lab"
-thumbnail: "/img/proj-ktm-field-lab.png"
-thumbnailCaption: ""
-description: "The Himalayan Climate Data Field Lab is a month-long, flexible unconference that will gather scholars, practitioners, activists, community leaders, and storytellers to examine the ways that climate change data and information infrastructures shape adaptation and mitigation in the Himalayan region. Join the Field Lab to co-design, test and produce new ideas, analytic tools, maps, sensing technologies, data protocols, artistic pieces and communication products that address climate change and its impacts, with the aim of creating a more equitable and pluralistic data landscape in the Himalayan region." 
+thumbnail: "/img/proj-ur-field-lab-2024.jpg"
+thumbnailCaption: "Participants of the UR Field Lab on Himalayan Climate Data, Kathmandu, 2024 (photo: urfieldlab.com)"
+description: "The Understanding Risk (UR) Field Lab on Himalayan Climate Data was a four-week, collaborative, unstructured un-conference in Kathmandu (May–June 2024) that brought together scholars, practitioners, artists, and community leaders to co-design creative approaches to climate and disaster risk management in the Himalayan region."
 ---
-The Himalayan Climate Data Field Lab is a **month-long, flexible unconference** that will gather scholars, practitioners, activists, community leaders, and storytellers to examine the ways that climate change data and information infrastructures shape adaptation and mitigation in the Himalayan region. Join the Field Lab to **co-design, test and produce new ideas, analytic tools, maps, sensing technologies, data protocols, artistic pieces and communication products** that address climate change and its impacts, with the aim of creating a more equitable and pluralistic data landscape in the Himalayan region.
+<Link is-button doOpenInNewTab to="https://urfieldlab.com/"> Visit the UR Field Lab Website </Link>
+
+The Understanding Risk (UR) Field Labs are **collaborative, unstructured un-conferences** that bring people together to produce creative approaches to today's most pressing climate and disaster risk management issues. The **UR Field Lab on Himalayan Climate Data** (Kathmandu, 13 May – 7 June 2024) gathered roughly 80 scholars, practitioners, activists, artists, community leaders, and storytellers from over 19 countries to examine how climate data and information infrastructures shape adaptation and mitigation in the Himalayan region.
+
+Over four weeks, participants **co-designed the schedule and formed working groups** to develop projects ranging from art to research—new analytic tools, maps, sensing technologies, data protocols, artistic pieces, and communication products—with the aim of creating a more equitable and pluralistic data landscape in the region.
 
 ## Themes
 Themes that Field Lab activities focused on included:
@@ -44,7 +48,7 @@ Themes that Field Lab activities focused on included:
 ## Outputs
 Outputs from the field lab included art installations, visualizations, machine learning models, field visits, and more.
 
-To see all of the outputs from the Field Lab, visit: https://urfieldlab.com/UR2024/.
+To see all of the outputs from the Field Lab, visit the [Kathmandu 2024 outputs page](https://www.urfieldlab.com/UR2024/outputs).
 
 ## Event Organizers 
 

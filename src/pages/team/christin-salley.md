@@ -5,8 +5,8 @@ type: "alumni"
 createdDate: 2023-11-30
 title: Postdoctoral Fellow
 yearDeparted: "2024"
-affiliation: "Virginia Tech"
-affiliationLink: "https://www.webapps.cee.vt.edu/index.php?category=people&pagetype=bio&do=getprofile&user=csalley.html"
+affiliation: "George Washington University"
+affiliationLink: "https://engineering.gwu.edu/christin-salley"
 img: /img/member-christin-salley.png
 linkedin: https://www.linkedin.com/in/christin-j-salley-phd-mse-35b01911a/
 twitter: ""
